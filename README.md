@@ -1,4 +1,4 @@
-# MD5 - Hardware
+##  MD5 Cryptographic Hash Function - Hardware and Software
 
 The main idea of this project is to implement a system where:
 
