@@ -45,7 +45,8 @@
         "lmb_bram": ""
       },
       "axi_dma_0": "",
-      "axis_data_fifo_0": ""
+      "axis_data_fifo_0": "",
+      "Md5HashFunction_0": ""
     },
     "interface_ports": {
       "push_buttons_5bits": {
@@ -1705,9 +1706,19 @@
             "value": "4096"
           }
         }
+      },
+      "Md5HashFunction_0": {
+        "vlnv": "xilinx.com:user:Md5HashFunction:1.0",
+        "xci_name": "mb_design_Md5HashFunction_0_0"
       }
     },
     "interface_nets": {
+      "axis_data_fifo_0_M_AXIS": {
+        "interface_ports": [
+          "axis_data_fifo_0/M_AXIS",
+          "Md5HashFunction_0/S00_AXIS"
+        ]
+      },
       "axi_gpio_leds_GPIO": {
         "interface_ports": [
           "led_16bits",
@@ -1846,16 +1857,16 @@
           "microblaze_0_axi_periph/S01_AXI"
         ]
       },
-      "axis_data_fifo_0_M_AXIS": {
-        "interface_ports": [
-          "axi_dma_0/S_AXIS_S2MM",
-          "axis_data_fifo_0/M_AXIS"
-        ]
-      },
       "axi_dma_0_M_AXIS_MM2S": {
         "interface_ports": [
           "axi_dma_0/M_AXIS_MM2S",
           "axis_data_fifo_0/S_AXIS"
+        ]
+      },
+      "Md5HashFunction_0_M00_AXIS": {
+        "interface_ports": [
+          "Md5HashFunction_0/M00_AXIS",
+          "axi_dma_0/S_AXIS_S2MM"
         ]
       }
     },
@@ -1899,7 +1910,9 @@
           "microblaze_0_axi_periph/S02_ACLK",
           "axi_dma_0/s_axi_lite_aclk",
           "microblaze_0_axi_periph/M08_ACLK",
-          "axis_data_fifo_0/s_axis_aclk"
+          "axis_data_fifo_0/s_axis_aclk",
+          "Md5HashFunction_0/m00_axis_aclk",
+          "Md5HashFunction_0/s00_axis_aclk"
         ]
       },
       "clk_wiz_1_locked": {
@@ -1940,7 +1953,9 @@
           "microblaze_0_axi_periph/S02_ARESETN",
           "axi_dma_0/axi_resetn",
           "microblaze_0_axi_periph/M08_ARESETN",
-          "axis_data_fifo_0/s_axis_aresetn"
+          "axis_data_fifo_0/s_axis_aresetn",
+          "Md5HashFunction_0/m00_axis_aresetn",
+          "Md5HashFunction_0/s00_axis_aresetn"
         ]
       },
       "mdm_1_debug_sys_rst": {
