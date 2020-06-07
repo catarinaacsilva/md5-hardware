@@ -1,5 +1,6 @@
 --------------------------------------------
--- Module Name: testbench to MD5 module
+-- Module Name: MD5 testbench
+-- Description: Testbench to MD5 module
 --
 -- Authors: Catarina Silva
 -- Email: c.alexandracorreia@ua.pt
