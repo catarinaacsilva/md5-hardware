@@ -23,25 +23,25 @@ type const_s is array (0 to 63) of uint8_t;
 type const_k is array (0 to 63) of uint32_t;
 type message is array (0 to 15) of uint32_t;
 
-constant S: const_s := (X"07", X"0C", X"11", X"16", -- 7, 12, 17, 22,
-                        X"07", X"0C", X"11", X"16", -- 7, 12, 17, 22,
-                        X"07", X"0C", X"11", X"16", -- 7, 12, 17, 22,
-                        X"07", X"0C", X"11", X"16", -- 7, 12, 17, 22,
+constant S: const_s := (X"07", X"0C", X"11", X"16", 
+                        X"07", X"0C", X"11", X"16",
+                        X"07", X"0C", X"11", X"16", 
+                        X"07", X"0C", X"11", X"16",
 
-						X"05", X"09", X"0E", X"14", -- 5,  9, 14, 20,
-						X"05", X"09", X"0E", X"14", -- 5,  9, 14, 20,
-						X"05", X"09", X"0E", X"14", -- 5,  9, 14, 20,
-						X"05", X"09", X"0E", X"14", -- 5,  9, 14, 20,
+						X"05", X"09", X"0E", X"14", 
+						X"05", X"09", X"0E", X"14", 
+						X"05", X"09", X"0E", X"14",
+						X"05", X"09", X"0E", X"14", 
 
-						X"04", X"0B", X"10", X"17", -- 4, 11, 16, 23,
-						X"04", X"0B", X"10", X"17", -- 4, 11, 16, 23,
-						X"04", X"0B", X"10", X"17", -- 4, 11, 16, 23,
-						X"04", X"0B", X"10", X"17", -- 4, 11, 16, 23,
+						X"04", X"0B", X"10", X"17",
+						X"04", X"0B", X"10", X"17",
+						X"04", X"0B", X"10", X"17",
+						X"04", X"0B", X"10", X"17",
 
-						X"06", X"0A", X"0F", X"15", -- 6, 10, 15, 21);
-						X"06", X"0A", X"0F", X"15", -- 6, 10, 15, 21);
-						X"06", X"0A", X"0F", X"15", -- 6, 10, 15, 21);
-						X"06", X"0A", X"0F", X"15"); -- 6, 10, 15, 21);
+						X"06", X"0A", X"0F", X"15", 
+						X"06", X"0A", X"0F", X"15", 
+						X"06", X"0A", X"0F", X"15",
+						X"06", X"0A", X"0F", X"15");
 										
 constant K: const_k := (X"d76aa478", X"e8c7b756", X"242070db", X"c1bdceee",
 						X"f57c0faf", X"4787c62a", X"a8304613", X"fd469501",
@@ -61,7 +61,7 @@ constant K: const_k := (X"d76aa478", X"e8c7b756", X"242070db", X"c1bdceee",
 						X"f7537e82", X"bd3af235", X"2ad7d2bb", X"eb86d391");
 
 signal M : uint512_t := (others => '0'); -- message
-signal message_length : uint32_t := (others => '0'); --message length
+signal message_length : uint32_t := (others => '0');
 signal data_counter : natural := 0;
 signal iCounter  : natural := 0;
 signal jCounter, jCounter_n : natural := 0;
