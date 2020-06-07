@@ -1,0 +1,122 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun Jun  7 18:37:43 2020
+| Host         : DESKTOP-QTAJP9C running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file md5Demo_control_sets_placed.rpt
+| Design       : md5Demo
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    44 |
+|    Minimum number of control sets                        |    44 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   127 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    44 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |    15 |
+| >= 10 to < 12      |    17 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     9 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            2 |
+| No           | No                    | Yes                    |              31 |            8 |
+| No           | Yes                   | No                     |              32 |            9 |
+| Yes          | No                    | No                     |             573 |          200 |
+| Yes          | No                    | Yes                    |               7 |            5 |
+| Yes          | Yes                   | No                     |             130 |           41 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------+--------------------+------------------+----------------+
+|  Clock Signal  |        Enable Signal        |  Set/Reset Signal  | Slice Load Count | Bel Load Count |
++----------------+-----------------------------+--------------------+------------------+----------------+
+|  clk_IBUF_BUFG | md5/done_i_1_n_0            |                    |                1 |              1 |
+|  clk_IBUF_BUFG |                             |                    |                2 |              4 |
+|  clk_IBUF_BUFG | md5/state[3]_i_1_n_0        | sw_IBUF[0]         |                5 |              7 |
+|  clk_IBUF_BUFG | md5/M[454]_i_1_n_0          | md5/M[451]_i_1_n_0 |                3 |              8 |
+|  clk_IBUF_BUFG | md5/M[294]_i_1_n_0          | md5/M[291]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG | md5/M[390]_i_1_n_0          | md5/M[387]_i_1_n_0 |                3 |              8 |
+|  clk_IBUF_BUFG | md5/M[102]_i_1_n_0          | md5/M[99]_i_1_n_0  |                3 |              8 |
+|  clk_IBUF_BUFG | md5/M[166]_i_1_n_0          | md5/M[163]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG | md5/M[198]_i_1_n_0          | md5/M[195]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG | md5/M[358]_i_1_n_0          | md5/M[355]_i_1_n_0 |                5 |              8 |
+|  clk_IBUF_BUFG | md5/M[230]_i_1_n_0          | md5/M[227]_i_1_n_0 |                3 |              8 |
+|  clk_IBUF_BUFG | md5/M[262]_i_1_n_0          | md5/M[259]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG | md5/M[38]_i_1_n_0           | md5/M[35]_i_1_n_0  |                2 |              8 |
+|  clk_IBUF_BUFG | md5/M[326]_i_1_n_0          | md5/M[323]_i_1_n_0 |                3 |              8 |
+|  clk_IBUF_BUFG | md5/M[134]_i_1_n_0          | md5/M[131]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG | md5/M[70]_i_1_n_0           | md5/M[67]_i_1_n_0  |                2 |              8 |
+|  clk_IBUF_BUFG | md5/M[486]_i_1_n_0          | md5/M[483]_i_1_n_0 |                1 |              8 |
+|  clk_IBUF_BUFG | md5/M[422]_i_1_n_0          | md5/M[419]_i_1_n_0 |                2 |              8 |
+|  clk_IBUF_BUFG | md5/M[358]_i_1_n_0          |                    |                5 |             10 |
+|  clk_IBUF_BUFG | md5/M[38]_i_1_n_0           |                    |                2 |             10 |
+|  clk_IBUF_BUFG | md5/M[262]_i_1_n_0          |                    |                3 |             10 |
+|  clk_IBUF_BUFG | md5/M[326]_i_1_n_0          |                    |                3 |             10 |
+|  clk_IBUF_BUFG | md5/M[390]_i_1_n_0          |                    |                5 |             10 |
+|  clk_IBUF_BUFG | md5/M[294]_i_1_n_0          |                    |                2 |             10 |
+|  clk_IBUF_BUFG | md5/M[454]_i_1_n_0          |                    |                4 |             10 |
+|  clk_IBUF_BUFG | md5/M[70]_i_1_n_0           |                    |                3 |             10 |
+|  clk_IBUF_BUFG | md5/M[102]_i_1_n_0          |                    |                4 |             10 |
+|  clk_IBUF_BUFG | md5/M[6]_i_1_n_0            |                    |                4 |             10 |
+|  clk_IBUF_BUFG | md5/M[6]_i_1_n_0            | md5/M[0]_i_1_n_0   |                4 |             10 |
+|  clk_IBUF_BUFG | md5/M[486]_i_1_n_0          |                    |                2 |             10 |
+|  clk_IBUF_BUFG | md5/M[230]_i_1_n_0          |                    |                3 |             10 |
+|  clk_IBUF_BUFG | md5/M[166]_i_1_n_0          |                    |                3 |             10 |
+|  clk_IBUF_BUFG | md5/M[198]_i_1_n_0          |                    |                3 |             10 |
+|  clk_IBUF_BUFG | md5/M[422]_i_1_n_0          |                    |                2 |             10 |
+|  clk_IBUF_BUFG | md5/M[134]_i_1_n_0          |                    |                3 |             10 |
+|  clk_IBUF_BUFG | md5/data_counter[5]_i_1_n_0 |                    |                7 |             26 |
+|  clk_IBUF_BUFG |                             | sw_IBUF[0]         |                8 |             31 |
+|  clk_IBUF_BUFG | md5/iCounter0               |                    |                8 |             31 |
+|  clk_IBUF_BUFG | md5/jCounter_n[30]_i_1_n_0  |                    |                9 |             31 |
+|  clk_IBUF_BUFG | md5/data_out0               |                    |               11 |             32 |
+|  clk_IBUF_BUFG |                             | p_gen/clear        |                9 |             32 |
+|  clk_IBUF_BUFG | md5/g0__2                   |                    |               20 |             36 |
+|  clk_IBUF_BUFG | md5/An0                     |                    |               47 |            128 |
+|  clk_IBUF_BUFG | md5/B[31]_i_1_n_0           |                    |               46 |            128 |
++----------------+-----------------------------+--------------------+------------------+----------------+
+
+

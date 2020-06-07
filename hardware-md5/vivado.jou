@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Jun  7 18:27:06 2020
+# Process ID: 848
+# Current directory: C:/Users/Duarte Dias/Documents/MD5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1456 C:\Users\Duarte Dias\Documents\MD5\MD5.xpr
+# Log file: C:/Users/Duarte Dias/Documents/MD5/vivado.log
+# Journal file: C:/Users/Duarte Dias/Documents/MD5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Duarte Dias/Documents/MD5/MD5.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Duarte Dias/Documents/MD5/MD5.runs/impl_1/md5Demo.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Duarte Dias/Documents/MD5/MD5.runs/impl_1/md5Demo.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw_manager

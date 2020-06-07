@@ -1,0 +1,22 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|              sys_clk_pin |              sys_clk_pin |                                                                                          md5/Bn_reg[29]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                          md5/Bn_reg[31]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                          md5/Bn_reg[25]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                          md5/Bn_reg[27]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                          md5/Bn_reg[23]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                          md5/Bn_reg[15]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                          md5/Bn_reg[21]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                          md5/Bn_reg[14]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                          md5/Bn_reg[17]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                          md5/Bn_reg[20]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                          md5/Bn_reg[22]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                          md5/Bn_reg[19]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                          md5/Bn_reg[13]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                          md5/Bn_reg[16]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                          md5/Bn_reg[18]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                          md5/Bn_reg[10]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                          md5/Bn_reg[12]/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                          md5/Bn_reg[11]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
