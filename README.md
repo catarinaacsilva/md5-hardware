@@ -7,9 +7,10 @@ The main idea of this project is to implement a system where:
 
 To explore the complexity and to compare two approaches:
 
-We developer a script to implement MD5 in C and compare the performance of two approaches:
+We developer a script to implement MD5 in C and compare the performance of three approaches:
 
 - All on software
+- All on hardware
 - MD5 on hardware and interaction on software
 
 
