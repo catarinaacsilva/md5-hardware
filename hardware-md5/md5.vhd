@@ -71,10 +71,10 @@ constant b0 : uint32_t := X"efcdab89";
 constant c0 : uint32_t := X"98badcfe";
 constant d0 : uint32_t := X"10325476";
 
-signal A, A_n : uint32_t := a0;
-signal B, B_n : uint32_t := b0;
-signal C, C_n : uint32_t := c0;
-signal D, D_n : uint32_t := d0;
+signal A, An : uint32_t := a0;
+signal B, Bn : uint32_t := b0;
+signal C, Cn : uint32_t := c0;
+signal D, Dn : uint32_t := d0;
 signal F      : uint32_t := to_unsigned(0, A'length);
 signal g      : integer := 0;
 
@@ -119,10 +119,10 @@ begin
         elsif (rising_edge(clk)) then
             state <= state_n;
             jCounter <= jCounter_n;
-            A <= A_n;
-            B <= B_n;
-            C <= C_n;
-            D <= D_n;
+            A <= An;
+            B <= Bn;
+            C <= Cn;
+            D <= Dn;
         end if;
     end process main;
 
@@ -236,39 +236,39 @@ begin
                     end loop;
 
                 when bCalc1 | bCalc2 | bCalc3 | bCalc4 =>
-                    A_n <= D;
-                    B_n <= B + leftrotate(A + F + K(jCounter) + M(g to g+31), s(jCounter)); 
-                    C_n <= B;
-                    D_n <= C;
+                    An <= D;
+                    Bn <= B + leftrotate(A + F + K(jCounter) + M(g to g+31), s(jCounter)); 
+                    Cn <= B;
+                    Dn <= C;
                     jCounter_n <= jCounter + 1;
 
                 when xCalc1 =>
-                    F <= (B_n and C_n) or (not B_n and D_n);
+                    F <= (Bn and Cn) or (not Bn and Dn);
                     g <= 32*jCounter_n;
 
                 when xCalc2 =>
-                    F <= (D_n and B_n) or (not D_n and C_n);
+                    F <= (Dn and Bn) or (not Dn and Cn);
                     g <= 32*((5*jCounter_n + 1) mod 16);
 
                 when xCalc3 =>
-                    F <= B_n xor C_n xor D_n;
+                    F <= Bn xor Cn xor Dn;
                     g <= 32*((3*jCounter_n + 5) mod 16);
 
                 when xCalc4 =>
-                    F <= C_n xor (B_n or not D_n);
+                    F <= Cn xor (Bn or not Dn);
                     g <= 32*((7*jCounter_n) mod 16);
 
                 when lastCalc =>
-                    A_n <= A_n + a0;
-                    B_n <= B_n + b0;
-                    C_n <= C_n + c0;
-                    D_n <= D_n + d0;
+                    An  <= An + a0;
+                    Bn <= Bn + b0;
+                    Cn <= Cn + c0;
+                    Dn <= Dn + d0;
 
                 when rotate2 =>
-                    A_n <= swap_endianness(A_n);
-                    B_n <= swap_endianness(B_n);
-                    C_n <= swap_endianness(C_n);
-                    D_n <= swap_endianness(D_n);
+                    An <= swap_endianness(An);
+                    Bn <= swap_endianness(Bn);
+                    Cn <= swap_endianness(Cn);
+                    Dn <= swap_endianness(Dn);
 
                 when finish =>
                     done <= '1';
