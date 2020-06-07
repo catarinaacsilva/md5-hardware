@@ -71,15 +71,14 @@ constant b0 : uint32_t := X"efcdab89";
 constant c0 : uint32_t := X"98badcfe";
 constant d0 : uint32_t := X"10325476";
 
-signal A, An : uint32_t := a0;
-signal B, Bn : uint32_t := b0;
-signal C, Cn : uint32_t := c0;
-signal D, Dn : uint32_t := d0;
-signal F      : uint32_t := to_unsigned(0, A'length);
-signal g      : integer := 0;
+signal A, An      : uint32_t := a0;
+signal B, Bn      : uint32_t := b0;
+signal C, Cn      : uint32_t := c0;
+signal D, Dn      : uint32_t := d0;
+signal xExpr      : uint32_t := to_unsigned(0, A'length);
+signal g          : integer := 0;
 
 type state_t is (idle,
-                 load_length,
                  loadMessage, 
                  padding,
                  rotate1,
@@ -234,25 +233,25 @@ begin
 
                 when bCalc1 | bCalc2 | bCalc3 | bCalc4 =>
                     An <= D;
-                    Bn <= B + leftrotate(A + F + K(jCounter) + M(g to g+31), s(jCounter)); 
+                    Bn <= B + leftrotate(A + xExpr + K(jCounter) + M(g to g+31), s(jCounter)); 
                     Cn <= B;
                     Dn <= C;
                     jCounter_n <= jCounter + 1;
 
                 when xCalc1 =>
-                    F <= (Bn and Cn) or (not Bn and Dn);
+                    xExpr <= (Bn and Cn) or (not Bn and Dn);
                     g <= 32*jCounter_n;
 
                 when xCalc2 =>
-                    F <= (Dn and Bn) or (not Dn and Cn);
+                    xExpr <= (Dn and Bn) or (not Dn and Cn);
                     g <= 32*((5*jCounter_n + 1) mod 16);
 
                 when xCalc3 =>
-                    F <= Bn xor Cn xor Dn;
+                    xExpr <= Bn xor Cn xor Dn;
                     g <= 32*((3*jCounter_n + 5) mod 16);
 
                 when xCalc4 =>
-                    F <= Cn xor (Bn or not Dn);
+                    xExpr <= Cn xor (Bn or not Dn);
                     g <= 32*((7*jCounter_n) mod 16);
 
                 when lastCalc =>
