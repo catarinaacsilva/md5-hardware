@@ -5,13 +5,13 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 
 entity MD5 is
-    Port ( data_in:     in  STD_LOGIC_VECTOR (31 downto 0);
-           data_out:    out STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
-           done:        out STD_LOGIC := '0';
-           err:         out STD_LOGIC := '0';
-           start:       in  STD_LOGIC;
-           clk:         in  STD_LOGIC;
-           reset:       in  STD_LOGIC);
+    Port ( data_in:     in  std_logic_vector (31 downto 0);
+           err:         out std_logic_vector := '0';
+           start:       in  std_logic_vector;
+           clk:         in  std_logic_vector;
+           reset:       in  std_logic_vector;
+           data_out:    out std_logic_vector (31 downto 0) := (others => '0');
+           done:        out std_logic_vector := '0');
 end MD5;
 
 architecture Behavioral of MD5 is
@@ -63,8 +63,8 @@ constant K: const_k := (X"d76aa478", X"e8c7b756", X"242070db", X"c1bdceee",
 signal M : uint512_t := (others => '0'); -- message
 signal message_length : uint32_t := (others => '0'); --message length
 signal data_counter : natural := 0;
-signal out_counter  : natural := 0;
-signal loop_counter, loop_counter_n : natural := 0;
+signal iCounter  : natural := 0;
+signal jCounter, jCounter_n : natural := 0;
 
 constant a0 : uint32_t := X"67452301";
 constant b0 : uint32_t := X"efcdab89";
@@ -80,17 +80,21 @@ signal g      : integer := 0;
 
 type state_t is (idle,
                  load_length,
-                 load_data, 
-                 pad,
-                 rotate,
-                 stage1_F, stage1_B, 
-                 stage2_F, stage2_B,
-                 stage3_F, stage3_B,
-                 stage4_F, stage4_B,
-                 stage5, -- add a0 to A, b0 to B etc.
-                 stage6, -- swap endianness
-                 finished,
-                 store_data);
+                 loadMessage, 
+                 padding,
+                 rotate1,
+                 xCalc1, 
+                 bCalc1, 
+                 xCalc2, 
+                 bCalc2,
+                 xCalc3, 
+                 bCalc3,
+                 xCalc4, 
+                 bCalc4,
+                 lastCalc,
+                 rotate2,
+                 finish,
+                 storeData);
 signal state, state_n : state_t;
 
 function leftrotate(x: in uint32_t; c: in uint8_t) return uint32_t is
@@ -111,10 +115,10 @@ begin
     begin
         if (reset = '1') then
             state <= idle;
-            loop_counter <= 0;
+            jCounter <= 0;
         elsif (rising_edge(clk)) then
             state <= state_n;
-            loop_counter <= loop_counter_n;
+            jCounter <= jCounter_n;
             A <= A_n;
             B <= B_n;
             C <= C_n;
@@ -122,7 +126,7 @@ begin
         end if;
     end process main;
 
-    fsm: process(state, start, loop_counter, data_counter, out_counter, message_length)
+    fsm: process(state, start, jCounter, data_counter, iCounter, message_length)
     begin
         state_n <= state;
 
@@ -132,73 +136,73 @@ begin
                     state_n <= load_length;
                 end if;
 
-            when load_length => -- machine expects to receive length of the message to process, in bits
-                state_n <= load_data;
+            when load_length =>
+                state_n <= loadMessage;
 
-            when load_data => 
+            when loadMessage => 
                 if (data_counter >= message_length) then
-                    state_n <= pad;
+                    state_n <= padding;
                 end if;
 
-            when pad =>
-                state_n <= rotate; 
+            when padding =>
+                state_n <= rotate1; 
 
-            when rotate => --endianness of input message needs to be swapped
-                state_n <= stage1_F;
+            when rotate1 => --endianness of input message needs to be swapped
+                state_n <= xCalc1;
 
-            when stage1_F =>
-                state_n <= stage1_B;
+            when xCalc1 =>
+                state_n <= bCalc1;
 
-            when stage1_B =>
-                if (loop_counter = 15) then
-                    state_n <= stage2_F;
+            when bCalc1 =>
+                if (jCounter = 15) then
+                    state_n <= xCalc2;
                 else
-                    state_n <= stage1_F;
+                    state_n <= xCalc1;
                 end if;
 
-            when stage2_F =>
-                state_n <= stage2_B;
+            when xCalc2 =>
+                state_n <= bCalc2;
 
-            when stage2_B =>
-                if (loop_counter = 31) then
-                    state_n <= stage3_F;
+            when bCalc2 =>
+                if (jCounter = 31) then
+                    state_n <= xCalc3;
                 else
-                    state_n <= stage2_F;
+                    state_n <= xCalc2;
                 end if;
 
-            when stage3_F =>
-                state_n <= stage3_B;
+            when xCalc3 =>
+                state_n <= bCalc3;
 
-            when stage3_B =>
-                if (loop_counter = 47) then
-                    state_n <= stage4_F;
+            when bCalc3 =>
+                if (jCounter = 47) then
+                    state_n <= xCalc4;
                 else
-                    state_n <= stage3_F;
+                    state_n <= xCalc3;
                 end if;
 
-            when stage4_F =>
-                state_n <= stage4_B;
+            when xCalc4 =>
+                state_n <= bCalc4;
 
-            when stage4_B =>
-                if (loop_counter = 63) then
-                    state_n <= stage5;
+            when bCalc4 =>
+                if (jCounter = 63) then
+                    state_n <= lastCalc;
                 else
-                    state_n <= stage4_F;
+                    state_n <= xCalc4;
                 end if;
 
-            when stage5 =>
-                state_n <= stage6;
+            when lastCalc =>
+                state_n <= rotate2;
 
-            when stage6 =>
-                state_n <= finished;
+            when rotate2 =>
+                state_n <= finish;
 
-            when finished =>
+            when finish =>
                 if (start = '1') then
-                    state_n <= store_data;
+                    state_n <= storeData;
                 end if;
 
-            when store_data =>
-                if (out_counter = 4) then
+            when storeData =>
+                if (iCounter = 4) then
                     state_n <= idle;
                 end if;
 
@@ -206,7 +210,7 @@ begin
         end case;
     end process fsm;
 
-    calc: process(reset, clk, state, data_counter, loop_counter)
+    calc: process(reset, clk, state, data_counter, jCounter)
     begin
         if (reset = '0' and rising_edge(clk)) then
 
@@ -214,70 +218,70 @@ begin
                 when load_length =>
                     message_length <= unsigned(data_in);
 
-                when load_data =>
+                when loadMessage =>
                     M(data_counter to data_counter+31) <= unsigned(data_in);
                     if (data_counter < message_length) then
                         data_counter <= data_counter + 32;
                     end if;
 
-                when pad =>
+                when padding =>
                     M(to_integer(message_length)) <= '1';
                     M(to_integer(message_length+1) to 447) <= (others => '0');
                     M(448 to 511) <= 
                     swap_endianness(message_length) & "00000000000000000000000000000000";
 
-                when rotate => 
+                when rotate1 => 
                     for i in 0 to 15 loop
                         M(32*i to 32*i+31) <= swap_endianness(M(32*i to 32*i+31));
                     end loop;
 
-                when stage1_B | stage2_B | stage3_B | stage4_B =>
+                when bCalc1 | bCalc2 | bCalc3 | bCalc4 =>
                     A_n <= D;
-                    B_n <= B + leftrotate(A + F + K(loop_counter) + M(g to g+31), s(loop_counter)); 
+                    B_n <= B + leftrotate(A + F + K(jCounter) + M(g to g+31), s(jCounter)); 
                     C_n <= B;
                     D_n <= C;
-                    loop_counter_n <= loop_counter + 1;
+                    jCounter_n <= jCounter + 1;
 
-                when stage1_F =>
+                when xCalc1 =>
                     F <= (B_n and C_n) or (not B_n and D_n);
-                    g <= 32*loop_counter_n;
+                    g <= 32*jCounter_n;
 
-                when stage2_F =>
+                when xCalc2 =>
                     F <= (D_n and B_n) or (not D_n and C_n);
-                    g <= 32*((5*loop_counter_n + 1) mod 16);
+                    g <= 32*((5*jCounter_n + 1) mod 16);
 
-                when stage3_F =>
+                when xCalc3 =>
                     F <= B_n xor C_n xor D_n;
-                    g <= 32*((3*loop_counter_n + 5) mod 16);
+                    g <= 32*((3*jCounter_n + 5) mod 16);
 
-                when stage4_F =>
+                when xCalc4 =>
                     F <= C_n xor (B_n or not D_n);
-                    g <= 32*((7*loop_counter_n) mod 16);
+                    g <= 32*((7*jCounter_n) mod 16);
 
-                when stage5 =>
+                when lastCalc =>
                     A_n <= A_n + a0;
                     B_n <= B_n + b0;
                     C_n <= C_n + c0;
                     D_n <= D_n + d0;
 
-                when stage6 =>
+                when rotate2 =>
                     A_n <= swap_endianness(A_n);
                     B_n <= swap_endianness(B_n);
                     C_n <= swap_endianness(C_n);
                     D_n <= swap_endianness(D_n);
 
-                when finished =>
+                when finish =>
                     done <= '1';
 
-                when store_data =>
-                    case out_counter is
+                when storeData =>
+                    case iCounter is
                         when 0 => data_out <= std_logic_vector(A);
                         when 1 => data_out <= std_logic_vector(B);
                         when 2 => data_out <= std_logic_vector(C);
                         when 3 => data_out <= std_logic_vector(D);
                         when others => null;
                     end case;
-                    out_counter <= out_counter + 1;
+                    iCounter <= iCounter + 1;
                     done <= '0';
 
                 when others => null;
