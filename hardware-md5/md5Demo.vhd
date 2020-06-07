@@ -20,12 +20,12 @@ begin
 
 md5:    entity work.md5(Behavioral)
         port map(   data_in => "00000011100011100000000000011110",
-                    data_out => data_out,
-                    done => led(0),
-                    err => led(1),
                     start => sw(1),
                     clk => clk,
-                    reset => sw(0)
+                    reset => sw(0),
+                    data_out => data_out,
+                    done => led(0),
+                    err => led(1)
         );
         
 p_gen: entity work.PulseGenerator(Behavioral)

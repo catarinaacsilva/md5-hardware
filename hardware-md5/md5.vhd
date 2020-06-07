@@ -6,12 +6,12 @@ use UNISIM.VCOMPONENTS.ALL;
 
 entity MD5 is
     Port ( data_in:     in  std_logic_vector (31 downto 0);
-           err:         out std_logic_vector := '0';
            start:       in  std_logic_vector;
            clk:         in  std_logic_vector;
            reset:       in  std_logic_vector;
            data_out:    out std_logic_vector (31 downto 0) := (others => '0');
-           done:        out std_logic_vector := '0');
+           done:        out std_logic_vector := '0';
+           err:         out std_logic_vector := '0';);
 end MD5;
 
 architecture Behavioral of MD5 is
