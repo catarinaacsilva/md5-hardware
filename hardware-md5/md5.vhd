@@ -134,11 +134,8 @@ begin
         case state is
             when idle =>
                 if (start = '1') then
-                    state_n <= load_length;
+                    state_n <= loadMessage;
                 end if;
-
-            when load_length =>
-                state_n <= loadMessage;
 
             when loadMessage => 
                 if (data_counter >= message_length) then
@@ -216,10 +213,9 @@ begin
         if (reset = '0' and rising_edge(clk)) then
 
             case state is
-                when load_length =>
-                    message_length <= unsigned(data_in);
 
                 when loadMessage =>
+                    message_length <= unsigned(data_in); --confirmar se é preciso
                     M(data_counter to data_counter+31) <= unsigned(data_in);
                     if (data_counter < message_length) then
                         data_counter <= data_counter + 32;
