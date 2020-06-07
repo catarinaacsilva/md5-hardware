@@ -43,10 +43,10 @@ architecture Behavioral OF MD5_tb IS
    type msg_t is array(0 to 15) of std_logic_vector(31 downto 0);
 
 
-   signal message : msg_t := (X"24cda8da", X"aed64a2e", X"312f765a", X"b90c9791",
-                              X"fd32d9d0", X"615206cb", X"5b0e5045", X"dbb5f6af",
-                              X"f4310a8e", X"58468968", X"c3b8c9aa", X"24db1a8d",
-                              X"aec70000", X"00000000", X"00000000", X"00000000");
+   signal message : msg_t := (X"56ac97aa", X"639abc49", X"312df211", X"00000000",
+                              X"21743829", X"2174af82", X"eb238951", X"5f6ddb00",
+                              X"f4721934", X"dfe73910", X"046287dd", X"84349239",
+                              X"3546ffd5", X"e498236a", X"00000000", X"00000000");
 
  
     signal message_length : std_logic_vector(31 downto 0) := (others => '0');
