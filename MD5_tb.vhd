@@ -75,32 +75,32 @@ begin
 
    behavProc: process
    begin
-       reset <= '1';
+       s_reset <= '1';
        
        wait for clkPeriod; -- 10 ns
-       reset <= '0';
-       start <= '1';
+       s_reset <= '0';
+       s_start <= '1';
        
        wait for 2 ns;
-       data_in <= message_length; -- load message length
+       s_data_in <= message_length; -- load message length
       
        wait for clkPeriod; -- 10 ns
-       start <= '0';
+       s_start <= '0';
        for i in 0 to 15 loop -- array size = 16
-           data_in <= message(i); -- input message
+           s_data_in <= message(i); -- input message
            wait for clkPeriod; -- 10 ns
        end loop;
 
        -- hash
        wait for 500 ns;
-       start <= '1';
+       s_start <= '1';
        
        wait for clkPeriod;
-       start <= '0';
+       s_start <= '0';
        
        wait for clkPeriod;
        for i in 0 to 3 loop
-           hash(32*i to 32*i+31) <= data_out; -- store hash
+           hash(32*i to 32*i+31) <= s_data_out; -- store hash
            wait for clkPeriod;
        end loop;
        
