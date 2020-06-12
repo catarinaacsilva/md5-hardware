@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Wed May 27 15:09:10 2020
+-- Date        : Fri Jun 12 13:42:00 2020
 -- Host        : GreatAtuin running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top mb_design_ilmb_bram_if_cntlr_1 -prefix
---               mb_design_ilmb_bram_if_cntlr_1_ mb_design_dlmb_bram_if_cntlr_1_sim_netlist.vhdl
--- Design      : mb_design_dlmb_bram_if_cntlr_1
+-- Command     : write_vhdl -force -mode funcsim
+--               C:/Users/catar/Desktop/git/cr-hashfunction/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/ip/mb_design_ilmb_bram_if_cntlr_1/mb_design_ilmb_bram_if_cntlr_1_sim_netlist.vhdl
+-- Design      : mb_design_ilmb_bram_if_cntlr_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xc7a100tcsg324-1
@@ -123,7 +123,7 @@ entity mb_design_ilmb_bram_if_cntlr_1_lmb_bram_if_cntlr is
   attribute C_LMB_PROTOCOL : integer;
   attribute C_LMB_PROTOCOL of mb_design_ilmb_bram_if_cntlr_1_lmb_bram_if_cntlr : entity is 0;
   attribute C_MASK : string;
-  attribute C_MASK of mb_design_ilmb_bram_if_cntlr_1_lmb_bram_if_cntlr : entity is "64'b0000000000000000000000000000000001000000000000000000000000000000";
+  attribute C_MASK of mb_design_ilmb_bram_if_cntlr_1_lmb_bram_if_cntlr : entity is "64'b0000000000000000000000000000000000000000000000000000000000000000";
   attribute C_MASK1 : string;
   attribute C_MASK1 of mb_design_ilmb_bram_if_cntlr_1_lmb_bram_if_cntlr : entity is "64'b0000000000000000000000000000000000000000100000000000000000000000";
   attribute C_MASK2 : string;
@@ -144,6 +144,8 @@ entity mb_design_ilmb_bram_if_cntlr_1_lmb_bram_if_cntlr is
   attribute C_UE_FAILING_REGISTERS of mb_design_ilmb_bram_if_cntlr_1_lmb_bram_if_cntlr : entity is 0;
   attribute C_WRITE_ACCESS : integer;
   attribute C_WRITE_ACCESS of mb_design_ilmb_bram_if_cntlr_1_lmb_bram_if_cntlr : entity is 2;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of mb_design_ilmb_bram_if_cntlr_1_lmb_bram_if_cntlr : entity is "lmb_bram_if_cntlr";
 end mb_design_ilmb_bram_if_cntlr_1_lmb_bram_if_cntlr;
 
 architecture STRUCTURE of mb_design_ilmb_bram_if_cntlr_1_lmb_bram_if_cntlr is
@@ -331,57 +333,52 @@ begin
   \^lmb_addrstrobe\ <= LMB_AddrStrobe;
   \^lmb_clk\ <= LMB_Clk;
   \^lmb_writedbus\(0 to 31) <= LMB_WriteDBus(0 to 31);
-\BRAM_WEN_A[0]_INST_0\: unisim.vcomponents.LUT3
+\BRAM_WEN_A[0]_INST_0\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"40"
+      INIT => X"8"
     )
         port map (
-      I0 => \^lmb_abus\(1),
-      I1 => LMB_WriteStrobe,
-      I2 => LMB_BE(0),
+      I0 => LMB_WriteStrobe,
+      I1 => LMB_BE(0),
       O => BRAM_WEN_A(0)
     );
-\BRAM_WEN_A[1]_INST_0\: unisim.vcomponents.LUT3
+\BRAM_WEN_A[1]_INST_0\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"40"
+      INIT => X"8"
     )
         port map (
-      I0 => \^lmb_abus\(1),
-      I1 => LMB_WriteStrobe,
-      I2 => LMB_BE(1),
+      I0 => LMB_WriteStrobe,
+      I1 => LMB_BE(1),
       O => BRAM_WEN_A(1)
     );
-\BRAM_WEN_A[2]_INST_0\: unisim.vcomponents.LUT3
+\BRAM_WEN_A[2]_INST_0\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"40"
+      INIT => X"8"
     )
         port map (
-      I0 => \^lmb_abus\(1),
-      I1 => LMB_WriteStrobe,
-      I2 => LMB_BE(2),
+      I0 => LMB_WriteStrobe,
+      I1 => LMB_BE(2),
       O => BRAM_WEN_A(2)
     );
-\BRAM_WEN_A[3]_INST_0\: unisim.vcomponents.LUT3
+\BRAM_WEN_A[3]_INST_0\: unisim.vcomponents.LUT2
     generic map(
-      INIT => X"40"
+      INIT => X"8"
     )
         port map (
-      I0 => \^lmb_abus\(1),
-      I1 => LMB_WriteStrobe,
-      I2 => LMB_BE(3),
+      I0 => LMB_WriteStrobe,
+      I1 => LMB_BE(3),
       O => BRAM_WEN_A(3)
     );
 GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-\No_ECC.Sl_Rdy_i_1\: unisim.vcomponents.LUT2
+\No_ECC.Sl_Rdy_i_1\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
-      I0 => \^lmb_abus\(1),
-      I1 => LMB_Rst,
+      I0 => LMB_Rst,
       O => \No_ECC.Sl_Rdy_i_1_n_0\
     );
 \No_ECC.Sl_Rdy_reg\: unisim.vcomponents.FDRE
@@ -449,7 +446,7 @@ entity mb_design_ilmb_bram_if_cntlr_1 is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of mb_design_ilmb_bram_if_cntlr_1 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of mb_design_ilmb_bram_if_cntlr_1 : entity is "mb_design_dlmb_bram_if_cntlr_1,lmb_bram_if_cntlr,{}";
+  attribute CHECK_LICENSE_TYPE of mb_design_ilmb_bram_if_cntlr_1 : entity is "mb_design_ilmb_bram_if_cntlr_1,lmb_bram_if_cntlr,{}";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of mb_design_ilmb_bram_if_cntlr_1 : entity is "yes";
   attribute x_core_info : string;
@@ -514,7 +511,7 @@ architecture STRUCTURE of mb_design_ilmb_bram_if_cntlr_1 is
   attribute C_LMB_PROTOCOL : integer;
   attribute C_LMB_PROTOCOL of U0 : label is 0;
   attribute C_MASK : string;
-  attribute C_MASK of U0 : label is "64'b0000000000000000000000000000000001000000000000000000000000000000";
+  attribute C_MASK of U0 : label is "64'b0000000000000000000000000000000000000000000000000000000000000000";
   attribute C_MASK1 : string;
   attribute C_MASK1 of U0 : label is "64'b0000000000000000000000000000000000000000100000000000000000000000";
   attribute C_MASK2 : string;
