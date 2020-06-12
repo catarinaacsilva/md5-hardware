@@ -7,7 +7,7 @@
 #include "xil_printf.h"
 
 
-// #define N	4000
+#define N	4000
 
 #define DMA_DEVICE_ID	XPAR_AXIDMA_0_DEVICE_ID
 
