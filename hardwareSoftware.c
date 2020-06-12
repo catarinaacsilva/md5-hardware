@@ -9,8 +9,10 @@
 
 // #define N	4000
 
+#define DMA_DEVICE_ID	XPAR_AXIDMA_0_DEVICE_ID
+
 // DMA configuration
-int DMAConfig(u16 dmaDeviceId, XAxiDma* pDMAInstDefs)
+int DMAConfig(u16 dmaDeviceId, XAxiDma* axidma)
 {
 	XAxiDma_Config* dmaConf;
 	int status;
@@ -21,20 +23,20 @@ int DMAConfig(u16 dmaDeviceId, XAxiDma* pDMAInstDefs)
 		return XST_FAILURE;
 	}
 
-	status = XAxiDma_CfgInitialize(pDMAInstDefs, dmaConf);
+	status = XAxiDma_CfgInitialize(axidma, dmaConf);
 	if (status != XST_SUCCESS) {
 		xil_printf("DMA Initialization failed %d.\r\n", status);
 		return XST_FAILURE;
 	}
 
-	if (XAxiDma_HasSg(pDMAInstDefs)) {
+	if (XAxiDma_HasSg(axidma)) {
 		xil_printf("Device configured as SG mode.\r\n");
 		return XST_FAILURE;
 	}
 
 	// Disable interrupts
-	XAxiDma_IntrDisable(pDMAInstDefs, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
-	XAxiDma_IntrDisable(pDMAInstDefs, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
+	XAxiDma_IntrDisable(axidma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DEVICE_TO_DMA);
+	XAxiDma_IntrDisable(axidma, XAXIDMA_IRQ_ALL_MASK, XAXIDMA_DMA_TO_DEVICE);
 
 	return XST_SUCCESS;
 }
@@ -94,6 +96,8 @@ int main()
 	int srcData[N], dstData[N];
 	unsigned int timeElapsed;
 
+	XAxiDma axiDma;
+
     init_platform();
 
     
@@ -111,43 +115,30 @@ int main()
 
 
 	// Configuring DMA
-	xil_printf("\r\nConfiguring DMA...");
-	status = DMAConfig(DMA_DEVICE_ID, &dmaInstDefs);
+	xil_printf("\r\nConfiguring DMA");
+	status = DMAConfig(DMA_DEVICE_ID, &axiDma);
 	if (status != XST_SUCCESS)
 	{
-		xil_printf("\r\nConfiguration failed.");
+		xil_printf("\r\nConfiguration failed");
 		return XST_FAILURE;
 	}
-	xil_printf("\r\nDMA running...");
+	xil_printf("\r\nDMA running");
 
-
-
+	// MD5
 	RestartPerformanceTimer();
-	status = XAxiDma_SimpleTransfer(&dmaInstDefs,(UINTPTR) dstData, N * sizeof(int), XAXIDMA_DEVICE_TO_DMA);
-	status = XAxiDma_SimpleTransfer(&dmaInstDefs,(UINTPTR) srcData, N * sizeof(int), XAXIDMA_DMA_TO_DEVICE);
+	status = XAxiDma_SimpleTransfer(&axiDma,(UINTPTR) dstData, N * sizeof(int), XAXIDMA_DEVICE_TO_DMA);
+	status = XAxiDma_SimpleTransfer(&axiDma,(UINTPTR) srcData, N * sizeof(int), XAXIDMA_DMA_TO_DEVICE);
 	
 	if (status != XST_SUCCESS)
 	{
-		xil_printf("\r\nDMA transfer failed.");
+		xil_printf("\r\nDMA transfer failed");
 		return XST_FAILURE;
 	}
-	while ((XAxiDma_Busy(&dmaInstDefs, XAXIDMA_DEVICE_TO_DMA)) || (XAxiDma_Busy(&dmaInstDefs, XAXIDMA_DMA_TO_DEVICE)))
-	{
-		/* Wait */
-	}
+	while ((XAxiDma_Busy(&axiDma, XAXIDMA_DEVICE_TO_DMA)) || (XAxiDma_Busy(&dmaInstDefs, XAXIDMA_DMA_TO_DEVICE))) { }
+
 	timeElapsed = StopAndGetPerformanceTimer();
-	xil_printf("\n\rDMA Hardware assisted reverse endianess time: %d microseconds",
-			   timeElapsed / (XPAR_CPU_M_AXI_DP_FREQ_HZ / 1000000));
+	xil_printf("\n\rDMA Hardware md5 time: %d microseconds", timeElapsed / (XPAR_CPU_M_AXI_DP_FREQ_HZ / 1000000));
 	PrintDataArray(dstData, min(8, N));
-	xil_printf("\n\rChecking result: %s\n\r", CheckReversedEndianess(srcData, dstData, N) ? "OK" : "Error");
-
-
-    // Hardware assisted
-    RestartPerformanceTimer();
-    md5Hw(dstData, srcData, N);
-    timeElapsed = StopAndGetPerformanceTimer();
-    xil_printf("\n\rHardware assisted reverse endianess time: %d microseconds", timeElapsed / (XPAR_CPU_M_AXI_DP_FREQ_HZ / 1000000));
-    PrintDataArray(dstData, min(8, N));
    
 
     cleanup_platform();
