@@ -7,7 +7,7 @@
 #include "xil_printf.h"
 
 
-#define N	4000
+// #define N	4000
 
 #define DMA_DEVICE_ID	XPAR_AXIDMA_0_DEVICE_ID
 
@@ -93,7 +93,8 @@ unsigned int StopAndGetPerformanceTimer()
 
 int main()
 {
-	int srcData[N], dstData[N];
+	//int srcData[N], dstData[N];
+	uint32_t msgInput, msgOutput; // check if it is correct
 	unsigned int timeElapsed;
 
 	XAxiDma axiDma;
@@ -103,14 +104,13 @@ int main()
     
     RestartPerformanceTimer();
     srand(0);
-    for (int i = 0; i < N; i++)
-    {
-    	srcData[i] = rand();
-    }
+   
+    msgInput = rand();
+    
     timeElapsed = StopAndGetPerformanceTimer();
     xil_printf("\n\rArray initialization time: %d microseconds\n\r",
     		   timeElapsed / (XPAR_CPU_M_AXI_DP_FREQ_HZ / 1000000));
-    PrintDataArray(srcData, min(8, N));
+    // PrintDataArray(srcData, min(8, N));
     xil_printf("\n\r");
 
 
@@ -126,8 +126,8 @@ int main()
 
 	// MD5
 	RestartPerformanceTimer();
-	status = XAxiDma_SimpleTransfer(&axiDma,(UINTPTR) dstData, N * sizeof(int), XAXIDMA_DEVICE_TO_DMA);
-	status = XAxiDma_SimpleTransfer(&axiDma,(UINTPTR) srcData, N * sizeof(int), XAXIDMA_DMA_TO_DEVICE);
+	status = XAxiDma_SimpleTransfer(&axiDma,(UINTPTR) msgOutput, N * sizeof(int), XAXIDMA_DEVICE_TO_DMA);
+	status = XAxiDma_SimpleTransfer(&axiDma,(UINTPTR) msgInput, N * sizeof(int), XAXIDMA_DMA_TO_DEVICE);
 	
 	if (status != XST_SUCCESS)
 	{
@@ -138,7 +138,7 @@ int main()
 
 	timeElapsed = StopAndGetPerformanceTimer();
 	xil_printf("\n\rDMA Hardware md5 time: %d microseconds", timeElapsed / (XPAR_CPU_M_AXI_DP_FREQ_HZ / 1000000));
-	PrintDataArray(dstData, min(8, N));
+	// PrintDataArray(dstData, min(8, N));
    
 
     cleanup_platform();
