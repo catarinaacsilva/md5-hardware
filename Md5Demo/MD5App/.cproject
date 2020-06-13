@@ -444,5 +444,7 @@
     </storageModule>
     	
     <storageModule moduleId="org.eclipse.cdt.core.pathentry"/>
+    	
+    <storageModule moduleId="refreshScope"/>
     
 </cproject>

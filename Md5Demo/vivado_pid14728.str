@@ -166,3 +166,4 @@ dismissDialog("Launch Vitis"); // bB (cr)
 // [GUI Memory]: 127 MB (+1354kb) [00:03:43]
 // WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2475 ms. Increasing delay to 3000 ms.
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1009 ms. Increasing delay to 3027 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1673 ms. Increasing delay to 4000 ms.
