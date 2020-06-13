@@ -167,3 +167,5 @@ dismissDialog("Launch Vitis"); // bB (cr)
 // WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2475 ms. Increasing delay to 3000 ms.
 // WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1009 ms. Increasing delay to 3027 ms.
 // WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1673 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2947 ms. Increasing delay to 8841 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,132 MB. GUI used memory: 71 MB. Current time: 6/13/20, 10:58:42 AM BST

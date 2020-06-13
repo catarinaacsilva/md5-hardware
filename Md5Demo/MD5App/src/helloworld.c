@@ -9,7 +9,7 @@
 #include "xaxidma.h"
 
 
-#define N	4000
+#define N	1
 
 #define DMA_DEVICE_ID	XPAR_AXIDMA_0_DEVICE_ID
 
@@ -109,11 +109,12 @@ int main()
     RestartPerformanceTimer();
     srand(0);
 
-    msgInput = rand();
+    msgInput = 1234599;
+
+    xil_printf("Input message: %x", msgInput);
 
     timeElapsed = StopAndGetPerformanceTimer();
-    xil_printf("\n\rArray initialization time: %d microseconds\n\r",
-    		   timeElapsed / (XPAR_CPU_M_AXI_DP_FREQ_HZ / 1000000));
+    xil_printf("\n\rInput initialization time: %d microseconds\n\r", timeElapsed / (XPAR_CPU_M_AXI_DP_FREQ_HZ / 1000000));
     // PrintDataArray(srcData, min(8, N));
     xil_printf("\n\r");
 
@@ -130,8 +131,8 @@ int main()
 
 	// MD5
 	RestartPerformanceTimer();
-	status = XAxiDma_SimpleTransfer(&axiDma,(UINTPTR) msgOutput, N * sizeof(int), XAXIDMA_DEVICE_TO_DMA);
-	status = XAxiDma_SimpleTransfer(&axiDma,(UINTPTR) msgInput, N * sizeof(int), XAXIDMA_DMA_TO_DEVICE);
+	status = XAxiDma_SimpleTransfer(&axiDma,(UINTPTR) &msgOutput, N * sizeof(int), XAXIDMA_DEVICE_TO_DMA);
+	status = XAxiDma_SimpleTransfer(&axiDma,(UINTPTR) &msgInput, N * sizeof(int), XAXIDMA_DMA_TO_DEVICE);
 
 	if (status != XST_SUCCESS)
 	{
