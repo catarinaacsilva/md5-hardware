@@ -1,0 +1,755 @@
+TRACE::2020-06-13.10:32:54::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:54::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:54::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:32:59::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-06-13.10:32:59::SCWPlatform::Opened new HwDB with name mb_design_wrapper_0
+TRACE::2020-06-13.10:32:59::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2020-06-13.10:32:59::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_design_wrapper",
+	"systems":	[{
+			"systemName":	"mb_design_wrapper",
+			"systemDesc":	"mb_design_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_design_wrapper"
+		}]
+}
+TRACE::2020-06-13.10:32:59::SCWPlatform::Boot application domains not present, creating them
+TRACE::2020-06-13.10:32:59::SCWPlatform::Pure FPGA device, no boot application will be created.
+TRACE::2020-06-13.10:32:59::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_design_wrapper",
+	"systems":	[{
+			"systemName":	"mb_design_wrapper",
+			"systemDesc":	"mb_design_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_design_wrapper"
+		}]
+}
+TRACE::2020-06-13.10:32:59::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_design_wrapper",
+	"systems":	[{
+			"systemName":	"mb_design_wrapper",
+			"systemDesc":	"mb_design_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_design_wrapper"
+		}]
+}
+TRACE::2020-06-13.10:32:59::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:32:59::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:32:59::SCWDomain::checking for install qemu data   : 
+TRACE::2020-06-13.10:32:59::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:32:59::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:32:59::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:32:59::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:32:59::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:32:59::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2020-06-13.10:32:59::SCWMssOS::No sw design opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:32:59::SCWMssOS::mss does not exists at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:32:59::SCWMssOS::Creating sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:32:59::SCWMssOS::Adding the swdes entry, created swdb C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss with des name C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:32:59::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:32:59::SCWMssOS::Writing mss at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:32:59::SCWMssOS::Completed writing the mss file at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp
+TRACE::2020-06-13.10:32:59::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2020-06-13.10:32:59::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2020-06-13.10:32:59::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:32:59::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:32:59::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:32:59::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss||
+
+TRACE::2020-06-13.10:32:59::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:32:59::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:32:59::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:32:59::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:32:59::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss||
+
+TRACE::2020-06-13.10:32:59::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:32:59::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:32:59::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:32:59::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:32:59::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss||
+
+TRACE::2020-06-13.10:32:59::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:32:59::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_design_wrapper",
+	"systems":	[{
+			"systemName":	"mb_design_wrapper",
+			"systemDesc":	"mb_design_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_design_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2020-06-13.10:32:59::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:32:59::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:32:59::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:32:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:32:59::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:32:59::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss||
+
+TRACE::2020-06-13.10:32:59::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:32:59::SCWMssOS::Completed writing the mss file at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp
+TRACE::2020-06-13.10:32:59::SCWMssOS::Forcing BSP Sources regeneration.
+LOG::2020-06-13.10:33:03::SCWPlatform::Started generating the artifacts platform mb_design_wrapper
+TRACE::2020-06-13.10:33:03::SCWPlatform::Sanity checking of platform is completed
+LOG::2020-06-13.10:33:03::SCWPlatform::Started generating the artifacts for system configuration mb_design_wrapper
+LOG::2020-06-13.10:33:03::SCWSystem::Checking the domain standalone_domain
+LOG::2020-06-13.10:33:03::SCWSystem::Not a boot domain 
+LOG::2020-06-13.10:33:03::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2020-06-13.10:33:03::SCWDomain::Generating domain artifcats
+TRACE::2020-06-13.10:33:03::SCWMssOS::Generating standalone artifcats
+TRACE::2020-06-13.10:33:03::SCWMssOS:: Copying the user libraries. 
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:33:03::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss||
+
+KEYINFO::2020-06-13.10:33:03::SCWMssOS::Could not open the swdb for C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+KEYINFO::2020-06-13.10:33:03::SCWMssOS::Could not open the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss is not found
+
+TRACE::2020-06-13.10:33:03::SCWMssOS::Cleared the swdb table entry
+TRACE::2020-06-13.10:33:03::SCWMssOS::No sw design opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::mss exists loading the mss file  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::Opened the sw design from mss  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::Adding the swdes entry C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2020-06-13.10:33:03::SCWMssOS::updating the scw layer about changes
+TRACE::2020-06-13.10:33:03::SCWMssOS::Opened the sw design.  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::Completed writing the mss file at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp
+TRACE::2020-06-13.10:33:03::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2020-06-13.10:33:03::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2020-06-13.10:33:03::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2020-06-13.10:33:03::SCWMssOS::skipping the bsp build ... 
+TRACE::2020-06-13.10:33:03::SCWMssOS::Copying to export directory.
+TRACE::2020-06-13.10:33:03::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2020-06-13.10:33:03::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2020-06-13.10:33:03::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2020-06-13.10:33:03::SCWSystem::Completed Processing the sysconfig mb_design_wrapper
+LOG::2020-06-13.10:33:03::SCWPlatform::Completed generating the artifacts for system configuration mb_design_wrapper
+TRACE::2020-06-13.10:33:03::SCWPlatform::Started preparing the platform 
+TRACE::2020-06-13.10:33:03::SCWSystem::Writing the bif file for system config mb_design_wrapper
+TRACE::2020-06-13.10:33:03::SCWSystem::dir created 
+TRACE::2020-06-13.10:33:03::SCWSystem::Writing the bif 
+TRACE::2020-06-13.10:33:03::SCWPlatform::Started writing the spfm file 
+TRACE::2020-06-13.10:33:03::SCWPlatform::Started writing the xpfm file 
+TRACE::2020-06-13.10:33:03::SCWPlatform::Completed generating the platform
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:33:03::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-06-13.10:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:33:03::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-06-13.10:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:33:03::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-06-13.10:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_design_wrapper",
+	"systems":	[{
+			"systemName":	"mb_design_wrapper",
+			"systemDesc":	"mb_design_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_design_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"f17e3db68fbe08d61a3da00541af2aa1",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2020-06-13.10:33:03::SCWPlatform::updated the xpfm file.
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:33:03::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-06-13.10:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:33:03::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-06-13.10:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:33:03::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-06-13.10:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:33:03::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-06-13.10:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_design_wrapper",
+	"systems":	[{
+			"systemName":	"mb_design_wrapper",
+			"systemDesc":	"mb_design_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_design_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"f17e3db68fbe08d61a3da00541af2aa1",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:33:03::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-06-13.10:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:33:03::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-06-13.10:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:33:03::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-06-13.10:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:33:03::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-06-13.10:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:33:03::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-06-13.10:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_design_wrapper",
+	"systems":	[{
+			"systemName":	"mb_design_wrapper",
+			"systemDesc":	"mb_design_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_design_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"f17e3db68fbe08d61a3da00541af2aa1",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2020-06-13.10:33:03::SCWPlatform::Started generating the artifacts platform mb_design_wrapper
+TRACE::2020-06-13.10:33:03::SCWPlatform::Sanity checking of platform is completed
+LOG::2020-06-13.10:33:03::SCWPlatform::Started generating the artifacts for system configuration mb_design_wrapper
+LOG::2020-06-13.10:33:03::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2020-06-13.10:33:03::SCWDomain::Generating domain artifcats
+TRACE::2020-06-13.10:33:03::SCWMssOS::Generating standalone artifcats
+TRACE::2020-06-13.10:33:03::SCWMssOS:: Copying the user libraries. 
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:33:03::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-06-13.10:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::Completed writing the mss file at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp
+TRACE::2020-06-13.10:33:03::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2020-06-13.10:33:03::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2020-06-13.10:33:03::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2020-06-13.10:33:03::SCWMssOS::skipping the bsp build ... 
+TRACE::2020-06-13.10:33:03::SCWMssOS::Copying to export directory.
+TRACE::2020-06-13.10:33:03::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2020-06-13.10:33:03::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2020-06-13.10:33:03::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2020-06-13.10:33:03::SCWSystem::Completed Processing the sysconfig mb_design_wrapper
+LOG::2020-06-13.10:33:03::SCWPlatform::Completed generating the artifacts for system configuration mb_design_wrapper
+TRACE::2020-06-13.10:33:03::SCWPlatform::Started preparing the platform 
+TRACE::2020-06-13.10:33:03::SCWSystem::Writing the bif file for system config mb_design_wrapper
+TRACE::2020-06-13.10:33:03::SCWSystem::dir created 
+TRACE::2020-06-13.10:33:03::SCWSystem::Writing the bif 
+TRACE::2020-06-13.10:33:03::SCWPlatform::Started writing the spfm file 
+TRACE::2020-06-13.10:33:03::SCWPlatform::Started writing the xpfm file 
+TRACE::2020-06-13.10:33:03::SCWPlatform::Completed generating the platform
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:33:03::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-06-13.10:33:03::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:03::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:33:03::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:33:04::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:33:04::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:04::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-06-13.10:33:04::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:04::SCWPlatform::Trying to open the hw design at C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:04::SCWPlatform::DSA given C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:04::SCWPlatform::DSA absoulate path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:04::SCWPlatform::DSA directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw
+TRACE::2020-06-13.10:33:04::SCWPlatform:: Platform Path C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/hw/mb_design_wrapper.xsa
+TRACE::2020-06-13.10:33:04::SCWPlatform:: Unique name xilinx:nexys4::0.0
+TRACE::2020-06-13.10:33:04::SCWPlatform::Trying to set the existing hwdb with name mb_design_wrapper_0
+TRACE::2020-06-13.10:33:04::SCWPlatform::Opened existing hwdb mb_design_wrapper_0
+TRACE::2020-06-13.10:33:04::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-06-13.10:33:04::SCWMssOS::Checking the sw design at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:04::SCWMssOS::DEBUG:  swdes dump  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2020-06-13.10:33:04::SCWMssOS::Sw design exists and opened at  C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/microblaze_0/standalone_domain/bsp/system.mss
+TRACE::2020-06-13.10:33:04::SCWWriter::formatted JSON is {
+	"platformName":	"mb_design_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"mb_design_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/mb_design_wrapper.xsa",
+	"deviceType":	"FPGA",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"mb_design_wrapper",
+	"systems":	[{
+			"systemName":	"mb_design_wrapper",
+			"systemDesc":	"mb_design_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"mb_design_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on microblaze_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"microblaze_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"f17e3db68fbe08d61a3da00541af2aa1",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2020-06-13.10:33:04::SCWPlatform::updated the xpfm file.
