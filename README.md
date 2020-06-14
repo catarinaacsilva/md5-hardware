@@ -25,7 +25,7 @@ The implementation will be based on this paper: [Hardware implementation of the 
 
 The core operation to the system is the MD5 cryptographic hash function. This operation was developed with a finite state machine:
 
-![fsm](https://github.com/catarinaacsilva/md5-hardware/blob/master/fsm.pdf)
+![fsm](fsm.pdf)
 
 ## Authors
 
