@@ -15,6 +15,8 @@ We developer a script to implement MD5 in C and compare the performance of three
 
 The implementation will be based on this paper: [Hardware implementation of the MD5 algorithm](https://www.sciencedirect.com/science/article/pii/S1474667016324429).
 
+The system has a DMA module to data transfers.
+
 ## Requirements
 
 - Vivado 2019.2
