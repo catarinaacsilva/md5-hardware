@@ -23,6 +23,12 @@ The system has a DMA module to data transfers.
 - Vitis 
 - Nexys4 Digilent Xilinx (FPGA)
 
+## Implmentation
+
+1. On Vivado was implemented a version just on hardware with an IP Core to MD5.
+2. Then, was implemented a version with IP Core on hardware to implement MD5 and all the control on software. Input data came from software to hardware by DMA and all the process occurs on hardware. When the process finish, the data produced on hardware is transmitted by DMA to software to show the user.
+3. Finish, the last version just on software was implemented.
+
 ## Finite State Machine
 
 The core operation to the system is the MD5 cryptographic hash function. This operation was developed with a finite state machine:
