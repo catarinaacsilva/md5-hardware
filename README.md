@@ -13,6 +13,7 @@ We developer a script to implement MD5 in C and compare the performance of three
 - All on hardware
 - MD5 on hardware and interaction on software
 
+The implementation will be based on this paper: [Hardware implementation of the MD5 algorithm](https://www.sciencedirect.com/science/article/pii/S1474667016324429).
 
 ## Requirements
 
@@ -20,7 +21,11 @@ We developer a script to implement MD5 in C and compare the performance of three
 - Vitis 
 - Nexys4 Digilent Xilinx (FPGA)
 
+## Finite State Machine
 
+The core operation to the system is the MD5 cryptographic hash function. This operation was developed with a finite state machine:
+
+![fsm](https://github.com/catarinaacsilva/md5-hardware/blob/master/fsm.pdf)
 
 ## Authors
 
