@@ -65,7 +65,8 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
                     data_out =>  s_dataOut,
 					done => s_done);
 					
-    s_ready <= (not s_validOut) or readEnabled;
+	s_ready <= (not s_validOut) or readEnabled;
+
     
     process(S_AXIS_ACLK)
 	begin
@@ -77,8 +78,7 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
             elsif (S_AXIS_TVALID = '1') then
 	           if (s_ready = '1') then
 					s_validOut <= '1';
-					s_start <= '1';
-                    s_dataOut  <= dataOut;
+					s_dataOut  <= dataOut;
 	           end if;
 	      
 	        elsif (readEnabled = '1') then
