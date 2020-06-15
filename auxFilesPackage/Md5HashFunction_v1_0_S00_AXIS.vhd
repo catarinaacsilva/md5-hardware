@@ -16,7 +16,7 @@ entity Md5HashFunction_v1_0_S00_AXIS is
 		-- Users to add ports here
         validData    : out std_logic;
         md5Data : out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
-        readEnabled  : in  std_logic;
+        readEnabled  : in  std_logic; --slave -> dmac
         
 		-- User ports ends
 		-- Do not modify the ports beyond this line
@@ -48,22 +48,23 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
             done:        out std_logic := '0');
 	end component md5;
 	
-	signal s_ready    : std_logic;
-    signal s_validOut : std_logic;
-    signal s_dataOut  : std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0); 
-    signal dataOut  : std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
-	signal s_done     : std_logic;
+	signal s_ready    	: std_logic; -- master -> slave
+    signal s_validOut 	: std_logic; -- data valid: slave->master
+    signal s_dataOut  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0); 
+    signal dataOut  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
+	signal s_done     	: std_logic;
+	signal s_start		: std_logic;
 
     begin
     
     md5_comp: md5
         port map (  data_in => S_AXIS_TDATA,
-                    start => '1', --valid
+                    start => s_start,
                     clk => S_AXIS_ACLK,
                     reset => S_AXIS_ARESETN,      
                     data_out =>  s_dataOut,
-                    done => s_done);
-    
+					done => s_done);
+					
     s_ready <= (not s_validOut) or readEnabled;
     
     process(S_AXIS_ACLK)
@@ -75,12 +76,13 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
        
             elsif (S_AXIS_TVALID = '1') then
 	           if (s_ready = '1') then
-                    s_validOut <= '1';
+					s_validOut <= '1';
+					s_start <= '1';
                     s_dataOut  <= dataOut;
 	           end if;
 	      
 	        elsif (readEnabled = '1') then
-	           s_validOut <= '0';               
+	           s_validOut <= '0';       
             end if;
         end if;
     end process;
