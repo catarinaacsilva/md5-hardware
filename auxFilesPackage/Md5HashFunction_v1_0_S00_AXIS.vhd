@@ -54,26 +54,29 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
     signal dataOut  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
 	signal s_done     	: std_logic;
 	signal s_start		: std_logic;
+	signal s_reset		: std_logic;
+	signal s_dataIn  	    : std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
 
     begin
     
     md5_comp: md5
-        port map (  data_in => S_AXIS_TDATA,
+        port map (  data_in => s_dataIn,
                     start => s_start,
                     clk => S_AXIS_ACLK,
-                    reset => S_AXIS_ARESETN,      
+                    reset => s_reset,      
                     data_out =>  s_dataOut,
 					done => s_done);
 					
 	s_ready <= (not s_validOut) or readEnabled;
 
-    
+
     process(S_AXIS_ACLK)
 	begin
         if (rising_edge (S_AXIS_ACLK)) then
-	        if (S_AXIS_ARESETN = '0') then
-	           s_validOut <= '0';
-	           s_dataOut  <= (others => '0');
+			if (S_AXIS_ARESETN = '0') then
+				s_reset <= '1';
+	        	s_validOut <= '0';
+				s_dataOut  <= (others => '0');
        
             elsif (S_AXIS_TVALID = '1') then
 	           if (s_ready = '1') then
@@ -81,8 +84,9 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 					s_dataOut  <= dataOut;
 	           end if;
 	      
-	        elsif (readEnabled = '1') then
-	           s_validOut <= '0';       
+			elsif (readEnabled = '1') then
+				s_dataIn <= S_AXIS_TDATA;
+	            s_validOut <= '0';       
             end if;
         end if;
     end process;
