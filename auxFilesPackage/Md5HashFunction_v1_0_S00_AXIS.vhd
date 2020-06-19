@@ -75,6 +75,7 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
             if (S_AXIS_TVALID = '1') then
 				
 				-- start to read the word
+				-- Avaliar de 8 em 8 bits. Aos fim de 4 validações é uma palavra e por isso pode começar e transferir os dados para o s_dataIn
 				if (S_AXIS_TSTRB(0) = '1' and S_AXIS_TSTRB(1) = '1' and S_AXIS_TSTRB(2) = '1' andS_AXIS_TSTRB(3) = '1') then
 					s_start <= '1';
             		s_dataIn <= S_AXIS_TDATA;
@@ -94,10 +95,10 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 				s_dataOut  <= (others => '0');    
 
 			elsif (S_AXIS_TVALID = '1') then
-				if (S_AXIS_TLAST = '1') then
+				if (S_AXIS_TLAST = '1') then   -- verifica se é a ultima palavra (do for que gera palavras)
                     s_validOut <= '0';
                 else
-					if (s_ready = '1' and s_done = '1') then
+					if (s_ready = '1' and s_done = '1') then --valido nos dois lados (md5 e aqui!)
 						s_validOut <= '1';
 						s_dataOut  <= s_md5Result;
 					end if;
