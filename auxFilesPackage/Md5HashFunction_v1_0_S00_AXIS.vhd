@@ -89,6 +89,7 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
         if (rising_edge (S_AXIS_ACLK)) then
 			if (S_AXIS_ARESETN = '0') then
 				s_reset <= '1';
+				s_start <= '0';
 				s_validOut <= '0';
 				s_dataOut  <= (others => '0');    
 
@@ -108,8 +109,6 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
         end if;
 	end process;
 	
-	
-
 
     validData <= s_validOut;
     md5Data <= s_dataOut;
