@@ -76,7 +76,7 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 				
 				-- start to read the word
 				if (S_AXIS_TSTRB(0) = '1' and S_AXIS_TSTRB(1) = '1' and S_AXIS_TSTRB(2) = '1' andS_AXIS_TSTRB(3) = '1') then
-					s_start = '1';
+					s_start <= '1';
             		s_dataIn <= S_AXIS_TDATA;
                 end if;
                           
