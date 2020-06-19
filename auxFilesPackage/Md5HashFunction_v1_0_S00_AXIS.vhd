@@ -97,7 +97,7 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 				if (S_AXIS_TLAST = '1') then
                     s_validOut <= '0';
                 else
-					if (s_ready = '1') then
+					if (s_ready = '1' and s_done = '1') then
 						s_validOut <= '1';
 						s_dataOut  <= s_md5Result;
 					end if;
