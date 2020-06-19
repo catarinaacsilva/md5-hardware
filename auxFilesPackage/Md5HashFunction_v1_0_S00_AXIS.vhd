@@ -57,11 +57,6 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 	signal s_reset		: std_logic;
 	signal s_dataIn  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
 
-	-- signal s_wrAddr : unsigned(MEM_ADDR_WIDTH-1 downto 0);
-
-	-- type TMemory is array (0 to (2**MEM_ADDR_WIDTH)-1) of std_logic_vector(S_AXIS_TDATA'range);
-    -- signal s_arrayBuffer : TMemory;
-
     begin
     
     md5_comp: md5
