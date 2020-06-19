@@ -51,7 +51,7 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 	signal s_ready    	: std_logic; -- master -> slave
     signal s_validOut 	: std_logic; -- data valid: slave->master
     signal s_dataOut  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0); 
-    signal dataOut  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
+    signal s_md5Result	  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
 	signal s_done     	: std_logic;
 	signal s_start		: std_logic;
 	signal s_reset		: std_logic;
@@ -64,7 +64,7 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
                     start => s_start,
                     clk => S_AXIS_ACLK,
                     reset => s_reset,      
-                    data_out =>  s_dataOut,
+                    data_out =>  s_md5Result,
 					done => s_done);
 					
 	s_ready <= (not s_validOut) or readEnabled;
@@ -81,7 +81,7 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
             elsif (S_AXIS_TVALID = '1') then
 	           if (s_ready = '1') then
 					s_validOut <= '1';
-					s_dataOut  <= dataOut;
+					s_dataOut  <= s_md5Result;
 	           end if;
 	      
 			elsif (readEnabled = '1') then
