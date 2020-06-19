@@ -57,6 +57,10 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 	signal s_reset		: std_logic;
 	signal s_dataIn  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
 
+	-- signal s_wrAddr : unsigned(MEM_ADDR_WIDTH-1 downto 0);
+
+	-- type TMemory is array (0 to (2**MEM_ADDR_WIDTH)-1) of std_logic_vector(S_AXIS_TDATA'range);
+    -- signal s_arrayBuffer : TMemory;
 
     begin
     
@@ -76,21 +80,42 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
         if (rising_edge (S_AXIS_ACLK)) then
 			if (S_AXIS_ARESETN = '0') then
 				s_reset <= '1';
-	        	s_validOut <= '0';
-				s_dataOut  <= (others => '0');
-       
-            elsif (S_AXIS_TVALID = '1') then
-	        	if (s_ready = '1') then
-					s_validOut <= '1';
-					s_dataOut  <= s_md5Result;
-	           	end if;
-	      
+				s_validOut <= '0';
+				s_dataOut  <= (others => '0');    
+
+			elsif (S_AXIS_TVALID = '1') then
+				if (S_AXIS_TLAST = '1') then
+                    s_validOut <= '0';
+                else
+					if (s_ready = '1') then
+						s_validOut <= '1';
+						s_dataOut  <= s_md5Result;
+						s_done <= '1';
+					end if;
+				end if;
+
 			elsif (readEnabled = '1') then
-				s_dataIn <= S_AXIS_TDATA;
 	            s_validOut <= '0';       
             end if;
         end if;
-    end process;
+	end process;
+	
+	process(S_AXIS_ACLK)
+    begin
+        if (rising_edge(S_AXIS_ACLK)) then
+            if (S_AXIS_TVALID = '1') then
+				
+				-- start to read the word
+				if (S_AXIS_TSTRB(0) = '1' and S_AXIS_TSTRB(1) = '1' and S_AXIS_TSTRB(2) = '1' andS_AXIS_TSTRB(3) = '1') then
+					s_start = '1';
+            		s_dataIn <= S_AXIS_TDATA;
+                end if;
+                          
+			end if;  
+		end if;
+	end process;
+	
+
 
     validData <= s_validOut;
     md5Data <= s_dataOut;
