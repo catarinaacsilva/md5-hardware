@@ -29,7 +29,7 @@ entity Md5HashFunction_v1_0_S00_AXIS is
 		S_AXIS_TREADY	: out std_logic;
 		-- Data in
 		S_AXIS_TDATA	: in std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
-		-- Byte qualifier
+		-- Byte qualifier 
 		S_AXIS_TSTRB	: in std_logic_vector((C_S_AXIS_TDATA_WIDTH/8)-1 downto 0);
 		-- Indicates boundary of last packet
 		S_AXIS_TLAST	: in std_logic;
@@ -55,7 +55,8 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 	signal s_done     	: std_logic;
 	signal s_start		: std_logic;
 	signal s_reset		: std_logic;
-	signal s_dataIn  	    : std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
+	signal s_dataIn  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
+
 
     begin
     
@@ -79,10 +80,10 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 				s_dataOut  <= (others => '0');
        
             elsif (S_AXIS_TVALID = '1') then
-	           if (s_ready = '1') then
+	        	if (s_ready = '1') then
 					s_validOut <= '1';
 					s_dataOut  <= s_md5Result;
-	           end if;
+	           	end if;
 	      
 			elsif (readEnabled = '1') then
 				s_dataIn <= S_AXIS_TDATA;
