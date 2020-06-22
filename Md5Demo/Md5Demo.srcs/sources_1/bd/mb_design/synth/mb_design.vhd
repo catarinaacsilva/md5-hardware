@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Fri Jun 12 13:40:57 2020
+--Date        : Mon Jun 22 23:10:52 2020
 --Host        : GreatAtuin running 64-bit major release  (build 9200)
 --Command     : generate_target mb_design.bd
 --Design      : mb_design
@@ -5858,7 +5858,7 @@ entity mb_design is
     usb_uart_txd : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of mb_design : entity is "mb_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=mb_design,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=46,numReposBlks=32,numNonXlnxBlks=0,numHierBlks=14,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=12,da_board_cnt=12,da_clkrst_cnt=5,da_mb_cnt=2,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of mb_design : entity is "mb_design,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=mb_design,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=46,numReposBlks=32,numNonXlnxBlks=0,numHierBlks=14,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=13,da_board_cnt=12,da_clkrst_cnt=5,da_mb_cnt=2,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of mb_design : entity is "mb_design.hwdef";
 end mb_design;

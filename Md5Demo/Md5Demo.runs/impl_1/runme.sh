@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/catar/Desktop/git/cr-hashfunction/Md5Demo/Md5Demo.runs/impl_1'
+HD_PWD='C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

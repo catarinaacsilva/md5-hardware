@@ -779,3 +779,52 @@ con
 
 12:19:09 INFO  : Launch script is exported to file 'C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\.sdk\launch_scripts\single_application_debug\systemdebugger_md5app_system_standalone.tcl'
 12:20:04 INFO  : Disconnected from the channel tcfchan#23.
+09:26:23 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\temp_xsdb_launch_script.tcl
+09:26:29 INFO  : Registering command handlers for Vitis TCF services
+09:26:31 INFO  : XSCT server has started successfully.
+09:26:33 INFO  : Successfully done setting XSCT server connection channel  
+09:26:33 INFO  : plnx-install-location is set to ''
+09:26:33 INFO  : Successfully done query RDI_DATADIR 
+09:26:33 INFO  : Successfully done setting workspace for the tool. 
+09:27:03 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+09:27:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:27:31 INFO  : Jtag cable 'Digilent Nexys4 210274504848A' is selected.
+09:27:31 INFO  : 'jtag frequency' command is executed.
+09:27:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504848A" && level==0} -index 0' command is executed.
+09:27:33 INFO  : FPGA configured successfully with bitstream "C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/_ide/bitstream/mb_design_wrapper.bit"
+09:27:33 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+09:27:33 INFO  : Context for processor 'microblaze_0' is selected.
+09:27:33 INFO  : System reset is completed.
+09:27:36 INFO  : 'after 3000' command is executed.
+09:27:36 INFO  : Context for processor 'microblaze_0' is selected.
+09:27:36 INFO  : The application 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/Release/MD5App.elf' is downloaded to processor 'microblaze_0'.
+09:27:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504848A" && level==0} -index 0
+fpga -file C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/Release/MD5App.elf
+----------------End of Script----------------
+
+09:27:37 INFO  : Memory regions updated for context PA
+09:27:37 INFO  : Memory regions updated for context PA
+09:27:37 INFO  : Context for processor 'microblaze_0' is selected.
+09:27:37 INFO  : 'con' command is executed.
+09:27:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+09:27:37 INFO  : Launch script is exported to file 'C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\.sdk\launch_scripts\single_application_debug\systemdebugger_md5app_system_standalone.tcl'
+10:24:05 INFO  : Disconnected from the channel tcfchan#1.
+23:00:41 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\temp_xsdb_launch_script.tcl
+23:00:46 INFO  : Registering command handlers for Vitis TCF services
+23:00:48 INFO  : XSCT server has started successfully.
+23:00:49 INFO  : plnx-install-location is set to ''
+23:00:49 INFO  : Successfully done setting XSCT server connection channel  
+23:00:49 INFO  : Successfully done query RDI_DATADIR 
+23:00:49 INFO  : Successfully done setting workspace for the tool. 

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Fri Jun 12 14:13:44 2020
+| Date         : Mon Jun 22 23:16:49 2020
 | Host         : GreatAtuin running 64-bit major release  (build 9200)
 | Command      : report_drc -file mb_design_wrapper_drc_routed.rpt -pb mb_design_wrapper_drc_routed.pb -rpx mb_design_wrapper_drc_routed.rpx
 | Design       : mb_design_wrapper
@@ -24,16 +24,18 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 9
-+----------+----------+-----------------------------------------------------+------------+
-| Rule     | Severity | Description                                         | Violations |
-+----------+----------+-----------------------------------------------------+------------+
-| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| DPIP-1   | Warning  | Input pipelining                                    | 4          |
-| DPOP-1   | Warning  | PREG Output pipelining                              | 1          |
-| DPOP-2   | Warning  | MREG Output pipelining                              | 1          |
-| REQP-181 | Advisory | writefirst                                          | 2          |
-+----------+----------+-----------------------------------------------------+------------+
+             Violations found: 13
++-----------+----------+-----------------------------------------------------+------------+
+| Rule      | Severity | Description                                         | Violations |
++-----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| DPIP-1    | Warning  | Input pipelining                                    | 4          |
+| DPOP-1    | Warning  | PREG Output pipelining                              | 1          |
+| DPOP-2    | Warning  | MREG Output pipelining                              | 1          |
+| PDRC-153  | Warning  | Gated clock check                                   | 1          |
+| REQP-1840 | Warning  | RAMB18 async control check                          | 3          |
+| REQP-181  | Advisory | writefirst                                          | 2          |
++-----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -78,6 +80,26 @@ Related violations: <none>
 DPOP-2#1 Warning
 MREG Output pipelining  
 DSP mb_design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 multiplier stage mb_design_i/microblaze_0/U0/MicroBlaze_Core_I/Performance.Core/Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net mb_design_i/Md5HashFunction_0/U0/Md5HashFunction_v1_0_S00_AXIS_inst/md5_comp/idleOut_reg_i_2_n_0 is a gated clock net sourced by a combinational pin mb_design_i/Md5HashFunction_0/U0/Md5HashFunction_v1_0_S00_AXIS_inst/md5_comp/idleOut_reg_i_2/O, cell mb_design_i/Md5HashFunction_0/U0/Md5HashFunction_v1_0_S00_AXIS_inst/md5_comp/idleOut_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 mb_design_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_4 has an input control pin mb_design_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_4/ENBWREN (net: mb_design_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/enb) which is driven by a register (mb_design_i/Md5HashFunction_0/U0/Md5HashFunction_v1_0_S00_AXIS_inst/FSM_sequential_state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 mb_design_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_4 has an input control pin mb_design_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_4/ENBWREN (net: mb_design_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/enb) which is driven by a register (mb_design_i/Md5HashFunction_0/U0/Md5HashFunction_v1_0_S00_AXIS_inst/FSM_sequential_state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#3 Warning
+RAMB18 async control check  
+The RAMB18E1 mb_design_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_4 has an input control pin mb_design_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_4/ENBWREN (net: mb_design_i/axis_data_fifo_0/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/enb) which is driven by a register (mb_design_i/Md5HashFunction_0/U0/Md5HashFunction_v1_0_S00_AXIS_inst/FSM_sequential_state_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-181#1 Advisory

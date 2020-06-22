@@ -1,0 +1,5 @@
+Nothing to build in platform 'mb_design_wrapper'
+
+09:27:04 **** Incremental Build of configuration Release for project MD5App ****
+make all 
+make: Nothing to be done for 'all'.

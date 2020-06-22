@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Fri Jun 12 14:13:50 2020
+| Date         : Mon Jun 22 23:16:56 2020
 | Host         : GreatAtuin running 64-bit major release  (build 9200)
 | Command      : report_methodology -file mb_design_wrapper_methodology_drc_routed.rpt -pb mb_design_wrapper_methodology_drc_routed.pb -rpx mb_design_wrapper_methodology_drc_routed.rpx
 | Design       : mb_design_wrapper
@@ -23,13 +23,14 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 102
+             Violations found: 103
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
 | LUTAR-1   | Warning  | LUT drives async reset alert  | 1          |
 | TIMING-9  | Warning  | Unknown CDC Logic             | 1          |
 | TIMING-18 | Warning  | Missing input or output delay | 100        |
+| TIMING-20 | Warning  | Non-clocked latch             | 1          |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -542,6 +543,11 @@ Related violations: <none>
 TIMING-18#100 Warning
 Missing input or output delay  
 An output delay is missing on usb_uart_txd relative to clock(s) sys_clock
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch mb_design_i/Md5HashFunction_0/U0/Md5HashFunction_v1_0_S00_AXIS_inst/md5_comp/idleOut_reg cannot be properly analyzed as its control pin mb_design_i/Md5HashFunction_0/U0/Md5HashFunction_v1_0_S00_AXIS_inst/md5_comp/idleOut_reg/G is not reached by a timing clock
 Related violations: <none>
 
 
