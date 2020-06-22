@@ -98,8 +98,8 @@ signal state, state_n : state_t;
 
 		case state is
 			when init =>
-				s_start = '0';
-				s_validOut = '0';
+				s_start <= '0';
+				s_validOut <= '0';
 				s_dataOut  <= (others => '0');
 
 				if(S_AXIS_TVALID = '1') then
@@ -111,56 +111,63 @@ signal state, state_n : state_t;
 						state_n <= busyReady;
 					else
 						state_n <= proc0;
+					end if;
 				else
 					state_n <= init;
+				end if;
 			
 			when proc0 =>
-				s_start = '1';
-				s_validOut = '1';
+				s_start <= '1';
+				s_validOut <= '1';
 				s_dataOut  <= s_md5result;
 
 				if(S_AXIS_TVALID = '1') then
 					state_n <= init;
 				else
 					state_n <= proc0;
+				end if;
 
 			when last =>
-				s_start = '0';
-				s_validOut = '0';
+				s_start <= '0';
+				s_validOut <= '0';
 				s_dataOut  <= (others => '0');
 
 				if(S_AXIS_TVALID = '1') then
 					state_n <= init;
 				else
 					state_n <= last;
-
+                end if;
 			when busyReady =>
-				s_start = '0';
-				s_validOut = '0';
+				s_start <= '0';
+				s_validOut <= '0';
 				s_dataOut  <= (others => '0');
 
 				if(S_AXIS_TVALID = '1') then
 					if (s_idleOut = '1' and s_ready = '1') then
 						state_n <= proc0;
 					else
-						state_n <= busReady;
+						state_n <= busyReady;
+					end if;
 				else
-					state_n <= busReady;
+					state_n <= busyReady;
+				end if;
 
 			when busyIdle =>
-				s_start = '0';
-				s_validOut = '0';
+				s_start <= '0';
+				s_validOut <= '0';
 				s_dataOut  <= (others => '0');
 
 				if(S_AXIS_TVALID = '1') then
 					if (s_idleOut = '1' and s_ready = '1') then
 						state_n <= proc0;
-					elsif (s_idleOut = '1' and s_ready = '0')
+					elsif (s_idleOut = '1' and s_ready = '0') then
 						state_n <= busyReady;
 					else
 						state_n <= busyIdle;
+					end if;
 				else
 					state_n <= busyIdle;
+				end if;
 
 		end case;
 
