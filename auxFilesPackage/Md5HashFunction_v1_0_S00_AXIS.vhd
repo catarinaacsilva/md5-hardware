@@ -45,7 +45,8 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
             clk:         in  std_logic;
             reset:       in  std_logic;
             data_out:    out std_logic_vector (C_S_AXIS_TDATA_WIDTH-1 downto 0) := (others => '0');
-            done:        out std_logic := '0');
+			done:        out std_logic := '0';
+			idleOut:     out std_logic);
 	end component md5;
 	
 	signal s_ready    	: std_logic; -- master -> slave
@@ -56,6 +57,7 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 	signal s_start		: std_logic;
 	signal s_reset		: std_logic;
 	signal s_dataIn  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
+	signal s_idleOut	: std_logic;
 
     begin
     
@@ -65,25 +67,26 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
                     clk => S_AXIS_ACLK,
                     reset => s_reset,      
                     data_out =>  s_md5Result,
-					done => s_done);
+					done => s_done,
+					idleOut => s_idleOut); -- verificar
 					
 	s_ready <= (not s_validOut) or readEnabled;
 
-	process(S_AXIS_ACLK)
-    begin
-        if (rising_edge(S_AXIS_ACLK)) then
-            if (S_AXIS_TVALID = '1') then
+	--process(S_AXIS_ACLK)
+    --begin
+        --if (rising_edge(S_AXIS_ACLK)) then
+           -- if (S_AXIS_TVALID = '1') then
 				
 				-- start to read the word
 				-- Avaliar de 8 em 8 bits. Aos fim de 4 validações é uma palavra e por isso pode começar e transferir os dados para o s_dataIn
-				if (S_AXIS_TSTRB(0) = '1' and S_AXIS_TSTRB(1) = '1' and S_AXIS_TSTRB(2) = '1' andS_AXIS_TSTRB(3) = '1') then
-					s_start <= '1';
-            		s_dataIn <= S_AXIS_TDATA;
-                end if;
-                          
-			end if;  
-		end if;
-	end process;
+				--if (S_AXIS_TSTRB(0) = '1' and S_AXIS_TSTRB(1) = '1' and S_AXIS_TSTRB(2) = '1' andS_AXIS_TSTRB(3) = '1') then
+					--s_start <= '1';
+            		--s_dataIn <= S_AXIS_TDATA;
+               -- end if;
+                      
+			--end if;  
+		--end if;
+	--end process;
 
     process(S_AXIS_ACLK)
 	begin
@@ -98,7 +101,7 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 				if (S_AXIS_TLAST = '1') then   -- verifica se é a ultima palavra (do for que gera palavras)
                     s_validOut <= '0';
                 else
-					if (s_ready = '1' and s_done = '1') then --valido nos dois lados (md5 e aqui!)
+					if (s_ready = '1' and s_idleOut = '1') then --valido nos dois lados (md5 e aqui!)
 						s_validOut <= '1';
 						s_dataOut  <= s_md5Result;
 					end if;

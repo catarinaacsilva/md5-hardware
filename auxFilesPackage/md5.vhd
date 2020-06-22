@@ -10,7 +10,8 @@ entity MD5 is
            clk:         in  std_logic;
            reset:       in  std_logic;
            data_out:    out std_logic_vector (31 downto 0) := (others => '0');
-           done:        out std_logic := '0');
+           done:        out std_logic := '0';
+           idleOut:     out std_logic);
 end MD5;
 
 architecture Behavioral of MD5 is
@@ -131,8 +132,10 @@ begin
 
         case state is
             when idle =>
+                idleOut <= '1';
                 if (start = '1') then
                     state_n <= loadMessage;
+                    idleOut <= '0';
                 end if;
 
             when loadMessage => 
