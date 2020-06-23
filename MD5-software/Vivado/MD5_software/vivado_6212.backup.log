@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jun 15 12:16:51 2020
+# Process ID: 6212
+# Current directory: C:/Users/Duarte Dias/Desktop/MD5_software
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7124 C:\Users\Duarte Dias\Desktop\MD5_software\MD5_software.xpr
+# Log file: C:/Users/Duarte Dias/Desktop/MD5_software/vivado.log
+# Journal file: C:/Users/Duarte Dias/Desktop/MD5_software\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Duarte Dias/Desktop/MD5_software/MD5_software.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 752.551 ; gain = 147.664
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 15 14:43:08 2020...

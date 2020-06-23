@@ -1,0 +1,8 @@
+Nothing to build in platform 'mb_design_wrapper'
+
+16:22:41 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+make: Nothing to be done for 'all'.
+16:22:43 **** Incremental Build of configuration Debug for project MD5_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

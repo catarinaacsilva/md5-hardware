@@ -1,0 +1,13 @@
+timestamp=[2020-06-11 12:39:44], mode=WORKBENCH_START, duration=0:00:15.865, duration_ms=15865, data={}
+timestamp=[2020-06-11 12:39:48], mode=WORKBENCH_UI_INIT, duration=0:00:03.588, duration_ms=3588, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2020-06-11 12:41:42], mode=APP_CREATION, duration=0:00:27.405, duration_ms=27405, data={name=MD5, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=mb_design_wrapper, application_type=application}
+timestamp=[2020-06-18 15:23:13], mode=WORKBENCH_START, duration=0:00:30.306, duration_ms=30306, data={}
+timestamp=[2020-06-18 15:23:18], mode=WORKBENCH_UI_INIT, duration=0:00:05.094, duration_ms=5094, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5,MD5_system,RemoteSystemsTempFiles,mb_design_wrapper}
+timestamp=[2020-06-20 19:04:49], mode=WORKBENCH_START, duration=0:00:35.826, duration_ms=35826, data={}
+timestamp=[2020-06-20 19:04:54], mode=WORKBENCH_UI_INIT, duration=0:00:05.491, duration_ms=5491, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5,MD5_system,RemoteSystemsTempFiles,mb_design_wrapper}
+timestamp=[2020-06-20 23:06:29], mode=PLATFORM_GENERATION, duration=0:00:32.241, duration_ms=32241, data={name=mb_design_wrapper}
+timestamp=[2020-06-20 23:19:30], mode=PLATFORM_GENERATION, duration=0:00:33.403, duration_ms=33403, data={name=mb_design_wrapper}
+timestamp=[2020-06-21 00:34:07], mode=PLATFORM_GENERATION, duration=0:00:25.797, duration_ms=25797, data={name=mb_design_wrapper}
+timestamp=[2020-06-21 00:47:41], mode=PLATFORM_GENERATION, duration=0:00:05.874, duration_ms=5874, data={name=mb_design_wrapper}
+timestamp=[2020-06-21 12:23:21], mode=WORKBENCH_START, duration=0:00:32.305, duration_ms=32305, data={}
+timestamp=[2020-06-21 12:23:26], mode=WORKBENCH_UI_INIT, duration=0:00:04.976, duration_ms=4976, data={editors_count=2, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5,MD5_system,RemoteSystemsTempFiles,mb_design_wrapper}

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jun 11 12:22:11 2020
+# Process ID: 8364
+# Current directory: C:/Users/Duarte Dias/Desktop/MD5_software
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7384 C:\Users\Duarte Dias\Desktop\MD5_software\MD5_software.xpr
+# Log file: C:/Users/Duarte Dias/Desktop/MD5_software/vivado.log
+# Journal file: C:/Users/Duarte Dias/Desktop/MD5_software\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Duarte Dias/Desktop/MD5_software/MD5_software.xpr}
+update_compile_order -fileset sources_1
+write_hw_platform -fixed -force  -include_bit -file C:/Xilinx/Projects/MD5/mb_design_wrapper.xsa
