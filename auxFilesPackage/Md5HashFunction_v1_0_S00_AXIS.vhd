@@ -77,7 +77,7 @@ signal state, state_n : state_t;
                     start => s_start,
                     clk => S_AXIS_ACLK,
                     reset => s_reset,      
-                    data_out =>  s_dataOut,
+                    data_out =>  s_md5Result,
 					done => s_done,
 					idleOut => s_idleOut);
 					
@@ -188,8 +188,8 @@ signal state, state_n : state_t;
 	end process;
 	
 
-    --validData <= s_validOut;
-	--md5Data <= s_dataOut;
+    validData <= s_validOut;
+	md5Data <= s_dataOut;
     S_AXIS_TREADY <= s_ready;
     
 end arch_imp;
