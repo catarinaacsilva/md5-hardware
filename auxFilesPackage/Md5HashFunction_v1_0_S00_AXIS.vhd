@@ -139,7 +139,7 @@ signal state, state_n : state_t;
 				s_readyS = 0;
 				
 				if(S_AXIS_TVALID = '1' and readyM = '1' and s_idleOut = '1') then
-					state_n <= proc;
+					state_n <= idle;
 				elsif(s_reset = '1') then
 					state_n <= init;
 				else
