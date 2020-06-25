@@ -105,7 +105,7 @@ signal state, state_n : state_t;
 				s_start = 0;
 				s_validOut = 0;
 				s_dataOut  <= (others => '0');
-				s_readyS = 1; -- esta disponivel para aceitar palavras!
+				s_readyS = 1; -- slave esta disponivel para aceitar palavras!
 				
 				if (S_AXIS_TVALID = '1' and readyM = '1') then
 					if(s_idleOut = '1') then
