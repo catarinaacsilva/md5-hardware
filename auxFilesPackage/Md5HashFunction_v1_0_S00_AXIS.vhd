@@ -162,11 +162,24 @@ signal state, state_n : state_t;
 				s_dataOut  <= (others => '0');
 				s_readyS = 1;
 
+				if(S_AXIS_TVALID = '1' or s_reset = '1') then
+					state_n <= init;
+				elsif (S_AXIS_TLAST = '1') then
+					state_n <= last;
+				else
+					state_n <= done;
+
 			when last =>
 				s_start = 0;
 				s_validOut = 0;
 				s_dataOut  <= (others => '0');
 				s_readyS = 1;
+
+				if (S_AXIS_TVALID = '1' or s_reset = '1') then
+					state_n <= init;
+				else
+					state_n <= last;
+
 
 		end case;
 
