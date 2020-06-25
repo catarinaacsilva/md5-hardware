@@ -49,8 +49,8 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 			idleOut:     out std_logic);
 	end component md5;
 	
-	signal s_ready    	: std_logic; -- master -> slave
-    signal s_validOut 	: std_logic; -- data valid: slave->master
+	-- signal s_ready    	: std_logic;
+    signal s_validOut 	: std_logic; 
     signal s_dataOut  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0); 
     signal s_md5Result	  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
 	signal s_done     	: std_logic;
@@ -159,7 +159,7 @@ signal state, state_n : state_t;
 			when done =>
 				s_start = 0;
 				s_validOut = 1;
-				s_dataOut  <= (others => '0');
+				s_dataOut  <= s_md5Result;
 				s_readyS = 1;
 
 				if(S_AXIS_TVALID = '1' or s_reset = '1') then
