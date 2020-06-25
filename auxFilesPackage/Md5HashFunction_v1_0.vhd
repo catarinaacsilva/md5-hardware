@@ -63,7 +63,8 @@ architecture arch_imp of Md5HashFunction_v1_0 is
         
         validData       : in std_logic;
         md5Data         : in std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
-        readEnabled     : out  std_logic	
+		--readEnabled     : out  std_logic	
+		s_readyM : out std_logic
 		);
 	end component Md5HashFunction_v1_0_M00_AXIS;
 
@@ -82,13 +83,15 @@ architecture arch_imp of Md5HashFunction_v1_0 is
 
         validData       : out std_logic;
         md5Data         : out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
-        readEnabled     : in  std_logic	
+		-- readEnabled     : in  std_logic
+		s_readyM : in std_logic
 		);
     end component Md5HashFunction_v1_0_S00_AXIS;
     
     signal s_validData    : std_logic;
     signal s_md5Data      : std_logic_vector(C_M00_AXIS_TDATA_WIDTH-1 downto 0); 
-    signal s_readEnabled  : std_logic;
+	-- signal s_readEnabled  : std_logic;
+	signal s_readyM : std_logic;
 
 begin
 
@@ -109,7 +112,8 @@ Md5HashFunction_v1_0_M00_AXIS_inst : Md5HashFunction_v1_0_M00_AXIS
 
         validData       => s_validData,
         md5Data         => s_md5Data,
-        readEnabled     => s_readEnabled
+		-- readEnabled     => s_readEnabled
+		s_readyM => s_readyM
 	);
 
 -- Instantiation of Axi Bus Interface S00_AXIS
@@ -128,7 +132,8 @@ Md5HashFunction_v1_0_S00_AXIS_inst : Md5HashFunction_v1_0_S00_AXIS
         
         validData       => s_validData,
         md5Data         => s_md5Data,
-        readEnabled     => s_readEnabled
+		-- readEnabled     => s_readEnabled
+		s_readyM => s_readyM
 	);
 
 	-- Add user logic here

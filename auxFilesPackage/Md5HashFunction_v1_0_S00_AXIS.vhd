@@ -16,7 +16,8 @@ entity Md5HashFunction_v1_0_S00_AXIS is
 		-- Users to add ports here
         validData    : out std_logic;
         md5Data : out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
-        readEnabled  : in  std_logic;
+		--readEnabled  : in  std_logic; -- vem do master
+		s_readyM : in std_logic;
         
 		-- User ports ends
 		-- Do not modify the ports beyond this line
@@ -50,6 +51,7 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 	end component md5;
 	
 	-- signal s_ready    	: std_logic;
+	signal s_readyS		: std_logic;
     signal s_validOut 	: std_logic; 
     signal s_dataOut  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0); 
     signal s_md5Result	  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
@@ -75,7 +77,7 @@ signal state, state_n : state_t;
                     start => s_start,
                     clk => S_AXIS_ACLK,
                     reset => s_reset,      
-                    data_out =>  s_md5Result,
+                    data_out =>  s_dataOut,
 					done => s_done,
 					idleOut => s_idleOut);
 					
