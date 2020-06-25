@@ -20,7 +20,7 @@ entity Md5HashFunction_v1_0_M00_AXIS is
         validData    : in  std_logic;
         md5Data   : in  std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
 		-- readEnabled  : out std_logic;
-		s_readyM : out std_logic;
+		readyM : out std_logic;
 
 		-- User ports ends
 		-- Do not modify the ports beyond this line
@@ -50,6 +50,6 @@ architecture implementation of Md5HashFunction_v1_0_M00_AXIS is
         M_AXIS_TDATA  <= md5Data;
         
 		-- readEnabled   <= validData and M_AXIS_TREADY; 
-		s_readyM <= validData and M_AXIS_TREADY; 
+		readyM <= validData and M_AXIS_TREADY; 
 	
 end implementation;

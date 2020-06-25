@@ -16,8 +16,8 @@ entity Md5HashFunction_v1_0_S00_AXIS is
 		-- Users to add ports here
         validData    : out std_logic;
         md5Data : out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
-		--readEnabled  : in  std_logic; -- vem do master
-		s_readyM : in std_logic;
+		--readEnabled  : in  std_logic;
+		readyM : in std_logic; -- vem do master quando pode aceitar mais palavras
         
 		-- User ports ends
 		-- Do not modify the ports beyond this line
@@ -53,7 +53,8 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 	-- signal s_ready    	: std_logic;
 	signal s_readyS		: std_logic;
     signal s_validOut 	: std_logic; 
-    signal s_dataOut  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0); 
+	
+	signal s_dataOut  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0); 
     signal s_md5Result	  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
 	signal s_done     	: std_logic;
 	signal s_start		: std_logic;
@@ -106,7 +107,7 @@ signal state, state_n : state_t;
 				s_dataOut  <= (others => '0');
 				s_readyS = 1; -- esta disponivel para aceitar palavras!
 				
-				if (S_AXIS_TVALID = '1' and s_readyM = '1') then
+				if (S_AXIS_TVALID = '1' and readyM = '1') then
 					if(s_idleOut = '1') then
 						state_n <= idle;
 					else
@@ -123,7 +124,7 @@ signal state, state_n : state_t;
 				s_dataOut  <= (others => '0');
 				s_readyS = 0;
 				
-				if(S_AXIS_TVALID = '1' and s_readyM = '1' and s_idleOut = '1') then
+				if(S_AXIS_TVALID = '1' and readyM = '1' and s_idleOut = '1') then
 					state_n <= proc;
 				elsif(s_reset = '1') then
 					state_n <= init;
@@ -137,7 +138,7 @@ signal state, state_n : state_t;
 				s_dataOut  <= (others => '0');
 				s_readyS = 0;
 				
-				if(S_AXIS_TVALID = '1' and s_readyM = '1' and s_idleOut = '1') then
+				if(S_AXIS_TVALID = '1' and readyM = '1' and s_idleOut = '1') then
 					state_n <= proc;
 				elsif(s_reset = '1') then
 					state_n <= init;
