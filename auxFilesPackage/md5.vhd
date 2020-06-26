@@ -129,13 +129,13 @@ begin
     fsm: process(state, start, jCounter, data_counter, iCounter, message_length)
     begin
         state_n <= state;
-
+        idleOut <= '0';
         case state is
             when idle =>
                 idleOut <= '1';
                 if (start = '1') then
                     state_n <= loadMessage;
-                    idleOut <= '0';
+                
                 end if;
 
             when loadMessage => 
