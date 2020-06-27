@@ -56,19 +56,6 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 			done:        out std_logic := '0';
 			idleOut:     out std_logic);
 	end component md5;
-	
-	-- signal s_ready    	: std_logic;
-	-- signal s_readyS		: std_logic;
-    -- signal s_validOut 	: std_logic; 
-	
-	-- signal s_dataOut  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0); 
-    -- signal s_md5Result	  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
-	-- signal s_done     	: std_logic;
-	-- signal s_start		: std_logic;
-	-- signal s_reset		: std_logic;
-	-- signal s_dataIn  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
-	-- signal s_idle	: std_logic;
-	-- signal s_enable		: std_logic;
 
 	-- last process
 	signal s_tlastdelayed : std_logic;
@@ -195,8 +182,6 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 		end case;
 
 	end process;
-
-
 
 	start <= s_start;
 	enable <= s_enable;
