@@ -61,10 +61,7 @@ architecture arch_imp of Md5HashFunction_v1_0 is
 		M_AXIS_TLAST	: out std_logic;
         M_AXIS_TREADY	: in std_logic;
         
-        validData       : in std_logic;
-        md5Data         : in std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
-		--readEnabled     : out  std_logic	
-		readyM : out std_logic
+       --AQUI
 		);
 	end component Md5HashFunction_v1_0_M00_AXIS;
 
@@ -81,17 +78,11 @@ architecture arch_imp of Md5HashFunction_v1_0 is
 		S_AXIS_TLAST	: in std_logic;
         S_AXIS_TVALID	: in std_logic;
 
-        validData       : out std_logic;
-        md5Data         : out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
-		-- readEnabled     : in  std_logic
-		readyM : in std_logic
+        -- AQUI
 		);
     end component Md5HashFunction_v1_0_S00_AXIS;
     
-    signal s_validData    : std_logic;
-    signal s_md5Data      : std_logic_vector(C_M00_AXIS_TDATA_WIDTH-1 downto 0); 
-	-- signal s_readEnabled  : std_logic;
-	signal readyM : std_logic;
+    --AQUI
 
 begin
 
@@ -110,10 +101,7 @@ Md5HashFunction_v1_0_M00_AXIS_inst : Md5HashFunction_v1_0_M00_AXIS
 		M_AXIS_TLAST	=> m00_axis_tlast,
         M_AXIS_TREADY	=> m00_axis_tready,
 
-        validData       => s_validData,
-        md5Data         => s_md5Data,
-		-- readEnabled     => s_readEnabled
-		readyM => readyM
+       -- AQUI
 	);
 
 -- Instantiation of Axi Bus Interface S00_AXIS
@@ -130,10 +118,7 @@ Md5HashFunction_v1_0_S00_AXIS_inst : Md5HashFunction_v1_0_S00_AXIS
 		S_AXIS_TLAST	=> s00_axis_tlast,
         S_AXIS_TVALID	=> s00_axis_tvalid,
         
-        validData       => s_validData,
-        md5Data         => s_md5Data,
-		-- readEnabled     => s_readEnabled
-		readyM => readyM
+        --AQUI
 	);
 
 	-- Add user logic here
