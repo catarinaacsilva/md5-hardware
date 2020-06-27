@@ -19,8 +19,9 @@ entity Md5HashFunction_v1_0_M00_AXIS is
     
 		dataInMaster	: in  std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
 		done			: in std_logic;
+		reset			: in std_logic;
 		dataOutMaster   : out std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
-		
+
 
 		-- lastInfo		: in std_logic;
 
@@ -46,8 +47,8 @@ end Md5HashFunction_v1_0_M00_AXIS;
 
 architecture implementation of Md5HashFunction_v1_0_M00_AXIS is
 
-	signal s_done : in std_logic;
-	signal s_dataOut : out std_logic_vector ()
+	signal s_done => std_logic;
+	signal s_reset => std_logic;
 
 	type state_t is ( 	OUT_IDLE, 
 						OUT_VALID);
@@ -67,7 +68,7 @@ architecture implementation of Md5HashFunction_v1_0_M00_AXIS is
 					dataIn	=> dataInMaster,
 					dataOut => dataOutMaster);
 
-		M_AXIS_TDATA <= dataOutMaster; 
+	M_AXIS_TDATA <= dataOutMaster; 
 	
 	process(M_AXIS_ARESETN, M_AXIS_ACLK)
     begin
@@ -88,6 +89,8 @@ architecture implementation of Md5HashFunction_v1_0_M00_AXIS is
 				 
 				if (s_done <= '1') then
 					state_n <= OUT_VALID;
+				elsif(s_reset <= '1') then
+					state_n <= OUT_IDLE;
 				else
 					state_n <= OUT_IDLE;
 				end if;
@@ -95,6 +98,8 @@ architecture implementation of Md5HashFunction_v1_0_M00_AXIS is
 			when OUT_VALID =>
 				M_AXIS_TVALID <= '1';
 				if (M_AXIS_TREADY <= '1') then
+					state_n <= OUT_IDLE;
+				elsif(s_reset <= '1') then
 					state_n <= OUT_IDLE;
 				else
 					state_n <= OUT_VALID;

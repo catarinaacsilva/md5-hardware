@@ -15,11 +15,7 @@ entity Md5HashFunction_v1_0_S00_AXIS is
 	port (
 		-- Users to add ports here
 
-        -- validData    	: out std_logic;
-        -- md5Data 		: out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
-		--readEnabled  : in  std_logic;
-		--readyM 			: in std_logic; -- vem do master quando pode aceitar mais palavras
-
+		idle  : in std_logic;
 		reset : in std_logic;
 		start : out std_logic;
 		enable: out std_logic;
@@ -47,15 +43,6 @@ entity Md5HashFunction_v1_0_S00_AXIS is
 end Md5HashFunction_v1_0_S00_AXIS;
 
 architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
-	component md5 is 
-	   port(data_in:     in  std_logic_vector (C_S_AXIS_TDATA_WIDTH-1 downto 0);
-            start:       in  std_logic;
-            clk:         in  std_logic;
-            reset:       in  std_logic;
-            data_out:    out std_logic_vector (C_S_AXIS_TDATA_WIDTH-1 downto 0) := (others => '0');
-			done:        out std_logic := '0';
-			idleOut:     out std_logic);
-	end component md5;
 
 	-- last process
 	signal s_tlastdelayed : std_logic;
@@ -185,6 +172,9 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 
 	start <= s_start;
 	enable <= s_enable;
+	
+	idle <= s_idle;
+	reset <= s_reset;
 	
 	dataOutSlave <= s_dataOutSlave;
 

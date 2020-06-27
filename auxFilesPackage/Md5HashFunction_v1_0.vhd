@@ -81,6 +81,7 @@ architecture arch_imp of Md5HashFunction_v1_0 is
         S_AXIS_TVALID	: in std_logic;
 
 		reset : in std_logic;
+		idle  : in std_logic;
 		start : out std_logic;
 		enable: out std_logic;
 		dataOutSlave : out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0)
@@ -93,7 +94,8 @@ architecture arch_imp of Md5HashFunction_v1_0 is
 	s_done   => std_logic;       
 	s_dataOutMaster => std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
 	-- Slave
-    s_reset => std_logic;
+	s_reset => std_logic;
+	s_idle  => std_logic;
 	s_start => std_logic;
 	s_enable => std_logic;
 	s_dataOutSlave => std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0)
@@ -134,7 +136,8 @@ Md5HashFunction_v1_0_S00_AXIS_inst : Md5HashFunction_v1_0_S00_AXIS
 		S_AXIS_TLAST	=> s00_axis_tlast,
         S_AXIS_TVALID	=> s00_axis_tvalid,
         
-        reset => s_reset,
+		reset => s_reset,
+		idle => s_idle,
 		start => s_start,
 		enable: => s_enable,
 		dataOutSlave => s_dataOutSlave
