@@ -85,7 +85,8 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 						IN_ENABLE, 
 						NO_START);
 
-signal state, state_n : state_t;
+	-- FSM
+	signal state, state_n : state_t;
 
 	begin
 		
@@ -111,7 +112,7 @@ signal state, state_n : state_t;
 	process(S_AXIS_ARESETN, S_AXIS_ACLK)
     begin
         if (S_AXIS_ARESETN = '1') then
-            state <= init;
+            state <= IN_IDLE;
         elsif (rising_edge(S_AXIS_ACLK)) then
             state <= state_n;
         end if;
@@ -137,16 +138,15 @@ signal state, state_n : state_t;
 					state_n <= IN_IDLE;
 				else
 					state_n <= IN_IDLE;
+				end if;
 			
 				
 
 			when IN_START =>
 				s_start = '1';
 				enable = '1';
-				-- s_validOut = '0';
-				-- s_dataOut  <= (others => '0');
-				-- s_readyS = 0;
 				
+
 				if (S_AXIS_TVALID = '1' and s_idle = '1') then
 					state_n <= IN_ENABLE;
 				elsif (s_idle = '0' or S_AXIS_TVALID = '0') then
@@ -155,15 +155,14 @@ signal state, state_n : state_t;
 					state_n <= IN_IDLE;
 				else
 					state_n <= IN_START;
+				end if;
 
 
 			when IN_ENABLE =>
 				s_start = '0';
 				s_enable = '1';
-				-- s_validOut = '0';
-				-- s_dataOut  <= (others => '0');
-				-- s_readyS = '0';
-				 
+			
+				
 				if(s_idle = '0') then
 					state_n <= NO_START;
 				elsif (s_tlastdelayed = '1') then
@@ -172,14 +171,12 @@ signal state, state_n : state_t;
 					state_n <= IN_IDLE;
 				else
 					state_n <= IN_ENABLE;
+				end if;
 
 
 			when NO_START =>
 				s_start = '0';
 				s_enable = '0';
-				-- s_validOut = 0;
-				-- s_dataOut  <= (others => '0');
-				-- s_readyS = 0;
 				
 				if(S_AXIS_TVALID = '0') then
 					state_n <= NO_START;
@@ -189,6 +186,7 @@ signal state, state_n : state_t;
 					state_n <= IN_IDLE;
 				else
 					state_n <= NO_START;
+				end if;
 
 		end case;
 

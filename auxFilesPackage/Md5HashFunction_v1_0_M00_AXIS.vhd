@@ -17,10 +17,12 @@ entity Md5HashFunction_v1_0_M00_AXIS is
 	port (
         -- Users to add ports here
         
-        validData    : in  std_logic;
-        md5Data   : in  std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
+        -- validData    : in  std_logic;
+        -- md5Data   : in  std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
 		-- readEnabled  : out std_logic;
-		readyM : out std_logic;
+		-- readyM : out std_logic;
+
+
 
 		-- User ports ends
 		-- Do not modify the ports beyond this line
@@ -43,13 +45,38 @@ entity Md5HashFunction_v1_0_M00_AXIS is
 end Md5HashFunction_v1_0_M00_AXIS;
 
 architecture implementation of Md5HashFunction_v1_0_M00_AXIS is
+
+	type state_t is ( 	OUT_IDLE, 
+						OUT_VALID);
+
+
     begin
-        M_AXIS_TVALID <= validData;
-        M_AXIS_TLAST  <= '0';
-        M_AXIS_TSTRB  <= (others => '1');
-        M_AXIS_TDATA  <= md5Data;
-        
-		-- readEnabled   <= validData and M_AXIS_TREADY; 
-		readyM <= validData and M_AXIS_TREADY; 
+        -- M_AXIS_TVALID <= validData;
+        -- M_AXIS_TLAST  <= '0';
+        -- M_AXIS_TSTRB  <= (others => '1');
+        -- M_AXIS_TDATA  <= md5Data;
+    
+		-- readyM <= validData and M_AXIS_TREADY; 
+	
+	process(M_AXIS_ARESETN, M_AXIS_ACLK)
+    begin
+        if (M_AXIS_ARESETN = '1') then
+            state <= OUT_IDLE;
+        elsif (rising_edge(M_AXIS_ACLK)) then
+            state <= state_n;
+        end if;
+	end process;
+	
+	process (state)
+	begin
+		state_n <= state;
+
+		case state is
+			when OUT_IDLE =>
+		
+			when OUT_VALID =>
+		end case;
+	end process;
+
 	
 end implementation;
