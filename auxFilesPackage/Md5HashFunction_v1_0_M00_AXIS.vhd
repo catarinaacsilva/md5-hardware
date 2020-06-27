@@ -16,12 +16,7 @@ entity Md5HashFunction_v1_0_M00_AXIS is
 	);
 	port (
         -- Users to add ports here
-        
-        -- validData    : in  std_logic;
-        -- md5Data   : in  std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
-		-- readEnabled  : out std_logic;
-		-- readyM : out std_logic;
-
+    
 		dataInMaster	: in  std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
 		-- lastInfo		: in std_logic;
 
