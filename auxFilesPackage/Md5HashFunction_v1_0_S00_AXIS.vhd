@@ -87,9 +87,16 @@ signal state, state_n : state_t;
 					idleOut 	=> 	s_idle);
 
 	register_last: Register
+		port map (  reset	=> s_reset,
+					clk 	=> S_AXIS_ACLK,
+					enable	=> '1', -- sempre que o last esteja a 1 então passa para a saida
+					dataIn	=> S_AXIS_TLAST,
+					dataOut => s_tlastdelayed);
+					
+	register_dataIn: Register
 		port map (  reset	=> s_reset
 					clk 	=> S_AXIS_ACLK
-					enable	=> '1', -- sempre que o last esteja a 1 então passa para a saida
+					enable	=> 
 					dataIn	=> S_AXIS_TLAST
 					dataOut => s_tlastdelayed);
 					
