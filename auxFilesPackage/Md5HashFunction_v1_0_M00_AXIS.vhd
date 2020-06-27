@@ -22,7 +22,8 @@ entity Md5HashFunction_v1_0_M00_AXIS is
 		-- readEnabled  : out std_logic;
 		-- readyM : out std_logic;
 
-
+		dataInMaster	: in  std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
+		lastInfo		: in std_logic;
 
 		-- User ports ends
 		-- Do not modify the ports beyond this line
@@ -46,17 +47,27 @@ end Md5HashFunction_v1_0_M00_AXIS;
 
 architecture implementation of Md5HashFunction_v1_0_M00_AXIS is
 
+	signal s_done : in std_logic;
+	signal s_dataOut : out std_logic_vector ()
+
 	type state_t is ( 	OUT_IDLE, 
 						OUT_VALID);
 
 
     begin
         -- M_AXIS_TVALID <= validData;
-        -- M_AXIS_TLAST  <= '0';
-        -- M_AXIS_TSTRB  <= (others => '1');
-        -- M_AXIS_TDATA  <= md5Data;
-    
 		-- readyM <= validData and M_AXIS_TREADY; 
+	
+	M_AXIS_TSTRB  <= (others => '1');
+	M_AXIS_TLAST <= lastInfo;
+
+	register_dataIn: Register
+		generic map(k 	=> C_M_AXIS_TDATA_WIDTH)
+		port map (  reset	=> s_reset,
+					clk 	=> M_AXIS_ACLK,
+					enable	=> s_done,
+					dataIn	=> dataInMaster,
+					dataOut => M_AXIS_TDATA);
 	
 	process(M_AXIS_ARESETN, M_AXIS_ACLK)
     begin
@@ -73,8 +84,21 @@ architecture implementation of Md5HashFunction_v1_0_M00_AXIS is
 
 		case state is
 			when OUT_IDLE =>
-		
+				M_AXIS_TVALID <= '0';
+				 
+				if (s_done <= '1') then
+					state_n <= OUT_VALID;
+				else
+					state_n <= OUT_IDLE;
+				end if;
+			 
 			when OUT_VALID =>
+				M_AXIS_TVALID <= '1';
+				if (M_AXIS_TREADY <= '1') then
+					state_n <= OUT_IDLE;
+				else
+					state_n <= OUT_VALID;
+				end if;
 		end case;
 	end process;
 

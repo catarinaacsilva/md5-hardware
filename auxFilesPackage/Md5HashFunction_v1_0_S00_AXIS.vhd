@@ -23,7 +23,8 @@ entity Md5HashFunction_v1_0_S00_AXIS is
 		reset : in std_logic;
 		start : out std_logic;
 		enable: out std_logic;
-		dataIn : out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
+		dataOutSlave : out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
+		lastInfo : out std_logic;
         
 		-- User ports ends
 		-- Do not modify the ports beyond this line
@@ -73,11 +74,13 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 	signal s_tlastdelayed : std_logic;
 
 	-- dataIn process
-	signal s_dataIn : std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
+	signal s_dataOutSlave : std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
 
 	-- md5 core signals (control)
 	signal s_start, s_enable : std_logic;
 	signal s_reset : std_logic;
+
+	signal s_readyS : in std_logic;
 
 
 	type state_t is ( 	IN_IDLE, 
@@ -106,7 +109,7 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 					clk 	=> S_AXIS_ACLK,
 					enable	=> s_enable and s_start,
 					dataIn	=> S_AXIS_TDATA,
-					dataOut => s_dataIn); -- input data on MD5 core
+					dataOut => s_dataOutSlave); -- input data on MD5 core
 					
 
 	process(S_AXIS_ARESETN, S_AXIS_ACLK)
@@ -124,13 +127,14 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 
 		state_n <= state;
 
+		s_readyS <= '0';
+
 		case state is
 			when IN_IDLE =>
 				s_start = '0';
 				s_enable = '0';
-				-- s_validOut = '0';
-				-- s_dataOut  <= (others => '0');
-				-- s_readyS = '1';
+
+				s_readyS <= '1';
 
 				if(S_AXIS_TVALID = '1') then
 					state_n <= IN_START;
@@ -193,14 +197,13 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 	end process;
 
 
-    -- validData <= s_validOut;
-	-- md5Data <= s_md5Result;
-	-- S_AXIS_TREADY <= s_ready;
-	
+
 	start <= s_start;
 	enable <= s_enable;
-	dataIn <= s_dataIn;
+	
+	dataOutSlave <= s_dataOutSlave;
 
-	S_AXIS_TREADY <= s_enable and s_start;
+	lastInfo <= s_tlastdelayed;
+	S_AXIS_TREADY <= s_readyS;
     
 end arch_imp;
