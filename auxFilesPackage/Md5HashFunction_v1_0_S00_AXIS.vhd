@@ -87,7 +87,7 @@ signal state, state_n : state_t;
 					idleOut 	=> 	s_idle);
 
 	register_last: Register
-		generic map(k 	=> C_S_AXIS_TDATA_WIDTH)
+		generic map(k 	=> 1)
 		port map (  reset	=> s_reset,
 					clk 	=> S_AXIS_ACLK,
 					enable	=> '1', -- sempre que o last esteja a 1 então passa para a saida
@@ -95,15 +95,13 @@ signal state, state_n : state_t;
 					dataOut => s_tlastdelayed);
 					
 	register_dataIn: Register
-		generic map(k 	=> 125000)
-		port map (  reset	=> s_reset
-					clk 	=> S_AXIS_ACLK
-					enable	=> 
-					dataIn	=> 
-					dataOut => );
+		generic map(k 	=> C_S_AXIS_TDATA_WIDTH)
+		port map (  reset	=> s_reset,
+					clk 	=> S_AXIS_ACLK,
+					enable	=> s_enable and s_start,
+					dataIn	=> s_dataIn,
+					dataOut => s_dataIn); --dados de entrada no md5 core
 					
-	-- s_ready <= (not s_validOut) or readEnabled;
-
 
 	process(S_AXIS_ARESETN, S_AXIS_ACLK)
     begin
