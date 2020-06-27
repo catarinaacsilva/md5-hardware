@@ -10,7 +10,7 @@ entity MD5 is
            start    :   in  std_logic;
            clk      :   in  std_logic;
            reset    :   in  std_logic;
-           data_out :   out std_logic_vector (31 downto 0) := (others => '0');
+           data_out :   out std_logic_vector (127 downto 0) := (others => '0');
            done     :   out std_logic := '0';
            idleOut  :   out std_logic);
 end MD5;
@@ -100,7 +100,7 @@ signal state, state_n : state_t;
 
 function leftrotate(x: in uint32_t; c: in uint8_t) return uint32_t is
     begin
-        return SHIFT_LEFT(x, to_integer(c)) or SHIFT_RIGHT(x, to_integer(32-c));
+        return SHIFT_LEFT(x, to_integer(c));
     end function leftrotate;
     
     function endianness(x: in uint32_t) return uint32_t is
@@ -227,8 +227,7 @@ begin
                     when padding =>
                         M(to_integer(message_length)) <= '1';
                         M(to_integer(message_length+1) to 447) <= (others => '0');
-                        M(448 to 511) <= 
-                        endianness(message_length) & "00000000000000000000000000000000";
+                        M(448 to 511) <= endianness(message_length) & "00000000000000000000000000000000";
 
                     when rotate1 => 
                         for i in 0 to 15 loop
