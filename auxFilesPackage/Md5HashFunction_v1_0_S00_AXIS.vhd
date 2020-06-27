@@ -14,10 +14,10 @@ entity Md5HashFunction_v1_0_S00_AXIS is
 	);
 	port (
 		-- Users to add ports here
-        validData    : out std_logic;
-        md5Data : out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
+        validData    	: out std_logic;
+        md5Data 		: out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
 		--readEnabled  : in  std_logic;
-		readyM : in std_logic; -- vem do master quando pode aceitar mais palavras
+		readyM 			: in std_logic; -- vem do master quando pode aceitar mais palavras
         
 		-- User ports ends
 		-- Do not modify the ports beyond this line
@@ -51,21 +51,26 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 	end component md5;
 	
 	-- signal s_ready    	: std_logic;
-	signal s_readyS		: std_logic;
-    signal s_validOut 	: std_logic; 
+	-- signal s_readyS		: std_logic;
+    -- signal s_validOut 	: std_logic; 
 	
-	signal s_dataOut  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0); 
-    signal s_md5Result	  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
-	signal s_done     	: std_logic;
-	signal s_start		: std_logic;
-	signal s_reset		: std_logic;
-	signal s_dataIn  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
-	signal s_idle	: std_logic;
-	signal s_enable		: std_logic;
+	-- signal s_dataOut  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0); 
+    -- signal s_md5Result	  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
+	-- signal s_done     	: std_logic;
+	-- signal s_start		: std_logic;
+	-- signal s_reset		: std_logic;
+	-- signal s_dataIn  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
+	-- signal s_idle	: std_logic;
+	-- signal s_enable		: std_logic;
 
 	-- last process
 	signal s_tlastdelayed : std_logic;
 
+	-- dataIn process
+	signal s_dataIn : std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
+
+	-- md5 core signals (control)
+	signal s_start, s_enable : std_logic;
 
 	type state_t is ( 	IN_IDLE, 
 						IN_START, 
@@ -75,22 +80,12 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 signal state, state_n : state_t;
 
     begin
-    
-    md5_comp: md5
-		port map (  data_in		=>	s_dataIn,
-					enable		=> 	s_enable,
-                    start 		=> 	s_start,
-                    clk 		=> 	S_AXIS_ACLK,
-                    reset 		=> 	s_reset,      
-                    data_out 	=>  s_md5Result,
-					done 		=> 	s_done,
-					idleOut 	=> 	s_idle);
 
 	register_last: Register
 		generic map(k 	=> 1)
 		port map (  reset	=> s_reset,
 					clk 	=> S_AXIS_ACLK,
-					enable	=> '1', -- sempre que o last esteja a 1 então passa para a saida
+					enable	=> '1',
 					dataIn	=> S_AXIS_TLAST,
 					dataOut => s_tlastdelayed);
 					
@@ -99,8 +94,8 @@ signal state, state_n : state_t;
 		port map (  reset	=> s_reset,
 					clk 	=> S_AXIS_ACLK,
 					enable	=> s_enable and s_start,
-					dataIn	=> s_dataIn,
-					dataOut => s_dataIn); --dados de entrada no md5 core
+					dataIn	=> S_AXIS_TDATA,
+					dataOut => S_AXIS_TDATA); -- input data on MD5 core
 					
 
 	process(S_AXIS_ARESETN, S_AXIS_ACLK)
@@ -164,8 +159,9 @@ signal state, state_n : state_t;
 
 
 			when NO_START =>
-				s_start = 1;
-				s_validOut = 0;
+				s_start = '0';
+				s_enable = '0';
+				-- s_validOut = 0;
 				-- s_dataOut  <= (others => '0');
 				-- s_readyS = 0;
 				
@@ -181,8 +177,8 @@ signal state, state_n : state_t;
 	end process;
 
 
-    validData <= s_validOut;
-	md5Data <= s_dataOut;
-    S_AXIS_TREADY <= s_ready;
+    -- validData <= s_validOut;
+	-- md5Data <= s_md5Result;
+    -- S_AXIS_TREADY <= s_ready;
     
 end arch_imp;

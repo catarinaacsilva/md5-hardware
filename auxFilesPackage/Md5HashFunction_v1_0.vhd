@@ -138,6 +138,16 @@ Md5HashFunction_v1_0_S00_AXIS_inst : Md5HashFunction_v1_0_S00_AXIS
 
 	-- Add user logic here
 
+	md5_comp: md5
+		port map (  data_in		=>	s_dataIn,
+					enable		=> 	s_enable,
+                    start 		=> 	s_start,
+                    clk 		=> 	S_AXIS_ACLK,
+                    reset 		=> 	s_reset,      
+                    data_out 	=>  s_md5Result,
+					done 		=> 	s_done,
+					idleOut 	=> 	s_idle);
+
 	-- User logic ends
 
 end arch_imp;
