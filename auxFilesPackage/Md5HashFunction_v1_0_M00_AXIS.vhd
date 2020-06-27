@@ -23,7 +23,7 @@ entity Md5HashFunction_v1_0_M00_AXIS is
 		-- readyM : out std_logic;
 
 		dataInMaster	: in  std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
-		lastInfo		: in std_logic;
+		-- lastInfo		: in std_logic;
 
 		-- User ports ends
 		-- Do not modify the ports beyond this line
@@ -55,11 +55,10 @@ architecture implementation of Md5HashFunction_v1_0_M00_AXIS is
 
 
     begin
-        -- M_AXIS_TVALID <= validData;
-		-- readyM <= validData and M_AXIS_TREADY; 
+
 	
 	M_AXIS_TSTRB  <= (others => '1');
-	M_AXIS_TLAST <= lastInfo;
+	M_AXIS_TLAST  <= '0'; -- como chega uma palavra resultante do processamento o last no master é irrelevante?
 
 	register_dataIn: Register
 		generic map(k 	=> C_M_AXIS_TDATA_WIDTH)
