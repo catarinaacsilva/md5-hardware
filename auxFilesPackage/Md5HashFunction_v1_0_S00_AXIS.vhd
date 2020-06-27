@@ -60,27 +60,28 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 	signal s_start		: std_logic;
 	signal s_reset		: std_logic;
 	signal s_dataIn  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
-	signal s_idleOut	: std_logic;
+	signal s_idle	: std_logic;
 
-	type state_t is (	init,
-						idle,
-						busy,
-						proc,
-						done,
-						last);
+	signal s_enable		: std_logic;
+
+	type state_t is ( 	IN_IDLE, 
+						IN_START, 
+						IN_ENABLE, 
+						NO_START);
 
 signal state, state_n : state_t;
 
     begin
     
     md5_comp: md5
-        port map (  data_in => s_dataIn,
-                    start => s_start,
-                    clk => S_AXIS_ACLK,
-                    reset => s_reset,      
-                    data_out =>  s_md5Result,
-					done => s_done,
-					idleOut => s_idleOut);
+		port map (  data_in		=>	s_dataIn,
+					enable		=> 	s_enable,
+                    start 		=> 	s_start,
+                    clk 		=> 	S_AXIS_ACLK,
+                    reset 		=> 	s_reset,      
+                    data_out 	=>  s_md5Result,
+					done 		=> 	s_done,
+					idleOut 	=> 	s_idle);
 					
 	-- s_ready <= (not s_validOut) or readEnabled;
 
@@ -101,92 +102,68 @@ signal state, state_n : state_t;
 		state_n <= state;
 
 		case state is
-			when init =>
-				s_start = 0;
-				s_validOut = 0;
-				s_dataOut  <= (others => '0');
-				s_readyS = 1; -- slave esta disponivel para aceitar palavras!
-				
-				if (S_AXIS_TVALID = '1' and readyM = '1') then
-					if(s_idleOut = '1') then
-						state_n <= idle;
-					else
-						state_n <= busy;
-				elsif(s_reset = '1')
-						state_n <= idle;
-				else 
-					state_n <= init;
-				
+			when IN_IDLE =>
+				s_start = '0';
+				s_enable = '0';
+				-- s_validOut = '0';
+				-- s_dataOut  <= (others => '0');
+				-- s_readyS = '1';
 
-			when idle =>
-				s_start = 0;
-				s_validOut = 0;
-				s_dataOut  <= (others => '0');
-				s_readyS = 0;
-				
-				if(S_AXIS_TVALID = '1' and readyM = '1' and s_idleOut = '1') then
-					state_n <= proc;
-				elsif(s_reset = '1') then
-					state_n <= init;
+				if(S_AXIS_TVALID = '1') then
+					state_n <= IN_START;
 				else
-					state_n <= idle;
-
-
-			when busy =>
-				s_start = 0;
-				s_validOut = 0;
-				s_dataOut  <= (others => '0');
-				s_readyS = 0;
+					state_n <= IN_IDLE;
+			
 				
-				if(S_AXIS_TVALID = '1' and readyM = '1' and s_idleOut = '1') then
-					state_n <= idle;
-				elsif(s_reset = '1') then
-					state_n <= init;
+
+			when IN_START =>
+				s_start = '1';
+				enable = '1';
+				-- s_validOut = '0';
+				-- s_dataOut  <= (others => '0');
+				-- s_readyS = 0;
+				
+				if (S_AXIS_TVALID = '1' and s_idle = '1') then
+					state_n <= IN_ENABLE;
+				elsif (s_idle = '0' or S_AXIS_TVALID = '0') then
+					state_n <= NO_START;
 				else
-					state_n <= busy;
+					state_n <= IN_START;
 
 
-			when proc =>
+			when IN_ENABLE =>
+				s_start = '0';
+				s_enable = '1';
+				-- s_validOut = '0';
+				-- s_dataOut  <= (others => '0');
+				-- s_readyS = '0';
+				 
+				if(s_idle = '0') then
+					state_n <= NO_START;
+				elsif (tlastdelayed = '1') then
+					state_n <= IN_IDLE;
+				else
+					state_n <= IN_ENABLE;
+
+
+			when NO_START =>
 				s_start = 1;
 				s_validOut = 0;
-				s_dataOut  <= (others => '0');
-				s_readyS = 0;
-
-				if(s_done = '1') then
-					state_n <= done;
-				elsif (s_reset = '1') then
-					state_n <= init;
+				-- s_dataOut  <= (others => '0');
+				-- s_readyS = 0;
+				
+				if(S_AXIS_TVALID = '0') then
+					state_n <= NO_START;
+				elsif (s_idle = '1' or S_AXIS_TVALID = '1') then
+					state_n <= IN_ENABLE;
 				else
-					state_n <= proc;
-
-			when done =>
-				s_start = 0;
-				s_validOut = 1;
-				s_dataOut  <= s_md5Result;
-				s_readyS = 1;
-
-				if(S_AXIS_TVALID = '1' or s_reset = '1') then
-					state_n <= init;
-				elsif (S_AXIS_TLAST = '1') then
-					state_n <= last;
-				else
-					state_n <= done;
-
-			when last =>
-				s_start = 0;
-				s_validOut = 0;
-				s_dataOut  <= (others => '0');
-				s_readyS = 1;
-
-				if (S_AXIS_TVALID = '1' or s_reset = '1') then
-					state_n <= init;
-				else
-					state_n <= last;
-
+					state_n <= NO_START;
 
 		end case;
 
 	end process;
+
+	process()
 	
 
     validData <= s_validOut;
