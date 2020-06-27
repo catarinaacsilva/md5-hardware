@@ -97,8 +97,8 @@ signal state, state_n : state_t;
 		port map (  reset	=> s_reset
 					clk 	=> S_AXIS_ACLK
 					enable	=> 
-					dataIn	=> S_AXIS_TLAST
-					dataOut => s_tlastdelayed);
+					dataIn	=> 
+					dataOut => );
 					
 	-- s_ready <= (not s_validOut) or readEnabled;
 
