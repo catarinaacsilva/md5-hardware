@@ -14,10 +14,16 @@ entity Md5HashFunction_v1_0_S00_AXIS is
 	);
 	port (
 		-- Users to add ports here
-        validData    	: out std_logic;
-        md5Data 		: out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
+
+        -- validData    	: out std_logic;
+        -- md5Data 		: out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
 		--readEnabled  : in  std_logic;
-		readyM 			: in std_logic; -- vem do master quando pode aceitar mais palavras
+		--readyM 			: in std_logic; -- vem do master quando pode aceitar mais palavras
+
+		reset : in std_logic;
+		start : out std_logic;
+		enable: out std_logic;
+		dataIn : out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
         
 		-- User ports ends
 		-- Do not modify the ports beyond this line
@@ -71,6 +77,8 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 
 	-- md5 core signals (control)
 	signal s_start, s_enable : std_logic;
+	signal s_reset : std_logic;
+
 
 	type state_t is ( 	IN_IDLE, 
 						IN_START, 
@@ -79,7 +87,9 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 
 signal state, state_n : state_t;
 
-    begin
+	begin
+		
+	s_reset <= reset;
 
 	register_last: Register
 		generic map(k 	=> 1)
@@ -95,7 +105,7 @@ signal state, state_n : state_t;
 					clk 	=> S_AXIS_ACLK,
 					enable	=> s_enable and s_start,
 					dataIn	=> S_AXIS_TDATA,
-					dataOut => S_AXIS_TDATA); -- input data on MD5 core
+					dataOut => s_dataIn); -- input data on MD5 core
 					
 
 	process(S_AXIS_ARESETN, S_AXIS_ACLK)
@@ -123,6 +133,8 @@ signal state, state_n : state_t;
 
 				if(S_AXIS_TVALID = '1') then
 					state_n <= IN_START;
+				elsif (s_reset = '1') then
+					state_n <= IN_IDLE;
 				else
 					state_n <= IN_IDLE;
 			
@@ -139,6 +151,8 @@ signal state, state_n : state_t;
 					state_n <= IN_ENABLE;
 				elsif (s_idle = '0' or S_AXIS_TVALID = '0') then
 					state_n <= NO_START;
+				elsif (s_reset = '1') then
+					state_n <= IN_IDLE;
 				else
 					state_n <= IN_START;
 
@@ -153,6 +167,8 @@ signal state, state_n : state_t;
 				if(s_idle = '0') then
 					state_n <= NO_START;
 				elsif (s_tlastdelayed = '1') then
+					state_n <= IN_IDLE;
+				elsif (s_reset = '1') then
 					state_n <= IN_IDLE;
 				else
 					state_n <= IN_ENABLE;
@@ -169,6 +185,8 @@ signal state, state_n : state_t;
 					state_n <= NO_START;
 				elsif (s_idle = '1' or S_AXIS_TVALID = '1') then
 					state_n <= IN_ENABLE;
+				elsif (s_reset = '1') then
+					state_n <= IN_IDLE;
 				else
 					state_n <= NO_START;
 
@@ -179,6 +197,10 @@ signal state, state_n : state_t;
 
     -- validData <= s_validOut;
 	-- md5Data <= s_md5Result;
-    -- S_AXIS_TREADY <= s_ready;
+	-- S_AXIS_TREADY <= s_ready;
+	
+	start <= s_start;
+	enable <= s_enable;
+	dataIn <= s_dataIn;
     
 end arch_imp;
