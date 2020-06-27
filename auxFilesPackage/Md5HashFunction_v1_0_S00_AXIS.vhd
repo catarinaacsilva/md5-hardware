@@ -202,5 +202,7 @@ signal state, state_n : state_t;
 	start <= s_start;
 	enable <= s_enable;
 	dataIn <= s_dataIn;
+
+	S_AXIS_TREADY <= s_enable and s_start;
     
 end arch_imp;
