@@ -61,7 +61,9 @@ architecture arch_imp of Md5HashFunction_v1_0 is
 		M_AXIS_TLAST	: out std_logic;
         M_AXIS_TREADY	: in std_logic;
         
-       --AQUI
+		dataInMaster	: in  std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
+		done 			: in  std_logic;
+		dataOutMaster   : out std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0)
 		);
 	end component Md5HashFunction_v1_0_M00_AXIS;
 
@@ -78,11 +80,23 @@ architecture arch_imp of Md5HashFunction_v1_0 is
 		S_AXIS_TLAST	: in std_logic;
         S_AXIS_TVALID	: in std_logic;
 
-        -- AQUI
+		reset : in std_logic;
+		start : out std_logic;
+		enable: out std_logic;
+		dataOutSlave : out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0)
+
 		);
     end component Md5HashFunction_v1_0_S00_AXIS;
-    
-    --AQUI
+	
+	-- Master
+	s_dataInMaster => std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
+	s_done   => std_logic;       
+	s_dataOutMaster => std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
+	-- Slave
+    s_reset => std_logic;
+	s_start => std_logic;
+	s_enable => std_logic;
+	s_dataOutSlave => std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0)
 
 begin
 
@@ -101,7 +115,9 @@ Md5HashFunction_v1_0_M00_AXIS_inst : Md5HashFunction_v1_0_M00_AXIS
 		M_AXIS_TLAST	=> m00_axis_tlast,
         M_AXIS_TREADY	=> m00_axis_tready,
 
-       -- AQUI
+		dataInMaster => s_dataOutSlave,
+		done => s_done,
+		dataOutMaster => s_dataOutMaster
 	);
 
 -- Instantiation of Axi Bus Interface S00_AXIS
@@ -118,18 +134,21 @@ Md5HashFunction_v1_0_S00_AXIS_inst : Md5HashFunction_v1_0_S00_AXIS
 		S_AXIS_TLAST	=> s00_axis_tlast,
         S_AXIS_TVALID	=> s00_axis_tvalid,
         
-        --AQUI
+        reset => s_reset,
+		start => s_start,
+		enable: => s_enable,
+		dataOutSlave => s_dataOutSlave
 	);
 
 	-- Add user logic here
 
 	md5_comp: md5
-		port map (  data_in		=>	s_dataIn,
+		port map (  data_in		=>	s_dataOutSlave,
 					enable		=> 	s_enable,
                     start 		=> 	s_start,
                     clk 		=> 	S_AXIS_ACLK,
                     reset 		=> 	s_reset,      
-                    data_out 	=>  s_md5Result,
+                    data_out 	=>  s_dataOutMaster,
 					done 		=> 	s_done,
 					idleOut 	=> 	s_idle);
 

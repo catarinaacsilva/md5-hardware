@@ -24,7 +24,7 @@ entity Md5HashFunction_v1_0_S00_AXIS is
 		start : out std_logic;
 		enable: out std_logic;
 		dataOutSlave : out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
-		lastInfo : out std_logic;
+		-- lastInfo : out std_logic;
         
 		-- User ports ends
 		-- Do not modify the ports beyond this line
@@ -188,7 +188,7 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 	
 	dataOutSlave <= s_dataOutSlave;
 
-	lastInfo <= s_tlastdelayed;
+	-- lastInfo <= s_tlastdelayed;
 	S_AXIS_TREADY <= s_readyS;
     
 end arch_imp;

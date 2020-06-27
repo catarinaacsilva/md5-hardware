@@ -18,6 +18,10 @@ entity Md5HashFunction_v1_0_M00_AXIS is
         -- Users to add ports here
     
 		dataInMaster	: in  std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
+		done			: in std_logic;
+		dataOutMaster   : out std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
+		
+
 		-- lastInfo		: in std_logic;
 
 		-- User ports ends
@@ -61,7 +65,9 @@ architecture implementation of Md5HashFunction_v1_0_M00_AXIS is
 					clk 	=> M_AXIS_ACLK,
 					enable	=> s_done,
 					dataIn	=> dataInMaster,
-					dataOut => M_AXIS_TDATA);
+					dataOut => dataOutMaster);
+
+		M_AXIS_TDATA <= dataOutMaster; 
 	
 	process(M_AXIS_ARESETN, M_AXIS_ACLK)
     begin
@@ -95,6 +101,5 @@ architecture implementation of Md5HashFunction_v1_0_M00_AXIS is
 				end if;
 		end case;
 	end process;
-
 	
 end implementation;
