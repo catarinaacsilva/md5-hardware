@@ -5,13 +5,14 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 
 entity MD5 is
-    Port ( data_in:     in  std_logic_vector (31 downto 0);
-           start:       in  std_logic;
-           clk:         in  std_logic;
-           reset:       in  std_logic;
-           data_out:    out std_logic_vector (31 downto 0) := (others => '0');
-           done:        out std_logic := '0';
-           idleOut:     out std_logic);
+    Port ( data_in  :   in  std_logic_vector (31 downto 0);
+           enable   :   in std_logic;
+           start    :   in  std_logic;
+           clk      :   in  std_logic;
+           reset    :   in  std_logic;
+           data_out :   out std_logic_vector (31 downto 0) := (others => '0');
+           done     :   out std_logic := '0';
+           idleOut  :   out std_logic);
 end MD5;
 
 architecture Behavioral of MD5 is
@@ -211,80 +212,81 @@ begin
 
     calc: process(reset, clk, state, data_counter, jCounter)
     begin
-        if (reset = '0' and rising_edge(clk)) then
+        if (reset = '0') then
+            if(rising_edge(clk)) then
 
-            case state is
+                case state is
 
-                when loadMessage =>
-                    message_length <= unsigned(data_in); --confirmar se é preciso
-                    M(data_counter to data_counter+31) <= unsigned(data_in);
-                    if (data_counter < message_length) then
-                        data_counter <= data_counter + 32;
-                    end if;
+                    when loadMessage =>
+                        message_length <= unsigned(data_in);
+                        M(data_counter to data_counter+31) <= unsigned(data_in);
+                        if (data_counter < message_length) then
+                            data_counter <= data_counter + 32;
+                        end if;
 
-                when padding =>
-                    M(to_integer(message_length)) <= '1';
-                    M(to_integer(message_length+1) to 447) <= (others => '0');
-                    M(448 to 511) <= 
-                    endianness(message_length) & "00000000000000000000000000000000";
+                    when padding =>
+                        M(to_integer(message_length)) <= '1';
+                        M(to_integer(message_length+1) to 447) <= (others => '0');
+                        M(448 to 511) <= 
+                        endianness(message_length) & "00000000000000000000000000000000";
 
-                when rotate1 => 
-                    for i in 0 to 15 loop
-                        M(32*i to 32*i+31) <= endianness(M(32*i to 32*i+31));
-                    end loop;
+                    when rotate1 => 
+                        for i in 0 to 15 loop
+                            M(32*i to 32*i+31) <= endianness(M(32*i to 32*i+31));
+                        end loop;
 
-                when bCalc1 | bCalc2 | bCalc3 | bCalc4 =>
-                    An <= D;
-                    Bn <= B + leftrotate(A + xExpr + K(jCounter) + M(g to g+31), s(jCounter)); 
-                    Cn <= B;
-                    Dn <= C;
-                    jCounter_n <= jCounter + 1;
+                    when bCalc1 | bCalc2 | bCalc3 | bCalc4 =>
+                        An <= D;
+                        Bn <= B + leftrotate(A + xExpr + K(jCounter) + M(g to g+31), s(jCounter)); 
+                        Cn <= B;
+                        Dn <= C;
+                        jCounter_n <= jCounter + 1;
 
-                when xCalc1 =>
-                    xExpr <= (Bn and Cn) or (not Bn and Dn);
-                    g <= 32*jCounter_n;
+                    when xCalc1 =>
+                        xExpr <= (Bn and Cn) or (not Bn and Dn);
+                        g <= 32*jCounter_n;
 
-                when xCalc2 =>
-                    xExpr <= (Dn and Bn) or (not Dn and Cn);
-                    g <= 32*((5*jCounter_n + 1) mod 16);
+                    when xCalc2 =>
+                        xExpr <= (Dn and Bn) or (not Dn and Cn);
+                        g <= 32*((5*jCounter_n + 1) mod 16);
 
-                when xCalc3 =>
-                    xExpr <= Bn xor Cn xor Dn;
-                    g <= 32*((3*jCounter_n + 5) mod 16);
+                    when xCalc3 =>
+                        xExpr <= Bn xor Cn xor Dn;
+                        g <= 32*((3*jCounter_n + 5) mod 16);
 
-                when xCalc4 =>
-                    xExpr <= Cn xor (Bn or not Dn);
-                    g <= 32*((7*jCounter_n) mod 16);
+                    when xCalc4 =>
+                        xExpr <= Cn xor (Bn or not Dn);
+                        g <= 32*((7*jCounter_n) mod 16);
 
-                when lastCalc =>
-                    An  <= An + a0;
-                    Bn <= Bn + b0;
-                    Cn <= Cn + c0;
-                    Dn <= Dn + d0;
+                    when lastCalc =>
+                        An  <= An + a0;
+                        Bn <= Bn + b0;
+                        Cn <= Cn + c0;
+                        Dn <= Dn + d0;
 
-                when rotate2 =>
-                    An <= endianness(An);
-                    Bn <= endianness(Bn);
-                    Cn <= endianness(Cn);
-                    Dn <= endianness(Dn);
+                    when rotate2 =>
+                        An <= endianness(An);
+                        Bn <= endianness(Bn);
+                        Cn <= endianness(Cn);
+                        Dn <= endianness(Dn);
 
-                when finish =>
-                    done <= '1';
+                    when finish =>
+                        done <= '1';
 
-                when storeData =>
-                    case iCounter is
-                        when 0 => data_out <= std_logic_vector(A);
-                        when 1 => data_out <= std_logic_vector(B);
-                        when 2 => data_out <= std_logic_vector(C);
-                        when 3 => data_out <= std_logic_vector(D);
-                        when others => null;
-                    end case;
-                    iCounter <= iCounter + 1;
-                    done <= '0';
+                    when storeData =>
+                        case iCounter is
+                            when 0 => data_out <= std_logic_vector(A);
+                            when 1 => data_out <= std_logic_vector(B);
+                            when 2 => data_out <= std_logic_vector(C);
+                            when 3 => data_out <= std_logic_vector(D);
+                            when others => null;
+                        end case;
+                        iCounter <= iCounter + 1;
+                        done <= '0';
 
-                when others => null;
-            end case;
-            
+                    when others => null;
+                end case;
+            end if;
         end if;
     end process calc;
 
