@@ -61,8 +61,11 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 	signal s_reset		: std_logic;
 	signal s_dataIn  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
 	signal s_idle	: std_logic;
-
 	signal s_enable		: std_logic;
+
+	-- last process
+	signal s_tlastdelayed : std_logic;
+
 
 	type state_t is ( 	IN_IDLE, 
 						IN_START, 
@@ -82,6 +85,13 @@ signal state, state_n : state_t;
                     data_out 	=>  s_md5Result,
 					done 		=> 	s_done,
 					idleOut 	=> 	s_idle);
+
+	register_last: Register
+		port map (  reset	=> s_reset
+					clk 	=> S_AXIS_ACLK
+					enable	=> '1', -- sempre que o last esteja a 1 então passa para a saida
+					dataIn	=> S_AXIS_TLAST
+					dataOut => s_tlastdelayed);
 					
 	-- s_ready <= (not s_validOut) or readEnabled;
 
@@ -140,7 +150,7 @@ signal state, state_n : state_t;
 				 
 				if(s_idle = '0') then
 					state_n <= NO_START;
-				elsif (tlastdelayed = '1') then
+				elsif (s_tlastdelayed = '1') then
 					state_n <= IN_IDLE;
 				else
 					state_n <= IN_ENABLE;
@@ -163,8 +173,6 @@ signal state, state_n : state_t;
 
 	end process;
 
-	process()
-	
 
     validData <= s_validOut;
 	md5Data <= s_dataOut;
