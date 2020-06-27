@@ -6,8 +6,8 @@ entity Register is
     port(   reset  :   in std_logic;
             clk :   in std_logic;
             enable: in std_logic;
-            dataIn: in std_logic_vector(k downto 0);
-            dataOut: out std_logic_vector(k downto 0));
+            dataIn: in std_logic_vector(k-1 downto 0);
+            dataOut: out std_logic_vector(k-1 downto 0));
 end Register;
 
 architecture Behavioral of Register is
