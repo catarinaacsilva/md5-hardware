@@ -1257,3 +1257,75 @@ selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 27, 108); // ch (w, cr)
 // TclEventType: PACKAGER_MESSAGE_UPDATE
 // TclEventType: DG_GRAPH_STALE
 // TclEventType: FILE_SET_CHANGE
+// Elapsed time: 83 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0.vhd", 5); // i (h, cr)
+selectCodeEditor("Md5HashFunction_v1_0.vhd", 107, 66); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0.vhd", 108, 65, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Md5HashFunction_v1_0.vhd", 96, 211); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0.vhd", 96, 211, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("Md5HashFunction_v1_0.vhd", 309, 206); // ch (w, cr)
+// Elapsed time: 42 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0_S00_AXIS.vhd", 3); // i (h, cr)
+// Elapsed time: 98 seconds
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 326, 315); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 212, 364); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 309, 377); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0.vhd", 5); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.vhd", 2); // i (h, cr)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0_S00_AXIS.vhd", 3); // i (h, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 216, 369); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 327, 379); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 326, 359); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 348, 379); // ch (w, cr)
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.vhd", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0_S00_AXIS.vhd", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0_M00_AXIS.vhd", 1); // i (h, cr)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0_S00_AXIS.vhd", 3); // i (h, cr)
+// Elapsed time: 103 seconds
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 219, 258); // ch (w, cr)
+typeControlKey((HResource) null, "Md5HashFunction_v1_0_S00_AXIS.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 317, 325); // ch (w, cr)
+// Elapsed time: 241 seconds
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 339, 261); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 377, 242); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 288, 209); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 45 seconds
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 373, 261); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 373, 261, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Md5HashFunction_v1_0_S00_AXIS.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 358, 315); // ch (w, cr)
+// Elapsed time: 163 seconds
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 388, 289); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 403, 283); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 815, 170); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,186 MB. GUI used memory: 86 MB. Current time: 6/28/20, 9:27:25 PM BST
+// Elapsed time: 610 seconds
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 340, 265); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 492, 287); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 336, 265); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 396, 284); // ch (w, cr)
+// Elapsed time: 24 seconds
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 214, 262); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 314, 264); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 181, 266); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 327, 314); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 337, 265); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 192, 282); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 191, 285); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 286, 322); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE

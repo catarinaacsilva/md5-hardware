@@ -82,8 +82,8 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 		port map (  reset	=> s_reset,
 					clk 	=> S_AXIS_ACLK,
 					enable	=> '1',
-					dataIn	=> S_AXIS_TLAST,
-					dataOut => s_tlastdelayed);
+					dataIn(0)	=> S_AXIS_TLAST,
+					dataOut(0) => s_tlastdelayed);
 					
 	auxEnSt <= 	s_enable and s_start;
 		
