@@ -73,7 +73,7 @@ architecture implementation of Md5HashFunction_v1_0_M00_AXIS is
     s_reset <= reset;
 
 	register_dataIn: RegisterP
-		generic map(k 	: C_M_AXIS_TDATA_WIDTH);
+		generic map(k 	=> C_M_AXIS_TDATA_WIDTH)
 		port map (  reset	=> s_reset,
 					clk 	=> M_AXIS_ACLK,
 					enable	=> s_done,
