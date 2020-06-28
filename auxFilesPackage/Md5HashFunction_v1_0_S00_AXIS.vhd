@@ -43,7 +43,14 @@ entity Md5HashFunction_v1_0_S00_AXIS is
 end Md5HashFunction_v1_0_S00_AXIS;
 
 architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
-
+    component RegisterP is
+        generic(k 	: integer := 1);
+        port(   reset  :   in std_logic;
+                clk :   in std_logic;
+                enable: in std_logic;
+                dataIn: in std_logic_vector((k-1) downto 0);
+                dataOut: out std_logic_vector((k-1) downto 0));
+    end component RegisterP;
 	-- last process
 	signal s_tlastdelayed : std_logic;
 
@@ -53,6 +60,7 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 	-- md5 core signals (control)
 	signal s_start, s_enable : std_logic;
 	signal s_reset, s_idle : std_logic;
+	signal auxEnSt : std_logic;
 
 	signal s_readyS : std_logic;
 
@@ -69,19 +77,21 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 		
 	s_reset <= reset;
 
-	register_last: Register
-		generic map(k 	: 1);
+	register_last: RegisterP
+		generic map(k 	=> 1)
 		port map (  reset	=> s_reset,
 					clk 	=> S_AXIS_ACLK,
 					enable	=> '1',
-					dataIn	=> S_AXIS_TLAST,
-					dataOut => s_tlastdelayed);
+					dataIn(0)	=> S_AXIS_TLAST,
+					dataOut(0) => s_tlastdelayed);
 					
-	register_dataIn: Register
-		generic map(k 	: C_S_AXIS_TDATA_WIDTH);
+	auxEnSt <= 	s_enable and s_start;
+		
+	register_dataIn: RegisterP
+		generic map(k 	=> C_S_AXIS_TDATA_WIDTH)
 		port map (  reset	=> s_reset,
 					clk 	=> S_AXIS_ACLK,
-					enable	=> s_enable and s_start,
+					enable	=> auxEnSt,
 					dataIn	=> S_AXIS_TDATA,
 					dataOut => s_dataOutSlave); -- input data on MD5 core
 					
@@ -130,7 +140,7 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 					state_n <= IN_ENABLE;
 				elsif (s_idle = '0' or S_AXIS_TVALID = '0') then
 					state_n <= NO_START;
-				elsif (s_reset <= '1') then
+				elsif (s_reset = '1') then
 					state_n <= IN_IDLE;
 				else
 					state_n <= IN_START;
@@ -144,9 +154,9 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 				
 				if(s_idle <= '0') then
 					state_n <= NO_START;
-				elsif (s_tlastdelayed <= '1') then
+				elsif (s_tlastdelayed = '1') then
 					state_n <= IN_IDLE;
-				elsif (s_reset <= '1') then
+				elsif (s_reset = '1') then
 					state_n <= IN_IDLE;
 				else
 					state_n <= IN_ENABLE;
@@ -157,11 +167,11 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 				s_start <= '0';
 				s_enable <= '0';
 				
-				if(S_AXIS_TVALID <= '0') then
+				if(S_AXIS_TVALID = '0') then
 					state_n <= NO_START;
-				elsif (s_idle <= '1' or S_AXIS_TVALID <= '1') then
+				elsif (s_idle = '1' or S_AXIS_TVALID = '1') then
 					state_n <= IN_ENABLE;
-				elsif (s_reset <= '1') then
+				elsif (s_reset = '1') then
 					state_n <= IN_IDLE;
 				else
 					state_n <= NO_START;
