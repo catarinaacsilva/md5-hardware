@@ -47,28 +47,31 @@ end Md5HashFunction_v1_0_M00_AXIS;
 
 architecture implementation of Md5HashFunction_v1_0_M00_AXIS is
 
-	signal s_done => std_logic;
-	signal s_reset => std_logic;
-
+	signal s_done : std_logic;
+	signal s_reset : std_logic;
+	
+	
 	type state_t is ( 	OUT_IDLE, 
 						OUT_VALID);
 
+    signal state, state_n : state_t;
+    
 
     begin
 
 	
 	M_AXIS_TSTRB  <= (others => '1');
-	M_AXIS_TLAST  <= '0'; -- como chega uma palavra resultante do processamento o last no master Ã© irrelevante?
+	M_AXIS_TLAST  <= '0'; -- como chega uma palavra resultante do processamento o last no master é irrelevante?
 
 	register_dataIn: Register
-		generic map(k 	=> C_M_AXIS_TDATA_WIDTH)
+		generic map(k 	: C_M_AXIS_TDATA_WIDTH)
 		port map (  reset	=> s_reset,
 					clk 	=> M_AXIS_ACLK,
 					enable	=> s_done,
 					dataIn	=> dataInMaster,
 					dataOut => dataOutMaster);
 
-	M_AXIS_TDATA <= dataOutMaster; 
+	-- M_AXIS_TDATA <= dataOutMaster; VERIFICAR
 	
 	process(M_AXIS_ARESETN, M_AXIS_ACLK)
     begin

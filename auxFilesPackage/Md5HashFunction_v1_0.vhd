@@ -89,16 +89,27 @@ architecture arch_imp of Md5HashFunction_v1_0 is
 		);
     end component Md5HashFunction_v1_0_S00_AXIS;
 	
+	component md5 is 
+	   port(data_in:     in  std_logic_vector (C_S00_AXIS_TDATA_WIDTH-1 downto 0);
+            start:       in  std_logic;
+            enable:      in  std_logic;
+            clk:         in  std_logic;
+            reset:       in  std_logic;
+            data_out:    out std_logic_vector (C_M00_AXIS_TDATA_WIDTH-1 downto 0) := (others => '0');
+            done:        out std_logic := '0';
+            idleOut: out std_logic);
+	end component md5;
+	
 	-- Master
-	s_dataInMaster => std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
-	s_done   => std_logic;       
-	s_dataOutMaster => std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
+	signal s_dataInMaster : std_logic_vector(C_M00_AXIS_TDATA_WIDTH-1 downto 0);
+	signal s_done :  std_logic;       
+	signal s_dataOutMaster : std_logic_vector(C_M00_AXIS_TDATA_WIDTH downto 0);
 	-- Slave
-	s_reset => std_logic;
-	s_idle  => std_logic;
-	s_start => std_logic;
-	s_enable => std_logic;
-	s_dataOutSlave => std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0)
+	signal s_reset : std_logic;
+	signal s_idle  : std_logic;
+	signal s_start : std_logic;
+	signal s_enable : std_logic;
+	signal s_dataOutSlave : std_logic_vector(C_S00_AXIS_TDATA_WIDTH-1 downto 0);
 
 begin
 
@@ -139,17 +150,17 @@ Md5HashFunction_v1_0_S00_AXIS_inst : Md5HashFunction_v1_0_S00_AXIS
 		reset => s_reset,
 		idle => s_idle,
 		start => s_start,
-		enable: => s_enable,
+		enable => s_enable,
 		dataOutSlave => s_dataOutSlave
 	);
 
 	-- Add user logic here
-
-	md5_comp: md5
+	
+	md5_comp: MD5
 		port map (  data_in		=>	s_dataOutSlave,
 					enable		=> 	s_enable,
                     start 		=> 	s_start,
-                    clk 		=> 	S_AXIS_ACLK,
+                    clk 		=> 	s00_axis_aclk,
                     reset 		=> 	s_reset,      
                     data_out 	=>  s_dataOutMaster,
 					done 		=> 	s_done,

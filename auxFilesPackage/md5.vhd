@@ -134,7 +134,7 @@ begin
         case state is
             when idle =>
                 idleOut <= '1';
-                if (start = '1') then
+                if (start = '1' and enable = '1') then
                     state_n <= loadMessage;
                 
                 end if;
