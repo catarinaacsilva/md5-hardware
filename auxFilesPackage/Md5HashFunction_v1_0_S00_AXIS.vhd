@@ -105,8 +105,8 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 
 		case state is
 			when IN_IDLE =>
-				s_start = '0';
-				s_enable = '0';
+				s_start <= '0';
+				s_enable <= '0';
 
 				s_readyS <= '1';
 
@@ -121,15 +121,15 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 				
 
 			when IN_START =>
-				s_start = '1';
-				enable = '1';
+				s_start <= '1';
+				enable <= '1';
 				
 
-				if (S_AXIS_TVALID = '1' and s_idle = '1') then
+				if (S_AXIS_TVALID <= '1' and s_idle <= '1') then
 					state_n <= IN_ENABLE;
-				elsif (s_idle = '0' or S_AXIS_TVALID = '0') then
+				elsif (s_idle <= '0' or S_AXIS_TVALID <= '0') then
 					state_n <= NO_START;
-				elsif (s_reset = '1') then
+				elsif (s_reset <= '1') then
 					state_n <= IN_IDLE;
 				else
 					state_n <= IN_START;
@@ -137,15 +137,15 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 
 
 			when IN_ENABLE =>
-				s_start = '0';
-				s_enable = '1';
+				s_start <= '0';
+				s_enable <= '1';
 			
 				
-				if(s_idle = '0') then
+				if(s_idle <= '0') then
 					state_n <= NO_START;
-				elsif (s_tlastdelayed = '1') then
+				elsif (s_tlastdelayed <= '1') then
 					state_n <= IN_IDLE;
-				elsif (s_reset = '1') then
+				elsif (s_reset <= '1') then
 					state_n <= IN_IDLE;
 				else
 					state_n <= IN_ENABLE;
@@ -153,14 +153,14 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 
 
 			when NO_START =>
-				s_start = '0';
-				s_enable = '0';
+				s_start <= '0';
+				s_enable <= '0';
 				
-				if(S_AXIS_TVALID = '0') then
+				if(S_AXIS_TVALID <= '0') then
 					state_n <= NO_START;
-				elsif (s_idle = '1' or S_AXIS_TVALID = '1') then
+				elsif (s_idle <= '1' or S_AXIS_TVALID <= '1') then
 					state_n <= IN_ENABLE;
-				elsif (s_reset = '1') then
+				elsif (s_reset <= '1') then
 					state_n <= IN_IDLE;
 				else
 					state_n <= NO_START;
