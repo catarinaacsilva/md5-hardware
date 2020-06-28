@@ -34,7 +34,7 @@ The system has a DMA module to data transfers.
 
 The core operation to the system is the MD5 cryptographic hash function. This operation was developed with a finite state machine:
 
-![](/fsm.png)
+![](doc/images/fsm.png)
 
 ## Authors
 
