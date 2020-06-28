@@ -915,3 +915,167 @@ selectCodeEditor("register.vhd", 268, 211); // ch (w, cr)
 selectCodeEditor("register.vhd", 325, 216); // ch (w, cr)
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0.vhd", 4); // i (h, cr)
 // HMemoryUtils.trashcanNow. Engine heap size: 1,186 MB. GUI used memory: 88 MB. Current time: 6/28/20, 3:27:19 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,186 MB. GUI used memory: 88 MB. Current time: 6/28/20, 3:57:20 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,186 MB. GUI used memory: 87 MB. Current time: 6/28/20, 4:27:20 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,186 MB. GUI used memory: 87 MB. Current time: 6/28/20, 4:57:20 PM BST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1200 ms. Increasing delay to 3600 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,186 MB. GUI used memory: 87 MB. Current time: 6/28/20, 5:27:21 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,186 MB. GUI used memory: 86 MB. Current time: 6/28/20, 5:57:21 PM BST
+// Elapsed time: 9226 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.vhd", 5); // i (h, cr)
+selectCodeEditor("register.vhd", 279, 196); // ch (w, cr)
+selectCodeEditor("register.vhd", 290, 221); // ch (w, cr)
+selectCodeEditor("register.vhd", 130, 58); // ch (w, cr)
+selectCodeEditor("register.vhd", 304, 210); // ch (w, cr)
+selectCodeEditor("register.vhd", 181, 208); // ch (w, cr)
+selectCodeEditor("register.vhd", 249, 179); // ch (w, cr)
+selectCodeEditor("register.vhd", 103, 60); // ch (w, cr)
+selectCodeEditor("register.vhd", 177, 183); // ch (w, cr)
+selectCodeEditor("register.vhd", 104, 64); // ch (w, cr)
+selectCodeEditor("register.vhd", 115, 71); // ch (w, cr)
+selectCodeEditor("register.vhd", 108, 55); // ch (w, cr)
+selectCodeEditor("register.vhd", 301, 210); // ch (w, cr)
+selectCodeEditor("register.vhd", 85, 182); // ch (w, cr)
+selectCodeEditor("register.vhd", 302, 222); // ch (w, cr)
+selectCodeEditor("register.vhd", 237, 212); // ch (w, cr)
+selectCodeEditor("register.vhd", 243, 212); // ch (w, cr)
+selectCodeEditor("register.vhd", 306, 261); // ch (w, cr)
+selectCodeEditor("register.vhd", 115, 59); // ch (w, cr)
+// Elapsed time: 55 seconds
+selectCodeEditor("register.vhd", 235, 150); // ch (w, cr)
+selectCodeEditor("register.vhd", 220, 212); // ch (w, cr)
+selectCodeEditor("register.vhd", 220, 212, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "register.vhd", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0_S00_AXIS.vhd", 2); // i (h, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 170, 131); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 170, 131, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Md5HashFunction_v1_0_S00_AXIS.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 165, 264); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 165, 264, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Md5HashFunction_v1_0_S00_AXIS.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_S00_AXIS.vhd", 227, 139); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0_M00_AXIS.vhd", 1); // i (h, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 173, 136); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 173, 136, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Md5HashFunction_v1_0_M00_AXIS.vhd", 'v'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0_S00_AXIS.vhd", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0_M00_AXIS.vhd", 1); // i (h, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 338, 155); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 320, 128); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0.vhd", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.vhd", 5); // i (h, cr)
+selectCodeEditor("register.vhd", 1, 56); // ch (w, cr)
+selectCodeEditor("register.vhd", 120, 173); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0.vhd", 4); // i (h, cr)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0_M00_AXIS.vhd", 1); // i (h, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 33, 163); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 101, 162); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0.vhd", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0_M00_AXIS.vhd", 1); // i (h, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 243, 156); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0_S00_AXIS.vhd", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "md5.vhd", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0.vhd", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0_M00_AXIS.vhd", 1); // i (h, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 190, 162); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.vhd", 5); // i (h, cr)
+selectCodeEditor("register.vhd", 86, 91); // ch (w, cr)
+typeControlKey((HResource) null, "register.vhd", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0_M00_AXIS.vhd", 1); // i (h, cr)
+typeControlKey((HResource) null, "Md5HashFunction_v1_0_M00_AXIS.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 84, 200); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 75, 255); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 82, 195); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 90, 180); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 92, 182); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 280, 265); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.vhd", 5); // i (h, cr)
+selectCodeEditor("register.vhd", 25, 75); // ch (w, cr)
+typeControlKey((HResource) null, "register.vhd", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0_M00_AXIS.vhd", 1); // i (h, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 188, 156); // ch (w, cr)
+typeControlKey((HResource) null, "Md5HashFunction_v1_0_M00_AXIS.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 253, 330); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 78, 158); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 211, 230); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 33 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.vhd", 5); // i (h, cr)
+selectCodeEditor("register.vhd", 303, 124); // ch (w, cr)
+selectCodeEditor("register.vhd", 295, 129); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("register.vhd", 182, 77); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0_M00_AXIS.vhd", 1); // i (h, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 109, 247); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0.vhd", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0_M00_AXIS.vhd", 1); // i (h, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 332, 311); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 351, 366); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 341, 315); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 254, 284); // ch (w, cr)
+// Elapsed time: 135 seconds
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 174, 232); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 75, 241); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 77, 218); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 78, 229); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 377, 246); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 173, 247); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 333, 344); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 185, 247); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 333, 288); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 184, 75); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 184, 75, false, false, false, false, true); // ch (w, cr) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "register.vhd", 5); // i (h, cr)
+selectCodeEditor("register.vhd", 147, 78); // ch (w, cr)
+selectCodeEditor("register.vhd", 147, 78, false, false, false, false, true); // ch (w, cr) - Double Click
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Md5HashFunction_v1_0_M00_AXIS.vhd", 1); // i (h, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 300, 216); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 110, 114); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 110, 114, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Md5HashFunction_v1_0_M00_AXIS.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 240, 379); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 239, 381, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "Md5HashFunction_v1_0_M00_AXIS.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 351, 373); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 407, 328); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 360, 346); // ch (w, cr)
+// Elapsed time: 50 seconds
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 153, 202); // ch (w, cr)
+selectCodeEditor("Md5HashFunction_v1_0_M00_AXIS.vhd", 164, 206); // ch (w, cr)

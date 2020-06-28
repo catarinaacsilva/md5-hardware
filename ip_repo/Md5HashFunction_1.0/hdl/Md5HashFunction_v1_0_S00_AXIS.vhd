@@ -69,7 +69,7 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 		
 	s_reset <= reset;
 
-	register_last: Register
+	register_last: RegisterP
 		generic map(k 	: 1);
 		port map (  reset	=> s_reset,
 					clk 	=> S_AXIS_ACLK,
@@ -77,7 +77,7 @@ architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
 					dataIn	=> S_AXIS_TLAST,
 					dataOut => s_tlastdelayed);
 					
-	register_dataIn: Register
+	register_dataIn: RegisterP
 		generic map(k 	: C_S_AXIS_TDATA_WIDTH);
 		port map (  reset	=> s_reset,
 					clk 	=> S_AXIS_ACLK,
