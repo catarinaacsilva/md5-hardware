@@ -14,9 +14,13 @@ entity Md5HashFunction_v1_0_S00_AXIS is
 	);
 	port (
 		-- Users to add ports here
-        validData    : out std_logic;
-        md5Data : out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
-        readEnabled  : in  std_logic; --slave -> dmac
+
+		idle  : in std_logic;
+		reset : in std_logic;
+		start : out std_logic;
+		enable: out std_logic;
+		dataOutSlave : out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
+		-- lastInfo : out std_logic;
         
 		-- User ports ends
 		-- Do not modify the ports beyond this line
@@ -39,143 +43,141 @@ entity Md5HashFunction_v1_0_S00_AXIS is
 end Md5HashFunction_v1_0_S00_AXIS;
 
 architecture arch_imp of Md5HashFunction_v1_0_S00_AXIS is
-	component md5 is 
-	   port(data_in:     in  std_logic_vector (C_S_AXIS_TDATA_WIDTH-1 downto 0);
-            start:       in  std_logic;
-            clk:         in  std_logic;
-            reset:       in  std_logic;
-            data_out:    out std_logic_vector (C_S_AXIS_TDATA_WIDTH-1 downto 0) := (others => '0');
-			done:        out std_logic := '0';
-			idleOut:     out std_logic);
-	end component md5;
-	
-	signal s_ready    	: std_logic; -- master -> slave
-    signal s_validOut 	: std_logic; -- data valid: slave->master
-    signal s_dataOut  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0); 
-    signal s_md5Result	  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
-	signal s_done     	: std_logic;
-	signal s_start		: std_logic;
-	signal s_reset		: std_logic;
-	signal s_dataIn  	: std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
-	signal s_idleOut	: std_logic;
 
-	type state_t is (	init,
-						proc0,
-						last,
-						busyReady,
-						busyIdle);
+	-- last process
+	signal s_tlastdelayed : std_logic;
 
-signal state, state_n : state_t;
+	-- dataIn process
+	signal s_dataOutSlave : std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
 
-    begin
-    
-    md5_comp: md5
-        port map (  data_in => s_dataIn,
-                    start => s_start,
-                    clk => S_AXIS_ACLK,
-                    reset => s_reset,      
-                    data_out =>  s_md5Result,
-					done => s_done,
-					idleOut => s_idleOut); -- verificar
+	-- md5 core signals (control)
+	signal s_start, s_enable : std_logic;
+	signal s_reset, s_idle : std_logic;
+
+	signal s_readyS : std_logic;
+
+
+	type state_t is ( 	IN_IDLE, 
+						IN_START, 
+						IN_ENABLE, 
+						NO_START);
+
+	-- FSM
+	signal state, state_n : state_t;
+
+	begin
+		
+	s_reset <= reset;
+
+	register_last: Register
+		generic map(k 	: 1);
+		port map (  reset	=> s_reset,
+					clk 	=> S_AXIS_ACLK,
+					enable	=> '1',
+					dataIn	=> S_AXIS_TLAST,
+					dataOut => s_tlastdelayed);
 					
-	s_ready <= (not s_validOut) or readEnabled;
-
+	register_dataIn: Register
+		generic map(k 	: C_S_AXIS_TDATA_WIDTH);
+		port map (  reset	=> s_reset,
+					clk 	=> S_AXIS_ACLK,
+					enable	=> s_enable and s_start,
+					dataIn	=> S_AXIS_TDATA,
+					dataOut => s_dataOutSlave); -- input data on MD5 core
+					
 
 	process(S_AXIS_ARESETN, S_AXIS_ACLK)
     begin
         if (S_AXIS_ARESETN = '1') then
-            state <= init;
+            state <= IN_IDLE;
         elsif (rising_edge(S_AXIS_ACLK)) then
             state <= state_n;
         end if;
     end process;
 
-
+    s_idle <= idle;
+    
 	process(state)
 	begin
 
 		state_n <= state;
+        
+		s_readyS <= '0';
 
 		case state is
-			when init =>
+			when IN_IDLE =>
 				s_start <= '0';
-				s_validOut <= '0';
-				s_dataOut  <= (others => '0');
+				s_enable <= '0';
+
+				s_readyS <= '1';
 
 				if(S_AXIS_TVALID = '1') then
-					if (S_AXIS_TLAST = '1') then
-						state_n <= last;
-					elsif ((s_idleOut <= '0' and s_ready = '0') or (s_idleOut <= '0' or s_ready = '1')) then
-						state_n <= busyIdle;
-					elsif (s_idleOut = '1' and s_ready = '0') then
-						state_n <= busyReady;
-					else
-						state_n <= proc0;
-					end if;
+					state_n <= IN_START;
+				elsif (s_reset = '1') then
+					state_n <= IN_IDLE;
 				else
-					state_n <= init;
+					state_n <= IN_IDLE;
 				end if;
 			
-			when proc0 =>
+				
+
+			when IN_START =>
 				s_start <= '1';
-				s_validOut <= '1';
-				s_dataOut  <= s_md5result;
+				enable <= '1';
+				
 
-				if(S_AXIS_TVALID = '1') then
-					state_n <= init;
+				if (S_AXIS_TVALID = '1' and s_idle = '1') then
+					state_n <= IN_ENABLE;
+				elsif (s_idle = '0' or S_AXIS_TVALID = '0') then
+					state_n <= NO_START;
+				elsif (s_reset <= '1') then
+					state_n <= IN_IDLE;
 				else
-					state_n <= proc0;
+					state_n <= IN_START;
 				end if;
 
-			when last =>
-				s_start <= '0';
-				s_validOut <= '0';
-				s_dataOut  <= (others => '0');
 
-				if(S_AXIS_TVALID = '1') then
-					state_n <= init;
-				else
-					state_n <= last;
-                end if;
-			when busyReady =>
+			when IN_ENABLE =>
 				s_start <= '0';
-				s_validOut <= '0';
-				s_dataOut  <= (others => '0');
-
-				if(S_AXIS_TVALID = '1') then
-					if (s_idleOut = '1' and s_ready = '1') then
-						state_n <= proc0;
-					else
-						state_n <= busyReady;
-					end if;
+				s_enable <= '1';
+			
+				
+				if(s_idle <= '0') then
+					state_n <= NO_START;
+				elsif (s_tlastdelayed <= '1') then
+					state_n <= IN_IDLE;
+				elsif (s_reset <= '1') then
+					state_n <= IN_IDLE;
 				else
-					state_n <= busyReady;
+					state_n <= IN_ENABLE;
 				end if;
 
-			when busyIdle =>
-				s_start <= '0';
-				s_validOut <= '0';
-				s_dataOut  <= (others => '0');
 
-				if(S_AXIS_TVALID = '1') then
-					if (s_idleOut = '1' and s_ready = '1') then
-						state_n <= proc0;
-					elsif (s_idleOut = '1' and s_ready = '0') then
-						state_n <= busyReady;
-					else
-						state_n <= busyIdle;
-					end if;
+			when NO_START =>
+				s_start <= '0';
+				s_enable <= '0';
+				
+				if(S_AXIS_TVALID <= '0') then
+					state_n <= NO_START;
+				elsif (s_idle <= '1' or S_AXIS_TVALID <= '1') then
+					state_n <= IN_ENABLE;
+				elsif (s_reset <= '1') then
+					state_n <= IN_IDLE;
 				else
-					state_n <= busyIdle;
+					state_n <= NO_START;
 				end if;
 
 		end case;
 
 	end process;
-	
 
-    validData <= s_validOut;
-    md5Data <= s_dataOut;
-    S_AXIS_TREADY <= s_ready;
+	start <= s_start;
+	enable <= s_enable;
+
+	
+	dataOutSlave <= s_dataOutSlave;
+
+	-- lastInfo <= s_tlastdelayed;
+	S_AXIS_TREADY <= s_readyS;
     
 end arch_imp;
