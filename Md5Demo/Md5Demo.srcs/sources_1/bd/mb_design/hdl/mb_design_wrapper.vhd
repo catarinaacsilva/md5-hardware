@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Mon Jun 22 23:10:53 2020
+--Date        : Sun Jun 28 22:22:45 2020
 --Host        : GreatAtuin running 64-bit major release  (build 9200)
 --Command     : generate_target mb_design_wrapper.bd
 --Design      : mb_design_wrapper
@@ -39,6 +39,13 @@ architecture STRUCTURE of mb_design_wrapper is
   port (
     reset : in STD_LOGIC;
     sys_clock : in STD_LOGIC;
+    led_16bits_tri_i : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    led_16bits_tri_o : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    led_16bits_tri_t : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    dual_seven_seg_led_disp_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    dual_seven_seg_led_disp_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    dual_seven_seg_led_disp_tri_t : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    dip_switches_16bits_tri_i : in STD_LOGIC_VECTOR ( 15 downto 0 );
     cellular_ram_addr : out STD_LOGIC_VECTOR ( 22 downto 0 );
     cellular_ram_adv_ldn : out STD_LOGIC;
     cellular_ram_ben : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -50,14 +57,7 @@ architecture STRUCTURE of mb_design_wrapper is
     cellular_ram_oen : out STD_LOGIC;
     cellular_ram_wait : in STD_LOGIC;
     cellular_ram_wen : out STD_LOGIC;
-    dual_seven_seg_led_disp_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    dual_seven_seg_led_disp_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
-    dual_seven_seg_led_disp_tri_t : out STD_LOGIC_VECTOR ( 7 downto 0 );
     push_buttons_5bits_tri_i : in STD_LOGIC_VECTOR ( 4 downto 0 );
-    dip_switches_16bits_tri_i : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    led_16bits_tri_i : in STD_LOGIC_VECTOR ( 15 downto 0 );
-    led_16bits_tri_o : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    led_16bits_tri_t : out STD_LOGIC_VECTOR ( 15 downto 0 );
     seven_seg_led_an_tri_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
     seven_seg_led_an_tri_o : out STD_LOGIC_VECTOR ( 7 downto 0 );
     seven_seg_led_an_tri_t : out STD_LOGIC_VECTOR ( 7 downto 0 );
