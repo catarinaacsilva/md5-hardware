@@ -16,9 +16,10 @@ entity Nexys4DisplayPort_v1_0_S00_AXI is
 	);
 	port (
 		-- Users to add ports here
-        dispEn_n  : out std_logic_vector(7 downto 0);
-        dispSeg_n : out std_logic_vector(6 downto 0);
-        dispPt_n  : out std_logic;
+		dataInMaster	: in  std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
+		done			: in std_logic;
+		dataOutMaster   : out std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
+
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -120,28 +121,23 @@ architecture arch_imp of Nexys4DisplayPort_v1_0_S00_AXI is
 	signal byte_index	: integer;
 	signal aw_en	: std_logic;
 	
-	constant ENABLE_COUNTER_MAX : integer := 125000-1;
-	subtype TEnableCounter is integer range 0 to ENABLE_COUNTER_MAX;
-	signal s_clkEnableCounter : TEnableCounter;
-	signal s_dispDriverEnable: std_logic;
 	
-	component Nexys4DispDriver is
-	   port(   	clk       : in std_logic;  
-				enable	  : in std_logic;
-				digitEn   : in std_logic_vector(7 downto 0);
-				digVal0   : in std_logic_vector(3 downto 0);
-				digVal1   : in std_logic_vector(3 downto 0);
-				digVal2   : in std_logic_vector(3 downto 0);
-				digVal3   : in std_logic_vector(3 downto 0);
-				digVal4   : in std_logic_vector(3 downto 0);
-				digVal5   : in std_logic_vector(3 downto 0);
-				digVal6   : in std_logic_vector(3 downto 0);
-				digVal7   : in std_logic_vector(3 downto 0);
-				decPtEn   : in std_logic_vector(7 downto 0);
-				dispEn_n  : out std_logic_vector(7 downto 0);
-				dispSeg_n : out std_logic_vector(6 downto 0);
-				dispPt_n  : out std_logic);
-    end component Nexys4DispDriver;
+	
+	component RegisterP is
+        generic(k 	: integer := 1);
+        port(   reset  :   in std_logic;
+                clk :   in std_logic;
+                enable: in std_logic;
+                dataIn: in std_logic_vector((k-1) downto 0);
+                dataOut: out std_logic_vector((k-1) downto 0));
+    end component RegisterP;
+    
+	signal s_done : std_logic;
+	
+	type state_t is ( 	OUT_IDLE, 
+						OUT_VALID);
+
+    signal state, state_n : state_t;
 
 begin
 	-- I/O Connections assignments
@@ -411,39 +407,50 @@ begin
 
 	-- Add user logic here
 	
-	clk_divider : process(S_AXI_ACLK)
-	begin
-	   if (rising_edge(S_AXI_ACLK)) then
-	       if(S_AXI_ARESETN = '0') then
-	           s_clkEnableCounter <= 0;
-	           s_dispDriverEnable <= '0';
-	       elsif (s_clkEnableCounter >= ENABLE_COUNTER_MAX) then
-	           s_clkEnableCounter <= 0;
-	           s_dispDriverEnable <= '1';
-	       else
-	          s_clkEnableCounter <= s_clkEnableCounter + 1;
-	          s_dispDriverEnable <= '0';
-	       end if;
-	   end if;
-	 end process;
-	   
+	register_dataIn: RegisterP
+		generic map(k 	=> C_M_AXIS_TDATA_WIDTH)
+		port map (  reset	=> S_AXI_ARESETN,
+					clk 	=> S_AXI_ACLK,
+					enable	=> s_done,
+					dataIn	=> dataInMaster,
+					dataOut => dataOutMaster);
 
-    display_driver : Nexys4DispDriver
-		port map(clk       => S_AXI_ACLK,
-				 enable    => s_dispDriverEnable,
-                 digitEn   => slv_reg0(7 downto 0), 
-                 digVal0   => slv_reg1(3 downto 0),
-                 digVal1   => slv_reg1(7 downto 4), 
-                 digVal2   => slv_reg1(11 downto 8),
-                 digVal3   => slv_reg1(15 downto 12),
-                 digVal4   => slv_reg1(19 downto 16),
-                 digVal5   => slv_reg1(23 downto 20),
-                 digVal6   => slv_reg1(27 downto 24),
-                 digVal7   => slv_reg1(31 downto 28),
-                 decPtEn   => slv_reg0(15 downto 8),
-                 dispEn_n  => dispEn_n,
-                 dispSeg_n => dispSeg_n,
-                 dispPt_n  => dispPt_n);
+	process(S_AXI_ARESETN, S_AXI_ACLK)
+    begin
+        if (S_AXI_ARESETN = '0') then
+            state <= OUT_IDLE;
+        elsif (rising_edge(S_AXI_ACLK)) then
+            state <= state_n;
+        end if;
+	end process;
+	
+	process (state)
+	begin
+		state_n <= state;
+
+		case state is
+			when OUT_IDLE =>
+				M_AXIS_TVALID <= '0';
+				 
+				if (s_done <= '1') then
+					state_n <= OUT_VALID;
+				elsif(S_AXI_ARESETN <= '0') then
+					state_n <= OUT_IDLE;
+				else
+					state_n <= OUT_IDLE;
+				end if;
+			 
+			when OUT_VALID =>
+				M_AXIS_TVALID <= '1';
+				if (M_AXIS_TREADY <= '1') then
+					state_n <= OUT_IDLE;
+				elsif(S_AXI_ARESETN <= '0') then
+					state_n <= OUT_IDLE;
+				else
+					state_n <= OUT_VALID;
+				end if;
+		end case;
+	end process;
 
 	-- User logic ends
 
