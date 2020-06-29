@@ -821,3 +821,10 @@ con
 
 09:27:37 INFO  : Launch script is exported to file 'C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\.sdk\launch_scripts\single_application_debug\systemdebugger_md5app_system_standalone.tcl'
 10:24:05 INFO  : Disconnected from the channel tcfchan#1.
+23:00:41 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\temp_xsdb_launch_script.tcl
+23:00:46 INFO  : Registering command handlers for Vitis TCF services
+23:00:48 INFO  : XSCT server has started successfully.
+23:00:49 INFO  : plnx-install-location is set to ''
+23:00:49 INFO  : Successfully done setting XSCT server connection channel  
+23:00:49 INFO  : Successfully done query RDI_DATADIR 
+23:00:49 INFO  : Successfully done setting workspace for the tool. 

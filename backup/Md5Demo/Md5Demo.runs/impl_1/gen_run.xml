@@ -1,32 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1591967375">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1593423249">
+  <File Type="BITSTR-BMM" Name="mb_design_wrapper_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="mb_design_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="mb_design_wrapper_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="mb_design_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="mb_design_wrapper.tcl"/>
-  <File Type="BITSTR-BMM" Name="mb_design_wrapper_bd.bmm"/>
+  <File Type="OPT-TIMING" Name="mb_design_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="mb_design_wrapper_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="mb_design_wrapper_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="mb_design_wrapper_reports.tcl"/>
-  <File Type="OPT-DCP" Name="mb_design_wrapper_opt.dcp"/>
   <File Type="OPT-DRC" Name="mb_design_wrapper_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="mb_design_wrapper.hwdef"/>
   <File Type="PWROPT-DCP" Name="mb_design_wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="mb_design_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="mb_design_wrapper_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="mb_design_wrapper_placed.dcp"/>
   <File Type="PLACE-IO" Name="mb_design_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="mb_design_wrapper_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="mb_design_wrapper_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="mb_design_wrapper_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="mb_design_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="mb_design_wrapper_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="mb_design_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="mb_design_wrapper_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="mb_design_wrapper_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="mb_design_wrapper.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="mb_design_wrapper_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="mb_design_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="mb_design_wrapper_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="mb_design_wrapper.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="mb_design_wrapper_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="mb_design_wrapper_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="mb_design_wrapper_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="mb_design_wrapper_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="mb_design_wrapper_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="mb_design_wrapper_drc_routed.pb"/>
   <File Type="ROUTE-DRC-RPX" Name="mb_design_wrapper_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="mb_design_wrapper_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-MMI" Name="mb_design_wrapper.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="mb_design_wrapper_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="mb_design_wrapper_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="mb_design_wrapper_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="mb_design_wrapper_power_routed.rpx"/>
@@ -35,13 +46,20 @@
   <File Type="ROUTE-TIMINGSUMMARY" Name="mb_design_wrapper_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="mb_design_wrapper_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="mb_design_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="mb_design_wrapper_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="mb_design_wrapper_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="mb_design_wrapper_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="mb_design_wrapper_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="mb_design_wrapper_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="mb_design_wrapper_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="mb_design_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="mb_design_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="mb_design_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="mb_design_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="mb_design_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="mb_design_wrapper_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="mb_design_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="mb_design_wrapper_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="mb_design_wrapper.rbt"/>
   <File Type="BITSTR-NKY" Name="mb_design_wrapper.nky"/>
   <File Type="PDI-FILE" Name="mb_design_wrapper.pdi"/>
@@ -50,6 +68,7 @@
   <File Type="RNPI_FILE" Name="mb_design_wrapper.rnpi"/>
   <File Type="NPI_FILE" Name="mb_design_wrapper.npi"/>
   <File Type="RBD_FILE" Name="mb_design_wrapper.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="mb_design_wrapper.ltx"/>
   <File Type="BITSTR-SYSDEF" Name="mb_design_wrapper.sysdef"/>
   <File Type="BG-BGN" Name="mb_design_wrapper.bgn"/>
@@ -102,22 +121,12 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
-    <Step Id="write_device_image"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="mb_design_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_design_microblaze_0_axi_intc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_design_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_design_microblaze_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_design_ilmb_bram_if_cntlr_1"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_design_axi_dma_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_design_axis_data_fifo_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_design_Md5HashFunction_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="mb_design_auto_pc_8"/>
-  <BlockFileSet Type="BlockSrcs" Name="mb_design_auto_pc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="mb_design_auto_pc_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="mb_design_auto_pc_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="mb_design_auto_pc_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="mb_design_auto_pc_4"/>
-  <BlockFileSet Type="BlockSrcs" Name="mb_design_auto_pc_5"/>
-  <BlockFileSet Type="BlockSrcs" Name="mb_design_auto_pc_6"/>
-  <BlockFileSet Type="BlockSrcs" Name="mb_design_auto_pc_7"/>
 </GenRun>
