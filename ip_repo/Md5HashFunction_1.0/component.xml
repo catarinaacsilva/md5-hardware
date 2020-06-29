@@ -224,7 +224,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>928c1c36</spirit:value>
+            <spirit:value>d05fb181</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -240,7 +240,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>928c1c36</spirit:value>
+            <spirit:value>d05fb181</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -527,7 +527,7 @@
       <spirit:file>
         <spirit:name>hdl/Md5HashFunction_v1_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_44896149</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_7f419840</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -618,8 +618,8 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>Md5HashFunction_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>4</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2020-06-28T21:22:20Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>7</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-06-29T09:33:06Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@123eac64_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/cr-hashfunction/ip_repo/Md5HashFunction_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@2dfab075_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/cr-hashfunction/ip_repo/Md5HashFunction_1.0</xilinx:tag>
@@ -729,12 +729,52 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@784f2ad_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3da2308d_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@1a70c641_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e478c52_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f41a22e_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49b4efeb_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a26111f_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13c28537_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2285447f_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dfde282_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a0e0e0e_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3963e77a_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7acf2f9d_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64ecdb6f_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f8943bc_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12cb03a9_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e3d9643_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3db884ff_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ef8bb17_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b1f3b07_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47aea2f1_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d4ccc52_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1587e367_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42afb859_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5730040a_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@624633de_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21ec487e_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e4ca349_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a99101b_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@187e2d7e_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32694237_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38d83bd8_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66a4539d_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11b32da9_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d3b0601_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79787a94_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b291e20_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72f3e903_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@296d20d9_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60e2497c_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1195fd7c_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@442cb3fa_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cfa5a3d_ARCHIVE_LOCATION">c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="6357f13e"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="3177ef9e"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="cbb3bd05"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="103e517a"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="140b9c35"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="02e99f97"/>

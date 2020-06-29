@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sun Jun 28 22:24:00 2020
-# Process ID: 36324
+# Start of session at: Mon Jun 29 10:35:00 2020
+# Process ID: 11292
 # Current directory: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1
 # Command line: vivado.exe -log mb_design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mb_design_wrapper.tcl
 # Log file: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/mb_design_wrapper.vds
@@ -22,9 +22,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 36008 
+INFO: Helper process launched with PID 12364 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 869.426 ; gain = 234.777
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 870.516 ; gain = 236.027
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'mb_design_wrapper' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/hdl/mb_design_wrapper.vhd:37]
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196' bound to instance 'cellular_ram_dq_iobuf_0' of component 'IOBUF' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/hdl/mb_design_wrapper.vhd:269]
@@ -75,94 +75,94 @@ INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2019.2/scripts
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196' bound to instance 'led_16bits_tri_iobuf_9' of component 'IOBUF' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/hdl/mb_design_wrapper.vhd:542]
 INFO: [Synth 8-3491] module 'mb_design' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:5831' bound to instance 'mb_design_i' of component 'mb_design' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/hdl/mb_design_wrapper.vhd:549]
 INFO: [Synth 8-638] synthesizing module 'mb_design' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:5866]
-INFO: [Synth 8-3491] module 'mb_design_Md5HashFunction_0_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_Md5HashFunction_0_0_stub.vhdl:5' bound to instance 'Md5HashFunction_0' of component 'mb_design_Md5HashFunction_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6699]
-INFO: [Synth 8-638] synthesizing module 'mb_design_Md5HashFunction_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_Md5HashFunction_0_0_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'mb_design_Md5HashFunction_0_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_Md5HashFunction_0_0_stub.vhdl:5' bound to instance 'Md5HashFunction_0' of component 'mb_design_Md5HashFunction_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6699]
+INFO: [Synth 8-638] synthesizing module 'mb_design_Md5HashFunction_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_Md5HashFunction_0_0_stub.vhdl:25]
 WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6223]
-INFO: [Synth 8-3491] module 'mb_design_axi_dma_0_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_axi_dma_0_0_stub.vhdl:5' bound to instance 'axi_dma_0' of component 'mb_design_axi_dma_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6716]
-INFO: [Synth 8-638] synthesizing module 'mb_design_axi_dma_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_axi_dma_0_0_stub.vhdl:75]
-INFO: [Synth 8-3491] module 'mb_design_axi_emc_0_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_axi_emc_0_0_stub.vhdl:5' bound to instance 'axi_emc_0' of component 'mb_design_axi_emc_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6782]
-INFO: [Synth 8-638] synthesizing module 'mb_design_axi_emc_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_axi_emc_0_0_stub.vhdl:62]
-INFO: [Synth 8-3491] module 'mb_design_axi_gpio_0_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_buttons' of component 'mb_design_axi_gpio_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6837]
-INFO: [Synth 8-638] synthesizing module 'mb_design_axi_gpio_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_axi_gpio_0_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'mb_design_axi_gpio_3_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_axi_gpio_3_0_stub.vhdl:5' bound to instance 'axi_gpio_display' of component 'mb_design_axi_gpio_3_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6861]
-INFO: [Synth 8-638] synthesizing module 'mb_design_axi_gpio_3_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_axi_gpio_3_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'mb_design_axi_gpio_2_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_axi_gpio_2_0_stub.vhdl:5' bound to instance 'axi_gpio_leds' of component 'mb_design_axi_gpio_2_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6889]
-INFO: [Synth 8-638] synthesizing module 'mb_design_axi_gpio_2_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_axi_gpio_2_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'mb_design_axi_gpio_1_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_axi_gpio_1_0_stub.vhdl:5' bound to instance 'axi_gpio_switches' of component 'mb_design_axi_gpio_1_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6914]
-INFO: [Synth 8-638] synthesizing module 'mb_design_axi_gpio_1_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_axi_gpio_1_0_stub.vhdl:32]
-INFO: [Synth 8-3491] module 'mb_design_axi_timer_0_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_axi_timer_0_0_stub.vhdl:5' bound to instance 'axi_timer_0' of component 'mb_design_axi_timer_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6938]
-INFO: [Synth 8-638] synthesizing module 'mb_design_axi_timer_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_axi_timer_0_0_stub.vhdl:37]
-INFO: [Synth 8-3491] module 'mb_design_axi_uartlite_0_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'mb_design_axi_uartlite_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6967]
-INFO: [Synth 8-638] synthesizing module 'mb_design_axi_uartlite_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_axi_uartlite_0_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'mb_design_axis_data_fifo_0_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_axis_data_fifo_0_0_stub.vhdl:5' bound to instance 'axis_data_fifo_0' of component 'mb_design_axis_data_fifo_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6992]
-INFO: [Synth 8-638] synthesizing module 'mb_design_axis_data_fifo_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_axis_data_fifo_0_0_stub.vhdl:23]
-INFO: [Synth 8-3491] module 'mb_design_clk_wiz_1_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'mb_design_clk_wiz_1_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:7007]
-INFO: [Synth 8-638] synthesizing module 'mb_design_clk_wiz_1_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_clk_wiz_1_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'mb_design_fit_timer_0_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_fit_timer_0_0_stub.vhdl:5' bound to instance 'fit_timer_0' of component 'mb_design_fit_timer_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:7014]
-INFO: [Synth 8-638] synthesizing module 'mb_design_fit_timer_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_fit_timer_0_0_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'mb_design_mdm_1_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'mb_design_mdm_1_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:7020]
-INFO: [Synth 8-638] synthesizing module 'mb_design_mdm_1_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_mdm_1_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'mb_design_microblaze_0_1' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_microblaze_0_1_stub.vhdl:5' bound to instance 'microblaze_0' of component 'mb_design_microblaze_0_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:7033]
-INFO: [Synth 8-638] synthesizing module 'mb_design_microblaze_0_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_microblaze_0_1_stub.vhdl:63]
-INFO: [Synth 8-3491] module 'mb_design_microblaze_0_axi_intc_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_microblaze_0_axi_intc_0_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'mb_design_microblaze_0_axi_intc_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:7119]
-INFO: [Synth 8-638] synthesizing module 'mb_design_microblaze_0_axi_intc_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_microblaze_0_axi_intc_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'mb_design_axi_dma_0_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_axi_dma_0_0_stub.vhdl:5' bound to instance 'axi_dma_0' of component 'mb_design_axi_dma_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6716]
+INFO: [Synth 8-638] synthesizing module 'mb_design_axi_dma_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_axi_dma_0_0_stub.vhdl:75]
+INFO: [Synth 8-3491] module 'mb_design_axi_emc_0_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_axi_emc_0_0_stub.vhdl:5' bound to instance 'axi_emc_0' of component 'mb_design_axi_emc_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6782]
+INFO: [Synth 8-638] synthesizing module 'mb_design_axi_emc_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_axi_emc_0_0_stub.vhdl:62]
+INFO: [Synth 8-3491] module 'mb_design_axi_gpio_0_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_buttons' of component 'mb_design_axi_gpio_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6837]
+INFO: [Synth 8-638] synthesizing module 'mb_design_axi_gpio_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'mb_design_axi_gpio_3_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_axi_gpio_3_0_stub.vhdl:5' bound to instance 'axi_gpio_display' of component 'mb_design_axi_gpio_3_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6861]
+INFO: [Synth 8-638] synthesizing module 'mb_design_axi_gpio_3_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_axi_gpio_3_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'mb_design_axi_gpio_2_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_axi_gpio_2_0_stub.vhdl:5' bound to instance 'axi_gpio_leds' of component 'mb_design_axi_gpio_2_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6889]
+INFO: [Synth 8-638] synthesizing module 'mb_design_axi_gpio_2_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_axi_gpio_2_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'mb_design_axi_gpio_1_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_axi_gpio_1_0_stub.vhdl:5' bound to instance 'axi_gpio_switches' of component 'mb_design_axi_gpio_1_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6914]
+INFO: [Synth 8-638] synthesizing module 'mb_design_axi_gpio_1_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_axi_gpio_1_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'mb_design_axi_timer_0_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_axi_timer_0_0_stub.vhdl:5' bound to instance 'axi_timer_0' of component 'mb_design_axi_timer_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6938]
+INFO: [Synth 8-638] synthesizing module 'mb_design_axi_timer_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_axi_timer_0_0_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'mb_design_axi_uartlite_0_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'mb_design_axi_uartlite_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6967]
+INFO: [Synth 8-638] synthesizing module 'mb_design_axi_uartlite_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'mb_design_axis_data_fifo_0_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_axis_data_fifo_0_0_stub.vhdl:5' bound to instance 'axis_data_fifo_0' of component 'mb_design_axis_data_fifo_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:6992]
+INFO: [Synth 8-638] synthesizing module 'mb_design_axis_data_fifo_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_axis_data_fifo_0_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'mb_design_clk_wiz_1_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'mb_design_clk_wiz_1_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:7007]
+INFO: [Synth 8-638] synthesizing module 'mb_design_clk_wiz_1_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_clk_wiz_1_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'mb_design_fit_timer_0_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_fit_timer_0_0_stub.vhdl:5' bound to instance 'fit_timer_0' of component 'mb_design_fit_timer_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:7014]
+INFO: [Synth 8-638] synthesizing module 'mb_design_fit_timer_0_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_fit_timer_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'mb_design_mdm_1_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'mb_design_mdm_1_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:7020]
+INFO: [Synth 8-638] synthesizing module 'mb_design_mdm_1_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_mdm_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'mb_design_microblaze_0_1' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_microblaze_0_1_stub.vhdl:5' bound to instance 'microblaze_0' of component 'mb_design_microblaze_0_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:7033]
+INFO: [Synth 8-638] synthesizing module 'mb_design_microblaze_0_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_microblaze_0_1_stub.vhdl:63]
+INFO: [Synth 8-3491] module 'mb_design_microblaze_0_axi_intc_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_microblaze_0_axi_intc_0_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'mb_design_microblaze_0_axi_intc_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:7119]
+INFO: [Synth 8-638] synthesizing module 'mb_design_microblaze_0_axi_intc_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_microblaze_0_axi_intc_0_stub.vhdl:36]
 INFO: [Synth 8-638] synthesizing module 'mb_design_microblaze_0_axi_periph_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:3836]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_7XQVZK' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:75]
-INFO: [Synth 8-3491] module 'mb_design_auto_pc_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'mb_design_auto_pc_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:247]
-INFO: [Synth 8-638] synthesizing module 'mb_design_auto_pc_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_auto_pc_0_stub.vhdl:67]
+INFO: [Synth 8-3491] module 'mb_design_auto_pc_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'mb_design_auto_pc_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:247]
+INFO: [Synth 8-638] synthesizing module 'mb_design_auto_pc_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_auto_pc_0_stub.vhdl:67]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_7XQVZK' (2#1) [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:75]
 INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1KGGRVS' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:372]
-INFO: [Synth 8-3491] module 'mb_design_auto_pc_1' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'mb_design_auto_pc_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:544]
-INFO: [Synth 8-638] synthesizing module 'mb_design_auto_pc_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_auto_pc_1_stub.vhdl:67]
+INFO: [Synth 8-3491] module 'mb_design_auto_pc_1' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'mb_design_auto_pc_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:544]
+INFO: [Synth 8-638] synthesizing module 'mb_design_auto_pc_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_auto_pc_1_stub.vhdl:67]
 INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1KGGRVS' (3#1) [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:372]
 INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_SWOCXT' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:669]
-INFO: [Synth 8-3491] module 'mb_design_auto_pc_2' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_auto_pc_2_stub.vhdl:5' bound to instance 'auto_pc' of component 'mb_design_auto_pc_2' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:841]
-INFO: [Synth 8-638] synthesizing module 'mb_design_auto_pc_2' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_auto_pc_2_stub.vhdl:67]
+INFO: [Synth 8-3491] module 'mb_design_auto_pc_2' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_auto_pc_2_stub.vhdl:5' bound to instance 'auto_pc' of component 'mb_design_auto_pc_2' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:841]
+INFO: [Synth 8-638] synthesizing module 'mb_design_auto_pc_2' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_auto_pc_2_stub.vhdl:67]
 INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_SWOCXT' (4#1) [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:669]
 INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1H7VOBD' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:966]
-INFO: [Synth 8-3491] module 'mb_design_auto_pc_3' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_auto_pc_3_stub.vhdl:5' bound to instance 'auto_pc' of component 'mb_design_auto_pc_3' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:1138]
-INFO: [Synth 8-638] synthesizing module 'mb_design_auto_pc_3' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_auto_pc_3_stub.vhdl:67]
+INFO: [Synth 8-3491] module 'mb_design_auto_pc_3' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_auto_pc_3_stub.vhdl:5' bound to instance 'auto_pc' of component 'mb_design_auto_pc_3' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:1138]
+INFO: [Synth 8-638] synthesizing module 'mb_design_auto_pc_3' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_auto_pc_3_stub.vhdl:67]
 INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1H7VOBD' (5#1) [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:966]
 INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_1W8QG7M' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:1263]
-INFO: [Synth 8-3491] module 'mb_design_auto_pc_4' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_auto_pc_4_stub.vhdl:5' bound to instance 'auto_pc' of component 'mb_design_auto_pc_4' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:1435]
-INFO: [Synth 8-638] synthesizing module 'mb_design_auto_pc_4' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_auto_pc_4_stub.vhdl:67]
+INFO: [Synth 8-3491] module 'mb_design_auto_pc_4' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_auto_pc_4_stub.vhdl:5' bound to instance 'auto_pc' of component 'mb_design_auto_pc_4' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:1435]
+INFO: [Synth 8-638] synthesizing module 'mb_design_auto_pc_4' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_auto_pc_4_stub.vhdl:67]
 INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_1W8QG7M' (6#1) [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:1263]
 INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_9GBDFU' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:1560]
-INFO: [Synth 8-3491] module 'mb_design_auto_pc_5' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_auto_pc_5_stub.vhdl:5' bound to instance 'auto_pc' of component 'mb_design_auto_pc_5' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:1732]
-INFO: [Synth 8-638] synthesizing module 'mb_design_auto_pc_5' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_auto_pc_5_stub.vhdl:67]
+INFO: [Synth 8-3491] module 'mb_design_auto_pc_5' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_auto_pc_5_stub.vhdl:5' bound to instance 'auto_pc' of component 'mb_design_auto_pc_5' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:1732]
+INFO: [Synth 8-638] synthesizing module 'mb_design_auto_pc_5' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_auto_pc_5_stub.vhdl:67]
 INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_9GBDFU' (7#1) [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:1560]
 INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_ZVBXPF' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:1857]
-INFO: [Synth 8-3491] module 'mb_design_auto_pc_6' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_auto_pc_6_stub.vhdl:5' bound to instance 'auto_pc' of component 'mb_design_auto_pc_6' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2029]
-INFO: [Synth 8-638] synthesizing module 'mb_design_auto_pc_6' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_auto_pc_6_stub.vhdl:67]
+INFO: [Synth 8-3491] module 'mb_design_auto_pc_6' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_auto_pc_6_stub.vhdl:5' bound to instance 'auto_pc' of component 'mb_design_auto_pc_6' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2029]
+INFO: [Synth 8-638] synthesizing module 'mb_design_auto_pc_6' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_auto_pc_6_stub.vhdl:67]
 INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_ZVBXPF' (8#1) [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:1857]
 INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_O1I4VV' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2164]
 INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_O1I4VV' (9#1) [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2164]
 INFO: [Synth 8-638] synthesizing module 'm08_couplers_imp_5W1MNP' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2324]
-INFO: [Synth 8-3491] module 'mb_design_auto_pc_7' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_auto_pc_7_stub.vhdl:5' bound to instance 'auto_pc' of component 'mb_design_auto_pc_7' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2495]
-INFO: [Synth 8-638] synthesizing module 'mb_design_auto_pc_7' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_auto_pc_7_stub.vhdl:67]
+INFO: [Synth 8-3491] module 'mb_design_auto_pc_7' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_auto_pc_7_stub.vhdl:5' bound to instance 'auto_pc' of component 'mb_design_auto_pc_7' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2495]
+INFO: [Synth 8-638] synthesizing module 'mb_design_auto_pc_7' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_auto_pc_7_stub.vhdl:67]
 INFO: [Synth 8-256] done synthesizing module 'm08_couplers_imp_5W1MNP' (10#1) [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2324]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_10TEBL8' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:3178]
-INFO: [Synth 8-3491] module 'mb_design_auto_pc_8' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_auto_pc_8_stub.vhdl:5' bound to instance 'auto_pc' of component 'mb_design_auto_pc_8' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:3350]
-INFO: [Synth 8-638] synthesizing module 'mb_design_auto_pc_8' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_auto_pc_8_stub.vhdl:67]
+INFO: [Synth 8-3491] module 'mb_design_auto_pc_8' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_auto_pc_8_stub.vhdl:5' bound to instance 'auto_pc' of component 'mb_design_auto_pc_8' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:3350]
+INFO: [Synth 8-638] synthesizing module 'mb_design_auto_pc_8' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_auto_pc_8_stub.vhdl:67]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_10TEBL8' (11#1) [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:3178]
 INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_N4AVSK' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:3449]
 INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_N4AVSK' (12#1) [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:3449]
 INFO: [Synth 8-638] synthesizing module 's02_couplers_imp_1ULGU71' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:3536]
 INFO: [Synth 8-256] done synthesizing module 's02_couplers_imp_1ULGU71' (13#1) [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:3536]
-INFO: [Synth 8-3491] module 'mb_design_xbar_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'mb_design_xbar_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:5407]
-INFO: [Synth 8-638] synthesizing module 'mb_design_xbar_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_xbar_0_stub.vhdl:85]
+INFO: [Synth 8-3491] module 'mb_design_xbar_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'mb_design_xbar_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:5407]
+INFO: [Synth 8-638] synthesizing module 'mb_design_xbar_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_xbar_0_stub.vhdl:85]
 INFO: [Synth 8-256] done synthesizing module 'mb_design_microblaze_0_axi_periph_0' (14#1) [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:3836]
 INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_UIMIJC' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2585]
-INFO: [Synth 8-3491] module 'mb_design_dlmb_bram_if_cntlr_1' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_dlmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'mb_design_dlmb_bram_if_cntlr_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2799]
-INFO: [Synth 8-638] synthesizing module 'mb_design_dlmb_bram_if_cntlr_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_dlmb_bram_if_cntlr_1_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'mb_design_dlmb_v10_1' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_dlmb_v10_1_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'mb_design_dlmb_v10_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2853]
-INFO: [Synth 8-638] synthesizing module 'mb_design_dlmb_v10_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_dlmb_v10_1_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'mb_design_ilmb_bram_if_cntlr_1' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_ilmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'mb_design_ilmb_bram_if_cntlr_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2881]
-INFO: [Synth 8-638] synthesizing module 'mb_design_ilmb_bram_if_cntlr_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_ilmb_bram_if_cntlr_1_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'mb_design_ilmb_v10_1' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_ilmb_v10_1_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'mb_design_ilmb_v10_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2935]
-INFO: [Synth 8-638] synthesizing module 'mb_design_ilmb_v10_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_ilmb_v10_1_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'mb_design_lmb_bram_1' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_lmb_bram_1_stub.vhdl:5' bound to instance 'lmb_bram' of component 'mb_design_lmb_bram_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2963]
-INFO: [Synth 8-638] synthesizing module 'mb_design_lmb_bram_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_lmb_bram_1_stub.vhdl:27]
+INFO: [Synth 8-3491] module 'mb_design_dlmb_bram_if_cntlr_1' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_dlmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'mb_design_dlmb_bram_if_cntlr_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2799]
+INFO: [Synth 8-638] synthesizing module 'mb_design_dlmb_bram_if_cntlr_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_dlmb_bram_if_cntlr_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'mb_design_dlmb_v10_1' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_dlmb_v10_1_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'mb_design_dlmb_v10_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2853]
+INFO: [Synth 8-638] synthesizing module 'mb_design_dlmb_v10_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_dlmb_v10_1_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'mb_design_ilmb_bram_if_cntlr_1' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_ilmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'mb_design_ilmb_bram_if_cntlr_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2881]
+INFO: [Synth 8-638] synthesizing module 'mb_design_ilmb_bram_if_cntlr_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_ilmb_bram_if_cntlr_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'mb_design_ilmb_v10_1' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_ilmb_v10_1_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'mb_design_ilmb_v10_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2935]
+INFO: [Synth 8-638] synthesizing module 'mb_design_ilmb_v10_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_ilmb_v10_1_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'mb_design_lmb_bram_1' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_lmb_bram_1_stub.vhdl:5' bound to instance 'lmb_bram' of component 'mb_design_lmb_bram_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2963]
+INFO: [Synth 8-638] synthesizing module 'mb_design_lmb_bram_1' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_lmb_bram_1_stub.vhdl:27]
 INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_UIMIJC' (15#1) [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:2585]
 INFO: [Synth 8-3491] module 'mb_design_microblaze_0_xlconcat_0' declared at 'c:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/ip/mb_design_microblaze_0_xlconcat_0/synth/mb_design_microblaze_0_xlconcat_0.v:57' bound to instance 'microblaze_0_xlconcat' of component 'mb_design_microblaze_0_xlconcat_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:7415]
 INFO: [Synth 8-6157] synthesizing module 'mb_design_microblaze_0_xlconcat_0' [c:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/ip/mb_design_microblaze_0_xlconcat_0/synth/mb_design_microblaze_0_xlconcat_0.v:57]
@@ -203,8 +203,8 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/Users/ca
 	Parameter NUM_PORTS bound to: 7 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (16#1) [c:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'mb_design_microblaze_0_xlconcat_0' (17#1) [c:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/ip/mb_design_microblaze_0_xlconcat_0/synth/mb_design_microblaze_0_xlconcat_0.v:57]
-INFO: [Synth 8-3491] module 'mb_design_rst_clk_wiz_1_100M_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'mb_design_rst_clk_wiz_1_100M_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:7426]
-INFO: [Synth 8-638] synthesizing module 'mb_design_rst_clk_wiz_1_100M_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-36324-GreatAtuin/realtime/mb_design_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'mb_design_rst_clk_wiz_1_100M_0' declared at 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'mb_design_rst_clk_wiz_1_100M_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:7426]
+INFO: [Synth 8-638] synthesizing module 'mb_design_rst_clk_wiz_1_100M_0' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/.Xil/Vivado-11292-GreatAtuin/realtime/mb_design_rst_clk_wiz_1_100M_0_stub.vhdl:21]
 INFO: [Synth 8-256] done synthesizing module 'mb_design' (18#1) [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.vhd:5866]
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196' bound to instance 'seven_seg_led_an_tri_iobuf_0' of component 'IOBUF' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/hdl/mb_design_wrapper.vhd:710]
 INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196' bound to instance 'seven_seg_led_an_tri_iobuf_1' of component 'IOBUF' [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/hdl/mb_design_wrapper.vhd:717]
@@ -295,7 +295,7 @@ WARNING: [Synth 8-3331] design mb_design_microblaze_0_axi_periph_0 has unconnect
 WARNING: [Synth 8-3331] design mb_design_microblaze_0_axi_periph_0 has unconnected port S02_ACLK
 WARNING: [Synth 8-3331] design mb_design_microblaze_0_axi_periph_0 has unconnected port S02_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 956.652 ; gain = 322.004
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 957.680 ; gain = 323.191
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -308,12 +308,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 956.652 ; gain = 322.004
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 957.680 ; gain = 323.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 956.652 ; gain = 322.004
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 957.680 ; gain = 323.191
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.167 . Memory (MB): peak = 956.652 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.119 . Memory (MB): peak = 957.680 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -386,22 +386,22 @@ Parsing XDC File [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/s
 Finished Parsing XDC File [C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1025.855 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1027.824 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 48 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 48 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 1025.855 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 1027.824 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_design_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1037.742 ; gain = 403.094
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1039.383 ; gain = 404.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1037.742 ; gain = 403.094
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1039.383 ; gain = 404.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -443,10 +443,10 @@ Applied set_property DONT_TOUCH = true for mb_design_i/microblaze_0_axi_periph/m
 Applied set_property DONT_TOUCH = true for mb_design_i/microblaze_0_axi_periph/m06_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for mb_design_i/microblaze_0_axi_periph/m08_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1037.742 ; gain = 403.094
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1039.383 ; gain = 404.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1037.742 ; gain = 403.094
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1039.383 ; gain = 404.895
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -504,7 +504,7 @@ WARNING: [Synth 8-3331] design mb_design_microblaze_0_axi_periph_0 has unconnect
 WARNING: [Synth 8-3331] design mb_design_microblaze_0_axi_periph_0 has unconnected port S01_ACLK
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1037.742 ; gain = 403.094
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1039.383 ; gain = 404.895
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -516,13 +516,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1037.742 ; gain = 403.094
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1039.383 ; gain = 404.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1037.742 ; gain = 403.094
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1039.383 ; gain = 404.895
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -534,7 +534,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1037.742 ; gain = 403.094
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1039.383 ; gain = 404.895
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -558,13 +558,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1037.742 ; gain = 403.094
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1039.383 ; gain = 404.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1037.742 ; gain = 403.094
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1039.383 ; gain = 404.895
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -583,25 +583,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1037.742 ; gain = 403.094
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1039.383 ; gain = 404.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1037.742 ; gain = 403.094
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1039.383 ; gain = 404.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1037.742 ; gain = 403.094
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1039.383 ; gain = 404.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1037.742 ; gain = 403.094
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1039.383 ; gain = 404.895
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -704,18 +704,18 @@ Report Instance Areas:
 |14    |    microblaze_0_local_memory |microblaze_0_local_memory_imp_UIMIJC |   496|
 +------+------------------------------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1037.742 ; gain = 403.094
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1039.383 ; gain = 404.895
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1037.742 ; gain = 322.004
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1037.742 ; gain = 403.094
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1039.383 ; gain = 323.191
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1039.383 ; gain = 404.895
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 1037.742 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 1039.383 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 48 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1044.980 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1051.434 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 48 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 48 instances
@@ -723,10 +723,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 168 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1044.980 ; gain = 723.559
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1044.980 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1051.434 ; gain = 730.402
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1051.434 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/mb_design_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mb_design_wrapper_utilization_synth.rpt -pb mb_design_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Jun 28 22:24:49 2020...
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 29 10:35:48 2020...
