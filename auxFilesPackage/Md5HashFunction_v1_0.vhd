@@ -80,7 +80,7 @@ architecture arch_imp of Md5HashFunction_v1_0 is
 		S_AXIS_TLAST	: in std_logic;
         S_AXIS_TVALID	: in std_logic;
 
-		reset : in std_logic;
+		-- reset : in std_logic;
 		idle  : in std_logic;
 		start : out std_logic;
 		enable: out std_logic;
@@ -104,12 +104,15 @@ architecture arch_imp of Md5HashFunction_v1_0 is
 	signal s_dataInMaster : std_logic_vector(C_M00_AXIS_TDATA_WIDTH-1 downto 0);
 	signal s_done :  std_logic;       
 	signal s_dataOutMaster : std_logic_vector(C_M00_AXIS_TDATA_WIDTH-1 downto 0);
+	
 	-- Slave
-	signal s_reset : std_logic;
 	signal s_idle  : std_logic;
 	signal s_start : std_logic;
 	signal s_enable : std_logic;
 	signal s_dataOutSlave : std_logic_vector(C_S00_AXIS_TDATA_WIDTH-1 downto 0);
+	
+	signal s_reset : std_logic;
+	signal s_clock : std_logic;
 
 begin
 
@@ -147,7 +150,7 @@ Md5HashFunction_v1_0_S00_AXIS_inst : Md5HashFunction_v1_0_S00_AXIS
 		S_AXIS_TLAST	=> s00_axis_tlast,
         S_AXIS_TVALID	=> s00_axis_tvalid,
         
-		reset => s_reset,
+		-- reset => s_reset,
 		idle => s_idle,
 		start => s_start,
 		enable => s_enable,
@@ -156,11 +159,14 @@ Md5HashFunction_v1_0_S00_AXIS_inst : Md5HashFunction_v1_0_S00_AXIS
 
 	-- Add user logic here
 	
+	s_reset <= m00_axis_aresetn and s00_axis_aresetn;
+	s_clock <= m00_axis_aclk and s00_axis_aclk;
+	
 	md5_comp: MD5
 		port map (  data_in		=>	s_dataOutSlave,
 					enable		=> 	s_enable,
                     start 		=> 	s_start,
-                    clk 		=> 	s00_axis_aclk,
+                    clk 		=> 	s_clock,
                     reset 		=> 	s_reset,      
                     data_out 	=>  s_dataOutMaster,
 					done 		=> 	s_done,

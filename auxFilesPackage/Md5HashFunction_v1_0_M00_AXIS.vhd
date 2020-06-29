@@ -19,7 +19,7 @@ entity Md5HashFunction_v1_0_M00_AXIS is
     
 		dataInMaster	: in  std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
 		done			: in std_logic;
-		reset			: in std_logic;
+		-- reset			: in std_logic;
 		dataOutMaster   : out std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
 
 
@@ -56,7 +56,7 @@ architecture implementation of Md5HashFunction_v1_0_M00_AXIS is
     end component RegisterP;
     
 	signal s_done : std_logic;
-	signal s_reset : std_logic;
+	-- signal s_reset : std_logic;
 	
 	
 	type state_t is ( 	OUT_IDLE, 
@@ -70,11 +70,11 @@ architecture implementation of Md5HashFunction_v1_0_M00_AXIS is
 	M_AXIS_TSTRB  <= (others => '1');
 	M_AXIS_TLAST  <= '0'; -- como chega uma palavra resultante do processamento o last no master é irrelevante?
 
-    s_reset <= reset;
+    -- s_reset <= reset;
 
 	register_dataIn: RegisterP
 		generic map(k 	=> C_M_AXIS_TDATA_WIDTH)
-		port map (  reset	=> s_reset,
+		port map (  reset	=> M_AXIS_ARESETN,
 					clk 	=> M_AXIS_ACLK,
 					enable	=> s_done,
 					dataIn	=> dataInMaster,
@@ -101,7 +101,7 @@ architecture implementation of Md5HashFunction_v1_0_M00_AXIS is
 				 
 				if (s_done <= '1') then
 					state_n <= OUT_VALID;
-				elsif(s_reset <= '1') then
+				elsif(M_AXIS_ARESETN <= '1') then
 					state_n <= OUT_IDLE;
 				else
 					state_n <= OUT_IDLE;
@@ -111,7 +111,7 @@ architecture implementation of Md5HashFunction_v1_0_M00_AXIS is
 				M_AXIS_TVALID <= '1';
 				if (M_AXIS_TREADY <= '1') then
 					state_n <= OUT_IDLE;
-				elsif(s_reset <= '1') then
+				elsif(M_AXIS_ARESETN <= '1') then
 					state_n <= OUT_IDLE;
 				else
 					state_n <= OUT_VALID;
