@@ -103,7 +103,7 @@ architecture arch_imp of Md5HashFunction_v1_0 is
 	-- Master
 	signal s_dataInMaster : std_logic_vector(C_M00_AXIS_TDATA_WIDTH-1 downto 0);
 	signal s_done :  std_logic;       
-	signal s_dataOutMaster : std_logic_vector(C_M00_AXIS_TDATA_WIDTH downto 0);
+	signal s_dataOutMaster : std_logic_vector(C_M00_AXIS_TDATA_WIDTH-1 downto 0);
 	-- Slave
 	signal s_reset : std_logic;
 	signal s_idle  : std_logic;

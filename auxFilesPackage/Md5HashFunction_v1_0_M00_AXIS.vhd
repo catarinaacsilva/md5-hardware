@@ -46,7 +46,15 @@ entity Md5HashFunction_v1_0_M00_AXIS is
 end Md5HashFunction_v1_0_M00_AXIS;
 
 architecture implementation of Md5HashFunction_v1_0_M00_AXIS is
-
+    component RegisterP is
+        generic(k 	: integer := 1);
+        port(   reset  :   in std_logic;
+                clk :   in std_logic;
+                enable: in std_logic;
+                dataIn: in std_logic_vector((k-1) downto 0);
+                dataOut: out std_logic_vector((k-1) downto 0));
+    end component RegisterP;
+    
 	signal s_done : std_logic;
 	signal s_reset : std_logic;
 	
@@ -59,12 +67,13 @@ architecture implementation of Md5HashFunction_v1_0_M00_AXIS is
 
     begin
 
-	
 	M_AXIS_TSTRB  <= (others => '1');
 	M_AXIS_TLAST  <= '0'; -- como chega uma palavra resultante do processamento o last no master é irrelevante?
 
-	register_dataIn: Register
-		generic map(k 	: C_M_AXIS_TDATA_WIDTH)
+    s_reset <= reset;
+
+	register_dataIn: RegisterP
+		generic map(k 	=> C_M_AXIS_TDATA_WIDTH)
 		port map (  reset	=> s_reset,
 					clk 	=> M_AXIS_ACLK,
 					enable	=> s_done,
