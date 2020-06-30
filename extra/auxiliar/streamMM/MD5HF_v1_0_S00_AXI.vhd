@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity Nexys4DisplayPort_v1_0_S00_AXI is
+entity MD5HF_v1_0_S00_AXI is
 	generic (
 		-- Users to add parameters here
 
@@ -16,9 +16,9 @@ entity Nexys4DisplayPort_v1_0_S00_AXI is
 	);
 	port (
 		-- Users to add ports here
-		dataInMaster	: in  std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
+        dataInMaster	: in  std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 		done			: in std_logic;
-		dataOutMaster   : out std_logic_vector(C_M_AXIS_TDATA_WIDTH-1 downto 0);
+		dataOutMaster   : out std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 
 		-- User ports ends
 		-- Do not modify the ports beyond this line
@@ -84,9 +84,9 @@ entity Nexys4DisplayPort_v1_0_S00_AXI is
     		-- accept the read data and response information.
 		S_AXI_RREADY	: in std_logic
 	);
-end Nexys4DisplayPort_v1_0_S00_AXI;
+end MD5HF_v1_0_S00_AXI;
 
-architecture arch_imp of Nexys4DisplayPort_v1_0_S00_AXI is
+architecture arch_imp of MD5HF_v1_0_S00_AXI is
 
 	-- AXI4LITE signals
 	signal axi_awaddr	: std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
@@ -121,8 +121,6 @@ architecture arch_imp of Nexys4DisplayPort_v1_0_S00_AXI is
 	signal byte_index	: integer;
 	signal aw_en	: std_logic;
 	
-	
-	
 	component RegisterP is
         generic(k 	: integer := 1);
         port(   reset  :   in std_logic;
@@ -132,15 +130,18 @@ architecture arch_imp of Nexys4DisplayPort_v1_0_S00_AXI is
                 dataOut: out std_logic_vector((k-1) downto 0));
     end component RegisterP;
     
-	signal s_done : std_logic;
+	-- signal s_done : std_logic;
+    
+    signal s_slvReg : std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 	
 	type state_t is ( 	OUT_IDLE, 
 						OUT_VALID);
 
     signal state, state_n : state_t;
-
+    
 begin
-	-- I/O Connections assignments
+
+    -- I/O Connections assignments
 
 	S_AXI_AWREADY	<= axi_awready;
 	S_AXI_WREADY	<= axi_wready;
@@ -374,7 +375,8 @@ begin
 	    loc_addr := axi_araddr(ADDR_LSB + OPT_MEM_ADDR_BITS downto ADDR_LSB);
 	    case loc_addr is
 	      when b"00" =>
-	        reg_data_out <= slv_reg0;
+	        -- reg_data_out <= slv_reg0;
+	       reg_data_out <= s_slvReg;
 	      when b"01" =>
 	        reg_data_out <= slv_reg1;
 	      when b"10" =>
@@ -404,18 +406,17 @@ begin
 	  end if;
 	end process;
 
-
-	-- Add user logic here
-	
-	register_dataIn: RegisterP
-		generic map(k 	=> C_M_AXIS_TDATA_WIDTH)
+    -- s_done <= done;
+    register_dataIn: RegisterP
+		generic map(k 	=> C_S_AXI_DATA_WIDTH)
 		port map (  reset	=> S_AXI_ARESETN,
 					clk 	=> S_AXI_ACLK,
-					enable	=> s_done,
+					enable	=> done,
 					dataIn	=> dataInMaster,
-					dataOut => dataOutMaster);
-
-	process(S_AXI_ARESETN, S_AXI_ACLK)
+					dataOut => s_slvReg);
+	
+	 
+    process(S_AXI_ARESETN, S_AXI_ACLK)
     begin
         if (S_AXI_ARESETN = '0') then
             state <= OUT_IDLE;
@@ -430,9 +431,10 @@ begin
 
 		case state is
 			when OUT_IDLE =>
-				M_AXIS_TVALID <= '0';
+				--M_AXIS_TVALID <= '0';
+				axi_bvalid <= '0';
 				 
-				if (s_done <= '1') then
+				if (done <= '1') then
 					state_n <= OUT_VALID;
 				elsif(S_AXI_ARESETN <= '0') then
 					state_n <= OUT_IDLE;
@@ -441,8 +443,10 @@ begin
 				end if;
 			 
 			when OUT_VALID =>
-				M_AXIS_TVALID <= '1';
-				if (M_AXIS_TREADY <= '1') then
+				--M_AXIS_TVALID <= '1';
+				axi_bvalid <= '1';
+				--if (M_AXIS_TREADY <= '1') then
+			    if (S_AXI_BREADY <= '1') then
 					state_n <= OUT_IDLE;
 				elsif(S_AXI_ARESETN <= '0') then
 					state_n <= OUT_IDLE;
@@ -451,7 +455,6 @@ begin
 				end if;
 		end case;
 	end process;
-
-	-- User logic ends
+	
 
 end arch_imp;
