@@ -132,7 +132,8 @@ architecture arch_imp of MD5HF_v1_0_S00_AXI is
     
 	-- signal s_done : std_logic;
     
-    signal s_slvReg : std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
+	signal s_slvReg : std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
+	signal resRegister: std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 	
 	type state_t is ( 	OUT_IDLE, 
 						OUT_VALID);
@@ -380,9 +381,9 @@ begin
 	      when b"01" =>
 	        reg_data_out <= resRegister(63 downto 32);
 	      when b"10" =>
-	        reg_data_out <= resRegister(95 downto 0);
+	        reg_data_out <= resRegister(95 downto 64);
 	      when b"11" =>
-	        reg_data_out <= resRegister(127 downto 0);
+	        reg_data_out <= resRegister(127 downto 96);
 	      when others =>
 	        reg_data_out  <= (others => '0');
 	    end case;
