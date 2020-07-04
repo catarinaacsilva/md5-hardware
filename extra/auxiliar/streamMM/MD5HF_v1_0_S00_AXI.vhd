@@ -125,7 +125,8 @@ architecture arch_imp of MD5HF_v1_0_S00_AXI is
 	signal aw_en	: std_logic;
 	
     
-    signal resRegister: std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
+	signal resRegister: std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
+
 
 begin
 	-- I/O Connections assignments
@@ -443,7 +444,7 @@ begin
 
 
 	-- Add user logic here
-
+	resRegister <= dataInMaster;
 	-- User logic ends
 
 end arch_imp;
