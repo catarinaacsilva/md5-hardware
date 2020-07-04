@@ -2,10 +2,10 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sat Jul  4 11:24:46 2020
-# Process ID: 17780
+# Start of session at: Sat Jul  4 11:28:41 2020
+# Process ID: 5264
 # Current directory: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17532 C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\Md5Demo.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18336 C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\Md5Demo.xpr
 # Log file: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/vivado.log
 # Journal file: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo\vivado.jou
 #-----------------------------------------------------------
@@ -20,7 +20,7 @@ WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/catar/Des
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/vivado-xilinx-tutorials/axi-stream/ip_repo/ReverseEndianessCop_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
-open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 761.262 ; gain = 155.730
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 820.082 ; gain = 164.250
 update_compile_order -fileset sources_1
 open_bd_design {C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/mb_design.bd}
 Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
@@ -73,6 +73,18 @@ Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /axi_dma_0/Dat
 Excluding slave segment /axi_uartlite_0/S_AXI/Reg from address space /axi_dma_0/Data_S2MM.
 Excluding slave segment /microblaze_0_axi_intc/S_AXI/Reg from address space /axi_dma_0/Data_S2MM.
 Successfully read diagram <mb_design> from BD file <C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/mb_design.bd>
-open_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1512.523 ; gain = 0.000
-exit
-INFO: [Common 17-206] Exiting Vivado at Sat Jul  4 11:27:12 2020...
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1543.020 ; gain = 45.535
+create_peripheral xilinx.com user MD5HF 1.0 -dir C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/../ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:MD5HF:1.0]
+set_property VALUE 8 [ipx::get_bus_parameters WIZ_NUM_REG -of_objects [ipx::get_bus_interfaces S00_AXI -of_objects [ipx::find_open_core xilinx.com:user:MD5HF:1.0]]]
+add_peripheral_interface S00_AXIS -interface_mode slave -axi_type stream [ipx::find_open_core xilinx.com:user:MD5HF:1.0]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:MD5HF:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:MD5HF:1.0]
+set_property  ip_repo_paths  {C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/../ip_repo/MD5HF_1.0 C:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0 C:/Users/catar/Desktop/git/vivado-xilinx-tutorials/timer-soft-hard/project/part1/ip_repo C:/Users/catar/Desktop/git/vivado-xilinx-tutorials/axi-stream/ip_repo/ReverseEndianessCop_1.0} [current_project]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/catar/Desktop/git/vivado-xilinx-tutorials/timer-soft-hard/project/part1/ip_repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/vivado-xilinx-tutorials/axi-stream/ip_repo/ReverseEndianessCop_1.0'.
