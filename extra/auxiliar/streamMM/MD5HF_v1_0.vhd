@@ -89,9 +89,9 @@ architecture arch_imp of MD5HF_v1_0 is
 		S_AXI_RVALID	: out std_logic;
 		S_AXI_RREADY	: in std_logic;
 		
-		dataInMaster	: in  std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
+		dataInMemMap	: in  std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 		done 			: in  std_logic;
-		dataOutMaster   : out std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0)
+		--dataOutMaster   : out std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0)
 		);
 	end component MD5HF_v1_0_S00_AXI;
 
@@ -123,15 +123,14 @@ architecture arch_imp of MD5HF_v1_0 is
             reset:       in  std_logic;
             data_out:    out std_logic_vector (C_S00_AXI_DATA_WIDTH-1 downto 0) := (others => '0');
             done:        out std_logic := '0';
-            idleOut: out std_logic);
+            idleOut: 	 out std_logic);
 	end component md5;
 	
-	-- Master
-	signal s_dataInMaster : std_logic_vector(C_S00_AXI_DATA_WIDTH-1 downto 0);
+	-- Memory Mapped (slave)
 	signal s_done :  std_logic;       
-	signal s_dataOutMaster : std_logic_vector(C_S00_AXI_DATA_WIDTH-1 downto 0);
+	signal s_dataInMemMap : std_logic_vector(C_S00_AXI_DATA_WIDTH-1 downto 0);
 	
-	-- Slave
+	-- Stream (slave)
 	signal s_idle  : std_logic;
 	signal s_start : std_logic;
 	signal s_enable : std_logic;
@@ -172,9 +171,9 @@ MD5HF_v1_0_S00_AXI_inst : MD5HF_v1_0_S00_AXI
 		S_AXI_RVALID	=> s00_axi_rvalid,
 		S_AXI_RREADY	=> s00_axi_rready,
 		
-		dataInMaster => s_dataOutSlave,
+		dataInMemMap => s_dataOutSlave,
 		done => s_done,
-		dataOutMaster => s_dataOutMaster
+		-- dataOutMaster => s_dataOutMaster
 	);
 
 -- Instantiation of Axi Bus Interface S00_AXIS
@@ -207,7 +206,7 @@ MD5HF_v1_0_S00_AXIS_inst : MD5HF_v1_0_S00_AXIS
                     start 		=> 	s_start,
                     clk 		=> 	s_clock,
                     reset 		=> 	s_reset,      
-                    data_out 	=>  s_dataOutMaster,
+                    data_out 	=>  s_dataInMemMap,
 					done 		=> 	s_done,
 					idleOut 	=> 	s_idle);
 

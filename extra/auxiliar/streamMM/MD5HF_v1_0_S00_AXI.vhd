@@ -16,7 +16,7 @@ entity MD5HF_v1_0_S00_AXI is
 	);
 	port (
 		-- Users to add ports here
-        dataInMaster	: in  std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
+        dataInMemMap	: in  std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 		done			: in std_logic;
 		-- dataOutMaster   : out std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 		-- User ports ends
@@ -444,7 +444,7 @@ begin
 
 
 	-- Add user logic here
-	resRegister <= dataInMaster;
+	resRegister <= dataInMemMap;
 	-- User logic ends
 
 end arch_imp;
