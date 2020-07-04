@@ -23,20 +23,22 @@ architecture Behavioral OF MD5_tb IS
     port(
         data_in:     in  std_logic_vector (31 downto 0);
         start:       in  std_logic;
+        enable   :   in std_logic;
         clk:         in  std_logic;
         reset:       in  std_logic;
         data_out:    out std_logic_vector (31 downto 0) := (others => '0');
         done:        out std_logic := '0';
-        err:         out std_logic := '0');
+        idleOut:     out std_logic);
     end component;
     
    signal s_data_in : std_logic_vector(31 downto 0) := (others => '0');
    signal s_start : std_logic := '0';
+   signal s_enable : std_logic;
    signal s_clk : std_logic := '0';
    signal s_reset : std_logic := '0';
    signal s_data_out : std_logic_vector(31 downto 0);
    signal s_done : std_logic;
-   signal s_err : std_logic;
+   signal s_idleOut : std_logic;
 
    constant clkPeriod : time := 10 ns;
 
@@ -56,12 +58,13 @@ begin
  
     uut: MD5 PORT MAP (
           data_in => s_data_in,
+          start => s_start,
+          enable => s_enable,
+          clk => s_clk,
+          reset => s_reset,
           data_out => s_data_out,
           done => s_done,
-          err => s_err,
-          start => s_start,
-          clk => s_clk,
-          reset => s_reset);
+          idleOut => s_idleOut);
 
    clkProc : process
    begin
