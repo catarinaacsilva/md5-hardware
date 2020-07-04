@@ -204,3 +204,525 @@ dismissDialog("Create and Package New IP"); // Q (cr)
 // [Engine Memory]: 1,293 MB (+28334kb) [00:01:53]
 dismissDialog("Create Peripheral IP"); // bB (cr)
 // HMemoryUtils.trashcanNow. Engine heap size: 1,296 MB. GUI used memory: 81 MB. Current time: 7/4/20, 11:30:41 AM BST
+// Elapsed time: 25 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (f, cr)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "md"); // OverlayTextField (ay, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "MD5HF_v1.0", 1, "MD5HF_v1.0", 0, false); // L (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "MD5HF_v1.0", 1); // L (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "MD5HF_v1.0", 1, "MD5HF_v1.0", 0, false, false, false, false, false, true); // L (O, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// [GUI Memory]: 139 MB (+111kb) [00:02:25]
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:MD5HF:1.0 MD5HF_0 
+// Tcl Message: endgroup 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// bB (cr):  Confirm Delete : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: delete_bd_objs [get_bd_intf_nets Md5HashFunction_0_M00_AXIS] [get_bd_intf_nets axis_data_fifo_0_M_AXIS] [get_bd_cells Md5HashFunction_0] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Elapsed time: 11 seconds
+dismissDialog("Confirm Delete"); // bB (cr)
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins MD5HF_0/s00_axi_aclk] [get_bd_pins MD5HF_0/s00_axis_aclk] 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+// Elapsed time: 13 seconds
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins MD5HF_0/s00_axi_aclk] [get_bd_pins MD5HF_0/s00_axis_aclk]' 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_nets Md5HashFunction_0_M00_AXIS] [get_bd_intf_nets axis_data_fifo_0_M_AXIS] [get_bd_cells Md5HashFunction_0]' 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets Md5HashFunction_0_M00_AXIS] [get_bd_intf_nets axis_data_fifo_0_M_AXIS] [get_bd_cells Md5HashFunction_0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins axis_data_fifo_0/M_AXIS] [get_bd_intf_pins MD5HF_0/S00_AXIS] 
+// Elapsed time: 13 seconds
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (cu, cr)
+// w (cr): Run Connection Automation: addNotify
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (2 out of 2 selected)]", 0, true, true, ui.utils.TriState.True); // K (O, w) - Node
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (w)
+dismissDialog("Run Connection Automation"); // w (cr)
+// bB (cr):  Run Connection Automation : addNotify
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// Tcl Message: startgroup 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/MD5HF_0/S00_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins MD5HF_0/S00_AXI] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// Tcl Message: Slave segment </MD5HF_0/S00_AXI/S00_AXI_reg> is being mapped into address space </axi_dma_0/Data_MM2S> at <0x44A0_0000 [ 64K ]> 
+// Tcl Message: INFO: [BD 41-1051] The usage register of slave segment /MD5HF_0/S00_AXI/S00_AXI_reg does not match the usage memory of address space /axi_dma_0/Data_MM2S and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space. 
+// Tcl Message: Excluding slave segment /MD5HF_0/S00_AXI/S00_AXI_reg from address space /axi_dma_0/Data_MM2S. Slave segment </MD5HF_0/S00_AXI/S00_AXI_reg> is being mapped into address space </axi_dma_0/Data_S2MM> at <0x44A0_0000 [ 64K ]> 
+// Tcl Message: INFO: [BD 41-1051] The usage register of slave segment /MD5HF_0/S00_AXI/S00_AXI_reg does not match the usage memory of address space /axi_dma_0/Data_S2MM and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space. 
+// Tcl Message: Excluding slave segment /MD5HF_0/S00_AXI/S00_AXI_reg from address space /axi_dma_0/Data_S2MM. Slave segment </MD5HF_0/S00_AXI/S00_AXI_reg> is being mapped into address space </microblaze_0/Data> at <0x44A0_0000 [ 64K ]> 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_1/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins MD5HF_0/s00_axis_aclk] 
+// Tcl Message: endgroup 
+dismissDialog("Run Connection Automation"); // bB (cr)
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "System_zoom_in"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 931, 210, 1224, 471, false, false, false, true, false); // go (i, cr) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // af (ao, Popup.HeavyWeightWindow)
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, Popup.HeavyWeightWindow)
+// Elapsed time: 31 seconds
+selectButton(PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "save_rsb_design"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// bB (cr):  Save Design : addNotify
+// Tcl Message: save_bd_design 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\Md5Demo.srcs\sources_1\bd\mb_design\mb_design.bd>  Wrote  : <C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/ui/bd_db273ea8.ui>  
+dismissDialog("Save Design"); // bB (cr)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 935, 198, 1224, 471, false, false, false, true, false); // go (i, cr) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cr): Re-customize IP: addNotify
+selectCheckBox((HResource) null, "Enable Write Channel", false); // g (o, r): FALSE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cr)
+// Tcl Command: 'set_property -dict [list CONFIG.c_include_s2mm {0}] [get_bd_cells axi_dma_0]'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.c_include_s2mm {0}] [get_bd_cells axi_dma_0] 
+// Tcl Message: delete_bd_objs [get_bd_nets axi_dma_0_s2mm_introut] [get_bd_intf_nets axi_dma_0_M_AXI_S2MM] 
+// Tcl Message: endgroup 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// [GUI Memory]: 147 MB (+1051kb) [00:04:10]
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "System_zoom_in"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "System_zoom_in"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "System_zoom_in"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 907, 169, 1224, 471, false, false, false, true, false); // go (i, cr) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // af (ao, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cr): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bB (cr):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name MD5HF_v1_0_project -directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.tmp/MD5HF_v1_0_project c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/component.xml 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  2298 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// [GUI Memory]: 154 MB (+250kb) [00:04:26]
+// WARNING: HEventQueue.dispatchEvent() is taking  1063 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/vivado-xilinx-tutorials/axi-stream/ip_repo/ReverseEndianessCop_1.0'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1618.434 ; gain = 0.000 
+// [GUI Memory]: 167 MB (+4937kb) [00:04:27]
+// 'i' command handler elapsed time: 8 seconds
+dismissDialog("Edit in IP Packager"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 234 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 10 seconds
+String[] filenames31467 = {"C:/Users/catar/Desktop/git/md5-hardware/auxiliarFiles/md5.vhd", "C:/Users/catar/Desktop/git/md5-hardware/auxiliarFiles/register.vhd"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 21 seconds
+dismissDialog("Add Sources"); // c (cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse -copy_to c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/src {C:/Users/catar/Desktop/git/md5-hardware/auxiliarFiles/md5.vhd C:/Users/catar/Desktop/git/md5-hardware/auxiliarFiles/register.vhd} 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd), MD5HF_v1_0_S00_AXI_inst : MD5HF_v1_0_S00_AXI(arch_imp) (MD5HF_v1_0_S00_AXI.vhd)]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd), MD5HF_v1_0_S00_AXI_inst : MD5HF_v1_0_S00_AXI(arch_imp) (MD5HF_v1_0_S00_AXI.vhd)]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd), MD5HF_v1_0_S00_AXIS_inst : MD5HF_v1_0_S00_AXIS(arch_imp) (MD5HF_v1_0_S00_AXIS.vhd)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd), MD5HF_v1_0_S00_AXIS_inst : MD5HF_v1_0_S00_AXIS(arch_imp) (MD5HF_v1_0_S00_AXIS.vhd)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("MD5HF_v1_0_S00_AXIS.vhd", 300, 299); // ch (w, cr)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - MD5HF", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // i (h, cr)
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0_S00_AXIS.vhd", 1); // i (h, cr)
+// Elapsed time: 30 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXIS.vhd", 225, 203); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0_S00_AXIS.vhd", 'v'); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("MD5HF_v1_0_S00_AXIS.vhd", 321, 308); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("MD5HF_v1_0.vhd", 269, 182); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0.vhd", 'v'); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd)]", 1); // B (F, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 351, 115); // ch (w, cr)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd), MD5HF_v1_0_S00_AXI_inst : MD5HF_v1_0_S00_AXI(arch_imp) (MD5HF_v1_0_S00_AXI.vhd)]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd), MD5HF_v1_0_S00_AXI_inst : MD5HF_v1_0_S00_AXI(arch_imp) (MD5HF_v1_0_S00_AXI.vhd)]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd), MD5HF_v1_0_S00_AXI_inst : MD5HF_v1_0_S00_AXI(arch_imp) (MD5HF_v1_0_S00_AXI.vhd)]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 416, 282); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 492, 271); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 475, 272); // ch (w, cr)
+// Elapsed time: 50 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 293, 336); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 302, 307); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 329, 340); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 294, 304); // ch (w, cr)
+// Elapsed time: 23 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 193, 346); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 335, 337); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 69, 109); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 34 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 553, 285); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 453, 359); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 264, 226); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 20 seconds
+typeControlKey((HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 309, 372); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 221, 298); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 299, 344); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 304, 344); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 131, 279); // ch (w, cr)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "Implement memory mapped register select and read logic generation", true); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "Implement memory mapped register select and read logic generation"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "Implement memory mapped register select and read logic generation"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "Implement memory mapped register select and read logic generation"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "Implement memory mapped register select and read logic generation"); // l (aP, cr)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String) null); // l (aP, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 311, 388); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 270, 304); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 202, 197); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 201, 192); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 199, 195); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 272, 278); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 197, 265); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 198, 298); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 'v'); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 200, 233); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 200, 231); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 264, 236); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 195, 231); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 243, 260); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 197, 231); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 198, 263); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 195, 296); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 262, 349); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 282, 378); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 318, 340); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 58, 357); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 307, 379); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 243, 364); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 243, 364, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 306, 374); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 297, 372); // ch (w, cr)
+// [GUI Memory]: 176 MB (+607kb) [00:17:00]
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 29 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 54, 301); // ch (w, cr)
+// Elapsed time: 35 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 25, 179); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 14, 262); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 315, 390); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 8, 263); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 220, 178); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 220, 177, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 329, 238); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 128, 385); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 128, 385, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 'c'); // ch (w, cr)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reg_data_out", true); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reg_data_out"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reg_data_out"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reg_data_out"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reg_data_out"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reg_data_out"); // l (aP, cr)
+// Elapsed time: 28 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String) null); // l (aP, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 221, 195); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 196, 200); // ch (w, cr)
+// Elapsed time: 24 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 212, 196); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 278, 275); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 271, 276); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 277, 306); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 271, 293); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 248, 261); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 243, 196); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 348, 188); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 254, 210); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 253, 194); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 227, 258); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 204, 198); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 305, 236); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 202, 197); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 208, 213); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 198, 194); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 322, 275); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 196, 193); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 314, 229); // ch (w, cr)
+// Elapsed time: 158 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 295, 208); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 197, 196); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 309, 289); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 263, 238); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 220, 197); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 321, 232); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 410, 198); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 243, 257); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,296 MB. GUI used memory: 101 MB. Current time: 7/4/20, 12:00:42 PM BST
+// Elapsed time: 1925 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 407, 193); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 263, 228); // ch (w, cr)
+// Elapsed time: 104 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 407, 195); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 385, 274); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 194, 193); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 318, 196); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 323, 196); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 309, 224); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 203, 194); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 275, 229); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 226, 193); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 311, 218); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 203, 200); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 270, 198); // ch (w, cr)
+// Elapsed time: 19 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 320, 239); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 194, 196); // ch (w, cr)
+// Elapsed time: 186 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 273, 235); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 197, 192); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,296 MB. GUI used memory: 93 MB. Current time: 7/4/20, 12:30:42 PM BST
+// Elapsed time: 46 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 211, 196); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 211, 196, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 98 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 222, 202); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 188, 200); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 192, 199); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 194, 198); // ch (w, cr)
+// Elapsed time: 30 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 231, 255); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 231, 202); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 280, 261); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 204, 199); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 438, 202); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 500, 203); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 442, 251); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 314, 218); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 315, 227); // ch (w, cr)
+// Elapsed time: 48 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 303, 194); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 259, 254); // ch (w, cr)
+// Elapsed time: 55 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 194, 187); // ch (w, cr)
+// Elapsed time: 31 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 295, 239); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 371, 194); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 371, 194, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 260, 265); // ch (w, cr)
+// Elapsed time: 23 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 418, 196); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 436, 196); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 436, 196, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 445, 194); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 445, 194, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 451, 189); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 451, 189, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 456, 198); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 456, 197, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 406, 263); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 515, 198); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 437, 274); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 83, 195); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 564, 193); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 216, 207); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 232, 258); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 414, 159); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,296 MB. GUI used memory: 93 MB. Current time: 7/4/20, 1:00:42 PM BST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,296 MB. GUI used memory: 92 MB. Current time: 7/4/20, 1:30:43 PM BST
+// Elapsed time: 3847 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - MD5HF", 0); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 1); // i (h, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 304, 173); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 1039, 208); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("MD5HF_v1_0.vhd", 56, 309); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 261, 384); // ch (w, cr)
