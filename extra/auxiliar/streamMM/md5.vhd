@@ -218,6 +218,7 @@ begin
                 case state is
 
                     when loadMessage =>
+                        done <= '0';
                         message_length <= unsigned(data_in);
                         M(data_counter to data_counter+31) <= unsigned(data_in);
                         if (data_counter < message_length) then
@@ -281,7 +282,7 @@ begin
                             when others => null;
                         end case;
                         iCounter <= iCounter + 1;
-                        done <= '0';
+                        -- done <= '0';
 
                     when others => null;
                 end case;

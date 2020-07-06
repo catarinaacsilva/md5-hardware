@@ -412,7 +412,7 @@ begin
 	        reg_data_out <= resRegister(127 downto 96);
 	      when b"100" =>
 	        --reg_data_out <= std_logic_vector(resize(unsigned'('0'&done), 32)); 
-	        reg_data_out <= '0' & done; 
+	        reg_data_out <= '1' & done; 
 	      when b"101" =>
 	        reg_data_out <= slv_reg5;
 	      when b"110" =>
