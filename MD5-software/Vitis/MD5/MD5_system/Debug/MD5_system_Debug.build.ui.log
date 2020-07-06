@@ -1,6 +1,6 @@
-2020-06-21T16:22:43.531326700255-16:22:43 **** Incremental Build of configuration Debug for project MD5_system ****
+2020-07-03T17:20:29.108517500255-17:20:29 **** Incremental Build of configuration Debug for project MD5_system ****
 000-make all 
 000-Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
 00255-
-16:22:43 Build Finished (took 363ms)
+17:20:29 Build Finished (took 297ms)
 

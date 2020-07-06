@@ -59,13 +59,13 @@ typedef int bool;
 
 #define min(a, b)	((a < b) ? a : b)
 
-#define N	100
+#define N	2000
 
 #define LEFTROTATE(x, c) (((x) << (c)) | ((x) >> (32 - (c))))
 
 unsigned int md5(unsigned char *initial_msg, unsigned long initial_len)
 {
-	unsigned char h0, h1, h2, h3;
+	uint32_t h0, h1, h2, h3;
 
 	// Message (to prepare)
 	uint8_t *msg = NULL;
@@ -180,10 +180,10 @@ unsigned int md5(unsigned char *initial_msg, unsigned long initial_len)
 	p2=(uint8_t *)&h2;
 	p3=(uint8_t *)&h3;
 
-	return ((p3[0] << 24) | (p3[1] << 16) | (p3[2] << 8) | p3[3]);
-
 	// cleanup
 	free(msg);
+
+	return (((p3[0] & 0xFF) << 24) | ((p3[1] & 0xFF) << 16) | ((p3[2] & 0xFF) << 8) | (p3[3] & 0xFF));
 }
 
 void Md5Sw(int* pDst, int* pSrc, unsigned int size)
