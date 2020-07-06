@@ -1794,6 +1794,9 @@
         "vlnv": "xilinx.com:ip:axi_dma:7.1",
         "xci_name": "mb_design_axi_dma_0_0",
         "parameters": {
+          "c_include_s2mm": {
+            "value": "0"
+          },
           "c_include_sg": {
             "value": "0"
           }
@@ -1830,12 +1833,6 @@
         "interface_ports": [
           "microblaze_0/DLMB",
           "microblaze_0_local_memory/DLMB"
-        ]
-      },
-      "axi_dma_0_M_AXI_S2MM": {
-        "interface_ports": [
-          "axi_dma_0/M_AXI_S2MM",
-          "microblaze_0_axi_periph/S02_AXI"
         ]
       },
       "axi_gpio_switches_GPIO": {
@@ -2007,7 +2004,6 @@
           "microblaze_0_local_memory/LMB_Clk",
           "axi_dma_0/m_axi_mm2s_aclk",
           "microblaze_0_axi_periph/S01_ACLK",
-          "axi_dma_0/m_axi_s2mm_aclk",
           "microblaze_0_axi_periph/S02_ACLK",
           "axi_dma_0/s_axi_lite_aclk",
           "microblaze_0_axi_periph/M08_ACLK",
@@ -2127,12 +2123,6 @@
           "axi_dma_0/mm2s_introut",
           "microblaze_0_xlconcat/In5"
         ]
-      },
-      "axi_dma_0_s2mm_introut": {
-        "ports": [
-          "axi_dma_0/s2mm_introut",
-          "microblaze_0_xlconcat/In6"
-        ]
       }
     },
     "addressing": {
@@ -2215,71 +2205,6 @@
       "/axi_dma_0": {
         "address_spaces": {
           "Data_MM2S": {
-            "range": "4G",
-            "width": "32",
-            "segments": {
-              "SEG_axi_emc_0_Mem0": {
-                "address_block": "/axi_emc_0/S_AXI_MEM/Mem0",
-                "offset": "0x60000000",
-                "range": "16M"
-              },
-              "SEG_MD5HF_0_S00_AXI_reg": {
-                "address_block": "/MD5HF_0/S00_AXI/S00_AXI_reg",
-                "offset": "0x44A00000",
-                "range": "64K",
-                "is_excluded": "TRUE"
-              },
-              "SEG_axi_dma_0_Reg": {
-                "address_block": "/axi_dma_0/S_AXI_LITE/Reg",
-                "offset": "0x41E00000",
-                "range": "64K",
-                "is_excluded": "TRUE"
-              },
-              "SEG_axi_gpio_buttons_Reg": {
-                "address_block": "/axi_gpio_buttons/S_AXI/Reg",
-                "offset": "0x40000000",
-                "range": "8K",
-                "is_excluded": "TRUE"
-              },
-              "SEG_axi_gpio_display_Reg": {
-                "address_block": "/axi_gpio_display/S_AXI/Reg",
-                "offset": "0x40010000",
-                "range": "8K",
-                "is_excluded": "TRUE"
-              },
-              "SEG_axi_gpio_leds_Reg": {
-                "address_block": "/axi_gpio_leds/S_AXI/Reg",
-                "offset": "0x40020000",
-                "range": "8K",
-                "is_excluded": "TRUE"
-              },
-              "SEG_axi_gpio_switches_Reg": {
-                "address_block": "/axi_gpio_switches/S_AXI/Reg",
-                "offset": "0x40030000",
-                "range": "8K",
-                "is_excluded": "TRUE"
-              },
-              "SEG_axi_timer_0_Reg": {
-                "address_block": "/axi_timer_0/S_AXI/Reg",
-                "offset": "0x41C00000",
-                "range": "8K",
-                "is_excluded": "TRUE"
-              },
-              "SEG_axi_uartlite_0_Reg": {
-                "address_block": "/axi_uartlite_0/S_AXI/Reg",
-                "offset": "0x40600000",
-                "range": "8K",
-                "is_excluded": "TRUE"
-              },
-              "SEG_microblaze_0_axi_intc_Reg": {
-                "address_block": "/microblaze_0_axi_intc/S_AXI/Reg",
-                "offset": "0x41200000",
-                "range": "8K",
-                "is_excluded": "TRUE"
-              }
-            }
-          },
-          "Data_S2MM": {
             "range": "4G",
             "width": "32",
             "segments": {

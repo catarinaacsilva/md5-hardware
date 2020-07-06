@@ -25,10 +25,12 @@
   <File Type="ROUTE-DRC" Name="mb_design_wrapper_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="mb_design_wrapper_drc_routed.pb"/>
   <File Type="ROUTE-DRC-RPX" Name="mb_design_wrapper_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="mb_design_wrapper.ltx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="mb_design_wrapper_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-MMI" Name="mb_design_wrapper.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="mb_design_wrapper_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="mb_design_wrapper_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="mb_design_wrapper.sysdef"/>
   <File Type="ROUTE-PWR-RPX" Name="mb_design_wrapper_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="mb_design_wrapper_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="mb_design_wrapper_route_status.pb"/>
@@ -36,6 +38,7 @@
   <File Type="ROUTE-TIMING-PB" Name="mb_design_wrapper_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="mb_design_wrapper_timing_summary_routed.rpx"/>
   <File Type="ROUTE-CLK" Name="mb_design_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="mb_design_wrapper.vdi"/>
   <File Type="ROUTE-BUS-SKEW" Name="mb_design_wrapper_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="mb_design_wrapper_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="mb_design_wrapper_bus_skew_routed.rpx"/>
@@ -47,15 +50,12 @@
   <File Type="PDI-FILE" Name="mb_design_wrapper.pdi"/>
   <File Type="RCFI_FILE" Name="mb_design_wrapper.rcfi"/>
   <File Type="CFI_FILE" Name="mb_design_wrapper.cfi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="RNPI_FILE" Name="mb_design_wrapper.rnpi"/>
   <File Type="NPI_FILE" Name="mb_design_wrapper.npi"/>
   <File Type="RBD_FILE" Name="mb_design_wrapper.rbd"/>
-  <File Type="BITSTR-LTX" Name="mb_design_wrapper.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="mb_design_wrapper.sysdef"/>
   <File Type="BG-BGN" Name="mb_design_wrapper.bgn"/>
   <File Type="BG-DRC" Name="mb_design_wrapper.drc"/>
-  <File Type="RDI-RDI" Name="mb_design_wrapper.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/mb_design/mb_design.bd">

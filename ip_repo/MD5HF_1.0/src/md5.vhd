@@ -10,7 +10,7 @@ entity MD5 is
            start    :   in  std_logic;
            clk      :   in  std_logic;
            reset    :   in  std_logic;
-           data_out :   out std_logic_vector (31 downto 0) := (others => '0'); -- para ser 128
+           data_out :   out std_logic_vector (127 downto 0) := (others => '0');
            done     :   out std_logic := '0';
            idleOut  :   out std_logic);
 end MD5;
@@ -274,10 +274,15 @@ begin
 
                     when storeData =>
                         case iCounter is
-                            when 0 => data_out <= std_logic_vector(A);
-                            when 1 => data_out <= std_logic_vector(B);
-                            when 2 => data_out <= std_logic_vector(C);
-                            when 3 => data_out <= std_logic_vector(D);
+                            --when 0 => data_out <= std_logic_vector(A);
+                            --when 1 => data_out <= std_logic_vector(B);
+                            --when 2 => data_out <= std_logic_vector(C);
+                            --when 3 => data_out <= std_logic_vector(D);
+                            when 0 => data_out <= std_logic_vector(resize(unsigned'('1'&A), 128));
+                            when 1 => data_out <= std_logic_vector(resize(unsigned'('1'&B), 128));
+                            when 2 => data_out <= std_logic_vector(resize(unsigned'('1'&C), 128));
+                            when 3 => data_out <= std_logic_vector(resize(unsigned'('1'&D), 128));
+                            
                             when others => null;
                         end case;
                         iCounter <= iCounter + 1;

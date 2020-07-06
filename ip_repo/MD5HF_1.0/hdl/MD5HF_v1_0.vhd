@@ -12,7 +12,7 @@ entity MD5HF_v1_0 is
 
 		-- Parameters of Axi Slave Bus Interface S00_AXI
 		C_S00_AXI_DATA_WIDTH	: integer	:= 32;
-		C_S00_AXI_ADDR_WIDTH	: integer	:= 4;
+		C_S00_AXI_ADDR_WIDTH	: integer	:= 5;
 
 		-- Parameters of Axi Slave Bus Interface S00_AXIS
 		C_S00_AXIS_TDATA_WIDTH	: integer	:= 32
@@ -64,7 +64,7 @@ architecture arch_imp of MD5HF_v1_0 is
 	component MD5HF_v1_0_S00_AXI is
 		generic (
 		C_S_AXI_DATA_WIDTH	: integer	:= 32;
-		C_S_AXI_ADDR_WIDTH	: integer	:= 4
+		C_S_AXI_ADDR_WIDTH	: integer	:= 5
 		);
 		port (
 		S_AXI_ACLK	: in std_logic;
@@ -89,9 +89,8 @@ architecture arch_imp of MD5HF_v1_0 is
 		S_AXI_RVALID	: out std_logic;
 		S_AXI_RREADY	: in std_logic;
 		
-		dataInMaster	: in  std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
-		done 			: in  std_logic;
-		dataOutMaster   : out std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0)
+		dataInMemMap	: in  std_logic_vector(127 downto 0);
+		done 			: in  std_logic
 		);
 	end component MD5HF_v1_0_S00_AXI;
 
@@ -114,8 +113,8 @@ architecture arch_imp of MD5HF_v1_0 is
 		dataOutSlave : out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0)
 		);
 	end component MD5HF_v1_0_S00_AXIS;
-
-    component md5 is 
+	
+	component md5 is 
 	   port(data_in:     in  std_logic_vector (C_S00_AXIS_TDATA_WIDTH-1 downto 0);
             start:       in  std_logic;
             enable:      in  std_logic;
@@ -123,15 +122,14 @@ architecture arch_imp of MD5HF_v1_0 is
             reset:       in  std_logic;
             data_out:    out std_logic_vector (C_S00_AXI_DATA_WIDTH-1 downto 0) := (others => '0');
             done:        out std_logic := '0';
-            idleOut: out std_logic);
+            idleOut: 	 out std_logic);
 	end component md5;
 	
-	-- Master
-	signal s_dataInMaster : std_logic_vector(C_S00_AXI_DATA_WIDTH-1 downto 0);
+	-- Memory Mapped (slave)
 	signal s_done :  std_logic;       
-	signal s_dataOutMaster : std_logic_vector(C_S00_AXI_DATA_WIDTH-1 downto 0);
+	signal s_dataInMemMap : std_logic_vector(127 downto 0);
 	
-	-- Slave
+	-- Stream (slave)
 	signal s_idle  : std_logic;
 	signal s_start : std_logic;
 	signal s_enable : std_logic;
@@ -139,8 +137,8 @@ architecture arch_imp of MD5HF_v1_0 is
 	
 	signal s_reset : std_logic;
 	signal s_clock : std_logic;
-
 	
+
 begin
 
 -- Instantiation of Axi Bus Interface S00_AXI
@@ -172,9 +170,8 @@ MD5HF_v1_0_S00_AXI_inst : MD5HF_v1_0_S00_AXI
 		S_AXI_RVALID	=> s00_axi_rvalid,
 		S_AXI_RREADY	=> s00_axi_rready,
 		
-		dataInMaster => s_dataOutSlave,
-		done => s_done,
-		dataOutMaster => s_dataOutMaster
+		dataInMemMap => s_dataInMemMap,
+		done => s_done
 	);
 
 -- Instantiation of Axi Bus Interface S00_AXIS
@@ -198,7 +195,8 @@ MD5HF_v1_0_S00_AXIS_inst : MD5HF_v1_0_S00_AXIS
 	);
 
 	-- Add user logic here
-    s_reset <= s00_axi_aresetn and s00_axis_aresetn;
+	
+	s_reset <= s00_axi_aresetn and s00_axis_aresetn;
 	s_clock <= s00_axi_aclk and s00_axis_aclk;
 	
 	md5_comp: MD5
@@ -207,7 +205,7 @@ MD5HF_v1_0_S00_AXIS_inst : MD5HF_v1_0_S00_AXIS
                     start 		=> 	s_start,
                     clk 		=> 	s_clock,
                     reset 		=> 	s_reset,      
-                    data_out 	=>  s_dataOutMaster,
+                    data_out 	=>  s_dataInMemMap,
 					done 		=> 	s_done,
 					idleOut 	=> 	s_idle);
 

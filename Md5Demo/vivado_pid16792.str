@@ -1,0 +1,1296 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 16792
+License: Customer
+
+Current time: 	Mon Jul 06 23:15:25 BST 2020
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1013
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 327 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	catar
+User home directory: C:/Users/catar
+User working directory: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo
+User country: 	PT
+User language: 	pt
+User locale: 	pt_PT
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/catar/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/catar/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/catar/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/vivado.log
+Vivado journal file location: 	C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/vivado.jou
+Engine tmp dir: 	C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/.Xil/Vivado-16792-GreatAtuin
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_SDK: C:/Xilinx/Vitis/2019.2
+XILINX_VITIS: C:/Xilinx/Vitis/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 690 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\Md5Demo.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 698 MB. GUI used memory: 48 MB. Current time: 7/6/20, 11:15:27 PM BST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 64 MB (+64415kb) [00:00:13]
+// [Engine Memory]: 721 MB (+604105kb) [00:00:13]
+// [GUI Memory]: 70 MB (+2920kb) [00:00:13]
+// [GUI Memory]: 89 MB (+16801kb) [00:00:15]
+// [GUI Memory]: 95 MB (+1007kb) [00:00:15]
+// [GUI Memory]: 104 MB (+4441kb) [00:00:15]
+// [GUI Memory]: 113 MB (+3969kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  3286 ms.
+// Tcl Message: open_project C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// WARNING: HEventQueue.dispatchEvent() is taking  1329 ms.
+// [Engine Memory]: 848 MB (+96305kb) [00:00:17]
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 767.977 ; gain = 133.809 
+// Project name: Md5Demo; location: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo; part: xc7a100tcsg324-1
+// [Engine Memory]: 1,043 MB (+159068kb) [00:00:19]
+dismissDialog("Open Project"); // bB (cr)
+// [Engine Memory]: 1,106 MB (+11796kb) [00:00:23]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 128 MB (+9800kb) [00:00:24]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_design_wrapper(STRUCTURE) (mb_design_wrapper.vhd)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_design_wrapper(STRUCTURE) (mb_design_wrapper.vhd), mb_design_i : mb_design (mb_design.bd)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_design_wrapper(STRUCTURE) (mb_design_wrapper.vhd), mb_design_i : mb_design (mb_design.bd)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// bB (cr):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/mb_design.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// HMemoryUtils.trashcanNow. Engine heap size: 1,165 MB. GUI used memory: 67 MB. Current time: 7/6/20, 11:15:47 PM BST
+// [Engine Memory]: 1,165 MB (+3778kb) [00:00:31]
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  2396 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+// Elapsed time: 12 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1367.527 ; gain = 42.398 
+dismissDialog("Open Block Design"); // bB (cr)
+// Elapsed time: 31 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // af (cr)
+selectMenuItem(RDIResourceCommand.RDICommands_SETTINGS, "Settings..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// I (cr): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1762 ms.
+// [GUI Memory]: 136 MB (+2272kb) [00:01:13]
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6); // L (E, I)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // L (E, I)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (I)
+// [GUI Memory]: 154 MB (+11094kb) [00:01:18]
+dismissDialog("Settings"); // I (cr)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 931, 165, 1224, 471, false, false, false, true, false); // go (i, cr) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // af (ao, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cr): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bB (cr):  Edit in IP Packager : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name MD5HF_v1_0_project -directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.tmp/MD5HF_v1_0_project c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  2404 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// WARNING: HEventQueue.dispatchEvent() is taking  1324 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1367.527 ; gain = 0.000 
+// 'i' command handler elapsed time: 9 seconds
+// [GUI Memory]: 169 MB (+7485kb) [00:01:33]
+dismissDialog("Edit in IP Packager"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 16 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd)]", 1); // B (F, cr)
+closeMainWindow("MD5HF_v1_0_project - [c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.xpr] - Vivado 2019.2"); // cr
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (cr): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+dismissDialog("Close Project"); // A (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,165 MB. GUI used memory: 98 MB. Current time: 7/6/20, 11:17:09 PM BST
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bB (cr)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets microblaze_0_axi_periph_M09_AXI] [get_bd_intf_nets axis_data_fifo_0_M_AXIS] [get_bd_cells MD5HF_0] 
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+// Elapsed time: 34 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // af (cr)
+selectMenuItem(RDIResourceCommand.RDICommands_SETTINGS, "Settings..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// I (cr): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1170 ms.
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6); // L (E, I)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // L (E, I)
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0", 1); // cq (O, I)
+selectList(PAResourceQtoS.SettingsProjectIPRepositoryPage_REPOSITORY_CHOOSER, "c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0", 0); // cq (O, I)
+selectButton(RDIResource.AbstractCombinedPanel_REMOVE_SELECTED_ELEMENTS, "Remove"); // E (f, I)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0 [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 180 MB (+2697kb) [00:02:47]
+// WARNING: HEventQueue.dispatchEvent() is taking  1033 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// Tcl Message: update_ip_catalog 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0'. 
+// bB (cr):  Refresh All IP Repositories : addNotify
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// [Engine Memory]: 1,306 MB (+86692kb) [00:02:49]
+dismissDialog("Refresh All IP Repositories"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,308 MB. GUI used memory: 113 MB. Current time: 7/6/20, 11:18:07 PM BST
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+dismissDialog("Settings"); // I (cr)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (f, cr)
+// [Engine Memory]: 1,419 MB (+50270kb) [00:02:56]
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "md5"); // OverlayTextField (ay, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (ay)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD, "Create and Package New IP..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER_WIZARD
+// Q (cr): Create and Package New IP: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,484 MB. GUI used memory: 117 MB. Current time: 7/6/20, 11:18:22 PM BST
+selectRadioButton(PAResourceItoN.NewIpWizard_CREATE_NEW_AXI4_IP_CREATE_AXI4, "Create a new AXI4 peripheral. Create an AXI4 IP, driver, software test application, IP Integrator AXI4 VIP simulation and debug demonstration design."); // b (a, Q)
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+setText(PAResourceItoN.NewIpWizard_NAME_MYIP, "MD5HF"); // ac (Q)
+setText(PAResourceItoN.NewIpWizard_DESCRIPTION_MY_NEW_AXI_IP, "MD5 Hash Fucntion"); // ac (Q)
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+// Elapsed time: 12 seconds
+setText(PAResourceItoN.NewIpWizard_NUMBER_OF_REGISTERS, "8"); // ac (E, Q)
+selectButton(PAResourceItoN.NewIpWizard_ADD_NEW_INTERFACE, (String) null); // k (f, Q)
+selectComboBox(PAResourceItoN.NewIpWizard_INTERFACE_TYPE, "Stream", 2); // e (E, Q)
+selectButton("NEXT", "Next >"); // JButton (j, Q)
+selectButton("FINISH", "Finish"); // JButton (j, Q)
+// 'q' command handler elapsed time: 40 seconds
+dismissDialog("Create and Package New IP"); // Q (cr)
+// Tcl Message: create_peripheral xilinx.com user MD5HF 1.0 -dir C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/../ip_repo 
+// Tcl Message: add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:MD5HF:1.0] 
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property VALUE 8 [ipx::get_bus_parameters WIZ_NUM_REG -of_objects [ipx::get_bus_interfaces S00_AXI -of_objects [ipx::find_open_core xilinx.com:user:MD5HF:1.0]]] 
+// Tcl Message: add_peripheral_interface S00_AXIS -interface_mode slave -axi_type stream [ipx::find_open_core xilinx.com:user:MD5HF:1.0] 
+// TclEventType: PACKAGER_OBJECT_ADD
+// Tcl Message: generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:MD5HF:1.0] 
+// Tcl Message: write_peripheral [ipx::find_open_core xilinx.com:user:MD5HF:1.0] 
+// TclEventType: FILE_SET_CHANGE
+// bB (cr):  Create Peripheral IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/../ip_repo/MD5HF_1.0 c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0} [current_project] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// Tcl Message: update_ip_catalog -rebuild 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0'. 
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+dismissDialog("Create Peripheral IP"); // bB (cr)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (f, cr)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "md5"); // OverlayTextField (ay, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "MD5HF_v1.0", 1, "MD5HF_v1.0", 0, false); // L (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "MD5HF_v1.0", 1); // L (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "MD5HF_v1.0", 1, "MD5HF_v1.0", 0, false); // L (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "MD5HF_v1.0", 1, "MD5HF_v1.0", 0, false, false, false, false, false, true); // L (O, ResizableWindow) - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:user:MD5HF:1.0 MD5HF_0 
+// Tcl Message: endgroup 
+// Tcl Command: 'set_property location {6 1729 552} [get_bd_cells MD5HF_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {6 1729 552} [get_bd_cells MD5HF_0] 
+// Tcl Command: 'set_property location {6 1615 621} [get_bd_cells MD5HF_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {6 1615 621} [get_bd_cells MD5HF_0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins axis_data_fifo_0/M_AXIS] [get_bd_intf_pins MD5HF_0/S00_AXIS] 
+// Elapsed time: 22 seconds
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (cu, cr)
+// w (cr): Run Connection Automation: addNotify
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (2 out of 2 selected)]", 0, true, true, ui.utils.TriState.True); // K (O, w) - Node
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (w)
+dismissDialog("Run Connection Automation"); // w (cr)
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// bB (cr):  Run Connection Automation : addNotify
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/MD5HF_0/S00_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins MD5HF_0/S00_AXI] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// Tcl Message: Slave segment </MD5HF_0/S00_AXI/S00_AXI_reg> is being mapped into address space </axi_dma_0/Data_MM2S> at <0x44A0_0000 [ 64K ]> 
+// Tcl Message: INFO: [BD 41-1051] The usage register of slave segment /MD5HF_0/S00_AXI/S00_AXI_reg does not match the usage memory of address space /axi_dma_0/Data_MM2S and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space. 
+// Tcl Message: Excluding slave segment /MD5HF_0/S00_AXI/S00_AXI_reg from address space /axi_dma_0/Data_MM2S. Slave segment </MD5HF_0/S00_AXI/S00_AXI_reg> is being mapped into address space </microblaze_0/Data> at <0x44A0_0000 [ 64K ]> 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_1/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins MD5HF_0/s00_axis_aclk] 
+// Tcl Message: endgroup 
+dismissDialog("Run Connection Automation"); // bB (cr)
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "System_zoom_in"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 993, 124, 1224, 471, false, false, false, true, false); // go (i, cr) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // af (ao, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cr): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bB (cr):  Edit in IP Packager : addNotify
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name MD5HF_v1_0_project -directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.tmp/MD5HF_v1_0_project c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  2258 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// [GUI Memory]: 193 MB (+4383kb) [00:04:44]
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1797.996 ; gain = 0.000 
+// 'i' command handler elapsed time: 7 seconds
+dismissDialog("Edit in IP Packager"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 203 MB (+621kb) [00:04:50]
+// Elapsed time: 48 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 19 seconds
+setFileChooser("C:/Users/catar/Desktop/git/md5-hardware/md5.vhd");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 23 seconds
+// [Engine Memory]: 1,492 MB (+1680kb) [00:05:57]
+dismissDialog("Add Sources"); // c (cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse -copy_to c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/src C:/Users/catar/Desktop/git/md5-hardware/md5.vhd 
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+dismissDialog("Add Sources"); // c (cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+setFileChooser("C:/Users/catar/Desktop/git/md5-hardware/register.vhd");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 5 seconds
+dismissDialog("Add Sources"); // c (cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse -copy_to c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/src C:/Users/catar/Desktop/git/md5-hardware/register.vhd 
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd)]", 1, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // ai (ao, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd), MD5HF_v1_0_S00_AXI_inst : MD5HF_v1_0_S00_AXI(arch_imp) (MD5HF_v1_0_S00_AXI.vhd)]", 2, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // ai (ao, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd), MD5HF_v1_0_S00_AXIS_inst : MD5HF_v1_0_S00_AXIS(arch_imp) (MD5HF_v1_0_S00_AXIS.vhd)]", 3, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // ai (ao, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - MD5HF", 1); // i (h, cr)
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0.vhd", 1); // i (h, cr)
+// Elapsed time: 39 seconds
+selectCodeEditor("MD5HF_v1_0.vhd", 354, 179); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0.vhd", 'v'); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,505 MB. GUI used memory: 138 MB. Current time: 7/6/20, 11:22:33 PM BST
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 2); // i (h, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 325, 151); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 'v'); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0_S00_AXIS.vhd", 3); // i (h, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0_S00_AXIS.vhd", 'v'); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, MD5HF_v1_0.vhd]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, MD5HF_v1_0.vhd]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("MD5HF_v1_0.vhd", 179, 318); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 289, 66); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - MD5HF", 0); // i (h, cr)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ar (O, cr)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h (M, cr)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // ar (O, cr)
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from Customization Parameters Wizard"); // h (M, cr)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes hdl_parameters [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'. 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (O, cr)
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// al (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// f (cr): Launch Runs: addNotify
+dismissDialog("Save Project"); // al (cr)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Jul  6 23:23:32 2020] Launched synth_1... Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 9, false); // u (O, cr)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 10 seconds
+collapseTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Mon Jul 06 23:23:40 BST 2020 ; 00:00:07 ; Vivado Synthesis Defaults (Vivado Synthesis 2019) ; Vivado Synthesis Default Reports (Vivado Synthesis 2019) ; xc7a100tcsg324-1 ; Vivado Synthesis Defaults", 0); // az (O, cr)
+expandTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Mon Jul 06 23:23:40 BST 2020 ; 00:00:07 ; Vivado Synthesis Defaults (Vivado Synthesis 2019) ; Vivado Synthesis Default Reports (Vivado Synthesis 2019) ; xc7a100tcsg324-1 ; Vivado Synthesis Defaults", 0); // az (O, cr)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Mon Jul 06 23:23:40 BST 2020 ; 00:00:07 ; Vivado Synthesis Defaults (Vivado Synthesis 2019) ; Vivado Synthesis Default Reports (Vivado Synthesis 2019) ; xc7a100tcsg324-1 ; Vivado Synthesis Defaults", 0, "synth_1", 0, true, false, false, false, false, true); // az (O, cr) - Double Click - Node
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Implementation Defaults (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xc7a100tcsg324-1 ; Default settings for Implementation.", 1, "constrs_1", 1, false); // az (O, cr)
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; constrs_1 ; Not started ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Vivado Implementation Defaults (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xc7a100tcsg324-1 ; Default settings for Implementation.", 1, "constrs_1", 1, false, false, false, false, false, true); // az (O, cr) - Double Click
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL (aI, cr)
+// [GUI Memory]: 214 MB (+637kb) [00:08:58]
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0.vhd", 1); // i (h, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("MD5HF_v1_0.vhd", 449, 335); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("MD5HF_v1_0.vhd", 402, 337); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 45 seconds
+selectCodeEditor("MD5HF_v1_0.vhd", 528, 244); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("MD5HF_v1_0.vhd", 414, 385); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 324, 249); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 368, 247); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 386, 319); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("MD5HF_v1_0.vhd", 339, 360); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 54, 245); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 381, 311); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("MD5HF_v1_0.vhd", 349, 324); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 358, 314); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 339, 405); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 395, 257); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 476, 348); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 325, 361); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 268, 193); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 335, 361); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 273, 246); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("MD5HF_v1_0.vhd", 290, 160); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 40, 193); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("MD5HF_v1_0.vhd", 162, 94); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0.vhd", 'v'); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("MD5HF_v1_0.vhd", 193, 329); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 302, 253); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 338, 278); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 308, 298); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 275, 375); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 197, 348); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0.vhd", 'v'); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - MD5HF", 0); // i (h, cr)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ar (O, cr)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h (M, cr)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // ar (O, cr)
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from Customization Parameters Wizard"); // h (M, cr)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes hdl_parameters [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'. 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar (O, cr)
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// al (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Save Project"); // al (cr)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Jul  6 23:28:36 2020] Launched synth_1... Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 20 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-638] synthesizing module 'MD5HF_v1_0' [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0.vhd:61]. ]", 27, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0.vhd;-;;-;16;-;line;-;61;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-638] synthesizing module 'MD5HF_v1_0' [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0.vhd:61]. ]", 27, true, false, false, false, false, true); // ah (O, cr) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-638] synthesizing module 'MD5HF_v1_0' [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0.vhd:61]. , [Synth 8-638] synthesizing module 'MD5HF_v1_0_S00_AXI' [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:88]. ]", 28, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0_S00_AXI.vhd;-;;-;16;-;line;-;88;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-638] synthesizing module 'MD5HF_v1_0' [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0.vhd:61]. , [Synth 8-638] synthesizing module 'MD5HF_v1_0_S00_AXI' [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:88]. ]", 28, false, false, false, false, false, true); // ah (O, cr) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-226] default block is never used [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:238]. ]", 29, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0_S00_AXI.vhd;-;;-;16;-;line;-;238;-;;-;16;-;"); // ah (O, cr)
+// [GUI Memory]: 232 MB (+7246kb) [00:13:46]
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-226] default block is never used [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:238]. ]", 29, true, false, false, false, false, true); // ah (O, cr) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-226] default block is never used [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:238]. , [Synth 8-226] default block is never used [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:404]. ]", 30, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0_S00_AXI.vhd;-;;-;16;-;line;-;404;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-226] default block is never used [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:238]. , [Synth 8-226] default block is never used [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:404]. ]", 30, false, false, false, false, false, true); // ah (O, cr) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-97] array index 63 out of range [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:408]. ]", 31, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-97] array index 63 out of range [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:408]. ]", 31, false, false, false, false, false, true); // ah (O, cr) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-97] array index 63 out of range [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:408]. ]", 31, false, false, false, false, false, true); // ah (O, cr) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-614] signal 'resRegister' is read in the process but is not in the sensitivity list [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:399]. ]", 32, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0_S00_AXI.vhd;-;;-;16;-;line;-;399;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-614] signal 'resRegister' is read in the process but is not in the sensitivity list [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:399]. ]", 32, false, false, false, false, false, true); // ah (O, cr) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-285] failed synthesizing module 'MD5HF_v1_0_S00_AXI' [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:88]. ]", 33, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0_S00_AXI.vhd;-;;-;16;-;line;-;88;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-285] failed synthesizing module 'MD5HF_v1_0_S00_AXI' [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:88]. ]", 33, true, false, false, false, false, true); // ah (O, cr) - Double Click - Node
+// Elapsed time: 10 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 285, 174); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0.vhd", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0.vhd", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 2); // i (h, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-638] synthesizing module 'MD5HF_v1_0' [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0.vhd:61]. ]", 27, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0.vhd;-;;-;16;-;line;-;61;-;;-;16;-;"); // ah (O, cr)
+// Elapsed time: 59 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd), md5_comp : MD5(Behavioral) (md5.vhd)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd), md5_comp : MD5(Behavioral) (md5.vhd)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("md5.vhd", 338, 210); // ch (w, cr)
+selectCodeEditor("md5.vhd", 310, 246); // ch (w, cr)
+selectCodeEditor("md5.vhd", 558, 214); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 2); // i (h, cr)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "resreg", true); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "resreg"); // l (aP, cr)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String) null); // l (aP, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "md5.vhd", 4); // i (h, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Jul  6 23:31:23 2020] Launched synth_1... Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 23 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-614] signal 'resRegister' is read in the process but is not in the sensitivity list [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:399]. ]", 28, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0_S00_AXI.vhd;-;;-;16;-;line;-;399;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-285] failed synthesizing module 'MD5HF_v1_0_S00_AXI' [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:88]. ]", 29, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0_S00_AXI.vhd;-;;-;16;-;line;-;88;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-614] signal 'resRegister' is read in the process but is not in the sensitivity list [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:399]. ]", 28, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0_S00_AXI.vhd;-;;-;16;-;line;-;399;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-97] array index 63 out of range [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:408]. ]", 27, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0_S00_AXI.vhd;-;;-;16;-;line;-;408;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-226] default block is never used [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:238]. ]", 26, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0_S00_AXI.vhd;-;;-;16;-;line;-;238;-;;-;16;-;"); // ah (O, cr)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0.vhd", 1); // i (h, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("MD5HF_v1_0.vhd", 341, 390); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 341, 389, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0_S00_AXIS.vhd", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0.vhd", 1); // i (h, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 1038, 47); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 461, 238); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 331, 230); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 331, 230, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("MD5HF_v1_0.vhd", 318, 210); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("MD5HF_v1_0.vhd", 292, 169); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Jul  6 23:33:24 2020] Launched synth_1... Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 29 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-614] signal 'resRegister' is read in the process but is not in the sensitivity list [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:399]. ]", 28, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-614] signal 'resRegister' is read in the process but is not in the sensitivity list [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:399]. ]", 28, false, false, false, false, false, true); // ah (O, cr) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-614] signal 'resRegister' is read in the process but is not in the sensitivity list [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:399]. ]", 28, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0_S00_AXI.vhd;-;;-;16;-;line;-;399;-;;-;16;-;"); // ah (O, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 198, 298); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 405, 307); // ch (w, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-97] array index 63 out of range [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:408]. ]", 27, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0_S00_AXI.vhd;-;;-;16;-;line;-;408;-;;-;16;-;"); // ah (O, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 196, 331); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 223, 328); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 224, 328, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 290, 109); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 384, 147); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 286, 106); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Jul  6 23:34:49 2020] Launched synth_1... Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 29 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-690] width mismatch in assignment; target has 32 bits, source has 2 bits [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:415]. ]", 27, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0_S00_AXI.vhd;-;;-;16;-;line;-;415;-;;-;16;-;"); // ah (O, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 206, 182); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 213, 179); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 201, 174); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 429, 174); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 376, 224); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Jul  6 23:35:57 2020] Launched synth_1... Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 19 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-285] failed synthesizing module 'MD5HF_v1_0_S00_AXI' [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:88]. ]", 29, true); // ah (O, cr) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-690] width mismatch in assignment; target has 128 bits, source has 32 bits [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:447]. ]", 28, false); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-690] width mismatch in assignment; target has 128 bits, source has 32 bits [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:447]. ]", 28, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0_S00_AXI.vhd;-;;-;16;-;line;-;447;-;;-;16;-;"); // ah (O, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 246, 337); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 187, 334); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 188, 333, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 'c'); // ch (w, cr)
+// Elapsed time: 15 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "dataInMemMap", true); // l (aP, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 328, 27); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 486, 82); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0.vhd", 1); // i (h, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 294, 232); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 294, 232, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "MD5HF_v1_0.vhd", 'c'); // ch (w, cr)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "s_dataOutSlave", true); // l (aP, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 315, 26); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("MD5HF_v1_0.vhd", 315, 285); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 315, 285, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("MD5HF_v1_0.vhd", 307, 193); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 307, 193, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "MD5HF_v1_0.vhd", 'c'); // ch (w, cr)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "s_dataOutSlave", true); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "s_dataOutSlave"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "s_dataOutSlave"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "s_dataOutSlave"); // l (aP, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 317, 27); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 313, 176); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 330, 174); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 326, 231); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 326, 231, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "MD5HF_v1_0.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 319, 231); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 273, 278); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0.vhd", 1); // i (h, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 303, 192); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 303, 192, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("MD5HF_v1_0.vhd", 318, 285); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 318, 285, false, false, false, false, true); // ch (w, cr) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0_S00_AXIS.vhd", 3); // i (h, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Jul  6 23:38:26 2020] Launched synth_1... Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 2); // i (h, cr)
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aH, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0.vhd", 1); // i (h, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 369, 280); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 2); // i (h, cr)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 11 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 187, 370); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 187, 370, false, false, false, false, true); // ch (w, cr) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0.vhd", 1); // i (h, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 321, 281); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 321, 281, false, false, false, false, true); // ch (w, cr) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 2); // i (h, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 180, 396); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 167, 371); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 167, 370, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 197, 381); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 188, 362); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 188, 361, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 'c'); // ch (w, cr)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "dataInMemMap", true); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "dataInMemMap"); // l (aP, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0.vhd", 1); // i (h, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 320, 311); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 319, 277); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 319, 277, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "MD5HF_v1_0.vhd", 'c'); // ch (w, cr)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "s_dataInMemMap", true); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "s_dataInMemMap"); // l (aP, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 308, 366); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 267, 403); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0.vhd", 'c'); // ch (w, cr)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "dataInMemMap", true); // l (aP, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 332, 30); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 387, 168); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Jul  6 23:39:27 2020] Launched synth_1... Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 10 seconds
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aH, cr)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'dataInMemMap': port width = 128, actual width = 32 [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0.vhd:173]. ]", 30, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0.vhd;-;;-;16;-;line;-;173;-;;-;16;-;"); // ah (O, cr)
+// Elapsed time: 28 seconds
+selectCodeEditor("MD5HF_v1_0.vhd", 233, 383); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 233, 383, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 18 seconds
+selectCodeEditor("MD5HF_v1_0.vhd", 213, 268); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 258, 313); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 326, 317); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 326, 316, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "MD5HF_v1_0.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 205, 329); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 205, 329, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "MD5HF_v1_0.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 335, 338); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Jul  6 23:41:00 2020] Launched synth_1... Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 20 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-690] width mismatch in assignment; target has 128 bits, source has 32 bits [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/src/md5.vhd:277]. ]", 31, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\src\md5.vhd;-;;-;16;-;line;-;277;-;;-;16;-;"); // ah (O, cr)
+selectCodeEditor("md5.vhd", 351, 299); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0_S00_AXIS.vhd", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0.vhd", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0_S00_AXIS.vhd", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 2); // i (h, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 212, 297); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 74, 318); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 80, 323); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 82, 315); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 97, 296); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 446, 298); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Jul  6 23:42:17 2020] Launched synth_1... Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log 
+// [GUI Memory]: 244 MB (+800kb) [00:27:00]
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 24 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-256] done synthesizing module 'MD5HF_v1_0_S00_AXI' (1#1) [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:88]. ]", 29, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0_S00_AXI.vhd;-;;-;16;-;line;-;88;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-256] done synthesizing module 'MD5HF_v1_0_S00_AXI' (1#1) [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:88]. ]", 29, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0_S00_AXI.vhd;-;;-;16;-;line;-;88;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-256] done synthesizing module 'MD5HF_v1_0_S00_AXI' (1#1) [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:88]. ]", 29, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0_S00_AXI.vhd;-;;-;16;-;line;-;88;-;;-;16;-;"); // ah (O, cr)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aH, cr)
+// Elapsed time: 12 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "resize"); // l (aP, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 242, 374); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 194, 294); // ch (w, cr)
+typeControlKey((HResource) null, "MD5HF_v1_0_S00_AXI.vhd", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "md5.vhd", 4); // i (h, cr)
+selectCodeEditor("md5.vhd", 191, 296); // ch (w, cr)
+selectCodeEditor("md5.vhd", 195, 317); // ch (w, cr)
+selectCodeEditor("md5.vhd", 218, 301); // ch (w, cr)
+selectCodeEditor("md5.vhd", 195, 330); // ch (w, cr)
+selectCodeEditor("md5.vhd", 198, 346); // ch (w, cr)
+selectCodeEditor("md5.vhd", 515, 354); // ch (w, cr)
+typeControlKey((HResource) null, "md5.vhd", 'v'); // ch (w, cr)
+typeControlKey((HResource) null, "md5.vhd", 'v'); // ch (w, cr)
+typeControlKey((HResource) null, "md5.vhd", 'v'); // ch (w, cr)
+typeControlKey((HResource) null, "md5.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("md5.vhd", 522, 366); // ch (w, cr)
+selectCodeEditor("md5.vhd", 522, 366, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("md5.vhd", 520, 387); // ch (w, cr)
+selectCodeEditor("md5.vhd", 520, 387, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("md5.vhd", 520, 400); // ch (w, cr)
+selectCodeEditor("md5.vhd", 520, 399, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("md5.vhd", 521, 419); // ch (w, cr)
+selectCodeEditor("md5.vhd", 521, 419, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("md5.vhd", 480, 366); // ch (w, cr)
+selectCodeEditor("md5.vhd", 480, 366, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("md5.vhd", 472, 384); // ch (w, cr)
+selectCodeEditor("md5.vhd", 472, 384, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("md5.vhd", 480, 396); // ch (w, cr)
+selectCodeEditor("md5.vhd", 480, 396, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("md5.vhd", 482, 414); // ch (w, cr)
+selectCodeEditor("md5.vhd", 482, 414, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("md5.vhd", 212, 279); // ch (w, cr)
+typeControlKey((HResource) null, "md5.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("md5.vhd", 207, 348); // ch (w, cr)
+typeControlKey((HResource) null, "md5.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("md5.vhd", 211, 365); // ch (w, cr)
+selectCodeEditor("md5.vhd", 207, 380); // ch (w, cr)
+selectCodeEditor("md5.vhd", 214, 398); // ch (w, cr)
+selectCodeEditor("md5.vhd", 212, 398); // ch (w, cr)
+selectCodeEditor("md5.vhd", 265, 350); // ch (w, cr)
+selectCodeEditor("md5.vhd", 494, 361); // ch (w, cr)
+selectCodeEditor("md5.vhd", 265, 379); // ch (w, cr)
+selectCodeEditor("md5.vhd", 190, 194); // ch (w, cr)
+selectCodeEditor("md5.vhd", 191, 265); // ch (w, cr)
+typeControlKey((HResource) null, "md5.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("md5.vhd", 192, 209); // ch (w, cr)
+selectCodeEditor("md5.vhd", 192, 276); // ch (w, cr)
+typeControlKey((HResource) null, "md5.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("md5.vhd", 187, 227); // ch (w, cr)
+selectCodeEditor("md5.vhd", 198, 299); // ch (w, cr)
+typeControlKey((HResource) null, "md5.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("md5.vhd", 200, 297); // ch (w, cr)
+selectCodeEditor("md5.vhd", 193, 251); // ch (w, cr)
+selectCodeEditor("md5.vhd", 199, 312); // ch (w, cr)
+typeControlKey((HResource) null, "md5.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("md5.vhd", 223, 254); // ch (w, cr)
+selectCodeEditor("md5.vhd", 201, 224); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("md5.vhd", 283, 126); // ch (w, cr)
+typeControlKey((HResource) null, "md5.vhd", 'c'); // ch (w, cr)
+selectCodeEditor("md5.vhd", 264, 198); // ch (w, cr)
+typeControlKey((HResource) null, "md5.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("md5.vhd", 367, 274); // ch (w, cr)
+selectCodeEditor("md5.vhd", 261, 208); // ch (w, cr)
+typeControlKey((HResource) null, "md5.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("md5.vhd", 266, 229); // ch (w, cr)
+typeControlKey((HResource) null, "md5.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("md5.vhd", 259, 242); // ch (w, cr)
+typeControlKey((HResource) null, "md5.vhd", 'v'); // ch (w, cr)
+selectCodeEditor("md5.vhd", 397, 271); // ch (w, cr)
+selectCodeEditor("md5.vhd", 334, 240); // ch (w, cr)
+selectCodeEditor("md5.vhd", 359, 270); // ch (w, cr)
+selectCodeEditor("md5.vhd", 346, 247); // ch (w, cr)
+selectCodeEditor("md5.vhd", 344, 230); // ch (w, cr)
+selectCodeEditor("md5.vhd", 514, 309); // ch (w, cr)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u (O, cr)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bB (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bB (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cr)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Mon Jul  6 23:45:02 2020] Launched synth_1... Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bB (cr)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 21 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-256] done synthesizing module 'MD5HF_v1_0_S00_AXI' (1#1) [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:88]. ]", 29, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0_S00_AXI.vhd;-;;-;16;-;line;-;88;-;;-;16;-;"); // ah (O, cr)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-256] done synthesizing module 'MD5HF_v1_0_S00_AXI' (1#1) [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:88]. ]", 29); // ah (O, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, MD5HF_v1_0(arch_imp) (MD5HF_v1_0.vhd), MD5HF_v1_0_S00_AXIS_inst : MD5HF_v1_0_S00_AXIS(arch_imp) (MD5HF_v1_0_S00_AXIS.vhd)]", 3); // B (F, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("MD5HF_v1_0_S00_AXI.vhd", 307, 297); // ch (w, cr)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "register", true); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "register"); // l (aP, cr)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "register"); // l (aP, cr)
+// Elapsed time: 14 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-256] done synthesizing module 'MD5HF_v1_0_S00_AXI' (1#1) [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:88]. , [Synth 8-256] done synthesizing module 'RegisterP' (2#1) [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/src/register.vhd:13]. ]", 30, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\src\register.vhd;-;;-;16;-;line;-;13;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-256] done synthesizing module 'MD5HF_v1_0_S00_AXI' (1#1) [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:88]. ]", 29, true); // ah (O, cr) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0_S00_AXI.vhd;-;;-;16;-;line;-;88;-;;-;16;-;"); // ah (O, cr)
+// Elapsed time: 21 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-256] done synthesizing module 'MD5HF_v1_0_S00_AXI' (1#1) [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:88]. , [Synth 8-256] done synthesizing module 'MD5' (4#1) [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/src/md5.vhd:18]. ]", 33, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\src\md5.vhd;-;;-;16;-;line;-;18;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6054] Found Dynamic range expression with variable size [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/src/md5.vhd:229]. ]", 34, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\src\md5.vhd;-;;-;16;-;line;-;229;-;;-;16;-;"); // ah (O, cr)
+// Elapsed time: 20 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'data_out': port width = 128, actual width = 32 [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0.vhd:123]. ]", 35, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0.vhd;-;;-;16;-;line;-;123;-;;-;16;-;"); // ah (O, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 334, 179); // ch (w, cr)
+selectCodeEditor("MD5HF_v1_0.vhd", 272, 275); // ch (w, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'data_out': port width = 128, actual width = 32 [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0.vhd:123]. ]", 35, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0.vhd;-;;-;16;-;line;-;123;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'data_out': port width = 128, actual width = 32 [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0.vhd:123]. ]", 35, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0.vhd;-;;-;16;-;line;-;123;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6054] Found Dynamic range expression with variable size [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/src/md5.vhd:229]. ]", 34, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\src\md5.vhd;-;;-;16;-;line;-;229;-;;-;16;-;"); // ah (O, cr)
+// Elapsed time: 93 seconds
+selectCodeEditor("md5.vhd", 304, 179); // ch (w, cr)
+selectCodeEditor("md5.vhd", 304, 179, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 21 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'data_out': port width = 128, actual width = 32 [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0.vhd:123]. ]", 35, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\hdl\MD5HF_v1_0.vhd;-;;-;16;-;line;-;123;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-256] done synthesizing module 'MD5HF_v1_0_S00_AXI' (1#1) [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:88]. , [Synth 8-256] done synthesizing module 'MD5' (4#1) [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/src/md5.vhd:18]. ]", 33, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\src\md5.vhd;-;;-;16;-;line;-;18;-;;-;16;-;"); // ah (O, cr)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-256] done synthesizing module 'MD5HF_v1_0_S00_AXI' (1#1) [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:88]. , [Synth 8-256] done synthesizing module 'MD5' (4#1) [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/src/md5.vhd:18]. ]", 33, false, false, false, false, false, true); // ah (O, cr) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-256] done synthesizing module 'MD5HF_v1_0_S00_AXI' (1#1) [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/hdl/MD5HF_v1_0_S00_AXI.vhd:88]. , [Synth 8-256] done synthesizing module 'MD5' (4#1) [c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/src/md5.vhd:18]. ]", 33, false); // ah (O, cr)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\catar\Desktop\git\md5-hardware\ip_repo\MD5HF_1.0\src\md5.vhd;-;;-;16;-;line;-;18;-;;-;16;-;"); // ah (O, cr)

@@ -16,7 +16,7 @@ entity MD5HF_v1_0_S00_AXI is
 	);
 	port (
 		-- Users to add ports here
-        dataInMaster	: in  std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
+        dataInMemMap	: in  std_logic_vector(127 downto 0);
 		done			: in std_logic;
 		-- dataOutMaster   : out std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 		-- User ports ends
@@ -125,7 +125,8 @@ architecture arch_imp of MD5HF_v1_0_S00_AXI is
 	signal aw_en	: std_logic;
 	
     
-    signal resRegister: std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
+	signal resRegister: std_logic_vector(127 downto 0);
+
 
 begin
 	-- I/O Connections assignments
@@ -410,8 +411,8 @@ begin
 	      when b"011" =>
 	        reg_data_out <= resRegister(127 downto 96);
 	      when b"100" =>
-	        --reg_data_out <= std_logic_vector(resize(unsigned'('0'&done), 32)); 
-	        reg_data_out <= '0' & done; 
+	        reg_data_out <= std_logic_vector(resize(unsigned'('1'&done), 32)); 
+	        -- reg_data_out <= "1111111111111111111111111111111" & done; 
 	      when b"101" =>
 	        reg_data_out <= slv_reg5;
 	      when b"110" =>
@@ -443,7 +444,7 @@ begin
 
 
 	-- Add user logic here
-
+	resRegister <= dataInMemMap;
 	-- User logic ends
 
 end arch_imp;
