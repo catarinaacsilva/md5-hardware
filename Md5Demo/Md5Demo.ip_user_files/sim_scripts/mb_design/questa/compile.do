@@ -236,18 +236,18 @@ vlog -work xil_defaultlib -64 "+incdir+../../../../Md5Demo.srcs/sources_1/bd/mb_
 "../../../bd/mb_design/ip/mb_design_axis_data_fifo_0_0/sim/mb_design_axis_data_fifo_0_0.v" \
 
 vcom -work xil_defaultlib -64 -93 \
-"../../../bd/mb_design/ipshared/2376/hdl/Md5HashFunction_v1_0_M00_AXIS.vhd" \
-"../../../bd/mb_design/ipshared/2376/hdl/Md5HashFunction_v1_0_S00_AXIS.vhd" \
-"../../../bd/mb_design/ipshared/2376/src/md5.vhd" \
-"../../../bd/mb_design/ipshared/2376/src/register.vhd" \
-"../../../bd/mb_design/ipshared/2376/hdl/Md5HashFunction_v1_0.vhd" \
-"../../../bd/mb_design/ip/mb_design_Md5HashFunction_0_0/sim/mb_design_Md5HashFunction_0_0.vhd" \
+"../../../bd/mb_design/ipshared/1b48/hdl/MD5HF_v1_0_S00_AXI.vhd" \
+"../../../bd/mb_design/ipshared/1b48/hdl/MD5HF_v1_0_S00_AXIS.vhd" \
+"../../../bd/mb_design/ipshared/1b48/src/md5.vhd" \
+"../../../bd/mb_design/ipshared/1b48/src/register.vhd" \
+"../../../bd/mb_design/ipshared/1b48/hdl/MD5HF_v1_0.vhd" \
+"../../../bd/mb_design/ip/mb_design_MD5HF_0_1/sim/mb_design_MD5HF_0_1.vhd" \
 
 vlog -work axi_protocol_converter_v2_1_20 -64 "+incdir+../../../../Md5Demo.srcs/sources_1/bd/mb_design/ipshared/ec67/hdl" "+incdir+../../../../Md5Demo.srcs/sources_1/bd/mb_design/ipshared/4fba" "+incdir+../../../../Md5Demo.srcs/sources_1/bd/mb_design/ipshared/8713/hdl" \
 "../../../../Md5Demo.srcs/sources_1/bd/mb_design/ipshared/c4a6/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../Md5Demo.srcs/sources_1/bd/mb_design/ipshared/ec67/hdl" "+incdir+../../../../Md5Demo.srcs/sources_1/bd/mb_design/ipshared/4fba" "+incdir+../../../../Md5Demo.srcs/sources_1/bd/mb_design/ipshared/8713/hdl" \
-"../../../bd/mb_design/ip/mb_design_auto_pc_8/sim/mb_design_auto_pc_8.v" \
+"../../../bd/mb_design/ip/mb_design_auto_pc_9/sim/mb_design_auto_pc_9.v" \
 "../../../bd/mb_design/ip/mb_design_auto_pc_0/sim/mb_design_auto_pc_0.v" \
 "../../../bd/mb_design/ip/mb_design_auto_pc_1/sim/mb_design_auto_pc_1.v" \
 "../../../bd/mb_design/ip/mb_design_auto_pc_2/sim/mb_design_auto_pc_2.v" \
@@ -256,6 +256,7 @@ vlog -work xil_defaultlib -64 "+incdir+../../../../Md5Demo.srcs/sources_1/bd/mb_
 "../../../bd/mb_design/ip/mb_design_auto_pc_5/sim/mb_design_auto_pc_5.v" \
 "../../../bd/mb_design/ip/mb_design_auto_pc_6/sim/mb_design_auto_pc_6.v" \
 "../../../bd/mb_design/ip/mb_design_auto_pc_7/sim/mb_design_auto_pc_7.v" \
+"../../../bd/mb_design/ip/mb_design_auto_pc_8/sim/mb_design_auto_pc_8.v" \
 
 vcom -work xil_defaultlib -64 -93 \
 "../../../bd/mb_design/sim/mb_design.vhd" \
