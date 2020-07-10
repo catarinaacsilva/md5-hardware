@@ -1,32 +1,22 @@
-2020-07-03T17:20:25.920939600255-17:20:25 **** Incremental Build of configuration Debug for project MD5 ****
+2020-07-10T10:15:48.991661900255-10:15:49 **** Incremental Build of configuration Debug for project MD5 ****
 000-make all 
 000-'Building file: ../src/helloworld.c'
 000-'Invoking: MicroBlaze gcc compiler'
 000-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Xilinx/Projects/MD5/mb_design_wrapper/export/mb_design_wrapper/sw/mb_design_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-000-../src/helloworld.c: In function 'md5':
-000/MD5/src/helloworld.c176-1-1variable 'p2' set but not used [-Wunused-but-set-variable]1-../src/helloworld.c:176:21: warning: variable 'p2' set but not used [-Wunused-but-set-variable]
-000-  uint8_t *p0, *p1, *p2, *p3;
-000-                     ^~
-000/MD5/src/helloworld.c176-1-1variable 'p1' set but not used [-Wunused-but-set-variable]1-../src/helloworld.c:176:16: warning: variable 'p1' set but not used [-Wunused-but-set-variable]
-000-  uint8_t *p0, *p1, *p2, *p3;
-000-                ^~
-000/MD5/src/helloworld.c176-1-1variable 'p0' set but not used [-Wunused-but-set-variable]1-../src/helloworld.c:176:11: warning: variable 'p0' set but not used [-Wunused-but-set-variable]
-000-  uint8_t *p0, *p1, *p2, *p3;
-000-           ^~
 000-../src/helloworld.c: In function 'Md5Sw':
-000/MD5/src/helloworld.c195-1-1passing argument 1 of 'md5' from incompatible pointer type [-Wincompatible-pointer-types]1-../src/helloworld.c:195:18: warning: passing argument 1 of 'md5' from incompatible pointer type [-Wincompatible-pointer-types]
-000-      *pDst = md5(p, sizeof(*p));
-000-                  ^
-000/MD5/src/helloworld.c66-1-1expected 'unsigned char *' but argument is of type 'int *'0-../src/helloworld.c:66:33: note: expected 'unsigned char *' but argument is of type 'int *'
-000- unsigned int md5(unsigned char *initial_msg, unsigned long initial_len)
-000-                  ~~~~~~~~~~~~~~~^~~~~~~~~~~
+000/MD5/src/helloworld.c197-1-1passing argument 1 of 'md5' from incompatible pointer type [-Wincompatible-pointer-types]1-../src/helloworld.c:197:26: warning: passing argument 1 of 'md5' from incompatible pointer type [-Wincompatible-pointer-types]
+000-   struct word128 w = md5(p, sizeof(*p));
+000-                          ^
+000/MD5/src/helloworld.c73-1-1expected 'unsigned char *' but argument is of type 'int *'0-../src/helloworld.c:73:35: note: expected 'unsigned char *' but argument is of type 'int *'
+000- struct word128 md5(unsigned char *initial_msg, unsigned long initial_len)
+000-                    ~~~~~~~~~~~~~~~^~~~~~~~~~~
 000-../src/helloworld.c: In function 'CheckMd5':
-000/MD5/src/helloworld.c209-1-1passing argument 1 of 'md5' from incompatible pointer type [-Wincompatible-pointer-types]1-../src/helloworld.c:209:14: warning: passing argument 1 of 'md5' from incompatible pointer type [-Wincompatible-pointer-types]
-000-   pDst = md5(p, sizeof(*p));
-000-              ^
-000/MD5/src/helloworld.c66-1-1expected 'unsigned char *' but argument is of type 'int *'0-../src/helloworld.c:66:33: note: expected 'unsigned char *' but argument is of type 'int *'
-000- unsigned int md5(unsigned char *initial_msg, unsigned long initial_len)
-000-                  ~~~~~~~~~~~~~~~^~~~~~~~~~~
+000/MD5/src/helloworld.c219-1-1passing argument 1 of 'md5' from incompatible pointer type [-Wincompatible-pointer-types]1-../src/helloworld.c:219:26: warning: passing argument 1 of 'md5' from incompatible pointer type [-Wincompatible-pointer-types]
+000-   struct word128 w = md5(p, sizeof(*p));
+000-                          ^
+000/MD5/src/helloworld.c73-1-1expected 'unsigned char *' but argument is of type 'int *'0-../src/helloworld.c:73:35: note: expected 'unsigned char *' but argument is of type 'int *'
+000- struct word128 md5(unsigned char *initial_msg, unsigned long initial_len)
+000-                    ~~~~~~~~~~~~~~~^~~~~~~~~~~
 000-'Finished building: ../src/helloworld.c'
 000-' '
 000-'Building target: MD5.elf'
@@ -37,9 +27,9 @@
 000-'Invoking: MicroBlaze Print Size'
 000-mb-size MD5.elf  |tee "MD5.elf.size"
 000-   text	   data	    bss	    dec	    hex	filename
-000-  19428	   1752	  32868	  54048	   d320	MD5.elf
+000-  20384	   1752	  32864	  55000	   d6d8	MD5.elf
 000-'Finished building: MD5.elf.size'
 000-' '
 00255-
-17:20:27 Build Finished (took 1s.782ms)
+10:15:51 Build Finished (took 2s.672ms)
 
