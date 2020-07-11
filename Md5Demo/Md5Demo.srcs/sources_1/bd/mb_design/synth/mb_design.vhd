@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Sat Jul 11 19:23:46 2020
+--Date        : Sat Jul 11 22:15:41 2020
 --Host        : GreatAtuin running 64-bit major release  (build 9200)
 --Command     : generate_target mb_design.bd
 --Design      : mb_design
@@ -6744,7 +6744,7 @@ architecture STRUCTURE of mb_design is
     s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_rvalid : out STD_LOGIC;
     s_axi_rready : in STD_LOGIC;
-    intr : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    intr : in STD_LOGIC_VECTOR ( 5 downto 0 );
     processor_clk : in STD_LOGIC;
     processor_rst : in STD_LOGIC;
     irq : out STD_LOGIC;
@@ -6760,8 +6760,7 @@ architecture STRUCTURE of mb_design is
     In3 : in STD_LOGIC_VECTOR ( 0 to 0 );
     In4 : in STD_LOGIC_VECTOR ( 0 to 0 );
     In5 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    In6 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    dout : out STD_LOGIC_VECTOR ( 6 downto 0 )
+    dout : out STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   end component mb_design_microblaze_0_xlconcat_0;
   component mb_design_mdm_1_0 is
@@ -7460,7 +7459,7 @@ architecture STRUCTURE of mb_design is
   signal microblaze_0_interrupt_ACK : STD_LOGIC_VECTOR ( 0 to 1 );
   signal microblaze_0_interrupt_ADDRESS : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal microblaze_0_interrupt_INTERRUPT : STD_LOGIC;
-  signal microblaze_0_intr : STD_LOGIC_VECTOR ( 6 downto 0 );
+  signal microblaze_0_intr : STD_LOGIC_VECTOR ( 5 downto 0 );
   signal reset_1 : STD_LOGIC;
   signal rst_clk_wiz_1_100M_bus_struct_reset : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_clk_wiz_1_100M_mb_reset : STD_LOGIC;
@@ -7965,7 +7964,7 @@ microblaze_0: component mb_design_microblaze_0_1
 microblaze_0_axi_intc: component mb_design_microblaze_0_axi_intc_0
      port map (
       interrupt_address(31 downto 0) => microblaze_0_interrupt_ADDRESS(31 downto 0),
-      intr(6 downto 0) => microblaze_0_intr(6 downto 0),
+      intr(5 downto 0) => microblaze_0_intr(5 downto 0),
       irq => microblaze_0_interrupt_INTERRUPT,
       processor_ack(1) => microblaze_0_interrupt_ACK(0),
       processor_ack(0) => microblaze_0_interrupt_ACK(1),
@@ -8308,8 +8307,7 @@ microblaze_0_xlconcat: component mb_design_microblaze_0_xlconcat_0
       In3(0) => axi_gpio_buttons_ip2intc_irpt,
       In4(0) => axi_uartlite_0_interrupt,
       In5(0) => axi_dma_0_mm2s_introut,
-      In6(0) => '0',
-      dout(6 downto 0) => microblaze_0_intr(6 downto 0)
+      dout(5 downto 0) => microblaze_0_intr(5 downto 0)
     );
 rst_clk_wiz_1_100M: component mb_design_rst_clk_wiz_1_100M_0
      port map (

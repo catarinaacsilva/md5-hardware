@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1594491939">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1594502235">
   <File Type="BITSTR-BMM" Name="mb_design_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="mb_design_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="mb_design_wrapper_timing_summary_init.rpt"/>

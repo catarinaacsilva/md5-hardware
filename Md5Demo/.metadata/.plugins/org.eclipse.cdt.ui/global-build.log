@@ -1,5 +1,23 @@
 Nothing to build in platform 'mb_design_wrapper'
 
-09:27:04 **** Incremental Build of configuration Release for project MD5App ****
+22:52:58 **** Incremental Build of configuration Release for project MD5App ****
 make all 
-make: Nothing to be done for 'all'.
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/export/mb_design_wrapper/sw/mb_design_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: MD5App.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/export/mb_design_wrapper/sw/mb_design_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5App.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5App.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MD5App.elf  |tee "MD5App.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  14624	   1900	   3172	  19696	   4cf0	MD5App.elf
+'Finished building: MD5App.elf.size'
+' '
+22:53:00 **** Incremental Build of configuration Debug for project MD5App_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

@@ -835,3 +835,361 @@ con
 19:33:09 INFO  : plnx-install-location is set to ''
 19:33:09 INFO  : Successfully done query RDI_DATADIR 
 19:33:09 INFO  : Successfully done setting workspace for the tool. 
+19:39:19 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+19:41:11 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+19:41:56 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+19:55:07 INFO  : Hardware specification for platform project 'mb_design_wrapper' is updated.
+19:55:51 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\temp_xsdb_launch_script.tcl
+19:55:54 INFO  : XSCT server has started successfully.
+19:55:54 WARN  : Failed to closehw "C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa"
+Reason: Cannot close hw design 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa'.
+Design is not opened in the current session.
+
+19:55:54 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa
+
+19:55:54 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+19:55:54 ERROR : Failed to openhw "C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+19:55:57 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+19:55:57 ERROR : Failed to get platform details for the project 'MD5App'. Cannot sync application flags.
+19:55:58 ERROR : Failed to compute checksum of hardware specification file used by project 'MD5App'
+19:56:21 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa
+
+19:56:21 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+19:56:21 ERROR : Failed to openhw "C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+19:57:17 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa
+
+19:57:17 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+19:57:17 ERROR : Failed to openhw "C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+19:57:29 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa
+
+19:57:29 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+19:57:29 ERROR : Failed to openhw "C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+19:59:10 INFO  : Hardware specification for platform project 'mb_design_wrapper' is updated.
+20:00:01 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\temp_xsdb_launch_script.tcl
+20:00:04 INFO  : XSCT server has started successfully.
+20:00:04 ERROR : (XSDB Server)ERROR: [HDF 64-5] File not found - C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa
+
+20:00:04 ERROR : (XSDB Server)ERROR: [Hsi 55-1451] Error: running open_hw_design.
+
+20:00:05 ERROR : Failed to openhw "C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper/export/mb_design_wrapper/hw/mb_design_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+20:00:07 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+20:00:07 ERROR : Failed to get platform details for the project 'MD5App'. Cannot sync application flags.
+20:00:08 ERROR : Failed to compute checksum of hardware specification file used by project 'MD5App'
+20:04:25 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\temp_xsdb_launch_script.tcl
+20:04:31 INFO  : XSCT server has started successfully.
+20:04:32 INFO  : plnx-install-location is set to ''
+20:04:32 INFO  : Successfully done setting XSCT server connection channel  
+20:04:32 INFO  : Successfully done setting workspace for the tool. 
+20:04:34 INFO  : Registering command handlers for Vitis TCF services
+20:04:35 INFO  : Successfully done query RDI_DATADIR 
+20:04:59 INFO  : Hardware specification for platform project 'mb_design_wrapper' is updated.
+20:06:42 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\temp_xsdb_launch_script.tcl
+20:06:45 INFO  : XSCT server has started successfully.
+20:06:57 INFO  : Hardware specification for platform project 'mb_design_wrapper' is updated.
+20:11:56 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\temp_xsdb_launch_script.tcl
+20:12:03 INFO  : Registering command handlers for Vitis TCF services
+20:12:03 INFO  : XSCT server has started successfully.
+20:12:03 INFO  : plnx-install-location is set to ''
+20:12:04 INFO  : Successfully done setting XSCT server connection channel  
+20:12:04 INFO  : Successfully done query RDI_DATADIR 
+20:12:04 INFO  : Successfully done setting workspace for the tool. 
+20:42:43 INFO  : Hardware specification for platform project 'mb_design_wrapper' is updated.
+20:44:48 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+20:44:48 ERROR : Failed to get platform details for the project 'MD5App'. Cannot sync application flags.
+21:00:09 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\temp_xsdb_launch_script.tcl
+21:00:16 INFO  : Registering command handlers for Vitis TCF services
+21:00:18 INFO  : XSCT server has started successfully.
+21:00:18 INFO  : plnx-install-location is set to ''
+21:00:18 INFO  : Successfully done setting XSCT server connection channel  
+21:00:19 INFO  : Successfully done setting workspace for the tool. 
+21:00:19 INFO  : Successfully done query RDI_DATADIR 
+21:00:28 INFO  : Hardware specification for platform project 'mb_design_wrapper' is updated.
+22:24:01 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\temp_xsdb_launch_script.tcl
+22:24:08 INFO  : Registering command handlers for Vitis TCF services
+22:24:09 INFO  : XSCT server has started successfully.
+22:24:09 INFO  : Successfully done setting XSCT server connection channel  
+22:24:10 INFO  : plnx-install-location is set to ''
+22:24:10 INFO  : Successfully done setting workspace for the tool. 
+22:24:10 INFO  : Successfully done query RDI_DATADIR 
+22:24:27 INFO  : Hardware specification for platform project 'mb_design_wrapper' is updated.
+22:24:50 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\temp_xsdb_launch_script.tcl
+22:24:57 INFO  : Registering command handlers for Vitis TCF services
+22:24:58 INFO  : XSCT server has started successfully.
+22:24:58 INFO  : plnx-install-location is set to ''
+22:24:58 INFO  : Successfully done setting XSCT server connection channel  
+22:24:59 INFO  : Successfully done setting workspace for the tool. 
+22:24:59 INFO  : Successfully done query RDI_DATADIR 
+22:26:18 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+22:26:18 INFO  : Updating application flags with new BSP settings...
+22:26:19 INFO  : Successfully updated application flags for project MD5App.
+22:26:21 INFO  : The hardware specfication used by project 'MD5App' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+22:26:22 INFO  : The file 'C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\MD5App\_ide\bitstream\mb_design_wrapper.bit' stored in project is removed.
+22:26:22 INFO  : The file 'C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\MD5App\_ide\bitstream\mb_design_wrapper.mmi' stored in project is removed.
+22:26:22 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\MD5App\_ide\bitstream' in project 'MD5App'.
+22:28:31 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+22:30:19 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+22:31:35 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+22:32:32 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+22:33:02 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+22:33:48 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+22:34:49 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+22:36:11 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+22:36:56 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+22:38:18 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+22:38:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:38:48 INFO  : Jtag cable 'Digilent Nexys4 210274504848A' is selected.
+22:38:48 INFO  : 'jtag frequency' command is executed.
+22:38:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504848A" && level==0} -index 0' command is executed.
+22:38:52 INFO  : FPGA configured successfully with bitstream "C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/_ide/bitstream/mb_design_wrapper.bit"
+22:38:52 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:38:52 INFO  : Context for processor 'microblaze_0' is selected.
+22:38:52 INFO  : System reset is completed.
+22:38:55 INFO  : 'after 3000' command is executed.
+22:38:55 INFO  : Context for processor 'microblaze_0' is selected.
+22:38:55 INFO  : The application 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/Release/MD5App.elf' is downloaded to processor 'microblaze_0'.
+22:38:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504848A" && level==0} -index 0
+fpga -file C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/Release/MD5App.elf
+----------------End of Script----------------
+
+22:38:56 INFO  : Memory regions updated for context PA
+22:38:56 INFO  : Memory regions updated for context PA
+22:38:56 INFO  : Context for processor 'microblaze_0' is selected.
+22:38:56 INFO  : 'con' command is executed.
+22:38:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+22:38:56 INFO  : Launch script is exported to file 'C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\.sdk\launch_scripts\single_application_debug\systemdebugger_md5app_system_standalone.tcl'
+22:40:46 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+22:40:56 INFO  : Disconnected from the channel tcfchan#6.
+22:40:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:40:56 INFO  : Jtag cable 'Digilent Nexys4 210274504848A' is selected.
+22:40:56 INFO  : 'jtag frequency' command is executed.
+22:40:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504848A" && level==0} -index 0' command is executed.
+22:40:58 INFO  : FPGA configured successfully with bitstream "C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/_ide/bitstream/mb_design_wrapper.bit"
+22:40:58 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:40:58 INFO  : Context for processor 'microblaze_0' is selected.
+22:40:58 INFO  : System reset is completed.
+22:41:01 INFO  : 'after 3000' command is executed.
+22:41:01 INFO  : Context for processor 'microblaze_0' is selected.
+22:41:02 INFO  : The application 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/Release/MD5App.elf' is downloaded to processor 'microblaze_0'.
+22:41:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504848A" && level==0} -index 0
+fpga -file C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/Release/MD5App.elf
+----------------End of Script----------------
+
+22:41:02 INFO  : Memory regions updated for context PA
+22:41:02 INFO  : Memory regions updated for context PA
+22:41:02 INFO  : Context for processor 'microblaze_0' is selected.
+22:41:02 INFO  : 'con' command is executed.
+22:41:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+22:41:02 INFO  : Launch script is exported to file 'C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\.sdk\launch_scripts\single_application_debug\systemdebugger_md5app_system_standalone.tcl'
+22:41:49 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+22:41:57 INFO  : Disconnected from the channel tcfchan#7.
+22:41:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:41:57 INFO  : Jtag cable 'Digilent Nexys4 210274504848A' is selected.
+22:41:57 INFO  : 'jtag frequency' command is executed.
+22:41:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504848A" && level==0} -index 0' command is executed.
+22:42:00 INFO  : FPGA configured successfully with bitstream "C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/_ide/bitstream/mb_design_wrapper.bit"
+22:42:00 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:42:00 INFO  : Context for processor 'microblaze_0' is selected.
+22:42:00 INFO  : System reset is completed.
+22:42:03 INFO  : 'after 3000' command is executed.
+22:42:03 INFO  : Context for processor 'microblaze_0' is selected.
+22:42:03 INFO  : The application 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/Release/MD5App.elf' is downloaded to processor 'microblaze_0'.
+22:42:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504848A" && level==0} -index 0
+fpga -file C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/Release/MD5App.elf
+----------------End of Script----------------
+
+22:42:03 INFO  : Memory regions updated for context PA
+22:42:03 INFO  : Memory regions updated for context PA
+22:42:03 INFO  : Context for processor 'microblaze_0' is selected.
+22:42:03 INFO  : 'con' command is executed.
+22:42:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+22:42:03 INFO  : Launch script is exported to file 'C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\.sdk\launch_scripts\single_application_debug\systemdebugger_md5app_system_standalone.tcl'
+22:43:16 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+22:43:36 INFO  : Disconnected from the channel tcfchan#8.
+22:43:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:43:37 INFO  : Jtag cable 'Digilent Nexys4 210274504848A' is selected.
+22:43:37 INFO  : 'jtag frequency' command is executed.
+22:43:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504848A" && level==0} -index 0' command is executed.
+22:43:39 INFO  : FPGA configured successfully with bitstream "C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/_ide/bitstream/mb_design_wrapper.bit"
+22:43:39 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:43:39 INFO  : Context for processor 'microblaze_0' is selected.
+22:43:39 INFO  : System reset is completed.
+22:43:42 INFO  : 'after 3000' command is executed.
+22:43:42 INFO  : Context for processor 'microblaze_0' is selected.
+22:43:42 INFO  : The application 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/Release/MD5App.elf' is downloaded to processor 'microblaze_0'.
+22:43:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504848A" && level==0} -index 0
+fpga -file C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/Release/MD5App.elf
+----------------End of Script----------------
+
+22:43:42 INFO  : Memory regions updated for context PA
+22:43:42 INFO  : Memory regions updated for context PA
+22:43:42 INFO  : Context for processor 'microblaze_0' is selected.
+22:43:42 INFO  : 'con' command is executed.
+22:43:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+22:43:42 INFO  : Launch script is exported to file 'C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\.sdk\launch_scripts\single_application_debug\systemdebugger_md5app_system_standalone.tcl'
+22:46:00 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+22:46:12 INFO  : Disconnected from the channel tcfchan#9.
+22:46:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:46:12 INFO  : Jtag cable 'Digilent Nexys4 210274504848A' is selected.
+22:46:13 INFO  : 'jtag frequency' command is executed.
+22:46:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504848A" && level==0} -index 0' command is executed.
+22:46:15 INFO  : FPGA configured successfully with bitstream "C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/_ide/bitstream/mb_design_wrapper.bit"
+22:46:15 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:46:15 INFO  : Context for processor 'microblaze_0' is selected.
+22:46:15 INFO  : System reset is completed.
+22:46:18 INFO  : 'after 3000' command is executed.
+22:46:18 INFO  : Context for processor 'microblaze_0' is selected.
+22:46:18 INFO  : The application 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/Release/MD5App.elf' is downloaded to processor 'microblaze_0'.
+22:46:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504848A" && level==0} -index 0
+fpga -file C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/Release/MD5App.elf
+----------------End of Script----------------
+
+22:46:18 INFO  : Memory regions updated for context PA
+22:46:18 INFO  : Memory regions updated for context PA
+22:46:18 INFO  : Context for processor 'microblaze_0' is selected.
+22:46:18 INFO  : 'con' command is executed.
+22:46:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+22:46:18 INFO  : Launch script is exported to file 'C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\.sdk\launch_scripts\single_application_debug\systemdebugger_md5app_system_standalone.tcl'
+22:48:14 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+22:48:25 INFO  : Disconnected from the channel tcfchan#10.
+22:48:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:48:25 INFO  : Jtag cable 'Digilent Nexys4 210274504848A' is selected.
+22:48:25 INFO  : 'jtag frequency' command is executed.
+22:48:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504848A" && level==0} -index 0' command is executed.
+22:48:28 INFO  : FPGA configured successfully with bitstream "C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/_ide/bitstream/mb_design_wrapper.bit"
+22:48:28 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:48:28 INFO  : Context for processor 'microblaze_0' is selected.
+22:48:28 INFO  : System reset is completed.
+22:48:31 INFO  : 'after 3000' command is executed.
+22:48:31 INFO  : Context for processor 'microblaze_0' is selected.
+22:48:31 INFO  : The application 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/Release/MD5App.elf' is downloaded to processor 'microblaze_0'.
+22:48:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504848A" && level==0} -index 0
+fpga -file C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/Release/MD5App.elf
+----------------End of Script----------------
+
+22:48:31 INFO  : Memory regions updated for context PA
+22:48:31 INFO  : Memory regions updated for context PA
+22:48:31 INFO  : Context for processor 'microblaze_0' is selected.
+22:48:31 INFO  : 'con' command is executed.
+22:48:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+22:48:31 INFO  : Launch script is exported to file 'C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\.sdk\launch_scripts\single_application_debug\systemdebugger_md5app_system_standalone.tcl'
+22:52:58 INFO  : Checking for BSP changes to sync application flags for project 'MD5App'...
+22:53:05 INFO  : Disconnected from the channel tcfchan#11.
+22:53:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:53:05 INFO  : Jtag cable 'Digilent Nexys4 210274504848A' is selected.
+22:53:05 INFO  : 'jtag frequency' command is executed.
+22:53:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504848A" && level==0} -index 0' command is executed.
+22:53:08 INFO  : FPGA configured successfully with bitstream "C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/_ide/bitstream/mb_design_wrapper.bit"
+22:53:08 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+22:53:08 INFO  : Context for processor 'microblaze_0' is selected.
+22:53:08 INFO  : System reset is completed.
+22:53:11 INFO  : 'after 3000' command is executed.
+22:53:11 INFO  : Context for processor 'microblaze_0' is selected.
+22:53:11 INFO  : The application 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/Release/MD5App.elf' is downloaded to processor 'microblaze_0'.
+22:53:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504848A" && level==0} -index 0
+fpga -file C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/_ide/bitstream/mb_design_wrapper.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/MD5App/Release/MD5App.elf
+----------------End of Script----------------
+
+22:53:11 INFO  : Memory regions updated for context PA
+22:53:11 INFO  : Memory regions updated for context PA
+22:53:11 INFO  : Context for processor 'microblaze_0' is selected.
+22:53:11 INFO  : 'con' command is executed.
+22:53:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+22:53:11 INFO  : Launch script is exported to file 'C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\.sdk\launch_scripts\single_application_debug\systemdebugger_md5app_system_standalone.tcl'
