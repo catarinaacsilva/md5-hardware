@@ -2,10 +2,10 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Mon Jul  6 23:15:11 2020
-# Process ID: 16792
+# Start of session at: Sat Jul 11 18:54:08 2020
+# Process ID: 13636
 # Current directory: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18940 C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\Md5Demo.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21436 C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\Md5Demo.xpr
 # Log file: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/vivado.log
 # Journal file: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo\vivado.jou
 #-----------------------------------------------------------
@@ -17,11 +17,26 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
-open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 767.977 ; gain = 133.809
+WARNING: [IP_Flow 19-3664] IP 'mb_design_MD5HF_0_1' generated file not found 'c:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/ip/mb_design_MD5HF_0_1/mb_design_MD5HF_0_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mb_design_MD5HF_0_1' generated file not found 'c:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/ip/mb_design_MD5HF_0_1/mb_design_MD5HF_0_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mb_design_MD5HF_0_1' generated file not found 'c:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/ip/mb_design_MD5HF_0_1/mb_design_MD5HF_0_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mb_design_MD5HF_0_1' generated file not found 'c:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/ip/mb_design_MD5HF_0_1/mb_design_MD5HF_0_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mb_design_MD5HF_0_1' generated file not found 'c:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/ip/mb_design_MD5HF_0_1/mb_design_MD5HF_0_1_sim_netlist.vhdl'. Please regenerate to continue.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 784.176 ; gain = 171.422
 update_compile_order -fileset sources_1
 open_bd_design {C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/mb_design.bd}
 Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
 Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
 Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
 Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
 Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
@@ -42,8 +57,6 @@ Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_br
 Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
 Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
 Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
-WARNING: [BD 41-1282] Ignoring parameter HAS_BURST
-WARNING: [BD 41-1281] Parameter HAS_BURST is not defined on /axi_dma_0/M_AXIS_MM2S. Setting parameter on /axi_dma_0/M_AXIS_MM2S failed
 Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - axis_data_fifo_0
 Adding component instance block -- xilinx.com:user:MD5HF:1.0 - MD5HF_0
 Excluding slave segment /MD5HF_0/S00_AXI/S00_AXI_reg from address space /axi_dma_0/Data_MM2S.
@@ -56,7 +69,7 @@ Excluding slave segment /axi_timer_0/S_AXI/Reg from address space /axi_dma_0/Dat
 Excluding slave segment /axi_uartlite_0/S_AXI/Reg from address space /axi_dma_0/Data_MM2S.
 Excluding slave segment /microblaze_0_axi_intc/S_AXI/Reg from address space /axi_dma_0/Data_MM2S.
 Successfully read diagram <mb_design> from BD file <C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/mb_design.bd>
-open_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1367.527 ; gain = 42.398
+open_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1345.875 ; gain = 0.000
 ipx::edit_ip_in_project -upgrade true -name MD5HF_v1_0_project -directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.tmp/MD5HF_v1_0_project c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/component.xml
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
@@ -65,124 +78,18 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0'.
 INFO: [IP_Flow 19-795] Syncing license key meta-data
-ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1367.527 ; gain = 0.000
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1345.875 ; gain = 0.000
 update_compile_order -fileset sources_1
-close_project
-delete_bd_objs [get_bd_intf_nets microblaze_0_axi_periph_M09_AXI] [get_bd_intf_nets axis_data_fifo_0_M_AXIS] [get_bd_cells MD5HF_0]
-WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/component.xml. It will be created.
-set_property  ip_repo_paths  c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0 [current_project]
-update_ip_catalog
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0'.
-create_peripheral xilinx.com user MD5HF 1.0 -dir C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/../ip_repo
-add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:MD5HF:1.0]
-set_property VALUE 8 [ipx::get_bus_parameters WIZ_NUM_REG -of_objects [ipx::get_bus_interfaces S00_AXI -of_objects [ipx::find_open_core xilinx.com:user:MD5HF:1.0]]]
-add_peripheral_interface S00_AXIS -interface_mode slave -axi_type stream [ipx::find_open_core xilinx.com:user:MD5HF:1.0]
-generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:MD5HF:1.0]
-write_peripheral [ipx::find_open_core xilinx.com:user:MD5HF:1.0]
-set_property  ip_repo_paths  {C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/../ip_repo/MD5HF_1.0 c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0} [current_project]
-update_ip_catalog -rebuild
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0'.
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:user:MD5HF:1.0 MD5HF_0
-endgroup
-set_property location {6 1729 552} [get_bd_cells MD5HF_0]
-set_property location {6 1615 621} [get_bd_cells MD5HF_0]
-connect_bd_intf_net [get_bd_intf_pins axis_data_fifo_0/M_AXIS] [get_bd_intf_pins MD5HF_0/S00_AXIS]
-startgroup
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/MD5HF_0/S00_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins MD5HF_0/S00_AXI]
-Slave segment </MD5HF_0/S00_AXI/S00_AXI_reg> is being mapped into address space </axi_dma_0/Data_MM2S> at <0x44A0_0000 [ 64K ]>
-INFO: [BD 41-1051] The usage register of slave segment /MD5HF_0/S00_AXI/S00_AXI_reg does not match the usage memory of address space /axi_dma_0/Data_MM2S and will be excluded. Use the include_bd_addr_seg command to override this precaution and make the slave segment visible within this address space.
-Excluding slave segment /MD5HF_0/S00_AXI/S00_AXI_reg from address space /axi_dma_0/Data_MM2S.
-Slave segment </MD5HF_0/S00_AXI/S00_AXI_reg> is being mapped into address space </microblaze_0/Data> at <0x44A0_0000 [ 64K ]>
-apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/clk_wiz_1/clk_out1 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins MD5HF_0/s00_axis_aclk]
-endgroup
-regenerate_bd_layout
-ipx::edit_ip_in_project -upgrade true -name MD5HF_v1_0_project -directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.tmp/MD5HF_v1_0_project c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/component.xml
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0'.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/Md5HashFunction_1.0'.
-INFO: [IP_Flow 19-795] Syncing license key meta-data
-ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1797.996 ; gain = 0.000
-update_compile_order -fileset sources_1
-add_files -norecurse -copy_to c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/src C:/Users/catar/Desktop/git/md5-hardware/md5.vhd
-update_compile_order -fileset sources_1
-add_files -norecurse -copy_to c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/src C:/Users/catar/Desktop/git/md5-hardware/register.vhd
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-ipx::merge_project_changes files [ipx::current_core]
-WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/component.xml' ignored by IP packager.
-ipx::merge_project_changes hdl_parameters [ipx::current_core]
-WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/component.xml' ignored by IP packager.
-WARNING: [IP_Flow 19-4300] HDL parameter 'C_S00_AXI_ADDR_WIDTH' has its value changed from '5' to '4'.
-INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
 launch_runs synth_1 -jobs 4
-[Mon Jul  6 23:23:32 2020] Launched synth_1...
-Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-ipx::merge_project_changes files [ipx::current_core]
-WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/component.xml' ignored by IP packager.
-ipx::merge_project_changes hdl_parameters [ipx::current_core]
-WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/component.xml' ignored by IP packager.
-WARNING: [IP_Flow 19-4300] HDL parameter 'C_S00_AXI_ADDR_WIDTH' has its value changed from '4' to '5'.
-INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Mon Jul  6 23:28:36 2020] Launched synth_1...
+[Sat Jul 11 18:56:19 2020] Launched synth_1...
 Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log
 reset_run synth_1
 launch_runs synth_1 -jobs 4
-[Mon Jul  6 23:31:23 2020] Launched synth_1...
-Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Mon Jul  6 23:33:24 2020] Launched synth_1...
-Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Mon Jul  6 23:34:49 2020] Launched synth_1...
-Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Mon Jul  6 23:35:57 2020] Launched synth_1...
-Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Mon Jul  6 23:38:26 2020] Launched synth_1...
-Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Mon Jul  6 23:39:27 2020] Launched synth_1...
-Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Mon Jul  6 23:41:00 2020] Launched synth_1...
-Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Mon Jul  6 23:42:17 2020] Launched synth_1...
-Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Mon Jul  6 23:45:02 2020] Launched synth_1...
-Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-[Mon Jul  6 23:54:24 2020] Launched synth_1...
+[Sat Jul 11 19:20:25 2020] Launched synth_1...
 Run output will be captured here: c:/users/catar/desktop/git/md5-hardware/md5demo/md5demo.tmp/md5hf_v1_0_project/MD5HF_v1_0_project.runs/synth_1/runme.log
 ipx::merge_project_changes files [ipx::current_core]
 WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/component.xml' ignored by IP packager.
-ipx::merge_project_changes hdl_parameters [ipx::current_core]
-WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0/component.xml' ignored by IP packager.
-INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
-set_property core_revision 2 [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
 ipx::update_source_project_archive -component [ipx::current_core]
 ipx::create_xgui_files [ipx::current_core]
 ipx::update_checksums [ipx::current_core]
@@ -191,17 +98,11 @@ ipx::move_temp_component_back -component [ipx::current_core]
 close_project -delete
 update_ip_catalog -rebuild -repo_path c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0
 INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/catar/Desktop/git/md5-hardware/ip_repo/MD5HF_1.0'
-save_bd_design
-Wrote  : <C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\Md5Demo.srcs\sources_1\bd\mb_design\mb_design.bd> 
-Wrote  : <C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/ui/bd_db273ea8.ui> 
 report_ip_status -name ip_status 
 upgrade_ip -vlnv xilinx.com:user:MD5HF:1.0 [get_ips  mb_design_MD5HF_0_1] -log ip_upgrade.log
 Upgrading 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/mb_design.bd'
-INFO: [IP_Flow 19-3422] Upgraded mb_design_MD5HF_0_1 (MD5HF_v1.0 1.0) from revision 1 to revision 2
-WARNING: [IP_Flow 19-4707] Upgraded port order differs after port 's00_axi_aclk'
-WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'mb_design_MD5HF_0_1'. These changes may impact your design.
+INFO: [IP_Flow 19-3422] Upgraded mb_design_MD5HF_0_1 (MD5HF_v1.0 1.0) from revision 2 to revision 3
 Excluding slave segment /MD5HF_0/S00_AXI/S00_AXI_reg from address space /axi_dma_0/Data_MM2S.
-CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'mb_design_MD5HF_0_1' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/catar/Desktop/git/md5-hardware/Md5Demo/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
 Wrote  : <C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\Md5Demo.srcs\sources_1\bd\mb_design\mb_design.bd> 
 Wrote  : <C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/ui/bd_db273ea8.ui> 
 INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/ip_upgrade.log'.
@@ -260,40 +161,47 @@ INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0
 Exporting to file C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/hw_handoff/mb_design.hwh
 Generated Block Design Tcl file C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/hw_handoff/mb_design_bd.tcl
 Generated Hardware Definition File C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/synth/mb_design.hwdef
-generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2479.129 ; gain = 172.684
-catch { config_ip_cache -export [get_ips -all mb_design_xbar_0] }
-catch { config_ip_cache -export [get_ips -all mb_design_microblaze_0_axi_intc_0] }
-catch { config_ip_cache -export [get_ips -all mb_design_axi_dma_0_0] }
+generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1671.664 ; gain = 170.344
 catch { config_ip_cache -export [get_ips -all mb_design_MD5HF_0_1] }
 catch { config_ip_cache -export [get_ips -all mb_design_auto_pc_9] }
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_9, cache-ID = 187688b738407347; cache size = 17.401 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_9, cache-ID = 187688b738407347; cache size = 21.035 MB.
 catch { config_ip_cache -export [get_ips -all mb_design_auto_pc_0] }
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_0, cache-ID = b11a40d5773b18eb; cache size = 17.401 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_0, cache-ID = b11a40d5773b18eb; cache size = 21.035 MB.
 catch { config_ip_cache -export [get_ips -all mb_design_auto_pc_1] }
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_1, cache-ID = b11a40d5773b18eb; cache size = 17.401 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_1, cache-ID = b11a40d5773b18eb; cache size = 21.035 MB.
 catch { config_ip_cache -export [get_ips -all mb_design_auto_pc_2] }
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_2, cache-ID = b11a40d5773b18eb; cache size = 17.401 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_2, cache-ID = b11a40d5773b18eb; cache size = 21.035 MB.
 catch { config_ip_cache -export [get_ips -all mb_design_auto_pc_3] }
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_3, cache-ID = b11a40d5773b18eb; cache size = 17.401 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_3, cache-ID = b11a40d5773b18eb; cache size = 21.035 MB.
 catch { config_ip_cache -export [get_ips -all mb_design_auto_pc_4] }
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_4, cache-ID = b11a40d5773b18eb; cache size = 17.401 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_4, cache-ID = b11a40d5773b18eb; cache size = 21.035 MB.
 catch { config_ip_cache -export [get_ips -all mb_design_auto_pc_5] }
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_5, cache-ID = b11a40d5773b18eb; cache size = 17.401 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_5, cache-ID = b11a40d5773b18eb; cache size = 21.035 MB.
 catch { config_ip_cache -export [get_ips -all mb_design_auto_pc_6] }
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_6, cache-ID = b11a40d5773b18eb; cache size = 17.401 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_6, cache-ID = b11a40d5773b18eb; cache size = 21.035 MB.
 catch { config_ip_cache -export [get_ips -all mb_design_auto_pc_7] }
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_7, cache-ID = b11a40d5773b18eb; cache size = 17.401 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_7, cache-ID = b11a40d5773b18eb; cache size = 21.035 MB.
 catch { config_ip_cache -export [get_ips -all mb_design_auto_pc_8] }
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_8, cache-ID = b11a40d5773b18eb; cache size = 17.401 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mb_design_auto_pc_8, cache-ID = b11a40d5773b18eb; cache size = 21.035 MB.
 export_ip_user_files -of_objects [get_files C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/mb_design.bd] -no_script -sync -force -quiet
 create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/mb_design.bd]
-launch_runs -jobs 4 {mb_design_xbar_0_synth_1 mb_design_microblaze_0_axi_intc_0_synth_1 mb_design_axi_dma_0_0_synth_1 mb_design_MD5HF_0_1_synth_1}
-[Tue Jul  7 00:12:52 2020] Launched mb_design_xbar_0_synth_1, mb_design_microblaze_0_axi_intc_0_synth_1, mb_design_axi_dma_0_0_synth_1, mb_design_MD5HF_0_1_synth_1...
-Run output will be captured here:
-mb_design_xbar_0_synth_1: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/mb_design_xbar_0_synth_1/runme.log
-mb_design_microblaze_0_axi_intc_0_synth_1: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/mb_design_microblaze_0_axi_intc_0_synth_1/runme.log
-mb_design_axi_dma_0_0_synth_1: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/mb_design_axi_dma_0_0_synth_1/runme.log
-mb_design_MD5HF_0_1_synth_1: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/mb_design_MD5HF_0_1_synth_1/runme.log
+launch_runs -jobs 4 mb_design_MD5HF_0_1_synth_1
+[Sat Jul 11 19:23:57 2020] Launched mb_design_MD5HF_0_1_synth_1...
+Run output will be captured here: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/mb_design_MD5HF_0_1_synth_1/runme.log
 export_simulation -of_objects [get_files C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/mb_design.bd] -directory C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.ip_user_files -ipstatic_source_dir C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.cache/compile_simlib/modelsim} {questa=C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.cache/compile_simlib/questa} {riviera=C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.cache/compile_simlib/riviera} {activehdl=C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-exit
-INFO: [Common 17-206] Exiting Vivado at Tue Jul  7 00:14:20 2020...
+make_wrapper -files [get_files C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/mb_design.bd] -top
+make_wrapper -files [get_files C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.srcs/sources_1/bd/mb_design/mb_design.bd] -top
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Jul 11 19:25:39 2020] Launched synth_1...
+Run output will be captured here: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/synth_1/runme.log
+[Sat Jul 11 19:25:39 2020] Launched impl_1...
+Run output will be captured here: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/impl_1/runme.log
+write_hw_platform -fixed -force  -include_bit -file C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2019.2/data\embeddedsw) loading 0 seconds
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/mb_design_wrapper.xsa
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.

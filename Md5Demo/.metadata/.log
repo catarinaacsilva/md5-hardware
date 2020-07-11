@@ -12507,3 +12507,48 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.xilinx.sdk.utils 0 0 2020-06-22 23:00:49.946
 !MESSAGE XSCT command with result: [setws C:/Users/catar/Desktop/git/md5-hardware/Md5Demo], Result: [null, ]. Thread: Thread-20
+!SESSION 2020-07-11 19:32:29.724 -----------------------------------------------
+eclipse.buildId=2019.2
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_PT
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2020-07-11 19:32:48.336
+!MESSAGE Both 'com.autoesl.autopilot.ui.models' and 'com.autoesl.autopilot.ui.models' register a package for 'com.autoesl.autopilot.solution'
+
+!ENTRY org.eclipse.ui 4 4 2020-07-11 19:33:00.761
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY org.eclipse.ui 4 4 2020-07-11 19:33:00.767
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-07-11 19:33:07.708
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-07-11 19:33:07.712
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-23
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-07-11 19:33:07.717
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-07-11 19:33:09.898
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-07-11 19:33:09.902
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-23
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-07-11 19:33:09.904
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-07-11 19:33:09.913
+!MESSAGE XSCT Command: [setws C:/Users/catar/Desktop/git/md5-hardware/Md5Demo], Thread: Thread-23
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-07-11 19:33:09.933
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-07-11 19:33:09.943
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2019.2/data]. Thread: Worker-2: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-07-11 19:33:09.946
+!MESSAGE XSCT command with result: [setws C:/Users/catar/Desktop/git/md5-hardware/Md5Demo], Result: [null, ]. Thread: Thread-23

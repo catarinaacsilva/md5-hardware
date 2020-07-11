@@ -828,3 +828,10 @@ con
 23:00:49 INFO  : Successfully done setting XSCT server connection channel  
 23:00:49 INFO  : Successfully done query RDI_DATADIR 
 23:00:49 INFO  : Successfully done setting workspace for the tool. 
+19:33:00 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\catar\Desktop\git\md5-hardware\Md5Demo\temp_xsdb_launch_script.tcl
+19:33:06 INFO  : Registering command handlers for Vitis TCF services
+19:33:07 INFO  : XSCT server has started successfully.
+19:33:09 INFO  : Successfully done setting XSCT server connection channel  
+19:33:09 INFO  : plnx-install-location is set to ''
+19:33:09 INFO  : Successfully done query RDI_DATADIR 
+19:33:09 INFO  : Successfully done setting workspace for the tool. 

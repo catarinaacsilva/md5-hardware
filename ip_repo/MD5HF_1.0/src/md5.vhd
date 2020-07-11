@@ -274,10 +274,10 @@ begin
 
                     when storeData =>
                         case iCounter is
-                            when 0 => data_out <= std_logic_vector(A);
-                            when 1 => data_out <= std_logic_vector(B);
-                            when 2 => data_out <= std_logic_vector(C);
-                            when 3 => data_out <= std_logic_vector(D);
+                            when 0 => data_out(127 downto 96) <= std_logic_vector(A);
+                            when 1 => data_out(95 downto 64) <= std_logic_vector(B);
+                            when 2 => data_out(63 downto 32) <= std_logic_vector(C);
+                            when 3 => data_out(31 downto 0) <= std_logic_vector(D);
                           
                             when others => null;
                         end case;

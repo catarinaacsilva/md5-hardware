@@ -6,3 +6,5 @@ timestamp=[2020-06-15 09:26:25], mode=WORKBENCH_START, duration=0:00:15.793, dur
 timestamp=[2020-06-15 09:26:26], mode=WORKBENCH_UI_INIT, duration=0:00:01.581, duration_ms=1581, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5App,MD5App_system,RemoteSystemsTempFiles,mb_design_wrapper}
 timestamp=[2020-06-22 23:00:43], mode=WORKBENCH_START, duration=0:00:11.134, duration_ms=11134, data={}
 timestamp=[2020-06-22 23:00:44], mode=WORKBENCH_UI_INIT, duration=0:00:01.251, duration_ms=1251, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5App,MD5App_system,RemoteSystemsTempFiles,mb_design_wrapper}
+timestamp=[2020-07-11 19:33:02], mode=WORKBENCH_START, duration=0:00:14.462, duration_ms=14462, data={}
+timestamp=[2020-07-11 19:33:04], mode=WORKBENCH_UI_INIT, duration=0:00:01.440, duration_ms=1440, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5App,MD5App_system,RemoteSystemsTempFiles,mb_design_wrapper}
