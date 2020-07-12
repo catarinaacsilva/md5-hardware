@@ -130,7 +130,7 @@ struct word128 md5(unsigned char *initial_msg, unsigned long initial_len)
 	memcpy(msg + new_len, &bits_len, 4);           // in bits at the end of the buffer
 
 	// Process the message in successive 512-bit chunks:
-	//for each 512-bit chunk of message:
+	// for each 512-bit chunk of message:
 	int offset;
 	for(offset=0; offset<new_len; offset += (512/8)) {
 
@@ -168,7 +168,6 @@ struct word128 md5(unsigned char *initial_msg, unsigned long initial_len)
 			c = b;
 			b = b + LEFTROTATE((a + f + k[i] + w[g]), r[i]);
 			a = temp;
-
 		}
 
 		// Add this chunks hash to result so far:
