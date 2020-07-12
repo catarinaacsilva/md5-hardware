@@ -1,0 +1,63 @@
+timestamp=[2020-06-13 10:29:38], mode=WORKBENCH_START, duration=0:00:08.079, duration_ms=8079, data={}
+timestamp=[2020-06-13 10:29:38], mode=WORKBENCH_UI_INIT, duration=0:00:00.828, duration_ms=828, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2020-06-13 10:33:08], mode=APP_CREATION, duration=0:00:13.260, duration_ms=13260, data={name=MD5App, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=mb_design_wrapper, application_type=application}
+timestamp=[2020-06-13 10:36:30], mode=PLATFORM_GENERATION, duration=0:00:16.260, duration_ms=16260, data={name=mb_design_wrapper}
+timestamp=[2020-06-15 09:26:25], mode=WORKBENCH_START, duration=0:00:15.793, duration_ms=15793, data={}
+timestamp=[2020-06-15 09:26:26], mode=WORKBENCH_UI_INIT, duration=0:00:01.581, duration_ms=1581, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5App,MD5App_system,RemoteSystemsTempFiles,mb_design_wrapper}
+timestamp=[2020-06-22 23:00:43], mode=WORKBENCH_START, duration=0:00:11.134, duration_ms=11134, data={}
+timestamp=[2020-06-22 23:00:44], mode=WORKBENCH_UI_INIT, duration=0:00:01.251, duration_ms=1251, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5App,MD5App_system,RemoteSystemsTempFiles,mb_design_wrapper}
+timestamp=[2020-07-11 19:33:02], mode=WORKBENCH_START, duration=0:00:14.462, duration_ms=14462, data={}
+timestamp=[2020-07-11 19:33:04], mode=WORKBENCH_UI_INIT, duration=0:00:01.440, duration_ms=1440, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5App,MD5App_system,RemoteSystemsTempFiles,mb_design_wrapper}
+timestamp=[2020-07-11 19:39:19], mode=PLATFORM_GENERATION, duration=0:00:32.863, duration_ms=32863, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 19:53:35], mode=PLATFORM_GENERATION, duration=0:00:03.371, duration_ms=3371, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 19:54:05], mode=PLATFORM_GENERATION, duration=0:00:14.993, duration_ms=14993, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 19:55:24], mode=PLATFORM_GENERATION, duration=0:00:07.007, duration_ms=7007, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 19:55:45], mode=PLATFORM_GENERATION, duration=0:00:04.479, duration_ms=4479, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 19:55:57], mode=PLATFORM_GENERATION, duration=0:00:02.477, duration_ms=2477, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 19:56:27], mode=PLATFORM_GENERATION, duration=0:00:02.409, duration_ms=2409, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 19:59:27], mode=PLATFORM_GENERATION, duration=0:00:05.289, duration_ms=5289, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 20:00:07], mode=PLATFORM_GENERATION, duration=0:00:02.475, duration_ms=2475, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 20:00:21], mode=PLATFORM_GENERATION, duration=0:00:02.439, duration_ms=2439, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 20:00:34], mode=PLATFORM_GENERATION, duration=0:00:02.403, duration_ms=2403, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 20:04:27], mode=WORKBENCH_START, duration=0:00:11.329, duration_ms=11329, data={}
+timestamp=[2020-07-11 20:04:29], mode=WORKBENCH_UI_INIT, duration=0:00:01.583, duration_ms=1583, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5App,MD5App_system,RemoteSystemsTempFiles,mb_design_wrapper}
+timestamp=[2020-07-11 20:05:20], mode=PLATFORM_GENERATION, duration=0:00:05.843, duration_ms=5843, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 20:06:26], mode=PLATFORM_GENERATION, duration=0:00:04.431, duration_ms=4431, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 20:07:10], mode=PLATFORM_GENERATION, duration=0:00:05.379, duration_ms=5379, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 20:08:13], mode=PLATFORM_GENERATION, duration=0:00:04.470, duration_ms=4470, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 20:08:38], mode=PLATFORM_GENERATION, duration=0:00:04.444, duration_ms=4444, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 20:11:58], mode=WORKBENCH_START, duration=0:00:11.222, duration_ms=11222, data={}
+timestamp=[2020-07-11 20:11:59], mode=WORKBENCH_UI_INIT, duration=0:00:01.157, duration_ms=1157, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5App,MD5App_system,RemoteSystemsTempFiles,mb_design_wrapper}
+timestamp=[2020-07-11 20:12:27], mode=PLATFORM_GENERATION, duration=0:00:09.752, duration_ms=9752, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 20:44:48], mode=PLATFORM_GENERATION, duration=0:00:03.291, duration_ms=3291, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 21:00:11], mode=WORKBENCH_START, duration=0:00:10.793, duration_ms=10793, data={}
+timestamp=[2020-07-11 21:00:12], mode=WORKBENCH_UI_INIT, duration=0:00:01.240, duration_ms=1240, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5App,MD5App_system,RemoteSystemsTempFiles,mb_design_wrapper}
+timestamp=[2020-07-11 21:00:39], mode=PLATFORM_GENERATION, duration=0:00:06.218, duration_ms=6218, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 22:24:04], mode=WORKBENCH_START, duration=0:00:11.780, duration_ms=11780, data={}
+timestamp=[2020-07-11 22:24:05], mode=WORKBENCH_UI_INIT, duration=0:00:01.529, duration_ms=1529, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5App,MD5App_system,RemoteSystemsTempFiles,mb_design_wrapper}
+timestamp=[2020-07-11 22:24:52], mode=WORKBENCH_START, duration=0:00:10.975, duration_ms=10975, data={}
+timestamp=[2020-07-11 22:24:53], mode=WORKBENCH_UI_INIT, duration=0:00:01.253, duration_ms=1253, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5App,MD5App_system,RemoteSystemsTempFiles,mb_design_wrapper}
+timestamp=[2020-07-11 22:25:33], mode=PLATFORM_GENERATION, duration=0:00:23.618, duration_ms=23618, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 22:35:54], mode=PLATFORM_GENERATION, duration=0:00:03.213, duration_ms=3213, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 22:36:11], mode=PLATFORM_GENERATION, duration=0:00:16.278, duration_ms=16278, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 22:37:39], mode=PLATFORM_GENERATION, duration=0:00:03.066, duration_ms=3066, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 22:38:11], mode=PLATFORM_GENERATION, duration=0:00:15.898, duration_ms=15898, data={name=mb_design_wrapper}
+timestamp=[2020-07-11 23:41:35], mode=PLATFORM_GENERATION, duration=0:00:02.830, duration_ms=2830, data={name=mb_design_wrapper}
+timestamp=[2020-07-12 00:05:01], mode=PLATFORM_GENERATION, duration=0:00:02.784, duration_ms=2784, data={name=mb_design_wrapper}
+timestamp=[2020-07-12 00:30:10], mode=PLATFORM_GENERATION, duration=0:00:02.798, duration_ms=2798, data={name=mb_design_wrapper}
+timestamp=[2020-07-12 00:54:31], mode=PLATFORM_GENERATION, duration=0:00:02.818, duration_ms=2818, data={name=mb_design_wrapper}
+timestamp=[2020-07-12 01:23:41], mode=PLATFORM_GENERATION, duration=0:00:02.773, duration_ms=2773, data={name=mb_design_wrapper}
+timestamp=[2020-07-12 01:24:00], mode=PLATFORM_GENERATION, duration=0:00:02.977, duration_ms=2977, data={name=mb_design_wrapper}
+timestamp=[2020-07-12 01:24:23], mode=PLATFORM_GENERATION, duration=0:00:16.201, duration_ms=16201, data={name=mb_design_wrapper}
+timestamp=[2020-07-12 01:41:30], mode=PLATFORM_GENERATION, duration=0:00:02.764, duration_ms=2764, data={name=mb_design_wrapper}
+timestamp=[2020-07-12 11:44:12], mode=WORKBENCH_START, duration=0:00:16.402, duration_ms=16402, data={}
+timestamp=[2020-07-12 11:44:14], mode=WORKBENCH_UI_INIT, duration=0:00:01.942, duration_ms=1942, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5App,MD5App_system,RemoteSystemsTempFiles,mb_design_wrapper}
+timestamp=[2020-07-12 11:45:36], mode=PLATFORM_GENERATION, duration=0:00:03.337, duration_ms=3337, data={name=mb_design_wrapper}
+timestamp=[2020-07-12 18:04:12], mode=WORKBENCH_START, duration=0:00:12.966, duration_ms=12966, data={}
+timestamp=[2020-07-12 18:04:13], mode=WORKBENCH_UI_INIT, duration=0:00:01.486, duration_ms=1486, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5App,MD5App_system,RemoteSystemsTempFiles,mb_design_wrapper}
+timestamp=[2020-07-12 18:06:08], mode=PLATFORM_GENERATION, duration=0:00:03.120, duration_ms=3120, data={name=mb_design_wrapper}
+timestamp=[2020-07-12 19:30:15], mode=WORKBENCH_START, duration=0:00:12.505, duration_ms=12505, data={}
+timestamp=[2020-07-12 19:30:17], mode=WORKBENCH_UI_INIT, duration=0:00:01.610, duration_ms=1610, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5App,MD5App_system,RemoteSystemsTempFiles,mb_design_wrapper}
+timestamp=[2020-07-12 19:32:20], mode=PLATFORM_GENERATION, duration=0:00:03.021, duration_ms=3021, data={name=mb_design_wrapper}
+timestamp=[2020-07-12 19:32:43], mode=PLATFORM_GENERATION, duration=0:00:03.953, duration_ms=3953, data={name=mb_design_wrapper}
+timestamp=[2020-07-12 19:33:05], mode=PLATFORM_GENERATION, duration=0:00:18.053, duration_ms=18053, data={name=mb_design_wrapper}
