@@ -2,12 +2,12 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sun Jun  7 18:34:18 2020
-# Process ID: 2096
-# Current directory: C:/Users/Duarte Dias/Documents/MD5/MD5.runs/synth_1
+# Start of session at: Sun Jul 12 12:10:53 2020
+# Process ID: 17216
+# Current directory: C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.runs/synth_1
 # Command line: vivado.exe -log md5Demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source md5Demo.tcl
-# Log file: C:/Users/Duarte Dias/Documents/MD5/MD5.runs/synth_1/md5Demo.vds
-# Journal file: C:/Users/Duarte Dias/Documents/MD5/MD5.runs/synth_1\vivado.jou
+# Log file: C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.runs/synth_1/md5Demo.vds
+# Journal file: C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source md5Demo.tcl -notrace
 Command: synth_design -top md5Demo -part xc7a100tcsg324-1
@@ -16,23 +16,23 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5540 
+INFO: Helper process launched with PID 18720 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 830.070 ; gain = 234.672
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 829.816 ; gain = 234.395
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'md5Demo' [C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/sources_1/imports/md5Demo.vhd:16]
-INFO: [Synth 8-638] synthesizing module 'MD5' [C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/sources_1/imports/md5.vhd:17]
-INFO: [Synth 8-226] default block is never used [C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/sources_1/imports/md5.vhd:133]
-INFO: [Synth 8-6054] Found Dynamic range expression with variable size [C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/sources_1/imports/md5.vhd:225]
-INFO: [Synth 8-256] done synthesizing module 'MD5' (1#1) [C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/sources_1/imports/md5.vhd:17]
-INFO: [Synth 8-638] synthesizing module 'PulseGenerator' [C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/sources_1/imports/PulseGenerator.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'PulseGenerator' (2#1) [C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/sources_1/imports/PulseGenerator.vhd:14]
-INFO: [Synth 8-638] synthesizing module 'Nexys4DispDriver' [C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/sources_1/imports/Nexys4DispDriver.vhd:24]
-WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/sources_1/imports/Nexys4DispDriver.vhd:31]
-INFO: [Synth 8-256] done synthesizing module 'Nexys4DispDriver' (3#1) [C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/sources_1/imports/Nexys4DispDriver.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'md5Demo' (4#1) [C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/sources_1/imports/md5Demo.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'md5Demo' [C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/sources_1/imports/md5Demo.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'MD5' [C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/sources_1/imports/md5.vhd:18]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/sources_1/imports/md5.vhd:131]
+INFO: [Synth 8-6054] Found Dynamic range expression with variable size [C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/sources_1/imports/md5.vhd:235]
+INFO: [Synth 8-256] done synthesizing module 'MD5' (1#1) [C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/sources_1/imports/md5.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'PulseGenerator' [C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/sources_1/imports/PulseGenerator.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'PulseGenerator' (2#1) [C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/sources_1/imports/PulseGenerator.vhd:14]
+INFO: [Synth 8-638] synthesizing module 'Nexys4DispDriver' [C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/sources_1/imports/Nexys4DispDriver.vhd:24]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/sources_1/imports/Nexys4DispDriver.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'Nexys4DispDriver' (3#1) [C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/sources_1/imports/Nexys4DispDriver.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'md5Demo' (4#1) [C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/sources_1/imports/md5Demo.vhd:16]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 902.641 ; gain = 307.242
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 902.309 ; gain = 306.887
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -45,64 +45,64 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 902.641 ; gain = 307.242
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 902.309 ; gain = 306.887
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 902.641 ; gain = 307.242
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 902.309 ; gain = 306.887
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.108 . Memory (MB): peak = 902.641 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 902.309 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/constrs_1/imports/Nexys4_Master.xdc]
-Finished Parsing XDC File [C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/constrs_1/imports/Nexys4_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/constrs_1/imports/Nexys4_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/md5Demo_propImpl.xdc].
+Parsing XDC File [C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/constrs_1/imports/Nexys4_Master.xdc]
+Finished Parsing XDC File [C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/constrs_1/imports/Nexys4_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/constrs_1/imports/Nexys4_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/md5Demo_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/md5Demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1025.020 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1017.961 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1025.020 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1017.961 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1025.020 ; gain = 429.621
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1017.961 ; gain = 422.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1025.020 ; gain = 429.621
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1017.961 ; gain = 422.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1025.020 ; gain = 429.621
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1017.961 ; gain = 422.539
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/sources_1/imports/md5.vhd:123]
-INFO: [Synth 8-5544] ROM "message_length" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "An" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "jCounter_n" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "xExpr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "g" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "iCounter" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/sources_1/imports/md5.vhd:125]
+INFO: [Synth 8-5546] ROM "message_length" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "An" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jCounter_n" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "xExpr" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "g" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iCounter" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1025.020 ; gain = 429.621
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1017.961 ; gain = 422.539
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
-+------+----------------+------------+----------+
-|      |RTL Partition   |Replication |Instances |
-+------+----------------+------------+----------+
-|1     |MD5__GB0        |           1|     41131|
-|2     |muxpart__12_MD5 |           1|     15809|
-|3     |MD5__GB2        |           1|     11740|
-|4     |md5Demo__GC0    |           1|       600|
-+------+----------------+------------+----------+
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |MD5__GB0      |           1|     41273|
+|2     |MD5__GB1      |           1|     16321|
+|3     |MD5__GB2      |           1|     11915|
+|4     |md5Demo__GC0  |           1|       600|
++------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -121,25 +121,22 @@ Detailed RTL Component Info :
 	              512 Bit    Registers := 1     
 	               32 Bit    Registers := 12    
 	               31 Bit    Registers := 6     
-	                4 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 6     
 +---Muxes : 
 	   2 Input    512 Bit        Muxes := 3     
-	  13 Input    512 Bit        Muxes := 1     
-	  13 Input     32 Bit        Muxes := 4     
+	  14 Input     32 Bit        Muxes := 4     
 	   2 Input     32 Bit        Muxes := 2     
-	   4 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
 	   8 Input      8 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 1     
+	  18 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 3     
 	   2 Input      3 Bit        Muxes := 1     
-	  13 Input      2 Bit        Muxes := 3     
-	  16 Input      2 Bit        Muxes := 1     
-	  13 Input      1 Bit        Muxes := 9     
-	  17 Input      1 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 9     
 	   2 Input      1 Bit        Muxes := 3     
 	   3 Input      1 Bit        Muxes := 2     
 	   8 Input      1 Bit        Muxes := 1     
@@ -165,21 +162,18 @@ Detailed RTL Component Info :
 	              512 Bit    Registers := 1     
 	               32 Bit    Registers := 12    
 	               31 Bit    Registers := 6     
-	                4 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input    512 Bit        Muxes := 3     
-	  13 Input    512 Bit        Muxes := 1     
-	  13 Input     32 Bit        Muxes := 4     
+	  14 Input     32 Bit        Muxes := 4     
 	   2 Input     32 Bit        Muxes := 2     
-	   4 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	  18 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 2     
 	   2 Input      3 Bit        Muxes := 1     
-	  13 Input      2 Bit        Muxes := 3     
-	  16 Input      2 Bit        Muxes := 1     
-	  13 Input      1 Bit        Muxes := 9     
-	  17 Input      1 Bit        Muxes := 1     
-	   4 Input      1 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 9     
 	   2 Input      1 Bit        Muxes := 1     
 Module PulseGenerator 
 Detailed RTL Component Info : 
@@ -216,20 +210,19 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-4471] merging register 'jCounter_n_reg[30:0]' into 'jCounter_n_reg[30:0]' [C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/sources_1/imports/md5.vhd:121]
-INFO: [Synth 8-4471] merging register 'jCounter_n_reg[30:0]' into 'jCounter_n_reg[30:0]' [C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/sources_1/imports/md5.vhd:121]
-INFO: [Synth 8-4471] merging register 'jCounter_n_reg[30:0]' into 'jCounter_n_reg[30:0]' [C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/sources_1/imports/md5.vhd:121]
-WARNING: [Synth 8-3917] design md5Demo has port led[1] driven by constant 0
+INFO: [Synth 8-4471] merging register 'jCounter_n_reg[30:0]' into 'jCounter_n_reg[30:0]' [C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/sources_1/imports/md5.vhd:123]
+INFO: [Synth 8-4471] merging register 'jCounter_n_reg[30:0]' into 'jCounter_n_reg[30:0]' [C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/sources_1/imports/md5.vhd:123]
+INFO: [Synth 8-4471] merging register 'jCounter_n_reg[30:0]' into 'jCounter_n_reg[30:0]' [C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/sources_1/imports/md5.vhd:123]
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (md5i_1/i_1/\data_counter_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (md5i_1/i_1/\data_counter_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (md5i_1/i_1/\data_counter_reg[2] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (md5i_1/i_1/\data_counter_reg[3] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (md5i_1/i_1/\data_counter_reg[4] )
-INFO: [Synth 8-3886] merging instance 'md5i_2/g_reg[4]' (FDE) to 'md5i_2/g_reg[0]'
-INFO: [Synth 8-3886] merging instance 'md5i_2/g_reg[3]' (FDE) to 'md5i_2/g_reg[0]'
-INFO: [Synth 8-3886] merging instance 'md5i_2/g_reg[2]' (FDE) to 'md5i_2/g_reg[0]'
-INFO: [Synth 8-3886] merging instance 'md5i_2/g_reg[1]' (FDE) to 'md5i_2/g_reg[0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (md5i_2/\g_reg[0] )
+INFO: [Synth 8-3886] merging instance 'md5i_3/g_reg[4]' (FDE) to 'md5i_3/g_reg[0]'
+INFO: [Synth 8-3886] merging instance 'md5i_3/g_reg[3]' (FDE) to 'md5i_3/g_reg[0]'
+INFO: [Synth 8-3886] merging instance 'md5i_3/g_reg[2]' (FDE) to 'md5i_3/g_reg[0]'
+INFO: [Synth 8-3886] merging instance 'md5i_3/g_reg[1]' (FDE) to 'md5i_3/g_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (md5i_3/\g_reg[0] )
 INFO: [Synth 8-3886] merging instance 'md5i_1/message_length_reg[0]' (FDE) to 'md5i_1/message_length_reg[5]'
 INFO: [Synth 8-3886] merging instance 'md5i_1/message_length_reg[1]' (FDE) to 'md5i_1/message_length_reg[2]'
 INFO: [Synth 8-3886] merging instance 'md5i_1/message_length_reg[2]' (FDE) to 'md5i_1/message_length_reg[3]'
@@ -262,7 +255,7 @@ INFO: [Synth 8-3886] merging instance 'md5i_1/message_length_reg[29]' (FDE) to '
 INFO: [Synth 8-3886] merging instance 'md5i_1/message_length_reg[30]' (FDE) to 'md5i_1/message_length_reg[31]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (md5i_1/\message_length_reg[31] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1025.020 ; gain = 429.621
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1017.961 ; gain = 422.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -286,21 +279,21 @@ Report RTL Partitions:
 +------+--------------+------------+----------+
 |      |RTL Partition |Replication |Instances |
 +------+--------------+------------+----------+
-|1     |MD5__GB0      |           1|      2470|
-|2     |MD5__GB2      |           1|      2798|
+|1     |MD5__GB0      |           1|      1981|
+|2     |MD5__GB2      |           1|      4072|
 |3     |md5Demo__GC0  |           1|       179|
 +------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 1025.020 ; gain = 429.621
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1017.961 ; gain = 422.539
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:18 . Memory (MB): peak = 1136.223 ; gain = 540.824
+Finished Timing Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 1139.992 ; gain = 544.570
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -308,13 +301,13 @@ Report RTL Partitions:
 |      |RTL Partition |Replication |Instances |
 +------+--------------+------------+----------+
 |1     |md5Demo__GC0  |           1|       179|
-|2     |md5Demo_GT0   |           1|      5268|
+|2     |md5Demo_GT0   |           1|      6053|
 +------+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:19 . Memory (MB): peak = 1142.102 ; gain = 546.703
+Finished Technology Mapping : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1139.992 ; gain = 544.570
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -338,13 +331,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:20 ; elapsed = 00:01:25 . Memory (MB): peak = 1142.102 ; gain = 546.703
+Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 1139.992 ; gain = 544.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:20 ; elapsed = 00:01:25 . Memory (MB): peak = 1142.102 ; gain = 546.703
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 1139.992 ; gain = 544.570
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -363,25 +356,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1142.102 ; gain = 546.703
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 1139.992 ; gain = 544.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1142.102 ; gain = 546.703
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 1139.992 ; gain = 544.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1142.102 ; gain = 546.703
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1139.992 ; gain = 544.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1142.102 ; gain = 546.703
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1139.992 ; gain = 544.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -400,16 +393,16 @@ Report Cell Usage:
 |1     |BUFG   |     1|
 |2     |CARRY4 |    75|
 |3     |LUT1   |    50|
-|4     |LUT2   |   132|
-|5     |LUT3   |    67|
-|6     |LUT4   |   271|
-|7     |LUT5   |   252|
-|8     |LUT6   |   363|
-|9     |MUXF7  |    41|
-|10    |MUXF8  |    18|
-|11    |FDCE   |    38|
-|12    |FDRE   |   739|
-|13    |IBUF   |     3|
+|4     |LUT2   |    48|
+|5     |LUT3   |   184|
+|6     |LUT4   |   107|
+|7     |LUT5   |   214|
+|8     |LUT6   |   456|
+|9     |MUXF7  |     4|
+|10    |FDCE   |    39|
+|11    |FDRE   |   721|
+|12    |FDSE   |    18|
+|13    |IBUF   |     4|
 |14    |OBUF   |    18|
 +------+-------+------+
 
@@ -417,35 +410,35 @@ Report Instance Areas:
 +------+---------+-----------------+------+
 |      |Instance |Module           |Cells |
 +------+---------+-----------------+------+
-|1     |top      |                 |  2068|
+|1     |top      |                 |  1939|
 |2     |  disp   |Nexys4DispDriver |    14|
-|3     |  md5    |MD5              |  1983|
+|3     |  md5    |MD5              |  1853|
 |4     |  p_gen  |PulseGenerator   |    49|
 +------+---------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1142.102 ; gain = 546.703
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1139.992 ; gain = 544.570
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:01:20 . Memory (MB): peak = 1142.102 ; gain = 424.324
-Synthesis Optimization Complete : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1142.102 ; gain = 546.703
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:01:04 . Memory (MB): peak = 1139.992 ; gain = 428.918
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1139.992 ; gain = 544.570
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1142.102 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 134 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1139.992 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'md5Demo' is not ideal for floorplanning, since the cellview 'MD5' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1142.102 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1139.992 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-74 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+73 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:01:39 . Memory (MB): peak = 1142.102 ; gain = 841.332
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1142.102 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 1139.992 ; gain = 842.055
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1139.992 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Duarte Dias/Documents/MD5/MD5.runs/synth_1/md5Demo.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.runs/synth_1/md5Demo.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file md5Demo_utilization_synth.rpt -pb md5Demo_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Jun  7 18:36:03 2020...
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 12 12:12:13 2020...

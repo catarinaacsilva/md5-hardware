@@ -6,7 +6,7 @@ use IEEE.NUMERIC_STD.all;
 entity md5Demo is
     Port (  clk : in  STD_LOGIC;
             led : out STD_LOGIC_VECTOR(1 downto 0);
-            sw  : in  STD_LOGIC_VECTOR(1 downto 0);
+            sw  : in  STD_LOGIC_VECTOR(2 downto 0);
             an  : out std_logic_vector(7 downto 0);
             seg : out std_logic_vector(6 downto 0);
             dp  : out std_logic
@@ -21,11 +21,13 @@ begin
 md5:    entity work.md5(Behavioral)
         port map(   data_in => "00000011100011100000000000011110",
                     start => sw(1),
+                    enable => sw(2),
                     clk => clk,
                     reset => sw(0),
                     data_out => data_out,
                     done => led(0),
-                    err => led(1)
+                    idleOut => led(1)
+                    
         );
         
 p_gen: entity work.PulseGenerator(Behavioral)

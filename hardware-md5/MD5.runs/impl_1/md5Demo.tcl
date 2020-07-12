@@ -65,16 +65,17 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param chipscope.maxJobs 1
   create_project -in_memory -part xc7a100tcsg324-1
   set_property board_part digilentinc.com:nexys4:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/Duarte Dias/Documents/MD5/MD5.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/Duarte Dias/Documents/MD5/MD5.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/Duarte Dias/Documents/MD5/MD5.cache/ip}} [current_project]
+  set_property webtalk.parent_dir C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.cache/wt [current_project]
+  set_property parent.project_path C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.xpr [current_project]
+  set_property ip_output_repo C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{C:/Users/Duarte Dias/Documents/MD5/MD5.runs/synth_1/md5Demo.dcp}}
-  read_xdc {{C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/constrs_1/imports/Nexys4_Master.xdc}}
+  add_files -quiet C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.runs/synth_1/md5Demo.dcp
+  read_xdc C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/constrs_1/imports/Nexys4_Master.xdc
   link_design -top md5Demo -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

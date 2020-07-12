@@ -17,23 +17,24 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 1
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/Duarte Dias/Documents/MD5/MD5.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/Duarte Dias/Documents/MD5/MD5.xpr} [current_project]
+set_property webtalk.parent_dir C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.cache/wt [current_project]
+set_property parent.project_path C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:nexys4:part0:1.1 [current_project]
-set_property ip_output_repo {c:/Users/Duarte Dias/Documents/MD5/MD5.cache/ip} [current_project]
+set_property ip_output_repo c:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  {C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/sources_1/imports/Nexys4DispDriver.vhd}
-  {C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/sources_1/imports/PulseGenerator.vhd}
-  {C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/sources_1/imports/md5.vhd}
-  {C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/sources_1/imports/md5Demo.vhd}
+  C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/sources_1/imports/Nexys4DispDriver.vhd
+  C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/sources_1/imports/PulseGenerator.vhd
+  C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/sources_1/imports/md5.vhd
+  C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/sources_1/imports/md5Demo.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -43,8 +44,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/constrs_1/imports/Nexys4_Master.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/Duarte Dias/Documents/MD5/MD5.srcs/constrs_1/imports/Nexys4_Master.xdc}}]
+read_xdc C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/constrs_1/imports/Nexys4_Master.xdc
+set_property used_in_implementation false [get_files C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.srcs/constrs_1/imports/Nexys4_Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

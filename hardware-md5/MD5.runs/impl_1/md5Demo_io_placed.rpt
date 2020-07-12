@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date                      : Sun Jun  7 18:37:43 2020
-| Host                      : DESKTOP-QTAJP9C running 64-bit major release  (build 9200)
+| Date                      : Sun Jul 12 12:13:24 2020
+| Host                      : GreatAtuin running 64-bit major release  (build 9200)
 | Command                   : report_io -file md5Demo_io_placed.rpt
 | Design                    : md5Demo
 | Device                    : xc7a100t
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            21 |
+|            22 |
 +---------------+
 
 
@@ -293,7 +293,7 @@ Table of Contents
 | R4         |             |            | GND                          | GND         |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | R5         |             | High Range | IO_L19N_T3_VREF_34           | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | R6         |             | High Range | IO_L19P_T3_34                | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| R7         |             | High Range | IO_L23P_T3_34                | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| R7         | sw[2]       | High Range | IO_L23P_T3_34                | INPUT       | LVCMOS33    |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | R8         |             | High Range | IO_L24P_T3_34                | User IO     |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | R9         |             | Dedicated  | VCCO_0                       | VCCO        |             |       0 |            |      |                     |                      |   any** |            |           |          |      |                  |              |                   |              |
 | R10        |             | High Range | IO_25_14                     | User IO     |             |      14 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |

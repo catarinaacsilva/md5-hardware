@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sun Jun  7 18:39:46 2020
-| Host             : DESKTOP-QTAJP9C running 64-bit major release  (build 9200)
+| Date             : Sun Jul 12 12:14:28 2020
+| Host             : GreatAtuin running 64-bit major release  (build 9200)
 | Command          : report_power -file md5Demo_power_routed.rpt -pb md5Demo_power_summary_routed.pb -rpx md5Demo_power_routed.rpx
 | Design           : md5Demo
 | Device           : xc7a100tcsg324-1
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.004 |        3 |       --- |             --- |
-| Slice Logic    |     0.008 |     2075 |       --- |             --- |
-|   LUT as Logic |     0.008 |      978 |     63400 |            1.54 |
+| Slice Logic    |     0.007 |     1933 |       --- |             --- |
+|   LUT as Logic |     0.007 |      935 |     63400 |            1.47 |
 |   CARRY4       |    <0.001 |       75 |     15850 |            0.47 |
-|   Register     |    <0.001 |      781 |    126800 |            0.62 |
-|   F7/F8 Muxes  |    <0.001 |       59 |     63400 |            0.09 |
-|   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |     0.009 |     1513 |       --- |             --- |
-| I/O            |    <0.001 |       21 |       210 |           10.00 |
+|   Register     |    <0.001 |      786 |    126800 |            0.62 |
+|   F7/F8 Muxes  |    <0.001 |        4 |     63400 |           <0.01 |
+|   Others       |     0.000 |        7 |       --- |             --- |
+| Signals        |     0.010 |     1567 |       --- |             --- |
+| I/O            |    <0.001 |       22 |       210 |           10.48 |
 | Static Power   |     0.097 |          |           |                 |
 | Total          |     0.119 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.037 |       0.022 |      0.015 |
+| Vccint    |       1.000 |     0.036 |       0.021 |      0.015 |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -142,7 +142,7 @@ Table of Contents
 | Name    | Power (W) |
 +---------+-----------+
 | md5Demo |     0.022 |
-|   md5   |     0.021 |
+|   md5   |     0.020 |
 +---------+-----------+
 
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1594514078">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1594577838">
   <File Type="PA-TCL" Name="mb_design_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="mb_design_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="mb_design_wrapper_reports.tcl"/>

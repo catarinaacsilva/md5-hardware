@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sun Jun  7 18:39:44 2020
-| Host         : DESKTOP-QTAJP9C running 64-bit major release  (build 9200)
+| Date         : Sun Jul 12 12:14:28 2020
+| Host         : GreatAtuin running 64-bit major release  (build 9200)
 | Command      : report_methodology -file md5Demo_methodology_drc_routed.rpt -pb md5Demo_methodology_drc_routed.pb -rpx md5Demo_methodology_drc_routed.rpx
 | Design       : md5Demo
 | Device       : xc7a100tcsg324-1
@@ -23,15 +23,31 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 19
+             Violations found: 23
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-18 | Warning  | Missing input or output delay | 19         |
+| TIMING-16 | Warning  | Large setup violation         | 3          |
+| TIMING-18 | Warning  | Missing input or output delay | 20         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.035 ns between md5/g_reg[6]/C (clocked by sys_clk_pin) and md5/Bn_reg[20]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.077 ns between md5/g_reg[6]/C (clocked by sys_clk_pin) and md5/Bn_reg[31]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.082 ns between md5/g_reg[6]/C (clocked by sys_clk_pin) and md5/Bn_reg[29]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
 TIMING-18#1 Warning
 Missing input or output delay  
 An input delay is missing on sw[0] relative to clock(s) sys_clk_pin
@@ -44,85 +60,90 @@ Related violations: <none>
 
 TIMING-18#3 Warning
 Missing input or output delay  
-An output delay is missing on an[0] relative to clock(s) sys_clk_pin
+An input delay is missing on sw[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#4 Warning
 Missing input or output delay  
-An output delay is missing on an[1] relative to clock(s) sys_clk_pin
+An output delay is missing on an[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#5 Warning
 Missing input or output delay  
-An output delay is missing on an[2] relative to clock(s) sys_clk_pin
+An output delay is missing on an[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#6 Warning
 Missing input or output delay  
-An output delay is missing on an[3] relative to clock(s) sys_clk_pin
+An output delay is missing on an[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#7 Warning
 Missing input or output delay  
-An output delay is missing on an[4] relative to clock(s) sys_clk_pin
+An output delay is missing on an[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#8 Warning
 Missing input or output delay  
-An output delay is missing on an[5] relative to clock(s) sys_clk_pin
+An output delay is missing on an[4] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#9 Warning
 Missing input or output delay  
-An output delay is missing on an[6] relative to clock(s) sys_clk_pin
+An output delay is missing on an[5] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#10 Warning
 Missing input or output delay  
-An output delay is missing on an[7] relative to clock(s) sys_clk_pin
+An output delay is missing on an[6] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#11 Warning
 Missing input or output delay  
-An output delay is missing on led[0] relative to clock(s) sys_clk_pin
+An output delay is missing on an[7] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#12 Warning
 Missing input or output delay  
-An output delay is missing on led[1] relative to clock(s) sys_clk_pin
+An output delay is missing on led[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#13 Warning
 Missing input or output delay  
-An output delay is missing on seg[0] relative to clock(s) sys_clk_pin
+An output delay is missing on led[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#14 Warning
 Missing input or output delay  
-An output delay is missing on seg[1] relative to clock(s) sys_clk_pin
+An output delay is missing on seg[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#15 Warning
 Missing input or output delay  
-An output delay is missing on seg[2] relative to clock(s) sys_clk_pin
+An output delay is missing on seg[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#16 Warning
 Missing input or output delay  
-An output delay is missing on seg[3] relative to clock(s) sys_clk_pin
+An output delay is missing on seg[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#17 Warning
 Missing input or output delay  
-An output delay is missing on seg[4] relative to clock(s) sys_clk_pin
+An output delay is missing on seg[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#18 Warning
 Missing input or output delay  
-An output delay is missing on seg[5] relative to clock(s) sys_clk_pin
+An output delay is missing on seg[4] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on seg[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#20 Warning
 Missing input or output delay  
 An output delay is missing on seg[6] relative to clock(s) sys_clk_pin
 Related violations: <none>

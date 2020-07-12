@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Duarte Dias/Documents/MD5/MD5.runs/impl_1'
+HD_PWD='C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

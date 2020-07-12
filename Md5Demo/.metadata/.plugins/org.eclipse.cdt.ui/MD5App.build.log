@@ -1,4 +1,4 @@
-01:41:37 **** Incremental Build of configuration Release for project MD5App ****
+19:47:12 **** Incremental Build of configuration Release for project MD5App ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -13,9 +13,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/catar/Desktop/git/md5-hardware/Md
 'Invoking: MicroBlaze Print Size'
 mb-size MD5App.elf  |tee "MD5App.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  14516	   1900	   3176	  19592	   4c88	MD5App.elf
+  14620	   1900	   3176	  19696	   4cf0	MD5App.elf
 'Finished building: MD5App.elf.size'
 ' '
 
-01:41:38 Build Finished (took 1s.241ms)
+19:47:14 Build Finished (took 1s.215ms)
 

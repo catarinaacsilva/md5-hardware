@@ -1,6 +1,6 @@
 Nothing to build in platform 'mb_design_wrapper'
 
-01:41:37 **** Incremental Build of configuration Release for project MD5App ****
+19:47:12 **** Incremental Build of configuration Release for project MD5App ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -15,9 +15,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/catar/Desktop/git/md5-hardware/Md
 'Invoking: MicroBlaze Print Size'
 mb-size MD5App.elf  |tee "MD5App.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  14516	   1900	   3176	  19592	   4c88	MD5App.elf
+  14620	   1900	   3176	  19696	   4cf0	MD5App.elf
 'Finished building: MD5App.elf.size'
 ' '
-01:41:39 **** Incremental Build of configuration Debug for project MD5App_system ****
+19:47:15 **** Incremental Build of configuration Debug for project MD5App_system ****
 make all 
 Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

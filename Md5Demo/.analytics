@@ -50,3 +50,14 @@ timestamp=[2020-07-12 01:23:41], mode=PLATFORM_GENERATION, duration=0:00:02.773,
 timestamp=[2020-07-12 01:24:00], mode=PLATFORM_GENERATION, duration=0:00:02.977, duration_ms=2977, data={name=mb_design_wrapper}
 timestamp=[2020-07-12 01:24:23], mode=PLATFORM_GENERATION, duration=0:00:16.201, duration_ms=16201, data={name=mb_design_wrapper}
 timestamp=[2020-07-12 01:41:30], mode=PLATFORM_GENERATION, duration=0:00:02.764, duration_ms=2764, data={name=mb_design_wrapper}
+timestamp=[2020-07-12 11:44:12], mode=WORKBENCH_START, duration=0:00:16.402, duration_ms=16402, data={}
+timestamp=[2020-07-12 11:44:14], mode=WORKBENCH_UI_INIT, duration=0:00:01.942, duration_ms=1942, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5App,MD5App_system,RemoteSystemsTempFiles,mb_design_wrapper}
+timestamp=[2020-07-12 11:45:36], mode=PLATFORM_GENERATION, duration=0:00:03.337, duration_ms=3337, data={name=mb_design_wrapper}
+timestamp=[2020-07-12 18:04:12], mode=WORKBENCH_START, duration=0:00:12.966, duration_ms=12966, data={}
+timestamp=[2020-07-12 18:04:13], mode=WORKBENCH_UI_INIT, duration=0:00:01.486, duration_ms=1486, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5App,MD5App_system,RemoteSystemsTempFiles,mb_design_wrapper}
+timestamp=[2020-07-12 18:06:08], mode=PLATFORM_GENERATION, duration=0:00:03.120, duration_ms=3120, data={name=mb_design_wrapper}
+timestamp=[2020-07-12 19:30:15], mode=WORKBENCH_START, duration=0:00:12.505, duration_ms=12505, data={}
+timestamp=[2020-07-12 19:30:17], mode=WORKBENCH_UI_INIT, duration=0:00:01.610, duration_ms=1610, data={editors_count=1, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=MD5App,MD5App_system,RemoteSystemsTempFiles,mb_design_wrapper}
+timestamp=[2020-07-12 19:32:20], mode=PLATFORM_GENERATION, duration=0:00:03.021, duration_ms=3021, data={name=mb_design_wrapper}
+timestamp=[2020-07-12 19:32:43], mode=PLATFORM_GENERATION, duration=0:00:03.953, duration_ms=3953, data={name=mb_design_wrapper}
+timestamp=[2020-07-12 19:33:05], mode=PLATFORM_GENERATION, duration=0:00:18.053, duration_ms=18053, data={name=mb_design_wrapper}

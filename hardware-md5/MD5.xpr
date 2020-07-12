@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/Duarte Dias/Documents/MD5/MD5.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="f381942c707c44688ccd773f74643bd0"/>

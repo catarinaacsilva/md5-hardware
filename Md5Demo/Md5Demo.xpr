@@ -40,13 +40,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="17"/>
-    <Option Name="WTModelSimExportSim" Val="17"/>
-    <Option Name="WTQuestaExportSim" Val="17"/>
-    <Option Name="WTIesExportSim" Val="17"/>
-    <Option Name="WTVcsExportSim" Val="17"/>
-    <Option Name="WTRivieraExportSim" Val="17"/>
-    <Option Name="WTActivehdlExportSim" Val="17"/>
+    <Option Name="WTXSimExportSim" Val="20"/>
+    <Option Name="WTModelSimExportSim" Val="20"/>
+    <Option Name="WTQuestaExportSim" Val="20"/>
+    <Option Name="WTIesExportSim" Val="20"/>
+    <Option Name="WTVcsExportSim" Val="20"/>
+    <Option Name="WTRivieraExportSim" Val="20"/>
+    <Option Name="WTActivehdlExportSim" Val="20"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -70,20 +70,20 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_ilmb_bram_if_cntlr_1/mb_design_ilmb_bram_if_cntlr_1.xci">
-          <Proxy FileSetName="mb_design_ilmb_bram_if_cntlr_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_microblaze_0_1/mb_design_microblaze_0_1.xci">
-          <Proxy FileSetName="mb_design_microblaze_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_MD5HF_0_1/mb_design_MD5HF_0_1.xci">
-          <Proxy FileSetName="mb_design_MD5HF_0_1"/>
+        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_xbar_0/mb_design_xbar_0.xci">
+          <Proxy FileSetName="mb_design_xbar_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_microblaze_0_axi_intc_0/mb_design_microblaze_0_axi_intc_0.xci">
           <Proxy FileSetName="mb_design_microblaze_0_axi_intc_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_xbar_0/mb_design_xbar_0.xci">
-          <Proxy FileSetName="mb_design_xbar_0"/>
+        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_microblaze_0_1/mb_design_microblaze_0_1.xci">
+          <Proxy FileSetName="mb_design_microblaze_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_ilmb_bram_if_cntlr_1/mb_design_ilmb_bram_if_cntlr_1.xci">
+          <Proxy FileSetName="mb_design_ilmb_bram_if_cntlr_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_MD5HF_0_1/mb_design_MD5HF_0_1.xci">
+          <Proxy FileSetName="mb_design_MD5HF_0_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_axis_data_fifo_0_0/mb_design_axis_data_fifo_0_0.xci">
           <Proxy FileSetName="mb_design_axis_data_fifo_0_0"/>

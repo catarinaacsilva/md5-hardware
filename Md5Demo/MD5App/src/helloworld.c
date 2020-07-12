@@ -42,28 +42,14 @@ int DMAConfig(u16 dmaDeviceId, XAxiDma* axidma)
 	return XST_SUCCESS;
 }
 
-
-void md5Hw(int* pDst, int* pSrc, unsigned int size)
+void PrintDataArray(uint32_t* pData, uint32_t begin, uint32_t end)
 {
-	int* p;
-
-	for (p = pSrc; p < (pSrc + size); p++, pDst++)
+	xil_printf("[");
+	for (uint32_t i = begin; i < end-1; i++)
 	{
-		putfslx(*p, 0, FSL_DEFAULT);
-		getfslx(*pDst, 0, FSL_DEFAULT);
+		xil_printf("%08x  ", pData[i]);
 	}
-}
-
-void PrintDataArray(uint32_t* pData, uint32_t size)
-{
-	uint32_t* p;
-
-	xil_printf("\n\r");
-	for (p = pData; p < pData + size; p++)
-	{
-		xil_printf("%08x  ", *p);
-	}
-	xil_printf("\n\r");
+	xil_printf("%08x]", pData[end-1]);
 }
 
 void ResetPerformanceTimer()
@@ -80,40 +66,43 @@ void RestartPerformanceTimer()
 	XTmrCtr_Enable(XPAR_TMRCTR_0_BASEADDR, 0);
 }
 
-unsigned int GetPerformanceTimer()
+uint32_t GetPerformanceTimer()
 {
 	return XTmrCtr_GetTimerCounterReg(XPAR_TMRCTR_0_BASEADDR, 0);
 }
 
-unsigned int StopAndGetPerformanceTimer()
+uint32_t StopAndGetPerformanceTimer()
 {
 	XTmrCtr_Disable(XPAR_TMRCTR_0_BASEADDR, 0);
 	return GetPerformanceTimer();
 }
 
-
 int main()
 {
-	uint32_t srcData[N];
-
-	unsigned int timeElapsed;
-	int status;
+	xil_printf("\r\nMD5");
+	// First position holds the amount of bits, the following position hold the data itself
+	uint32_t srcData[N+1];
+	uint32_t timeElapsed;
+	uint32_t status;
 
 	XAxiDma axiDma;
 
     init_platform();
 
-
     RestartPerformanceTimer();
-    srand(0);
 
-    for (int i = 0; i < N; i++) {
+    // The size of the message is 32 bits time the number of words
+    srcData[0] = 32 * N;
+    // The remaining bits are generated randomly
+    srand(0);
+    for (uint32_t i = 1; i < N+1; i++) {
+    	// Increase the randomness of the input
     	srcData[i] = rand() + rand();
     }
 
     timeElapsed = StopAndGetPerformanceTimer();
-    xil_printf("\n\rInput (%d microseconds):\n\r", timeElapsed / (XPAR_CPU_M_AXI_DP_FREQ_HZ / 1000000));
-    PrintDataArray(srcData, N);
+    xil_printf("\n\rInput (%d microseconds; %d bits): ", timeElapsed / (XPAR_CPU_M_AXI_DP_FREQ_HZ / 1000000), srcData[0]);
+    PrintDataArray(srcData, 1, N+1);
 
 	// Configuring DMA
 	xil_printf("\r\nConfiguring DMA");
@@ -123,11 +112,11 @@ int main()
 		xil_printf("\r\nConfiguration failed");
 		return XST_FAILURE;
 	}
-	xil_printf("\r\nDMA running");
+	xil_printf("\r\nDMA running...");
 
 	// MD5
 	RestartPerformanceTimer();
-	status = XAxiDma_SimpleTransfer(&axiDma,(UINTPTR) srcData, N * sizeof(uint32_t), XAXIDMA_DMA_TO_DEVICE);
+	status = XAxiDma_SimpleTransfer(&axiDma,(UINTPTR) srcData, (N+1) * sizeof(uint32_t), XAXIDMA_DMA_TO_DEVICE);
 
 	if (status != XST_SUCCESS)
 	{
@@ -139,19 +128,19 @@ int main()
 	while (XAxiDma_Busy(&axiDma, XAXIDMA_DMA_TO_DEVICE));
 
 	timeElapsed = StopAndGetPerformanceTimer();
-	xil_printf("\n\rDMA Hardware md5 time: %d microseconds", timeElapsed / (XPAR_CPU_M_AXI_DP_FREQ_HZ / 1000000));
+	xil_printf("\n\rDMA Hardware md5 (%d microseconds)", timeElapsed / (XPAR_CPU_M_AXI_DP_FREQ_HZ / 1000000));
 
-	//for(1 N)
-
-	//Output
+	// The output of the MD5 are a 128 bits hash (4 registers of 32 bits)
 	uint32_t res[4];
 
-	for (int i = 0; i < 4; i++) {
+	for (uint32_t i = 0; i < 4; i++) {
 		res [i] = 0;
 	}
 
+	// Wait for signal done
 	while(Xil_In32(XPAR_MD5HF_0_S00_AXI_BASEADDR + 16) != 1);
 
+	// Read the 4 words from the registers
 	res[0] = Xil_In32(XPAR_MD5HF_0_S00_AXI_BASEADDR + 0);
 	res[1] = Xil_In32(XPAR_MD5HF_0_S00_AXI_BASEADDR + 4);
 	res[2] = Xil_In32(XPAR_MD5HF_0_S00_AXI_BASEADDR + 8);
@@ -159,9 +148,8 @@ int main()
 
 	// Time to read the result from hardware
 	timeElapsed = StopAndGetPerformanceTimer();
-	xil_printf("\n\rOutput (%d microseconds):", timeElapsed / (XPAR_CPU_M_AXI_DP_FREQ_HZ / 1000000));
-	PrintDataArray(res, 4);
-	//
+	xil_printf("\n\rOutput (%d microseconds): ", timeElapsed / (XPAR_CPU_M_AXI_DP_FREQ_HZ / 1000000));
+	PrintDataArray(res, 0, 4);
 
     cleanup_platform();
     return 0;

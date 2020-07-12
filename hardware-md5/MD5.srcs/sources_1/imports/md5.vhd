@@ -7,11 +7,12 @@ use UNISIM.VCOMPONENTS.ALL;
 entity MD5 is
     Port ( data_in:     in  std_logic_vector (31 downto 0);
            start:       in  std_logic;
+           enable   :   in std_logic;
            clk:         in  std_logic;
            reset:       in  std_logic;
            data_out:    out std_logic_vector (31 downto 0) := (others => '0');
            done:        out std_logic := '0';
-           err:         out std_logic := '0');
+           idleOut  :   out std_logic);
 end MD5;
 
 architecture Behavioral of MD5 is
@@ -79,6 +80,7 @@ signal xExpr      : uint32_t := to_unsigned(0, A'length);
 signal g          : integer := 0;
 
 type state_t is (idle,
+                 loadLength,
                  loadMessage, 
                  padding,
                  rotate1,
@@ -111,7 +113,7 @@ function leftrotate(x: in uint32_t; c: in uint8_t) return uint32_t is
     end function endianness;
 
 begin
-    main: process(reset, clk)
+   main: process(reset, clk)
     begin
         if (reset = '1') then
             state <= idle;
@@ -129,12 +131,18 @@ begin
     fsm: process(state, start, jCounter, data_counter, iCounter, message_length)
     begin
         state_n <= state;
-
+        idleOut <= '0';
         case state is
             when idle =>
-                if (start = '1') then
+                idleOut <= '1';
+                
+                if (start = '1' or enable = '1') then
                     state_n <= loadMessage;
+                
                 end if;
+            
+            when loadLength =>
+                state_n <= loadMessage;
 
             when loadMessage => 
                 if (data_counter >= message_length) then
@@ -143,7 +151,7 @@ begin
 
             when padding =>
                 state_n <= rotate1; 
-
+                
             when rotate1 => --endianness of input message needs to be swapped
                 state_n <= xCalc1;
 
@@ -212,9 +220,11 @@ begin
         if (reset = '0' and rising_edge(clk)) then
 
             case state is
-
+                when loadLength =>
+                        message_length <= unsigned(data_in);
+                    
                 when loadMessage =>
-                    message_length <= unsigned(data_in); --confirmar se é preciso
+                    message_length <= unsigned(data_in);
                     M(data_counter to data_counter+31) <= unsigned(data_in);
                     if (data_counter < message_length) then
                         data_counter <= data_counter + 32;
@@ -226,10 +236,26 @@ begin
                     M(448 to 511) <= 
                     endianness(message_length) & "00000000000000000000000000000000";
 
-                when rotate1 => 
-                    for i in 0 to 15 loop
-                        M(32*i to 32*i+31) <= endianness(M(32*i to 32*i+31));
-                    end loop;
+                when rotate1 =>
+                    M(0 to 31) <= endianness(M(0 to 31));
+                    M(32*1 to 32*1+31) <= endianness(M(32*1 to 32*1+31));
+                    M(32*2 to 32*2+31) <= endianness(M(32*2 to 32*2+31));
+                    M(32*3 to 32*3+31) <= endianness(M(32*3 to 32*3+31));
+                    M(32*4 to 32*4+31) <= endianness(M(32*4 to 32*4+31));
+                    M(32*5 to 32*5+31) <= endianness(M(32*5 to 32*5+31));
+                    M(32*6 to 32*6+31) <= endianness(M(32*6 to 32*6+31));
+                    M(32*7 to 32*7+31) <= endianness(M(32*7 to 32*7+31));
+                    M(32*8 to 32*8+31) <= endianness(M(32*8 to 32*8+31));
+                    M(32*9 to 32*9+31) <= endianness(M(32*9 to 32*9+31));
+                    M(32*10 to 32*10+31) <= endianness(M(32*10 to 32*10+31));
+                    M(32*11 to 32*11+31) <= endianness(M(32*11 to 32*11+31));
+                    M(32*12 to 32*12+31) <= endianness(M(32*12 to 32*12+31));
+                    M(32*13 to 32*13+31) <= endianness(M(32*13 to 32*13+31));
+                    M(32*14 to 32*14+31) <= endianness(M(32*14 to 32*14+31));
+                    M(32*15 to 32*15+31) <= endianness(M(32*15 to 32*15+31));
+                --    for i in 0 to 15 loop
+                --        M(32*i to 32*i+31) <= endianness(M(32*i to 32*i+31));
+                --    end loop;
 
                 when bCalc1 | bCalc2 | bCalc3 | bCalc4 =>
                     An <= D;
@@ -255,12 +281,12 @@ begin
                     g <= 32*((7*jCounter_n) mod 16);
 
                 when lastCalc =>
-                    An  <= An + a0;
+                    An <= An + a0;
                     Bn <= Bn + b0;
                     Cn <= Cn + c0;
                     Dn <= Dn + d0;
 
-                when rotate2 =>
+               when rotate2 =>
                     An <= endianness(An);
                     Bn <= endianness(Bn);
                     Cn <= endianness(Cn);

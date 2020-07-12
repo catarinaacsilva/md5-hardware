@@ -1,0 +1,90 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Jul 12 09:55:27 2020
+# Process ID: 9144
+# Current directory: C:/Users/catar/Desktop/git/md5-hardware/hardware-md5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9588 C:\Users\catar\Desktop\git\md5-hardware\hardware-md5\MD5.xpr
+# Log file: C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/vivado.log
+# Journal file: C:/Users/catar/Desktop/git/md5-hardware/hardware-md5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Duarte Dias/Documents/MD5' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 750.602 ; gain = 108.688
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Jul 12 10:01:41 2020] Launched synth_1...
+Run output will be captured here: C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.runs/synth_1/runme.log
+[Sun Jul 12 10:01:41 2020] Launched impl_1...
+Run output will be captured here: C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Jul 12 10:02:59 2020] Launched synth_1...
+Run output will be captured here: C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.runs/synth_1/runme.log
+[Sun Jul 12 10:02:59 2020] Launched impl_1...
+Run output will be captured here: C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1170.715 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 133 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'md5Demo' is not ideal for floorplanning, since the cellview 'MD5' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.195 . Memory (MB): peak = 1802.684 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.195 . Memory (MB): peak = 1802.684 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1802.684 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 1916.777 ; gain = 970.441
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Jul 12 10:15:06 2020] Launched synth_1...
+Run output will be captured here: C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.runs/synth_1/runme.log
+[Sun Jul 12 10:15:06 2020] Launched impl_1...
+Run output will be captured here: C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1991.297 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'md5Demo' is not ideal for floorplanning, since the cellview 'MD5' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.152 . Memory (MB): peak = 1991.297 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.152 . Memory (MB): peak = 1991.297 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2080.477 ; gain = 104.566
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Jul 12 10:32:58 2020] Launched synth_1...
+Run output will be captured here: C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.runs/synth_1/runme.log
+[Sun Jul 12 10:32:58 2020] Launched impl_1...
+Run output will be captured here: C:/Users/catar/Desktop/git/md5-hardware/hardware-md5/MD5.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 12 10:38:56 2020...

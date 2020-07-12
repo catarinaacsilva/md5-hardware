@@ -1,6 +1,6 @@
-01:41:39 **** Incremental Build of configuration Debug for project MD5App_system ****
+19:47:15 **** Incremental Build of configuration Debug for project MD5App_system ****
 make all 
 Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
 
-01:41:40 Build Finished (took 198ms)
+19:47:15 Build Finished (took 200ms)
 
