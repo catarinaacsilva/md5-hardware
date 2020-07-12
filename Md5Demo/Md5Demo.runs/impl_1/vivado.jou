@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Sat Jul 11 22:18:17 2020
-# Process ID: 3124
+# Start of session at: Sun Jul 12 01:35:40 2020
+# Process ID: 128
 # Current directory: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/impl_1
 # Command line: vivado.exe -log mb_design_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source mb_design_wrapper.tcl -notrace
 # Log file: C:/Users/catar/Desktop/git/md5-hardware/Md5Demo/Md5Demo.runs/impl_1/mb_design_wrapper.vdi

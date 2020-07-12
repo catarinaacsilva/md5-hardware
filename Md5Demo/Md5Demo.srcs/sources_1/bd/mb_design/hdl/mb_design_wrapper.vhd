@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Sat Jul 11 22:15:42 2020
+--Date        : Sun Jul 12 01:33:02 2020
 --Host        : GreatAtuin running 64-bit major release  (build 9200)
 --Command     : generate_target mb_design_wrapper.bd
 --Design      : mb_design_wrapper

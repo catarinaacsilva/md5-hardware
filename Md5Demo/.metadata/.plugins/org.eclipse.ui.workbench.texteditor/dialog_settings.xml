@@ -2,12 +2,15 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="AXI" key="selection"/>
+		<item value="min" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="min"/>
+			<item value="Index"/>
+			<item value="AXI_BASEADDR"/>
 			<item value="AXI"/>
 			<item value="S00"/>
 			<item value="S00_AXI"/>
