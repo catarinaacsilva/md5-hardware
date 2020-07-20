@@ -15,7 +15,14 @@ We developer a script to implement MD5 in C and compare the performance of three
 
 The implementation will be based on this paper: [Hardware implementation of the MD5 algorithm](https://www.sciencedirect.com/science/article/pii/S1474667016324429).
 
-The system has a DMA module to data transfers.
+**Structure of the project:**
+
+- MD5Demo: Hardware + Software approach
+- hardware-md5: approach just on hardware
+- md5.c : script in C of MD5
+- ip_repo: IP Core to Hardware + Software approach
+- simulation: testbench
+
 
 ## Requirements
 
