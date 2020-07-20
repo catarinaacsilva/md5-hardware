@@ -1,18 +1,10 @@
---------------------------------------------
--- Module Name: MD5 testbench
--- Description: Testbench to MD5 module
---
--- Authors: Catarina Silva
--- Email: c.alexandracorreia@ua.pt
---------------------------------------------
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-library UNISIM; -- check if it is necessary
-use UNISIM.VComponents.all; -- check if it is necessary
+library UNISIM;
+use UNISIM.VComponents.all;
  
 
 entity MD5_tb IS
