@@ -47,7 +47,7 @@ The IP Core to implement the MD5 function has a AXI Stream Slave interface and a
 
 On the AXI Stream Slave interface we have the following state machine:
 
-![](doc/images/img06.png)
+![](doc/img06.png)
 
 ## Architecture
 
