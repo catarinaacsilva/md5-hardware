@@ -28,7 +28,7 @@ The system has a DMA module to data transfers.
 1. On Vivado was implemented a version just on hardware with an IP Core to MD5.
 2. Then, it was implemented a version with IP Core on hardware to implement MD5 and all the control on software. Input data came from software to hardware by DMA and all the process occurs on hardware. When the process finishes, the data produced on hardware is transmitted by AXI Memmory Mapped Interface to software to show the user.
 
-![](doc/images/img00.png)
+![](doc/img00.png)
 
 3. Finish, the last version just on software was implemented (simple script).
 4. It was counted the time on different approaches and compare results.
@@ -37,13 +37,13 @@ The system has a DMA module to data transfers.
 
 The IP Core to implement the MD5 function has a AXI Stream Slave interface and a AXI Memmory Mapped Interface. The follow images show the interaction:
 
-![](doc/images/img01.png)
+![](doc/img01.png)
 
-![](doc/images/img02.png)
+![](doc/img02.png)
 
-![](doc/images/img03.png)
+![](doc/img03.png)
 
-![](doc/images/img05.png)
+![](doc/img05.png)
 
 On the AXI Stream Slave interface we have the following state machine:
 
@@ -51,7 +51,7 @@ On the AXI Stream Slave interface we have the following state machine:
 
 ## Architecture
 
-![](doc/images/img04.png)
+![](doc/img04.png)
 
 
 ## Authors
